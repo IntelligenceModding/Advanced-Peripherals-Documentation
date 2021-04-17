@@ -1,0 +1,35 @@
+site_name: Advanced Peripherals
+
+nav:
+    - 'Home': 'index.md'
+    - 'Getting started': 'getstarted.md'
+    - 'Peripherals':
+      - 'Chat Box': 'peripherals/chat_box.md'
+      - 'Environment Detector': 'peripherals/environment_detector.md'
+      - 'Player Detector': 'peripherals/player_detector.md'
+      - 'Me Bridge': 'peripherals/me_bridge.md'
+      - 'Rs Bridge': 'peripherals/rs_bridge.md'
+      - 'Energy Detector': 'peripherals/energy_detector.md'
+    - 'Turtles':
+      - 'Chunky Turtle': 'turtles/chunky_turtle.md'
+      - 'Environment Turtle': 'turtles/environment_turtle.md'
+      - 'Player Turtle': 'turtles/player_turtle.md'
+      - 'Chatty Turtle': 'turtles/chatty_turtle.md'
+    - 'Items':
+      - 'Chunk Controller': 'items/chunk_controller.md'
+      - 'Pocket Computer': 'items/pocket_computer.md'
+      
+theme:
+    name: material
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - attr_list
+    - def_list
+    - pymdownx.highlight:
+        linenums: true
+    - pymdownx.superfences
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
