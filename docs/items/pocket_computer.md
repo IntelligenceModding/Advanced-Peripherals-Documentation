@@ -1,4 +1,4 @@
-#Chunk Controller
+#Pocket Computers
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Advanced-Environment-Pocket-Computer.png){ align=right }
 We provide pocket computer upgrades for the following peripherals:
