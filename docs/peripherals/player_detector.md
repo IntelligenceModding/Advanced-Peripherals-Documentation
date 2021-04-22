@@ -30,9 +30,9 @@ end
 
 function printPlayerCords(player) --this function will print the coordinates of the player
   local pos = detector.getPlayerPos(player) --getPlayerPos returns a table with coordinates
-  print("X of ".. i .." is: ".. pos.x)
-  print("Y of ".. i .." is: ".. pos.y)
-  print("Z of ".. i .." is: ".. pos.z)
+  print("X of ".. player .." is: ".. pos.x)
+  print("Y of ".. player .." is: ".. pos.y)
+  print("Z of ".. player .." is: ".. pos.z)
 end
 
 --Prints some information to the terminal of the computer
