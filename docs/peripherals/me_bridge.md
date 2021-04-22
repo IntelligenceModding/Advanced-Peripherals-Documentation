@@ -5,7 +5,7 @@
 The Me Bridge is able to interact with AppliedEnergistics2.
 You can retrieve items, craft items, get all items as a list and more. The Me Bridge uses one channel.
 
-#Events
+##Events
 
 !!! warning
     The crafting event does not work everytime. The crafting event is also barely tested
@@ -15,7 +15,7 @@ You can retrieve items, craft items, get all items as a list and more. The Me Br
 | crafting | "crafting" | table job informations or null | Fires when a crafting job is done, is cancelled or aborted |
 
 
-#Functions
+##Functions
 
 The most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
 You can use the command /advancedperipherals getHashItem with an item in your hand to get the MD5 hash of the NBT tags of the item.
@@ -48,7 +48,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | exportItemToChest(table item, string chest) |	int |	exports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
 | importItemFromChest(table item, string chest) |	int |	imports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
 
-#Screenshots
+##Screenshots
 
 Picture of the table from listItems()
 
@@ -63,7 +63,7 @@ Picture of the table from craftItem()
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233210.png)
 
 
-#Example
+##Example
 
 I made a script to craft items, the computer will re-craft every item needed(a specified amount) in the ME system. Everything is adjustable.
 
@@ -75,7 +75,7 @@ Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e
 Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.4b
 Reworked the system of the ME Bridge, it has now more features and a new system for the item parameter.

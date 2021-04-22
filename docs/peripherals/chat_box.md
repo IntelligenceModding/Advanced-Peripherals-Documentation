@@ -13,7 +13,7 @@ The chat box is able to read and write messages to the ingame chat. You can send
 |------------|--------------|-------------|-------------|-------------|
 |chat        | "chat"       | string username | string message | Fires when a player sends a message |
 
-#Functions
+##Functions
 
 The chat box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
 
@@ -34,7 +34,7 @@ end
 | sendMessage(string message)  | | Broadcasts a message to the global chat |
 | sendMessageToPlayer(string message, string username)  | | Sends a message to one specific players |
 
-#Example
+##Example
 
 I made an script which emits an redstone signal if a player sends a specified message.
 
@@ -42,7 +42,7 @@ Script: [here](https://gist.github.com/Seniorendi/2002973af6e983f48d5cf7a225d725
 
 Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 4.0b
 Fixed that the chat bos is not working on LAN worlds

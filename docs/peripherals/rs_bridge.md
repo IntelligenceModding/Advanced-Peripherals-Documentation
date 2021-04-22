@@ -4,10 +4,10 @@
 
 The Rs Bridge is able to interact with Refined Storage. You can retrieve items, craft items, get all items as a list and more. The Rs Bridge uses one channel.
 
-#Events
+##Events
 No Events
 
-#Functions
+##Functions
 
 The most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
 You can use the command /advancedperipherals getHashItem with an item in your hand to get the MD5 hash of the NBT tags of the item. The MD5 hash for the protection I book is ae70053c97f877de546b0248b9ddf525.
@@ -38,7 +38,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | exportItemToChest(table item, string chest) |	int |	exports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
 | importItemFromChest(table item, string chest) |	int |	imports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
 
-#Screenshots
+##Screenshots
 
 Picture of the table from listItems()
 
@@ -49,7 +49,7 @@ Picture of the table from listCraftableItems()
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_234048.png)
 
 
-#Example
+##Example
 
 I made a script to craft items, the computer will re-craft every item needed(a specified amount) in the RS system. Everything is adjustable.
 
@@ -61,7 +61,7 @@ Script: [Click here](https://gist.github.com/Seniorendi/26bd8ecaec400146f2e38790
 Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.4b
 Reworked the system of the RS Bridge, it has now more features and a new system for the item parameter.

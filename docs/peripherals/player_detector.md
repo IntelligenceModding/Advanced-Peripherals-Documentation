@@ -4,13 +4,13 @@
 
 The Player Detector is able to recognize players within a certain range, in addition it recognizes the player who clicks on him.
 
-#Events
+##Events
 
 | Event Name | Parameter One  | Parameter Two | Description |
 |------------|--------------|-------------|-------------|
 | playerClick | "playerClick" | string username | Fires when a player clicks on the block |
 
-#Functions
+##Functions
 
 Example:
 
@@ -52,7 +52,7 @@ end
 !!! info
     The center of the range is the player detector and not the computer.
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 The player detector was also a buggy block, like the energy detector. But it was not too buggy.
 We had bugs that the block uses completly wrong coordinates or the range was broken.

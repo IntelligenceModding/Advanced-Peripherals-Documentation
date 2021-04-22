@@ -5,11 +5,11 @@
 The environment detector is able to recieve informations from your environment like the current time, the current moon phase,
 the light level of the block and many more.
 
-#Events
+##Events
 No Events
 
 
-#Functions
+##Functions
 
 List of moon phases:
 
@@ -55,7 +55,7 @@ print("Current dimension ".. detector.getDimensionName())
 |isSunny() | boolean | Returns true if it's sunny |
 |listDimensions() |	table |	Returns a table with all registered dimensions(also modded dimensions) |
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.3.3b
 Added much more functions to the environment detector. The environment detector was like an useless block before this update.

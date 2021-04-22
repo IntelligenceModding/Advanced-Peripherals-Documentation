@@ -5,7 +5,7 @@
 
 The player turtle is the turtle version of the [Player Detector](https://docs.srendi.de/Peripherals/playerdetector/).
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.4b
 Added the player turtle

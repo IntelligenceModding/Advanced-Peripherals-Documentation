@@ -4,7 +4,7 @@
 The chunk controller is an crafting ingredient for the chunky turtle.
 Nothing special here.
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.4b
 Added as the crafting ingredient for the chunky turtle.

@@ -12,7 +12,7 @@ The energy detector can detect energy flow and acts as an resistor. You can defi
 
 No Events
 
-#Functions
+##Functions
 
 The energy detector is quite simple, you can set the max energy flow or receive the current flow/max flow.
 
@@ -31,7 +31,7 @@ print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints 
 | getTransferRateLimit() | int | Returns the max rate limit which has been set with setTransferRateLimit(). |
 | getTransferRate() | int | Returns the current energy which go trough the block. |
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 The energy detector had some weird problems in versions older than 0.4.6b
 The block was able to store infinite amounts of energy or it creates an limitless amount of energy.

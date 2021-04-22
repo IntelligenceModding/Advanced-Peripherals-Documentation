@@ -5,7 +5,7 @@
 
 The chatty turtle is the turtle version of the [Chat box](https://docs.srendi.de/Peripherals/chatbox/).
 
-#Changelog/Trivia
+##Changelog/Trivia
 
 0.4b
 Added the chatty turtle
