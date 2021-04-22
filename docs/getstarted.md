@@ -2,7 +2,7 @@
 
 !!! info
     I explain here how computercraft works.
-    If you want to know how my mod works, you can open the tabs on the left for the specific feature.
+    If you want to know how the mod works, you can open the tabs on the left for the specific feature.
 
 This is a addon for [computercraft](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked). The mod exists to add more blocks, turtles and more to computercraft
 for extended features.
