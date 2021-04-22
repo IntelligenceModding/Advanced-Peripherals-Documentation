@@ -41,3 +41,11 @@ I made an script which emits an redstone signal if a player sends a specified me
 Script: [here](https://gist.github.com/Seniorendi/2002973af6e983f48d5cf7a225d7257a)
 
 Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
+
+#Changelog/Trivia
+
+4.0b
+Fixed that the chat bos is not working on LAN worlds
+
+0.1b
+Added the chat box. it was the first feature of the mod.

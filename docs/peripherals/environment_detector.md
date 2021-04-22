@@ -54,3 +54,11 @@ print("Current dimension ".. detector.getDimensionName())
 |isThunder() | boolean | Returns true if it's thundering |
 |isSunny() | boolean | Returns true if it's sunny |
 |listDimensions() |	table |	Returns a table with all registered dimensions(also modded dimensions) |
+
+#Changelog/Trivia
+
+0.3.3b
+Added much more functions to the environment detector. The environment detector was like an useless block before this update.
+
+0.1b
+Added the block. It was the second feature of the mod.

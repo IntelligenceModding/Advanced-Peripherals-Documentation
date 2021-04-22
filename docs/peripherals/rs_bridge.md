@@ -56,7 +56,18 @@ I made a script to craft items, the computer will re-craft every item needed(a s
 Script: [Click here](https://gist.github.com/Seniorendi/26bd8ecaec400146f2e38790faceead8)
 
 !!! bug
-    This script does not work on version above 3.10b
+    This script does not work on version above 0.4b
 
 Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
+
+#Changelog/Trivia
+
+0.4b
+Reworked the system of the RS Bridge, it has now more features and a new system for the item parameter.
+
+0.3.9b
+Added the functions import/exportItemFromChest
+
+0.3.6b
+Added the RS Bridge with a good amount of features.

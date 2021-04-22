@@ -30,3 +30,23 @@ print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints 
 | setTransferRateLimit(int limit) | | Set the transfer rate limit. |
 | getTransferRateLimit() | int | Returns the max rate limit which has been set with setTransferRateLimit(). |
 | getTransferRate() | int | Returns the current energy which go trough the block. |
+
+#Changelog/Trivia
+
+The energy detector had some weird problems in versions older than 0.4.6b
+The block was able to store infinite amounts of energy or it creates an limitless amount of energy.
+
+0.4.6b
+The energy detector is now bug free. *hopefully*
+
+0.4.5b
+Completly changed the system of the energy detector, but the energy detector was able to drain energy without any reson.
+
+0.4.3b
+Created a crafting recipe for the detector.
+
+0.4.2b
+The energy detector is now able to send energy automatically.
+
+0.4.1b
+Added the lovely bugged energy detector.

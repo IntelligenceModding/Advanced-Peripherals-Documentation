@@ -51,3 +51,20 @@ end
 
 !!! info
     The center of the range is the player detector and not the computer.
+
+#Changelog/Trivia
+
+The player detector was also a buggy block, like the energy detector. But it was not too buggy.
+We had bugs that the block uses completly wrong coordinates or the range was broken.
+
+0.4.2b
+Added a max range config value.
+
+0.3b
+Added the functions isPlayersInRange and isPlayerinRange.
+
+0.2.6b
+Added the function getPlayersInRange.
+
+0.1b
+Added the player detector, it was the third feature of the mod.

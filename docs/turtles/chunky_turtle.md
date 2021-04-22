@@ -5,3 +5,8 @@
 
 The chunky turtle loads the chunk of the turtles position. The turtle can be disabled in the configuration file.
 The turtle have no functions or events, it just loads the chunk.
+
+#Changelog/Trivia
+
+0.4b
+Added the chunky turtle

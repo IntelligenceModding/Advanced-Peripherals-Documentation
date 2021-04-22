@@ -70,7 +70,18 @@ I made a script to craft items, the computer will re-craft every item needed(a s
 Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e119d3558)
 
 !!! bug
-    This script does not work on version above 3.10b
+    This script does not work on version above 0.4b
 
 Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
+
+#Changelog/Trivia
+
+0.4b
+Reworked the system of the ME Bridge, it has now more features and a new system for the item parameter.
+
+0.3.9b
+Added the functions import/exportItemFromChest
+
+0.3b
+Added the ME Bridge with a good amount of features.

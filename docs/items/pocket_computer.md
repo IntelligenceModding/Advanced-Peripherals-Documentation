@@ -13,3 +13,11 @@ We provide pocket computer upgrades for the following peripherals:
 
 !!! hint recipes
     You can see the crafting recipes when you use the mod Just Enough Items.
+
+##Changelog/Trivia
+
+0.4.3b
+Added the player detector and chat box updgrade.
+
+0.4.1b
+Added the environment detector upgrade, it was the first upgrade.
