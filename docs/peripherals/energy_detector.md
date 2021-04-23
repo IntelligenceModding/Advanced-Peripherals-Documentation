@@ -8,7 +8,7 @@ The energy detector can detect energy flow and acts as an resistor. You can defi
     The energy detector does not work on versions below 0.4.5b.
     I recommend to use the latest version.
 
-#Events
+##Events
 
 No Events
 

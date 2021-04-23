@@ -18,8 +18,8 @@ You can retrieve items, craft items, get all items as a list and more. The Me Br
 ##Functions
 
 The most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
-You can use the command /advancedperipherals getHashItem with an item in your hand to get the MD5 hash of the NBT tags of the item.
-The MD5 hash for the protection I book is ae70053c97f877de546b0248b9ddf525.
+You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags of the item.
+The MD5 hash for the protection I book is `ae70053c97f877de546b0248b9ddf525`.
 
 Example with exportItem:
 

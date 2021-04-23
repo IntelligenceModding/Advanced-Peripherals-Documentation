@@ -7,7 +7,7 @@ The chat box is able to read and write messages to the ingame chat. You can send
 !!! hint
     If you write your message with an $ the message will not be sent to the global chat but the chat event fires.
 
-#Events
+##Events
 
 | Event Name | Parameter One  | Parameter Two | Parameter Three | Description |
 |------------|--------------|-------------|-------------|-------------|
