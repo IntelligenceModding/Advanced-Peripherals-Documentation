@@ -1,6 +1,6 @@
 #Player Detector
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/Energy-Detector.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
 
 The energy detector can detect energy flow and acts as an resistor. You can define the max flow rate to use it as an resistor.
 

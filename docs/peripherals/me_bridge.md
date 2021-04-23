@@ -1,6 +1,6 @@
 #ME Bridge
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/ME-Bridge.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/ME-Bridge.png){ align=right }
 
 The Me Bridge is able to interact with AppliedEnergistics2.
 You can retrieve items, craft items, get all items as a list and more. The Me Bridge uses one channel.

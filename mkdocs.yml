@@ -10,6 +10,7 @@ nav:
       - 'Me Bridge': 'peripherals/me_bridge.md'
       - 'Rs Bridge': 'peripherals/rs_bridge.md'
       - 'Energy Detector': 'peripherals/energy_detector.md'
+      - 'AR Controller': 'peripherals/ar_controller.md'
     - 'Turtles':
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
@@ -18,7 +19,7 @@ nav:
     - 'Items':
       - 'Chunk Controller': 'items/chunk_controller.md'
       - 'Pocket Computer': 'items/pocket_computer.md'
-      
+      - 'AR Goggles': 'items/ar_goggles.md'
 theme:
     name: material
 

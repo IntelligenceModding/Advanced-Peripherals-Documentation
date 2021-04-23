@@ -1,6 +1,6 @@
 # AR Controller
-<!--!!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/Chat-box-e1617224333272.png){ align=right }-->
+!!! picture inline end
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/AR-Controller.png){ align=right }
 
 The AR Controller is used to control your AR Goggles wirelessly. You can draw anything you wish into an overlay that will be visible as long as you're wearing the goggles.
 
@@ -11,6 +11,7 @@ The AR Controller is used to control your AR Goggles wirelessly. You can draw an
 While the controller is in relative mode, it interprets all coordinates as if they were on a virtual screen the size you specified, and then scales them according to your screen size.
 
 All color values are hexadecimal color codes (for example ```0xff00ff```)
+
 | Function | Returns  | Description |
 |------------|--------------|-------------|
 | isRelativeMode()  | boolean\[, int, int\] | Returns true and the size of the virtual screen if relative mode is active, or just false if it isn't |
@@ -47,4 +48,5 @@ end
 
 ##Changelog/Trivia
 
-//TODO: add implementation version
+0.5b
+Added the AR Controller and goggles, made by Olfi01#6413

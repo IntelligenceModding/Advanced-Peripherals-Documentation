@@ -1,6 +1,6 @@
 #Player Detector
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/Player-Detector.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/Player-Detector.png){ align=right }
 
 The Player Detector is able to recognize players within a certain range, in addition it recognizes the player who clicks on him.
 

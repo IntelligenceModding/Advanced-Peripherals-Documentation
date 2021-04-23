@@ -1,6 +1,6 @@
 #RS Bridge
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/RS-Bridge.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/RS-Bridge.png){ align=right }
 
 The Rs Bridge is able to interact with Refined Storage. You can retrieve items, craft items, get all items as a list and more. The Rs Bridge uses one channel.
 

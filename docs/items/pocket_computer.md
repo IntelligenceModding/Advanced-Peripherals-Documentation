@@ -1,6 +1,6 @@
 #Pocket Computers
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/Advanced-Environment-Pocket-Computer.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/Advanced-Pocket-Computer.png){ align=right }
 We provide pocket computer upgrades for the following peripherals:
 
 * [Environment Detector](https://docs.srendi.de/Peripherals/environmentdetector/)

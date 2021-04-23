@@ -1,6 +1,6 @@
 #Environment Detector
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/03/Environment-Detector-e1617223696336.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/04/Environment-Detector.png){ align=right }
 
 The environment detector is able to recieve informations from your environment like the current time, the current moon phase,
 the light level of the block and many more.
