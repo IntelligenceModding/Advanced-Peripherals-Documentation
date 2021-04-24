@@ -2,7 +2,7 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Environment-Detector.png){ align=right }
 
-The environment detector is able to recieve informations from your environment like the current time, the current moon phase,
+The environment detector is able to recieve information from the environment like the current time, the current moon phase,
 the light level of the block and many more.
 
 ##Events
@@ -39,7 +39,7 @@ print("Current dimension ".. detector.getDimensionName())
 |----------|---------|-------------|
 |getBiome() |	String | Returns the biome the block is in |
 |getSkyLightLevel()	| int |	Returns the sky light level above the block |
-|getBlockLightLevel() |	int |	Returns the block light level of the block(can be manipulate with light sources) |
+|getBlockLightLevel() |	int |	Returns the block light level of the block(can be manipulated with light sources) |
 |getDayLightLevel()	| int |	Returns the day light level of the current world from 0 to 15(like the day light sensor) |
 |getTime() (WIP) | int | Returns the daytime of the current world |
 |getDimensionProvider()	| string | Returns the provider of the dimension(ex. minecraft) |
@@ -49,7 +49,7 @@ print("Current dimension ".. detector.getDimensionName())
 |getMoonId() | int | Returns the current moon phase as id(ex. 2) |
 |isSlimeChunk() | boolean |	Returns true if the chunk is a slime chunk |
 |isDimension(string dimension) | boolean | is dimension	Returns true if the current dimension matches the first parameter |
-|isMoon(int moonphase) | boolean | Returns true if the current moon phase machtes the first parameter(ex. 0 = Full moon) |
+|isMoon(int moonphase) | boolean | Returns true if the current moon phase matches the first parameter(ex. 0 = Full moon) |
 |isRaining() | boolean | Returns true if it's raining |
 |isThunder() | boolean | Returns true if it's thundering |
 |isSunny() | boolean | Returns true if it's sunny |
@@ -58,7 +58,7 @@ print("Current dimension ".. detector.getDimensionName())
 ##Changelog/Trivia
 
 0.3.3b
-Added much more functions to the environment detector. The environment detector was like an useless block before this update.
+Added much more functions to the environment detector. The environment detector was a useless block before this update.
 
 0.1b
 Added the block. It was the second feature of the mod.

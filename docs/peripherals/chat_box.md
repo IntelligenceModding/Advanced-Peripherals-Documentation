@@ -45,7 +45,7 @@ Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
 ##Changelog/Trivia
 
 4.0b
-Fixed that the chat bos is not working on LAN worlds
+Fixed that the chat box is not working on LAN worlds
 
 0.1b
 Added the chat box. it was the first feature of the mod.

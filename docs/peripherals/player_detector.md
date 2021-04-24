@@ -17,9 +17,6 @@ Example:
 ```lua
 detector = peripheral.wrap("right") --Defines the detector on the right
 
-getPlayers(50) --Will execute the function getPlayers
-
-printPlayerCords("Srendi")  --Will execute the function printPlayerCords
 
 function getPlayers(int range)
   local players = detector.getPlayersInRange(range) --Returns a table of every player in a certain range
@@ -34,6 +31,10 @@ function printPlayerCords(player) --this function will print the coordinates of 
   print("Y of ".. player .." is: ".. pos.y)
   print("Z of ".. player .." is: ".. pos.z)
 end
+
+getPlayers(50) --Will execute the function getPlayers
+
+printPlayerCords("Srendi")  --Will execute the function printPlayerCords
 
 --Prints some information to the terminal of the computer
 while true do
@@ -55,7 +56,7 @@ end
 ##Changelog/Trivia
 
 The player detector was also a buggy block, like the energy detector. But it was not too buggy.
-We had bugs that the block uses completly wrong coordinates or the range was broken.
+We had bugs that the block uses completely wrong coordinates or the range was broken.
 
 0.4.2b
 Added a max range config value.
