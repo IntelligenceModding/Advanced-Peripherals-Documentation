@@ -30,9 +30,9 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | listItems() |	table | Returns all items. |
 | isItemCrafting(table item) | boolean | Returns true if already a job for the item exists. |
 | getItem(table item) | table | Returns a table with information of the item. |
-| getEnergyUsage() | int |	Returns the energy usage of the whole Me System. |
-| getEnergyStorage() | int |	Returns the stored energy of the whole Me System. |
-| getMaxEnergyStorage() |	int | Returns the maximum energy storage of the whole Me System. |
+| getEnergyUsage() | int |	Returns the energy usage of the whole RS System. |
+| getEnergyStorage() | int |	Returns the stored energy of the whole RS System. |
+| getMaxEnergyStorage() |	int | Returns the maximum energy storage of the whole RS System. |
 | craftItem(table item)	| table | Crafts an item. |
 | exportItem(table item, string directions) |	int | exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
 | importItem(table item, string directions) |	int | imports an item to the me system from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
