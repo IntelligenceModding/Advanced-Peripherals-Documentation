@@ -1,4 +1,4 @@
-#Player Detector
+#Energy Detector
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
 
