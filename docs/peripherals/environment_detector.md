@@ -58,7 +58,7 @@ print("Current dimension ".. detector.getDimensionName())
 ##Changelog/Trivia
 
 0.3.3b
-Added much more functions to the environment detector. The environment detector was like an useless block before this update.
+Added much more functions to the environment detector. The environment detector was a useless block before this update.
 
 0.1b
 Added the block. It was the second feature of the mod.
