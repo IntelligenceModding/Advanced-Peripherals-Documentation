@@ -2,7 +2,7 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
 
-The energy detector can detect energy flow and acts as an resistor. You can define the max flow rate to use it as an resistor.
+The energy detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 
 !!! bug
     The energy detector does not work on versions below 0.4.5b.
@@ -21,7 +21,7 @@ Example:
 ```lua
 detector = peripheral.wrap("energyDetector_0") -- Define the peripheral
 
-detector.setTransferRateLimit(512) -- Only 512 FE/t can go trough the block
+detector.setTransferRateLimit(512) -- Only 512 FE/t can go through the block
 print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints the current transfer rate
 ```
 
@@ -29,7 +29,7 @@ print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints 
 |----------|---------|-------------|
 | setTransferRateLimit(int limit) | | Set the transfer rate limit. |
 | getTransferRateLimit() | int | Returns the max rate limit which has been set with setTransferRateLimit(). |
-| getTransferRate() | int | Returns the current energy which go trough the block. |
+| getTransferRate() | int | Returns the current energy which go through the block. |
 
 ##Changelog/Trivia
 
