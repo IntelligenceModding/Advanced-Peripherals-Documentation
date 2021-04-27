@@ -14,7 +14,9 @@ manager = peripheral.wrap("back") --Wraps the inventory manager
 
 manager.addItemToPlayer("UP", 63, "minecraft:dirt") --Will add 63 dirt to the players inventory from the chest above
 
-manager.removeItemFromPlayer("UP", 128, "minecraft:stone") --Will remove 128 stone blocks from the players inventory to the chest above
+manager.removeItemFromPlayer("UP", 114, "minecraft:stone") --Will remove 114 stone blocks from the players inventory to the chest above
+
+manager.removeItemFromPlayer("UP", 400) --Will remove 400 items from the players inventory to the chest above
 ```
 
 | Function | Returns  | Description |
