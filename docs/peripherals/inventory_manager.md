@@ -25,6 +25,8 @@ manager.removeItemFromPlayer("UP", 128, "minecraft:stone") --Will remove 128 sto
 | getItems() | table | Returns the contents of the players inventory |
 
 ##Changelog/Trivia
+0.5.2b
+Fixed a bug, that the inventory manager does not drop the contents.
 
 0.5b
 Added the Inventory Manager and Memory Card
