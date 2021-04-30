@@ -12,6 +12,7 @@ nav:
       - 'Energy Detector': 'peripherals/energy_detector.md'
       - 'AR Controller': 'peripherals/ar_controller.md'
       - 'Inventory Manager': 'peripherals/inventory_manager.md'
+      - 'Redstone Integrator': 'peripherals/redstone_integrator.md'
     - 'Turtles':
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
@@ -23,6 +24,8 @@ nav:
       - 'AR Goggles': 'items/ar_goggles.md'
       - 'Computer Tool': 'items/computer_tool.md'
       - 'Memory Card': 'items/memory_card.md'
+    - 'Utilities and Others':
+      - 'Item parameter for ME/RS Bridge': 'othersandutilities/item_parameter.md'
 theme:
     name: material
 
