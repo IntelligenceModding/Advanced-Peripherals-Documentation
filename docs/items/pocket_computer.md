@@ -1,15 +1,15 @@
 #Pocket Computers
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Advanced-Pocket-Computer.png){ align=right }
-We provide pocket computer upgrades for the following peripherals:
+We provide Pocket Computer upgrades for the following peripherals:
 
-* [Environment Detector](https://docs.srendi.de/Peripherals/environmentdetector/)
-* [Player Detector](https://docs.srendi.de/Peripherals/playerdetector/)
-* [Chat Box](https://docs.srendi.de/Peripherals/chatbox/)
+* [Environment Detector](https://docs.srendi.de/peripherals/environment_detector/)
+* [Player Detector](https://docs.srendi.de/peripherals/player_detector/)
+* [Chat Box](https://docs.srendi.de/peripherals/chat_box/)
 
 !!! info events
-    The upgrades comes wihout any events. You can't use events like the chat event
-    for the chat box upgrade.
+    The upgrade comes wihout any events. You can't use events like the chat event
+    for the Chat Box upgrade.
 
 !!! hint recipes
     You can see the crafting recipes when you use the mod Just Enough Items.

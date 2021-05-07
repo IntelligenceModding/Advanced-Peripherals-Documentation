@@ -2,15 +2,16 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/RS-Bridge.png){ align=right }
 
-The Rs Bridge is able to interact with Refined Storage. You can retrieve items, craft items, get all items as a list and more. The Rs Bridge uses one channel.
+The Rs Bridge is able to interact with Refined Storage.
+You can retrieve items, craft items, get all items as a list and more.
 
 ##Events
 
-No Events
+No events.
 
 ##Functions
 
-The most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
+Most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
 You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags of the item. The MD5 hash for the protection I book is `ae70053c97f877de546b0248b9ddf525`.
 
 Example with exportItem:
@@ -28,16 +29,16 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | listFluids()	| table | Returns all stored fluids.
 | listCraftableItems() | table |	Returns all craftable items. |
 | listItems() |	table | Returns all items. |
-| isItemCrafting(table item) | boolean | Returns true if already a job for the item exists. |
+| isItemCrafting(table item) | boolean | Returns true if a job for the item already exists. |
 | getItem(table item) | table | Returns a table with information of the item. |
 | getEnergyUsage() | int |	Returns the energy usage of the whole RS System. |
 | getEnergyStorage() | int |	Returns the stored energy of the whole RS System. |
 | getMaxEnergyStorage() |	int | Returns the maximum energy storage of the whole RS System. |
 | craftItem(table item)	| table | Crafts an item. |
-| exportItem(table item, string directions) |	int | exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
-| importItem(table item, string directions) |	int | imports an item to the me system from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
-| exportItemToChest(table item, string chest) |	int |	exports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
-| importItemFromChest(table item, string chest) |	int |	imports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
+| exportItem(table item, string directions) |	int | Exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| importItem(table item, string directions) |	int | Imports an item to the me system from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| exportItemToChest(table item, string chest) |	int |	Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network. |
+| importItemFromChest(table item, string chest) |	int |	Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network. |
 
 ##Screenshots
 
@@ -52,7 +53,7 @@ Picture of the table from listCraftableItems()
 
 ##Example
 
-I made a script to craft items, the computer will re-craft every item needed(a specified amount) in the RS system. Everything is adjustable.
+I made a script to craft items, the computer will re-craft every item needed (a specified amount) in the RS system. Everything is adjustable.
 
 Script: [Click here](https://gist.github.com/Seniorendi/26bd8ecaec400146f2e38790faceead8)
 

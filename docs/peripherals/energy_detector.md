@@ -2,10 +2,10 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
 
-The energy detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
+The Energy Detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 
 !!! bug
-    The energy detector does not work on versions below 0.4.5b.
+    The Energy Detector does not work on versions below 0.4.5b.
     I recommend to use the latest version.
 
 ##Events
@@ -14,7 +14,7 @@ No Events
 
 ##Functions
 
-The energy detector is quite simple, you can set the max energy flow or receive the current flow/max flow.
+The Energy Detector is quite simple, you can set the max energy flow or receive the current flow/max flow.
 
 Example:
 
@@ -33,7 +33,7 @@ print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints 
 
 ##Changelog/Trivia
 
-The energy detector had some weird problems in versions older than 0.4.6b
+The Energy Detector had some weird problems in versions older than 0.4.6b
 The block was able to store infinite amounts of energy or it creates an limitless amount of energy.
 
 0.4.6b

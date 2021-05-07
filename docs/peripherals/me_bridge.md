@@ -2,22 +2,22 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/ME-Bridge.png){ align=right }
 
-The Me Bridge is able to interact with AppliedEnergistics2.
+The Me Bridge is able to interact with Applied Energistics 2.
 You can retrieve items, craft items, get all items as a list and more. The Me Bridge uses one channel.
 
 ##Events
 
 !!! warning
-    The crafting event does not work everytime. The crafting event is also barely tested
+    The crafting event does not work everytime. The crafting event is also barely tested.
 
 | Event Name | Parameter One | Parameter Two | Description |
 |------------|---------------|---------------|-------------|
-| crafting | "crafting" | table job informations or nil | Fires when a crafting job is done, is cancelled or aborted |
+| crafting | "crafting" | table job informations or nil | Fires when a crafting job is done, cancelled or aborted. |
 
 
 ##Functions
 
-The most functions uses a table to craft, export or import the item. How these item parameters exaclty works, can you see at the [Item parameters of the ME/RS Bridge](https://docs.srendi.de/othersandutilities/item_parameter/) page.
+Most functions uses a table to craft, export or import the item. You can see how these item parameters exactly works at the [Item parameters of the ME/RS Bridge](https://docs.srendi.de/othersandutilities/item_parameter/) page.
 
 Example with exportItem:
 
@@ -34,17 +34,17 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | listFluid()	| table | Returns all stored fluids.
 | listCraftableItems() | table |	Returns all craftable items. |
 | listItems() |	table | Returns all items. |
-| isItemCrafting(table item) | boolean | Returns true if already a job for the item exists. |
+| isItemCrafting(table item) | boolean | Returns true if a job for the item already exists. |
 | getItem(table item) | table | Returns a table with information of the item. |
 | getEnergyUsage() | int |	Returns the energy usage of the whole ME System. |
 | getEnergyStorage() | int |	Returns the stored energy of the whole ME System. |
 | getMaxEnergyStorage() |	int | Returns the maximum energy storage of the whole ME System. |
 | getCraftingCPUs() |	table | Returns all connected crafting cpus. |
 | craftItem(table item)	| table | Crafts an item. |
-| exportItem(table item, string directions) |	int | exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
-| importItem(table item, string directions) |	int | imports an item to the me system from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south" |
-| exportItemToChest(table item, string chest) |	int |	exports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
-| importItemFromChest(table item, string chest) |	int |	imports an item to a chest(Every inventory tile entity should work) which is connected to the peripheral network. |
+| exportItem(table item, string directions) |	int | Exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| importItem(table item, string directions) |	int | Imports an item to the Me System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| exportItemToChest(table item, string chest) |	int |	Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network. |
+| importItemFromChest(table item, string chest) |	int |	Imports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network. |
 
 ##Screenshots
 
@@ -63,7 +63,7 @@ Picture of the table from craftItem()
 
 ##Example
 
-I made a script to craft items, the computer will re-craft every item needed(a specified amount) in the ME system. Everything is adjustable.
+I made a script to craft items, the computer will re-craft every item needed (a specified amount) in the ME system. Everything is adjustable.
 
 Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e119d3558)
 

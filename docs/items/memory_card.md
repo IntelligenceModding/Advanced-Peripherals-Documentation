@@ -2,9 +2,9 @@
 
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Memory-Card.png){ align=right }
-The AR Goggles can be used in combination with the Inventory Manager to communicate with the players Inventory
+The [AR Goggles](https://docs.srendi.de/items/ar_goggles/) can be used in combination with the [Inventory Manager](https://docs.srendi.de/peripherals/inventory_manager/) to communicate with the player's inventory.
 
-Right click a memory card to assign it to you.
+Right click with the Memory Card in hand to assign it to yourself.
 
 ##Changelog/Trivia
 
