@@ -5,27 +5,27 @@
 The AR Controller is used to control your AR Goggles wirelessly. You can draw anything you wish into an overlay that will be visible as long as you're wearing the goggles.
 
 !!! hint
-    To link your goggles to an AR Controller, right click it with them in your hand. Multiple Goggles can be linked to one controller.
+    To link your goggles to an AR Controller, right click it with them in your hand. Multiple Goggles can be linked to one Controller.
 
 ##Functions
-While the controller is in relative mode, it interprets all coordinates as if they were on a virtual screen the size you specified, and then scales them according to your screen size.
+While the Controller is in relative mode, it interprets all coordinates as if they were on a virtual screen the size you specified, and then scales them according to your screen size.
 
 All color values are hexadecimal color codes (for example ```0xff00ff```)
 
 | Function | Returns  | Description |
 |------------|--------------|-------------|
-| isRelativeMode()  | boolean\[, int, int\] | Returns true and the size of the virtual screen if relative mode is active, or just false if it isn't |
+| isRelativeMode()  | boolean\[, int, int\] | Returns true and the size of the virtual screen if relative mode is active, or just false if it isn't. |
 | setRelativeMode(boolean enabled\[, int virtualScreenWidth, int virtualScreenHeight\])  | | Activates or deactivates relative mode. Requires virtual screen width and height if it's being enabled. |
 | drawString(string text, int x, int y, int color) | | Draws the given string to the specified position and the specified color. |
 | drawCenteredString(string text, int x, int y, int color) | | The same as ```drawString()```, but centers the string horizontally around the specified position. |
 | drawRightboundString(string text, int x, int y, int color) | | The same as ```drawString()```, but the string is positioned with its right end at the specified position. |
-| drawCircle(int x, int y, int radius, int color) | | Will draw a circle without filling it.  |
+| drawCircle(int x, int y, int radius, int color) | | Draws a circle without filling it.  |
 | drawItemIcon(string itemId, int x, int y) | | Draws the given item to the specified position. |
 | horizontalLine(int minX, int maxX, int y, int color) | | Draws a horizontal line in the given color from minX to maxX at vertical y. |
 | verticalLine(int x, int minY, int maxY, int color) | | Draws a vertical line in the given color from minY to maxY at horizontal x. |
 | fill(int minX, int minY, int maxX, int maxY, int color) | | Fills a rectangle with the given color from the corner minX, minY to maxX, maxY. |
 | fillGradient(int minX, int minY, int maxX, int maxY, int colorFrom, int colorTo) | | Draws a rectangular gradient from colorFrom to colorTo with the given corners. |
-| fillCircle(int x, int y, int radius, int color) | | Will draw a full circle. |
+| fillCircle(int x, int y, int radius, int color) | | Draws a full circle. |
 | clear() | | Clears the entire canvas. |
 
 Everything that's painted onto the canvas remains there until ```clear()``` is called, however, it might be repositioned if relative mode is toggled on or off.
@@ -56,7 +56,7 @@ First, we have a script with more adaptability. You can define x, y, width and h
 
 Script: [Github](https://gist.github.com/Seniorendi/ce4971245b20fb031ca9b65ec4fcb4d0)
 
-And we have another script which depents on the script above, but it is simpler to use.
+And we have another script which depends on the script above, but is simpler to use.
 
 Script: [Github](https://gist.github.com/Seniorendi/954e9888fac01efe8f23e82d0ae06e92)
 
@@ -65,4 +65,4 @@ Script: [Github](https://gist.github.com/Seniorendi/954e9888fac01efe8f23e82d0ae0
 Added fillCircle, drawCircle and drawItemIcon.
 
 0.5b
-Added the AR Controller and goggles, made by Olfi01#6413
+Added the AR Controller and Goggles, made by Olfi01#6413

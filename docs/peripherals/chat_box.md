@@ -2,7 +2,7 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Chat-box.png){ align=right }
 
-The chat box is able to read and write messages to the ingame chat. You can send messages to just one player or to everyone.
+The Chat Box is able to read and write messages to the in-game chat. You can send messages to just one player or to everyone.
 
 !!! hint
     If you write your message with an $ the message will not be sent to the global chat but the chat event fires.
@@ -15,7 +15,7 @@ The chat box is able to read and write messages to the ingame chat. You can send
 
 ##Functions
 
-The chat box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
+The Chat Box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
 
 ``` lua
 box = peripheral.wrap("right") --Defines the chat box on the right
@@ -31,12 +31,12 @@ end
 
 | Function | Returns  | Description |
 |------------|--------------|-------------|
-| sendMessage(string message)  | | Broadcasts a message to the global chat |
-| sendMessageToPlayer(string message, string username)  | | Sends a message to one specific players |
+| sendMessage(string message)  | | Broadcasts a message to the global chat. |
+| sendMessageToPlayer(string message, string username)  | | Sends a message to one specific player. |
 
 ##Example
 
-I made an script which emits an redstone signal if a player sends a specified message.
+I made an script which emits a redstone signal if a player sends a specified message.
 
 Script: [here](https://gist.github.com/Seniorendi/2002973af6e983f48d5cf7a225d7257a)
 

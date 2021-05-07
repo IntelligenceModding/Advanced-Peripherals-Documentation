@@ -2,7 +2,7 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Environment-Detector.png){ align=right }
 
-The environment detector is able to recieve information from the environment like the current time, the current moon phase,
+The Environment Detector is able to receive information from the environment like the current time, the current moon phase,
 the light level of the block and many more.
 
 ##Events
@@ -22,7 +22,7 @@ List of moon phases:
 * 6 First quarter
 * 7 Waxing gibbous
 
-The environment detector is easy to use. Wrap the peripheral and use one of the functions.
+The Environment Detector is easy to use. Wrap the peripheral and use one of the functions.
 
 ``` lua
 detector = peripheral.wrap("right") --Defines the detector on the right
@@ -37,23 +37,23 @@ print("Current dimension ".. detector.getDimensionName())
 
 | Function | Returns | Description |
 |----------|---------|-------------|
-|getBiome() |	String | Returns the biome the block is in |
-|getSkyLightLevel()	| int |	Returns the sky light level above the block |
-|getBlockLightLevel() |	int |	Returns the block light level of the block(can be manipulated with light sources) |
-|getDayLightLevel()	| int |	Returns the day light level of the current world from 0 to 15(like the day light sensor) |
-|getTime() (WIP) | int | Returns the daytime of the current world |
-|getDimensionProvider()	| string | Returns the provider of the dimension(ex. minecraft) |
-|getDimensionName() |	string | Returns the name of the dimension(ex. the_nether) |
-|getDimensionPaN() | string |	Returns the name with the provider of the dimension(ex. minecraft:overworld) |
-|getMoonName() | string |	Returns the current moon phase as name(ex. Third quarter) |
-|getMoonId() | int | Returns the current moon phase as id(ex. 2) |
-|isSlimeChunk() | boolean |	Returns true if the chunk is a slime chunk |
-|isDimension(string dimension) | boolean | is dimension	Returns true if the current dimension matches the first parameter |
-|isMoon(int moonphase) | boolean | Returns true if the current moon phase matches the first parameter(ex. 0 = Full moon) |
-|isRaining() | boolean | Returns true if it's raining |
-|isThunder() | boolean | Returns true if it's thundering |
-|isSunny() | boolean | Returns true if it's sunny |
-|listDimensions() |	table |	Returns a table with all registered dimensions(also modded dimensions) |
+|getBiome() |	String | Returns the biome the block is in. |
+|getSkyLightLevel()	| int |	Returns the sky light level above the block. |
+|getBlockLightLevel() |	int |	Returns the light level of the block (can be manipulated with light sources). |
+|getDayLightLevel()	| int |	Returns the day light level of the current world from 0 to 15 (like the day light sensor). |
+|getTime() (WIP) | int | Returns the daytime of the current world. |
+|getDimensionProvider()	| string | Returns the provider of the dimension (ex. minecraft). |
+|getDimensionName() |	string | Returns the name of the dimension (ex. the_nether). |
+|getDimensionPaN() | string |	Returns the name with the provider of the dimension (ex. minecraft:overworld). |
+|getMoonName() | string |	Returns the current moon phase as name (ex. Third quarter). |
+|getMoonId() | int | Returns the current moon phase as id (ex. 2). |
+|isSlimeChunk() | boolean |	Returns true if the chunk is a slime chunk. |
+|isDimension(string dimension) | boolean | Returns true if the current dimension matches the first parameter. |
+|isMoon(int moonphase) | boolean | Returns true if the current moon phase matches the first parameter (ex. 0 = Full moon). |
+|isRaining() | boolean | Returns true if it's raining. |
+|isThunder() | boolean | Returns true if it's thundering. |
+|isSunny() | boolean | Returns true if it's sunny. |
+|listDimensions() |	table |	Returns a table with all registered dimensions(also modded dimensions). |
 
 ##Changelog/Trivia
 

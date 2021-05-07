@@ -2,20 +2,20 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Player-Detector.png){ align=right }
 
-The Player Detector is able to recognize players within a certain range, in addition it recognizes the player who clicks on him.
+The Player Detector is able to recognize players within a certain range. In addition, it recognizes the player who clicks on him.
 
 ##Events
 
 | Event Name | Parameter One  | Parameter Two | Description |
 |------------|--------------|-------------|-------------|
-| playerClick | "playerClick" | string username | Fires when a player clicks on the block |
+| playerClick | "playerClick" | string username | Fires when a player clicks on the block. |
 
 ##Functions
 
 Example:
 
 ```lua
-detector = peripheral.wrap("right") --Defines the detector on the right
+detector = peripheral.wrap("right") --Defines the Detector on the right
 
 
 function getPlayers(int range)
@@ -46,12 +46,12 @@ end
 | Function | Returns | Description |
 |----------|---------|-------------|
 | getPlayersInRange(int range) | table | Return players within a certain range. |
-| getPlayerPos(string player) | table | Returns players position. |
+| getPlayerPos(string player) | table | Returns player's position. |
 | isPlayerInRange(int range, string username) | boolean | Returns true if the player is in range, false if not. |
 | isPlayersInRange(int range)	 | boolean | Returns true if any player is in range, false if not. |
 
 !!! info
-    The center of the range is the player detector and not the computer.
+    The center of the range is the Player Detector itself and not the Computer.
 
 ##Changelog/Trivia
 
