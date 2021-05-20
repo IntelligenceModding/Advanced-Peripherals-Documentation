@@ -13,6 +13,23 @@ nav:
       - 'AR Controller': 'peripherals/ar_controller.md'
       - 'Inventory Manager': 'peripherals/inventory_manager.md'
       - 'Redstone Integrator': 'peripherals/redstone_integrator.md'
+    - 'Mod Integrations':
+      - 'How does it work?': 'peripheralproxy/getstarted.md'
+      - 'Mekanism':
+        - 'Fission Reactor': 'peripheralproxy/mekanism/fission.md'
+        - 'Fusion Reactor': 'peripheralproxy/mekanism/fusion.md'
+        - 'Boiler': 'peripheralproxy/mekanism/boiler.md'
+        - 'Generic Machine': 'peripheralproxy/mekanism/generic.md'
+        - 'Turbine': 'peripheralproxy/mekanism/turbine.md'
+        - 'Induction Matrix': 'peripheralproxy/mekanism/induction.md'
+      - 'Botania':
+        - 'Mana generating flower': 'peripheralproxy/botania/flower.md'
+        - 'Mana Pool': 'peripheralproxy/botania/pool.md'
+        - 'Mana Spreader': 'peripheralproxy/botania/spreader.md'
+      - 'Immersive Engineering':
+        - 'Capacitor': 'peripheralproxy/ie/capacitor.md'
+        - 'Redstone Probe': 'peripheralproxy/ie/probe.md'
+        - 'Redstone Connector': 'peripheralproxy/ie/connector.md'
     - 'Turtles':
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
@@ -28,8 +45,31 @@ nav:
       - 'Item parameter for ME/RS Bridge': 'othersandutilities/item_parameter.md'
 theme:
     name: material
+    features:
+      - navigation.top
+    palette:
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+plugins:
+  - search:
+      lang: en
+
+repo_url: https://github.com/Seniorendi/Advanced-Peripherals-Documentation
+repo_name: Seniorendi/Advanced-Peripherals-Documentation
+edit_uri: edit/main/docs/
 
 markdown_extensions:
+    - toc:
+        permalink: true
     - admonition
     - pymdownx.details
     - attr_list

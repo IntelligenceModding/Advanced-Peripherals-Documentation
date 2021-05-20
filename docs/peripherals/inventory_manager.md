@@ -7,6 +7,8 @@ The Inventory Manager can communicate with the player's inventory. You need to r
 !!! info
     Only one Memory Card can be linked by Inventory Manager.
 
+<br><br/>
+
 ##Functions
 
 ```lua
@@ -25,6 +27,9 @@ manager.removeItemFromPlayer("UP", 400) --Will remove 400 items from the players
 | addItemToPlayer(string inventoryBlock, int count\[, string item\])  | int amount | Adds an item to the player's inventory. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null. |
 | removeItemFromPlayer(string inventoryBlock, int count\[, string item\]) | int amount | Removes an item from the player's inventory to the given inventory direction. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will remove a random item from the player's inventory if the argument `item` is null. |
 | getItems() | table | Returns the content of the player's inventory. |
+| getArmor() | table | Returns the content of the player's armor slots. |
+| isPlayerEquipped() | boolean | Returns true if the player is wearing one or more armor pieces. |
+| isWearing(int slot) | boolean | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots) |
 
 ##Changelog/Trivia
 0.5.2b
