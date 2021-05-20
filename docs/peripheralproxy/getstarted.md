@@ -23,6 +23,8 @@ If you want to see more integrations, you can request a mod integration [here](h
 
 Currently we support:
 
+* Minecraft
+    - Beacon
 * Mekanism
     - Fission reactor
     - Boiler
