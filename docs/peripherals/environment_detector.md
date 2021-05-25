@@ -47,6 +47,7 @@ print("Current dimension ".. detector.getDimensionName())
 |getDimensionPaN() | string |	Returns the name with the provider of the dimension (ex. minecraft:overworld). |
 |getMoonName() | string |	Returns the current moon phase as name (ex. Third quarter). |
 |getMoonId() | int | Returns the current moon phase as id (ex. 2). |
+|getRadiation() | table | Returns the current radiation from mekanism. |
 |isSlimeChunk() | boolean |	Returns true if the chunk is a slime chunk. |
 |isDimension(string dimension) | boolean | Returns true if the current dimension matches the first parameter. |
 |isMoon(int moonphase) | boolean | Returns true if the current moon phase matches the first parameter (ex. 0 = Full moon). |

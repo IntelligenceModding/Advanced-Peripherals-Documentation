@@ -19,8 +19,8 @@ The [Induction Matrix](https://wiki.aidancbrady.com/wiki/Induction_Matrix) is a 
 | Function | Returns | Description |
 |----------|---------|-------------|
 | getEnergy() | int | Returns the amount of stored energy. |
-| getInputRate() | int | Returns the input rate per tick. |
-| getOutputRate() | int | Returns the output rate per tick. |
+| getLastInput() | int | Returns the input rate per tick. |
+| getLastOutput() | int | Returns the output rate per tick. |
 | getEnergyNeeded() | int | Returns the amount of energy that is needed to fill the matrix. |
 | getEnergyFilledPercentage() | int | Returns the amount of the energy in percent. |
 | getTransferCap() | table | Returns the max transfer rate per tick. This is defined by the amount of [induction providers](https://wiki.aidancbrady.com/wiki/Induction_Providers) |
