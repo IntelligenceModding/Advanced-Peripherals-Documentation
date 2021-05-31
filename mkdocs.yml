@@ -2,7 +2,6 @@ site_name: Advanced Peripherals
 
 nav:
     - 'Home': 'index.md'
-    - 'Getting started': 'getstarted.md'
     - 'Peripherals':
       - 'Chat Box': 'peripherals/chat_box.md'
       - 'Environment Detector': 'peripherals/environment_detector.md'
@@ -24,6 +23,7 @@ nav:
         - 'Generic Machine': 'peripheralproxy/mekanism/generic.md'
         - 'Turbine': 'peripheralproxy/mekanism/turbine.md'
         - 'Induction Matrix': 'peripheralproxy/mekanism/induction.md'
+        - 'Digital Miner': 'peripheralproxy/mekanism/digital_miner.md'
       - 'Botania':
         - 'Mana generating flower': 'peripheralproxy/botania/flower.md'
         - 'Mana Pool': 'peripheralproxy/botania/pool.md'

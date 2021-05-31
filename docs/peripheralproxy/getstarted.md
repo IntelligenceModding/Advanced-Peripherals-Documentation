@@ -32,6 +32,7 @@ Currently we support:
     - Any energy supporting machine
     - Turbine
     - Induction Matrix
+    - Digital Miner
 * Botania
     - Any flower
     - Any spreader

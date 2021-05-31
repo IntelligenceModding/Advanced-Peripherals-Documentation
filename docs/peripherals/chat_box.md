@@ -48,4 +48,4 @@ Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
 Fixed that the chat box is not working on LAN worlds
 
 0.1b
-Added the chat box. it was the first feature of the mod.
+Added the chat box. It was the first feature of the mod.

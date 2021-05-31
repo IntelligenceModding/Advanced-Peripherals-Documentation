@@ -55,8 +55,16 @@ print("Current dimension ".. detector.getDimensionName())
 |isThunder() | boolean | Returns true if it's thundering. |
 |isSunny() | boolean | Returns true if it's sunny. |
 |listDimensions() |	table |	Returns a table with all registered dimensions(also modded dimensions). |
+|getRadiation() |	table |	Returns the radiation of mekanism with the unit. |
+|getRadiationRaw() | int |	Returns the raw radiation without unit. |
 
 ##Changelog/Trivia
+
+0.6.5b
+Added getRadiationRaw
+
+0.6.1b
+Added getRadiation
 
 0.3.3b
 Added much more functions to the environment detector. The environment detector was a useless block before this update.
