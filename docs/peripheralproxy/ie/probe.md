@@ -1,10 +1,10 @@
-#Redstone Wire Connector
+#Redstone Probe
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Redstone-Wire-Connector.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/05/Redstone-Probe-Connector.png){ align=right }
     Mod: Immersive Engineering <br><br/>
-    Block: Redstone Wire Connector
-The redstone wire connector is a block from Immersive Engineering to connect redstone wire over big distances.
+    Block: Redstone Probe Connector
+The redstone probe connector is a block from Immersive Engineering to read data in a specific redstone channel.
 
 <br><br/>
 <br><br/>
@@ -16,9 +16,9 @@ The redstone wire connector is a block from Immersive Engineering to connect red
 | Function | Returns | Description |
 |----------|---------|-------------|
 | setSendingChannel(string color) | | Sets the sending channel of the probe connector. |
-| getRedstoneChannel() | string | Returns the current redstone channel. |
-| isInputMode() | boolean | Returns true if the mode of the wire connector is set to input. |
-| getOutput() | int | Returns the power of the redstone on the current channel. |
+| setReceivingChannel(string color) | | Sets the receiving channel of the probe connector. |
+| getReceivingChannel() | string | Returns the receiving channel of the probe connector. |
+| getSendingChannel() | string | Returns the receiving channel of the probe connector. |
 | getRedstoneForChannel(string color) | int | Returns the power of the redstone on the given channel. |
 
 ##Changelog/Trivia

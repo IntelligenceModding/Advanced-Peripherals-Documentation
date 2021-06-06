@@ -31,7 +31,7 @@ nav:
       - 'Immersive Engineering':
         - 'Capacitor': 'peripheralproxy/ie/capacitor.md'
         - 'Redstone Probe': 'peripheralproxy/ie/probe.md'
-        - 'Redstone Connector': 'peripheralproxy/ie/connector.md'
+        - 'Redstone Wire Connector': 'peripheralproxy/ie/connector.md'
     - 'Turtles':
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
