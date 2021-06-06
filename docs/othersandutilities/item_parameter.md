@@ -20,5 +20,4 @@ We have 3 parameters to filter the NBT values(`tag`, `nbt`, `json`). You can see
 | count | The count of the item you want to get. | `{name="advancedperipherals:computer_tool", count=48}` |
 | nbt | The NBT value as MD5 hash. You can get the MD5 hash via the `/advancedperipherals getHashItem` command. | `{name="minecraft:enchanted_book", count=38, nbt="ae70053c97f877de546b0248b9ddf525"}` |
 | json | This is the NBT value as JSON format. You can find this format everywhere. You can get the format with `bridge.getItem(`EXAMPLE_PARAMETER`).nbt.` All functions that return information about items will return the NBT value as **JSON** and not as MD5 Hash. JSON needs to be a table, not a string! | `{name="minecraft:book", count=38, json={pages:['{"text":"Advanced Peripherals book example"}'],title:CoolBook,author:Srendi}}` |
-| tag | This is the NBT value as binary. But I do not recommend this. | `No example` |
 | fingerprint | This is the fingerprint of an item which you can find in every function that return information about items. If you use fingerprint, name and NBT will be ignored. | `{fingerprint="501761a712d45cdcdb2f7793dc0339e5"}` |

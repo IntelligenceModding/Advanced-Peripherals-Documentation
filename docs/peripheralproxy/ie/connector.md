@@ -15,7 +15,7 @@ The redstone wire connector is a block from Immersive Engineering to connect red
 ##Functions
 | Function | Returns | Description |
 |----------|---------|-------------|
-| setSendingChannel(string color) | | Sets the sending channel of the probe connector. |
+| setRedstoneChannel(string color) | | Sets the redstone channel of the wire connector. |
 | getRedstoneChannel() | string | Returns the current redstone channel. |
 | isInputMode() | boolean | Returns true if the mode of the wire connector is set to input. |
 | getOutput() | int | Returns the power of the redstone on the current channel. |
