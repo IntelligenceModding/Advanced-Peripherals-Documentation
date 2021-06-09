@@ -1,4 +1,5 @@
 site_name: Advanced Peripherals
+site_url: 'https://docs.srendi.de/'
 
 nav:
     - 'Home': 'index.md'
