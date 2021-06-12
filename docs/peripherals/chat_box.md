@@ -1,40 +1,60 @@
-#Chat Box
+# Chat Box
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Chat-box.png){ align=right }
 
 The Chat Box is able to read and write messages to the in-game chat. You can send messages to just one player or to everyone.
 
 !!! hint
-    If you write your message with an $ the message will not be sent to the global chat but the chat event fires.
+    If you prefix your message with a $ the message will not be sent to the global chat but the chat event fires.  
+    Example:  
+    `$this message is hidden!`
 
-##Events
+## Overview
 
-| Event Name | Parameter One  | Parameter Two | Parameter Three | Description |
-|------------|--------------|-------------|-------------|-------------|
-|chat        | "chat"       | string username | string message | Fires when a player sends a message |
+| Peripheral Name | Interfaces with | Events | Introduced in |
+|-----------------|-----------------|--------|---------------|
+| chatBox         | Game Chat       | Yes    | 0.1b          |
 
-##Functions
+## Events
 
-The Chat Box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
+| Event Name | Parameter One | Parameter Two   | Parameter Three | Description                         |
+|------------|---------------|-----------------|-----------------|-------------------------------------|
+|chat        | "chat"        | string username | string message  | Fires when a player sends a message |
+
+### Example
 
 ``` lua
-box = peripheral.wrap("right") --Defines the chat box on the right
-
-box.sendMessage("Hey world") --Sends a message to the global chat
-box.sendMessageToPlayer("Hey you", "Player644") --Send a message only to one specific players
-
 while true do
-  event, username, message = os.pullEvent("chat") --will be fired when someone sends a chat messages
-  print(username.. " just wrote: ".. message) --Prints "*User* just wrote: *Message*"
+  event, username, message = os.pullEvent("chat") -- Will be fired when someone sends a chat message
+  print(username.. " just wrote: ".. message) -- Prints "*User* just wrote: *Message*"
 end
 ```
+
+!!! info
+    The `chat` event will fire once a chatbox has been connected to the computer.
+    You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
+
+## Functions
 
 | Function | Returns  | Description |
 |------------|--------------|-------------|
 | sendMessage(string message)  | | Broadcasts a message to the global chat. |
 | sendMessageToPlayer(string message, string username)  | | Sends a message to one specific player. |
 
-##Example
+### Example
+
+The Chat Box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
+
+``` lua
+local box = peripheral.find("chatBox") -- Finds a connected Chat Box
+
+if box == nil then error("Missing Chat Box") end
+
+box.sendMessage("Hey world") -- Sends a message to the global chat
+box.sendMessageToPlayer("Hey you", "Player644") -- Send a message only to one specific player
+```
+
+## Scripts & Examples
 
 I made an script which emits a redstone signal if a player sends a specified message.
 
@@ -42,7 +62,7 @@ Script: [here](https://gist.github.com/Seniorendi/2002973af6e983f48d5cf7a225d725
 
 Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
 
-##Changelog/Trivia
+## Changelog/Trivia
 
 4.0b
 Fixed that the chat box is not working on LAN worlds
