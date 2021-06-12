@@ -15,7 +15,7 @@ A beacon is a block that projects a light beam skyward and can provide status ef
 ##Functions
 | Function | Returns | Description |
 |----------|---------|-------------|
-| getLevel() | boolean | Returns the level of the beacon. |
+| getLevel() | int | Returns the level of the beacon. |
 | getPrimaryEffect() | string | Returns the primary effect. |
 | getSecondaryEffect() | string | Returns the secondary effect. |
 
