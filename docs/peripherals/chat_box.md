@@ -1,4 +1,5 @@
 # Chat Box
+
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Chat-box.png){ align=right }
 
@@ -12,18 +13,18 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 ## Overview
 
 | Peripheral Name | Interfaces with | Events | Introduced in |
-|-----------------|-----------------|--------|---------------|
+| --------------- | --------------- | ------ | ------------- |
 | chatBox         | Game Chat       | Yes    | 0.1b          |
 
 ## Events
 
 | Event Name | Parameter One | Parameter Two   | Parameter Three | Description                         |
-|------------|---------------|-----------------|-----------------|-------------------------------------|
-|chat        | "chat"        | string username | string message  | Fires when a player sends a message |
+| ---------- | ------------- | --------------- | --------------- | ----------------------------------- |
+| chat       | "chat"        | string username | string message  | Fires when a player sends a message |
 
 ### Example
 
-``` lua
+```lua
 while true do
   event, username, message = os.pullEvent("chat") -- Will be fired when someone sends a chat message
   print(username.. " just wrote: ".. message) -- Prints "*User* just wrote: *Message*"
@@ -31,21 +32,21 @@ end
 ```
 
 !!! info
-    The `chat` event will fire once a chatbox has been connected to the computer.
-    You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
+The `chat` event will fire once a chatbox has been connected to the computer.
+You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
 
 ## Functions
 
-| Function | Returns  | Description |
-|------------|--------------|-------------|
-| sendMessage(string message)  | | Broadcasts a message to the global chat. |
-| sendMessageToPlayer(string message, string username)  | | Sends a message to one specific player. |
+| Function                                             | Returns | Description                              |
+| ---------------------------------------------------- | ------- | ---------------------------------------- |
+| sendMessage(string message)                          |         | Broadcasts a message to the global chat. |
+| sendMessageToPlayer(string message, string username) |         | Sends a message to one specific player.  |
 
 ### Example
 
 The Chat Box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
 
-``` lua
+```lua
 local box = peripheral.find("chatBox") -- Finds a connected Chat Box
 
 if box == nil then error("Missing Chat Box") end
