@@ -1,4 +1,5 @@
-#Redstone Integrator
+# Redstone Integrator
+
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Redstone-Integrator.png){ align=right }
 
@@ -7,18 +8,20 @@ You can use the same code you would use for a computer on a Redstone Integrator.
 
 You may need this peripheral for cases where you need to output redstone signals on more sides than a regular computer has to offer.
 
-##Events
-No Events
+## Overview
 
+| Peripheral Name    | Interfaces with | Events | Introduced in |
+| ------------------ | --------------- | ------ | ------------- |
+| redstoneIntegrator | Refined Storage | No     | 0.5.3b        |
 
-##Functions
+## Functions
 
 The Redstone Integrator uses the same sides as the Redstone API.
 You can use `front`, `bottom`, `right` and so on.
 
 You can also use `Analogue` instead of `Analog`. Example: `setAnalogueOutput`
 
-``` lua
+```lua
 integrator = peripheral.wrap("redstoneIntegrator_1") --Defines the Integrator as redstoneIntegrator_1
 
 --Prints some information to the terminal of the computer
@@ -28,17 +31,16 @@ integrator.setOutput("top", true) --Will set the redstone level to 15 at the top
 
 ```
 
-| Function | Returns | Description |
-|----------|---------|-------------|
-|getInput(string direction) |	boolean | Returns true if the redstone at the given side is on. False if not. |
-|getOuput(string direction) |	boolean | Returns true if the Redstone Integrator sends a redstone signal to the given side. False if not. |
-|getAnalogInput(string direction) |	int | Returns the redstone level on the given side. |
-|getAnalogOutput(string direction) |	boolean | Returns the redstone level which sends the Redstone Integrator on the given side. |
-|setOutput(string direction, boolean power) | | Will set the redstone level to 15 on the given side if power is true. |
-|setAnalogOutput(string direction, int power) | | Will set the redstone level to the given power on the given side. |
+| Function                                     | Returns | Description                                                                                      |
+| -------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------ |
+| getInput(string direction)                   | boolean | Returns true if the redstone at the given side is on. False if not.                              |
+| getOuput(string direction)                   | boolean | Returns true if the Redstone Integrator sends a redstone signal to the given side. False if not. |
+| getAnalogInput(string direction)             | int     | Returns the redstone level on the given side.                                                    |
+| getAnalogOutput(string direction)            | boolean | Returns the redstone level which sends the Redstone Integrator on the given side.                |
+| setOutput(string direction, boolean power)   |         | Will set the redstone level to 15 on the given side if power is true.                            |
+| setAnalogOutput(string direction, int power) |         | Will set the redstone level to the given power on the given side.                                |
 
-
-##Changelog/Trivia
+## Changelog/Trivia
 
 0.5.3b
 Added the lovely Redstone Integrator

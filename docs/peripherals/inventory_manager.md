@@ -1,4 +1,5 @@
-#Inventory Manager
+# Inventory Manager
+
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/Inventory-Manager.png){ align=right }
 
@@ -7,9 +8,15 @@ The Inventory Manager can communicate with the player's inventory. You need to r
 !!! info
     Only one Memory Card can be linked by Inventory Manager.
 
-<br><br/>
+<br><br>
 
-##Functions
+## Overview
+
+| Peripheral Name  | Interfaces with  | Events | Introduced in |
+| ---------------- | ---------------- | ------ | ------------- |
+| inventoryManager | Player Inventory | No     | 0.5b          |
+
+## Functions
 
 ```lua
 manager = peripheral.wrap("back") --Wraps the Inventory Manager
@@ -21,17 +28,18 @@ manager.removeItemFromPlayer("UP", 114, "minecraft:stone") --Will remove 114 sto
 manager.removeItemFromPlayer("UP", 400) --Will remove 400 items from the players inventory to the chest above
 ```
 
-| Function | Returns  | Description |
-|------------|--------------|-------------|
-| getOwner()  | string | Returns the owner of the memory card, nil if the memory card is empty. |
-| addItemToPlayer(string inventoryBlock, int count\[, string item\])  | int amount | Adds an item to the player's inventory. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null. |
+| Function                                                                | Returns    | Description                                                                                                                                                                                                                                                |
+| ----------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| addItemToPlayer(string inventoryBlock, int count\[, string item\])      | int amount | Adds an item to the player's inventory. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null.                                            |
+| getArmor()                                                              | table      | Returns the content of the player's armor slots.                                                                                                                                                                                                           |
+| getItems()                                                              | table      | Returns the content of the player's inventory.                                                                                                                                                                                                             |
+| getOwner()                                                              | string     | Returns the owner of the memory card, nil if the memory card is empty.                                                                                                                                                                                     |
+| isPlayerEquipped()                                                      | boolean    | Returns true if the player is wearing one or more armor pieces.                                                                                                                                                                                            |
+| isWearing(int slot)                                                     | boolean    | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots)                                                                                                                                                       |
 | removeItemFromPlayer(string inventoryBlock, int count\[, string item\]) | int amount | Removes an item from the player's inventory to the given inventory direction. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will remove a random item from the player's inventory if the argument `item` is null. |
-| getItems() | table | Returns the content of the player's inventory. |
-| getArmor() | table | Returns the content of the player's armor slots. |
-| isPlayerEquipped() | boolean | Returns true if the player is wearing one or more armor pieces. |
-| isWearing(int slot) | boolean | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots) |
 
-##Changelog/Trivia
+## Changelog/Trivia
+
 0.5.2b
 Fixed a bug, that the inventory manager does not drop the contents.
 

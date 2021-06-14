@@ -5,6 +5,8 @@
 
 The Player Detector is able to recognize players within a certain range. In addition, it recognizes the player who clicks on him.
 
+<br><br><br><br><br><br>
+
 ## Overview
 
 | Peripheral Name | Interfaces with | Events | Introduced in |
@@ -17,7 +19,7 @@ The Player Detector is able to recognize players within a certain range. In addi
 | ----------- | ------------- | --------------- | ---------------------------------------- |
 | playerClick | "playerClick" | string username | Fires when a player clicks on the block. |
 
-##Functions
+## Functions
 
 Example:
 
@@ -58,7 +60,7 @@ end
 | isPlayersInRange(int range)                 | boolean | Returns true if any player is in range, false if not. |
 
 !!! info
-The center of the range is the Player Detector itself and not the Computer.
+    The center of the range is the Player Detector itself and not the Computer.
 
 ## Changelog/Trivia
 

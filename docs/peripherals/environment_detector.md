@@ -6,15 +6,13 @@
 The Environment Detector provides current information from the environment like the current time, the current moon phase,
 the light level of the block and many more.
 
+<br><br><br><br><br><br>
+
 ## Overview
 
 | Peripheral Name     | Interfaces with | Events | Introduced in |
 | ------------------- | --------------- | ------ | ------------- |
 | environmentDetector | World           | No     | 0.1b          |
-
-## Events
-
-No Events
 
 ## Functions
 
