@@ -19,7 +19,9 @@ The Inventory Manager can communicate with the player's inventory. You need to r
 ## Functions
 
 ```lua
-manager = peripheral.wrap("back") --Wraps the Inventory Manager
+local manager = peripheral.find("inventoryManager") -- Finds the peripheral if one is connected
+
+if manager == nil then error("inventoryManager not found") end
 
 manager.addItemToPlayer("UP", 63, "minecraft:dirt") --Will add 63 dirt to the players inventory from the chest above
 

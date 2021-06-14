@@ -47,9 +47,9 @@ You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to se
 The Chat Box is quite easy to use. Wrap the peripheral and send messages or use the chat event.
 
 ```lua
-local box = peripheral.find("chatBox") -- Finds a connected Chat Box
+local box = peripheral.find("chatBox") -- Finds the peripheral if one is connected
 
-if box == nil then error("Missing Chat Box") end
+if box == nil then error("chatBox not found") end
 
 box.sendMessage("Hey world") -- Sends a message to the global chat
 box.sendMessageToPlayer("Hey you", "Player644") -- Send a message only to one specific player

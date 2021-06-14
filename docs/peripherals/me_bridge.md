@@ -29,7 +29,9 @@ Most functions uses a table to craft, export or import the item. You can see how
 Example with exportItem:
 
 ```lua
-bridge = peripheral.wrap("meBridge_0") -- Define the peripheral
+local bridge = peripheral.find("meBridge") -- Finds the peripheral if one is connected
+
+if manager == nil then error("meBridge not found") end
 
 bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "UP")
 -- Exports an protection I book to the chest above the me bridge.

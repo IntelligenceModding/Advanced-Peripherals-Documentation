@@ -24,8 +24,9 @@ The Player Detector is able to recognize players within a certain range. In addi
 Example:
 
 ```lua
-detector = peripheral.wrap("right") --Defines the Detector on the right
+local detector = peripheral.find("playerDetector") -- Finds the peripheral if one is connected
 
+if detector == nil then error("playerDetector not found") end
 
 function getPlayers(int range)
   local players = detector.getPlayersInRange(range) --Returns a table of every player in a certain range

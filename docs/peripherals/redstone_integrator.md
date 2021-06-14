@@ -22,7 +22,9 @@ You can use `front`, `bottom`, `right` and so on.
 You can also use `Analogue` instead of `Analog`. Example: `setAnalogueOutput`
 
 ```lua
-integrator = peripheral.wrap("redstoneIntegrator_1") --Defines the Integrator as redstoneIntegrator_1
+local integrator = peripheral.find("redstoneIntegrator") -- Finds the peripheral if one is connected
+
+if integrator == nil then error("redstoneIntegrator not found") end
 
 --Prints some information to the terminal of the computer
 print("Left redstone ".. integrator.getAnalogInput("left")) --Will return the level of the redstone at the right side.

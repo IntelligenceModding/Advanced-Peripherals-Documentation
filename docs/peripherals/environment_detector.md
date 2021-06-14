@@ -30,7 +30,9 @@ List of moon phases:
 The Environment Detector is easy to use. Wrap the peripheral and use one of the functions.
 
 ```lua
-detector = peripheral.wrap("right") --Defines the detector on the right
+local detector = peripheral.find("environmentDetector") -- Finds the peripheral if one is connected
+
+if detector == nil then error("environmentDetector not found") end
 
 --Prints some information to the terminal of the computer
 print("Biome ".. detector.getBiome())

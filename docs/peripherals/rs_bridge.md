@@ -22,7 +22,9 @@ You can use the command `/advancedperipherals getHashItem` with an item in your 
 Example with exportItem:
 
 ```lua
-bridge = peripheral.wrap("rsBridge_0") -- Define the peripheral
+local bridge = peripheral.find("rsBridge") -- Finds the peripheral if one is connected
+
+if bridge == nil then error("rsBridge not found") end
 
 bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "UP")
 -- Exports an protection I book to the chest above the me bridge.

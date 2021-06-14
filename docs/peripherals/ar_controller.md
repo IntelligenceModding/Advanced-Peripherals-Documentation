@@ -48,7 +48,10 @@ Everything that's painted onto the canvas remains there until `clear()` is calle
 Olfi01 made a simple script that shows the current date and time in the top right corner of the screen and updates every second.
 
 ```lua
-controller = peripheral.wrap("left") -- Defines the controller to the left of the computer
+local controller = peripheral.find("arController") -- Finds the peripheral if one is connected
+
+if controller == nil then error("arController not found") end
+
 controller.setRelativeMode(true, 1600, 900) -- Convenient Aspect ratio for most screens
 while true do
   local timer = os.startTimer(1)

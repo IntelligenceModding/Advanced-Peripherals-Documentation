@@ -24,7 +24,9 @@ The Energy Detector is quite simple, you can set the max energy flow or receive 
 Example:
 
 ```lua
-detector = peripheral.wrap("energyDetector_0") -- Define the peripheral
+local detector = peripheral.find("energyDetector") -- Finds the peripheral if one is connected
+
+if detector == nil then error("energyDetector not found") end
 
 detector.setTransferRateLimit(512) -- Only 512 FE/t can go through the block
 print("Current transfer rate: ".. detector.getTransferRate .." FE/t") -- prints the current transfer rate
