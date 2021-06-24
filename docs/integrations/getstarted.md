@@ -1,21 +1,15 @@
-#Proxy Integrations
-
-!!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Peripheral-Proxy.png){ align=right }
+#Mod Integrations
 
 ##How does it work?
 
-You can simply put a peripheral proxy in front of a supported block, so the computer will be able to use functions from that block.
-
-Here is a little gif:
-![Gif](https://srendi.de/wp-content/uploads/2021/05/ezgif.com-gif-maker-1.gif)
+You can simply put your computer next to a supported block.
 
 Example code for an immersive engineering capacitor.
 ```lua
-capacitor = peripheral.wrap("peripheralProxy:IECapacitor_0") --Wrap the capacitor
+capacitor = peripheral.wrap("IECapacitor_0") --Wrap the capacitor
 
 print("Stored energy: ".. capacitor.getStoredEnergy() .."FE") --Will print the stored energy
-print("Energy Capacity".. capacitor.getMaxEnergy() .."FE") --Will print the energy capacity
+print("Energy Capacity: ".. capacitor.getMaxEnergy() .."FE") --Will print the energy capacity
 ```
 
 ##Supported Mods
@@ -33,6 +27,7 @@ Currently we support:
     - Turbine
     - Induction Matrix
     - Digital Miner
+    - Chemical Tanks
 * Botania
     - Any flower
     - Any spreader
@@ -41,3 +36,11 @@ Currently we support:
     - Any capacitor
     - Redstone probe
     - Redstone connector
+
+
+##Changelog/Trivia
+0.6b
+Added mod integrations with the peripheral proxy
+
+0.5.2b
+Added fillCircle, drawCircle and drawItemIcon.
