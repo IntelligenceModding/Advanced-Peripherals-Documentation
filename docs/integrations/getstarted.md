@@ -1,6 +1,6 @@
-#Mod Integrations
+# Mod Integrations
 
-##How does it work?
+## How does it work?
 
 You can simply put your computer next to a supported block.
 
@@ -12,7 +12,7 @@ print("Stored energy: ".. capacitor.getStoredEnergy() .."FE") --Will print the s
 print("Energy Capacity: ".. capacitor.getMaxEnergy() .."FE") --Will print the energy capacity
 ```
 
-##Supported Mods
+## Supported Mods
 If you want to see more integrations, you can request a mod integration [here](https://github.com/Seniorendi/AdvancedPeripherals/issues)
 
 Currently we support:
@@ -36,9 +36,13 @@ Currently we support:
     - Any capacitor
     - Redstone probe
     - Redstone connector
+* Integrated Dynamics
+    - Variable Store
 
+## Changelog/Trivia
+0.7b
+Added Variable Store integrationb
 
-##Changelog/Trivia
 0.6b
 Added mod integrations with the peripheral proxy
 
