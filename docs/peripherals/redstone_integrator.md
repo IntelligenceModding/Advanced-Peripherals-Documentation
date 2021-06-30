@@ -28,7 +28,7 @@ if integrator == nil then error("redstoneIntegrator not found") end
 
 --Prints some information to the terminal of the computer
 print("Left redstone ".. integrator.getAnalogInput("left")) --Will return the level of the redstone at the right side.
-print("Right redstone output".. integrator.getOutput("right")) -Will return the output level which is set wich setAnalogOutput
+print("Right redstone output".. integrator.getOutput("right")) --Will return the output level which is set wich setAnalogOutput
 integrator.setOutput("top", true) --Will set the redstone level to 15 at the top of the Redstone Integrator
 
 ```
