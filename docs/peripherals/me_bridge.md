@@ -2,8 +2,8 @@
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/04/ME-Bridge.png){ align=right }
 
-The Me Bridge is able to interact with Applied Energistics 2.
-You can retrieve items, craft items, get all items as a list and more. The Me Bridge uses one channel.
+The ME Bridge is able to interact with Applied Energistics 2.
+You can retrieve items, craft items, get all items as a list and more. The ME Bridge uses one channel.
 
 <br><br><br><br><br><br>
 
@@ -47,7 +47,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | getEnergyUsage()                              | int     | Returns the energy usage of the whole ME System.                                                                                                       |
 | getItem(table item)                           | table   | Returns a table with information of the item.                                                                                                          |
 | getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole ME System.                                                                                             |
-| importItem(table item, string directions)     | int     | Imports an item to the Me System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| importItem(table item, string directions)     | int     | Imports an item to the ME System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
 | importItemFromChest(table item, string chest) | int     | Imports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
 | isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists.                                                                                                     |
 | listCraftableFluid()                          | table   | Returns all craftable fluids.                                                                                                                          |
