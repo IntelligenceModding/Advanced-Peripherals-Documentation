@@ -18,8 +18,8 @@ Geo scanner has delay between scans, so you should be ready for this.
 
 | Function            | Returns              | Description                                       |
 | ------------------- | -------------------- | ------------------------------------------------- |
-| getEnergy()         | int                  | Returns stored RF energy                          |
-| getEnergyCapacity() | int                  | Returns max stored RF energy                      |
+| getFuelLevel()      | int                  | Returns stored fuel                               |
+| getFuelMaxLevel()   | int                  | Returns max stored fuel                           |
 | cost(int radius)    | int                  | Returns cost in RF for scan                       |
 | scan(int radius)    | table or nil, reason | Returns data about blocks in radius               |
 | getScanCooldown()   | int                  | Returns cooldown for scanner                      |
