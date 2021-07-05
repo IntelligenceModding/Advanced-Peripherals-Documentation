@@ -22,6 +22,7 @@ This upgrade allow everything, that [Weak automata](https://docs.srendi.de/turtl
 | warpToPoint(string name)      | true or nil, err         | Teleport turtle to stored point if turtle has enough fuel      |
 | estimateWarpCost(string name) | int or nil, err          | Returns cost of warp in fuel                                   |
 | distanceToPoint(string name)  | int or nil, err          | Return manhattan distance to point                             |
+| getWarpCooldown()             | int                      | Returns current waro operation cooldown                        |
 
 ## Changelog/Trivia
 

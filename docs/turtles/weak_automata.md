@@ -17,6 +17,13 @@ But weak soul is only a start of jorney! Understanding of automata stabilization
 
 - [End Automata](https://docs.srendi.de/turtles/end_automata/).
 
+## Cooldowns and fuel consumption
+
+Several operations, for example, dig, click or suck items have build-in cooldowns to avoid overusage and server load with turtles.
+But, you can reduce this cooldowns with increasing fuel consumption!
+
+For example, if click operation required 1 fuel point for perform and will have 5 seconds cooldown, with fuel consumption 2 you can perform click operation one in 2.5 seconds, but in cost of 2 fuel point. Fuel point will grow faster, than cooldown drops. With fuel consumption 3 mean that you will use 4 fuel points.
+
 <br><br><br><br><br><br>
 
 ## Overview
@@ -41,6 +48,11 @@ But weak soul is only a start of jorney! Understanding of automata stabilization
 | collectItems([int count])                         | true or nil, err         | Collect items around turtle                                                                          |
 | feedSoul()                                        | true, result or nil, err | Tries to feed entity at front of turtle to weak mechanic soul. Soul should be in selected slot       |
 | chargeTurtle([int fuel])                          | int or nil, err          | Tries to charge turtle and returns amount of recived fuel or errors
+| getSuckCooldown() | int | Returns current suck item operation cooldown |
+| getDigCooldown() | int | Returns current dig block operation cooldown |
+| getClickCooldown() | int | Returns current click block operation cooldown |
+| getFuelConsumptionRate() | int | Returns current fuel consumption rate |
+| setFuelConsumptionRate(int rate) | true or nil, err | Tries to set fuel consumption rate |
 
 ## Changelog/Trivia
 
