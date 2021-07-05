@@ -40,6 +40,7 @@ But weak soul is only a start of jorney! Understanding of automata stabilization
 | collectSpecificItem(string itemName, [int count]) | true or nil, err         | Collect items around turtle by name                                                                  |
 | collectItems([int count])                         | true or nil, err         | Collect items around turtle                                                                          |
 | feedSoul()                                        | true, result or nil, err | Tries to feed entity at front of turtle to weak mechanic soul. Soul should be in selected slot       |
+| chargeTurtle([int fuel])                          | int or nil, err          | Tries to charge turtle and returns amount of recived fuel or errors
 
 ## Changelog/Trivia
 
