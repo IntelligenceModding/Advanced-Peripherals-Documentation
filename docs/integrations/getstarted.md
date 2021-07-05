@@ -40,8 +40,9 @@ Currently we support:
     - Variable Store
 
 ## Changelog/Trivia
+
 0.7b
-Added Variable Store integrationb
+Added Variable Store integration
 
 0.6b
 Added mod integrations with the peripheral proxy
