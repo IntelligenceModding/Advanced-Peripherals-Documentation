@@ -16,6 +16,7 @@ nav:
       - 'Block Reader': 'peripherals/block_reader.md'
       - 'NBT Storage': 'peripherals/nbt_storage.md'
       - 'Geo Scanner': 'peripherals/geo_scanner.md'
+      - 'Colony Integrator': 'peripherals/colony_integrator.md'
     - 'Mod Integrations':
       - 'How does it work?': 'integrations/getstarted.md'
       - 'Minecraft':

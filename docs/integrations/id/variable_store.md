@@ -1,7 +1,7 @@
 # Variable Store
 
 !!! picture inline end
-    ![Header](){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/07/Variable-Store.png){ align=right }
     Mod: Integrated Dynamics <br><br/>
     Block: Variable Store
 Variable Store is block from Integrated Dynamics that store variables

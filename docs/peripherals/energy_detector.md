@@ -15,7 +15,7 @@ The Energy Detector can detect energy flow and acts as a resistor. You can defin
 
 | Peripheral Name | Interfaces with | Events | Introduced in |
 | --------------- | --------------- | ------ | ------------- |
-| energyDetector  | RF              | No     | 0.4.1b        |
+| energyDetector  | Energy(FE)      | No     | 0.4.1b        |
 
 ## Functions
 

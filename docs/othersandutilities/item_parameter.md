@@ -10,7 +10,7 @@ Every item has is own fingerpint.
 You **need** to use the name parameter **or** the fingerprint parameter. If you use both, it will not break anything but the mod will use the fingerprint parameter.
 The count parameter will always work.
 
-We have 3 parameters to filter the NBT values(`tag`, `nbt`, `json`). You can see more on them below.
+We have 2 parameters to filter the NBT values(`nbt`, `json`). You can see more on them below.
 
 ##Possible informations.
 

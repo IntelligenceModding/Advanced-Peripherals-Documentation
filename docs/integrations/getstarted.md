@@ -44,6 +44,7 @@ Currently we support:
 ## Changelog/Trivia
 
 0.7r
+Removed the peripheral proxy, you can now connect your computer with any supported block directly.
 Added Variable Store integration
 Added Drawer integration
 
