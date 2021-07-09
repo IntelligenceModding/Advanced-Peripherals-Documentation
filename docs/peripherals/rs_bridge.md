@@ -33,14 +33,14 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | Function                                      | Returns | Description                                                                                                                                            |
 | --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | craftItem(table item)                         | table   | Crafts an item.                                                                                                                                        |
-| exportItem(table item, string directions)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south".                      |
-| exportItemToChest(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
+| exportItem(table item, string directions)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front".                      |
+| exportItemToPeripheral(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
 | getEnergyStorage()                            | int     | Returns the stored energy of the whole RS System.                                                                                                      |
 | getEnergyUsage()                              | int     | Returns the energy usage of the whole RS System.                                                                                                       |
 | getItem(table item)                           | table   | Returns a table with information of the item.                                                                                                          |
 | getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole RS System.                                                                                             |
-| importItem(table item, string directions)     | int     | Imports an item to the me system from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
-| importItemFromChest(table item, string chest) | int     | Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network.                                      |
+| importItem(table item, string directions)     | int     | Imports an item to the me system from the chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front". |
+| importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network.                                      |
 | isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists.                                                                                                     |
 | listCraftableFluids()                         | table   | Returns all craftable fluids.                                                                                                                          |
 | listCraftableItems()                          | table   | Returns all craftable items.                                                                                                                           |
@@ -70,6 +70,10 @@ Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
 
 ## Changelog/Trivia
+
+0.7r
+The RS Bridge does now use computercraft directions("top", "right", ...)
+We also changed some function names
 
 0.4b
 Reworked the system of the RS Bridge, it has now more features and a new system for the item parameter.

@@ -40,15 +40,15 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | Function                                      | Returns | Description                                                                                                                                            |
 | --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | craftItem(table item)                         | table   | Crafts an item.                                                                                                                                        |
-| exportItem(table item, string directions)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south".                      |
-| exportItemToChest(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
+| exportItem(table item, string direction)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south".                      |
+| exportItemToPeripheral(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
 | getCraftingCPUs()                             | table   | Returns all connected crafting cpus.                                                                                                                   |
 | getEnergyStorage()                            | int     | Returns the stored energy of the whole ME System.                                                                                                      |
 | getEnergyUsage()                              | int     | Returns the energy usage of the whole ME System.                                                                                                       |
 | getItem(table item)                           | table   | Returns a table with information of the item.                                                                                                          |
 | getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole ME System.                                                                                             |
-| importItem(table item, string directions)     | int     | Imports an item to the ME System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
-| importItemFromChest(table item, string chest) | int     | Imports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
+| importItem(table item, string direction)     | int     | Imports an item to the ME System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
+| importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
 | isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists.                                                                                                     |
 | listCraftableFluid()                          | table   | Returns all craftable fluids.                                                                                                                          |
 | listCraftableItems()                          | table   | Returns all craftable items.                                                                                                                           |
@@ -82,6 +82,10 @@ Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
 
 ## Changelog/Trivia
+
+0.7r
+The ME Bridge does now use computercraft directions("top", "right", ...)
+We also changed some function names
 
 0.4b
 Reworked the system of the ME Bridge, it has now more features and a new system for the item parameter.

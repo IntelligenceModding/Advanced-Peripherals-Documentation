@@ -32,18 +32,19 @@ manager.removeItemFromPlayer("UP", 400) --Will remove 400 items from the players
 
 | Function                                                                | Returns    | Description                                                                                                                                                                                                                                                |
 | ----------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| addItemToPlayer(string inventoryBlock, int count\[, int slot\, string item])      | int amount | Adds an item to the player's inventory. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null.                                            |
+| addItemToPlayer(string direction, int count\[, int slot\, string item])      | int amount | Adds an item to the player's inventory. `direction` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null.                                            |
 | getArmor()                                                              | table      | Returns the content of the player's armor|
 | getItems()                                                              | table      | Returns the content of the player's|
 | getOwner()                                                              | string     | Returns the owner of the memory card, nil if the memory card is|
 | isPlayerEquipped()                                                      | boolean    | Returns true if the player is wearing one or more armor|
 | isWearing(int slot)                                                     | boolean    | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots)                                                                                                                                                       |
-| removeItemFromPlayer(string inventoryBlock, int count\[, int slot\, string item]) | int amount | Removes an item from the player's inventory to the given inventory direction. `inventoryBlock` is the direction for the chest/inventory block. The Inventory Manager will remove a random item from the player's inventory if the argument `item` is null. |
+| removeItemFromPlayer(string direction, int count\[, int slot\, string item]) | int amount | Removes an item from the player's inventory to the given inventory direction. `direction` is the direction for the chest/inventory block. The Inventory Manager will remove a random item from the player's inventory if the argument `item` is null. |
 
 ## Changelog/Trivia
 
 0.7r
 Added the slot parameter
+Also changed the direction parameter to computercraft directions.
 
 0.5.2b
 Fixed a bug, that the inventory manager does not drop the contents.
