@@ -39,15 +39,18 @@ nav:
         - 'Redstone Wire Connector': 'integrations/ie/connector.md'
       - 'Integrated Dynamics':
         - 'Variable Store': 'integrations/id/variable_store.md'
+    - 'Metaphysics':
+      - 'Cooldowns and fuel consumption': 'metaphysics/cooldowns_and_fuel_consumption.md'
+      - 'Weak automata': 'metaphysics/weak_automata.md'
+      - 'Overpowered automata': 'metaphysics/overpowered_automata.md'
+      - 'End automata': 'metaphysics/end_automata.md'
+      - 'Husbandry automata': 'metaphysics/husbandry_automata.md'
     - 'Turtles':
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
       - 'Player Turtle': 'turtles/player_turtle.md'
       - 'Chatty Turtle': 'turtles/chatty_turtle.md'
       - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
-      - 'Weak automata': 'turtles/weak_automata.md'
-      - 'Overpowered weak automata': 'turtles/overpowered_weak_automata.md'
-      - 'End automata': 'turtles/end_automata.md'
     - 'Items':
       - 'Chunk Controller': 'items/chunk_controller.md'
       - 'Pocket Computer': 'items/pocket_computer.md'

@@ -11,18 +11,8 @@ It provides several ability:
 - Click on block with item or empty hand;
 - Suck item around, all or specific;
 - Detect items around;
-- Detect block or turtle in line of view;
-
-But weak soul is only a start of jorney! Understanding of automata stabilization and general soul nature will allow to create more powerful soul variants. Try to feed monster or animal souls to weak mechanic soul:
-
-- [End Automata](https://docs.srendi.de/turtles/end_automata/).
-
-## Cooldowns and fuel consumption
-
-Several operations, for example, dig, click or suck items have build-in cooldowns to avoid overusage and server load with turtles.
-But, you can reduce this cooldowns with increasing fuel consumption!
-
-For example, if click operation required 1 fuel point for perform and will have 5 seconds cooldown, with fuel consumption 2 you can perform click operation one in 2.5 seconds, but in cost of 2 fuel point. Fuel point will grow faster, than cooldown drops. With fuel consumption 3 mean that you will use 4 fuel points.
+- Detect blocks and entities in line;
+- Charge turtle with RF item inside inventory;
 
 <br><br><br><br><br><br>
 
