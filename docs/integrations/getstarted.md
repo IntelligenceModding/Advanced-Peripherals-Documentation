@@ -38,11 +38,14 @@ Currently we support:
     - Redstone connector
 * Integrated Dynamics
     - Variable Store
+* Storage Drawers
+    - Drawer
 
 ## Changelog/Trivia
 
 0.7b
 Added Variable Store integration
+Added Drawer integration
 
 0.6b
 Added mod integrations with the peripheral proxy

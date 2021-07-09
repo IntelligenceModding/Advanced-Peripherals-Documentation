@@ -37,6 +37,8 @@ nav:
         - 'Capacitor': 'integrations/ie/capacitor.md'
         - 'Redstone Probe': 'integrations/ie/probe.md'
         - 'Redstone Wire Connector': 'integrations/ie/connector.md'
+      - 'Storage Drawers':
+        - 'Drawer': 'integrations/sd/drawer.md'
       - 'Integrated Dynamics':
         - 'Variable Store': 'integrations/id/variable_store.md'
     - 'Metaphysics':
