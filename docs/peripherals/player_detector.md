@@ -55,10 +55,11 @@ end
 
 | Function                                        | Returns | Description                            |
 | ------------------------------------------------| ------- | ---------------------------------------|
+| getPlayerPos(string player)                     | table   | Returns player's position.             |
+| getOnlinePlayers()                              | table   | Returns a table of all online players.             |
 | getPlayersInRange(int range)                    | table   | Return players within a certain range. |
 | getPlayersInCoords(table posOne, table posTwo)  | table   | Return players within 2 positions. The tables need to have a x, y, and z value |
 | getPlayersInCubic(int x, int y, int z)          | table   | Return players within a certain range. You can define the range in every 3 axes |
-| getPlayerPos(string player)                     | table   | Returns player's position. |
 | isPlayerInRange(int range, string username)     | boolean | Returns true if the player is in range, false if not. |
 | isPlayerInCoords(table posOne, table posTwo)    | boolean | Returns true if the player is within 2 positions. The tables need to have a x, y, and z value |
 | isPlayerInCubic(int x, int y, int z)            | boolean | Returns true if the player is within a certain range. You can define the range in every 3 axes |
