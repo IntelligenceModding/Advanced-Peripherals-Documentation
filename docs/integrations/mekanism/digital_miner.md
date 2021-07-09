@@ -13,10 +13,6 @@ The [Digital Miner](https://wiki.aidancbrady.com/wiki/Digital_Miner) is the scal
 <br><br/>
 <br><br/>
 
-!!! warning
-    You need to connect the peripheral proxy in the middle of the bottom. See:
-    ![Miner](https://srendi.de/wp-content/uploads/2021/05/Bild_2021-05-31_141652.png)
-
 !!! info
     Energy functions will always return in FE. If you want it in joules, multiplay the value with 2.5
 

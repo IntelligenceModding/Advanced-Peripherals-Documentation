@@ -17,7 +17,7 @@ We provide Pocket Computer upgrades for the following peripherals:
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added geo scanner upgrade.
 
 0.4.3b

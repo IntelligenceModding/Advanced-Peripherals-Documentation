@@ -16,5 +16,5 @@ See [inventory](https://tweaked.cc/generic_peripheral/inventory.html) peripheral
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added integration for Storage Drawers

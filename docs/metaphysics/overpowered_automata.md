@@ -9,5 +9,5 @@ But everything come for price. If you try to perform any operation with this sou
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added the overpowered automatas

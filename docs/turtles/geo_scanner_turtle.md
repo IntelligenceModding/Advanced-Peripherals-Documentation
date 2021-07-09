@@ -7,5 +7,5 @@ The Geoscanning Turtle is the turtle version of the [Geo Scanner](https://docs.s
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added the geoscanning turtle

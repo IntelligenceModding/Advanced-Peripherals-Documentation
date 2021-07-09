@@ -8,7 +8,7 @@ This block is able to read data of blocks and tile entities in front of it.
 
 | Peripheral Name | Interfaces with | Events | Introduced in |
 |-----------------|-----------------|--------|---------------|
-| blockReader     | Blocks          | No     | 0.7b          |
+| blockReader     | Blocks          | No     | 0.7r          |
 
 
 ### Example
@@ -31,5 +31,5 @@ end
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added the block reader

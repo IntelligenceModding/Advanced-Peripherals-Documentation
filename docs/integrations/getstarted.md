@@ -43,7 +43,7 @@ Currently we support:
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added Variable Store integration
 Added Drawer integration
 

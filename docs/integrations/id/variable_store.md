@@ -19,5 +19,5 @@ Variable Store is block from Integrated Dynamics that store variables
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added integration for Integrated Dynamics

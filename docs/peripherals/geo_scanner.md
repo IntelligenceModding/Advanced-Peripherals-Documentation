@@ -13,7 +13,7 @@ Geo scanner has delay between scans, so you should be ready for this.
 
 | Peripheral Name     | Interfaces with | Events | Introduced in |
 | ------------------- | --------------- | ------ | ------------- |
-| geoScanner          | World           | No     | 0.7b          |
+| geoScanner          | World           | No     | 0.7r          |
 
 
 | Function            | Returns              | Description                                       |
@@ -28,5 +28,5 @@ Geo scanner has delay between scans, so you should be ready for this.
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added nbt storage

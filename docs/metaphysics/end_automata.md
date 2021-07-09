@@ -11,7 +11,7 @@ This upgrade allow everything, that [Weak automata](https://docs.srendi.de/turtl
 
 | Peripheral Name           | Interfaces with | Events | Introduced in |
 | ------------------------- | --------------- | ------ | ------------- |
-| endMechanicSoul           | World           | No     | 0.7b          |
+| endMechanicSoul           | World           | No     | 0.7r          |
 
 ### Peripheral funtions
 
@@ -26,5 +26,5 @@ This upgrade allow everything, that [Weak automata](https://docs.srendi.de/turtl
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added the end automata

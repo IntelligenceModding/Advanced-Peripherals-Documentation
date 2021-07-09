@@ -11,7 +11,7 @@ NBT Storage is custom block that allow input/output custom data to block. Mostly
 
 | Peripheral Name     | Interfaces with | Events | Introduced in |
 | ------------------- | --------------- | ------ | ------------- |
-| nbtStorage          | World           | No     | 0.7b          |
+| nbtStorage          | World           | No     | 0.7r          |
 
 
 | Function           | Returns                | Description                                             |
@@ -23,5 +23,5 @@ NBT Storage is custom block that allow input/output custom data to block. Mostly
 
 ## Changelog/Trivia
 
-0.7b
+0.7r
 Added nbt storage
