@@ -35,7 +35,7 @@ function getPlayers(int range)
   end
 end
 
-function printPlayerCords(player) --this function will print the coordinates of the player
+function printPlayerCoords(player) --this function will print the coordinates of the player
   local pos = detector.getPlayerPos(player) --getPlayerPos returns a table with coordinates
   print("X of ".. player .." is: ".. pos.x)
   print("Y of ".. player .." is: ".. pos.y)
@@ -44,7 +44,7 @@ end
 
 getPlayers(50) --Will execute the function getPlayers
 
-printPlayerCords("Srendi")  --Will execute the function printPlayerCords
+printPlayerCoords("User")  --Will execute the function printPlayerCords
 
 --Prints some information to the terminal of the computer
 while true do
@@ -77,6 +77,7 @@ We had bugs that the block uses completely wrong coordinates or the range was br
 
 0.7r
 Added more functions to the player detector. One to define the range in every 3 axes, one to define 2 positions.
+Also added `getOnlinePlayers`
 
 0.4.2b
 Added a max range config value.
