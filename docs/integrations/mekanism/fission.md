@@ -11,7 +11,7 @@ The [Fission Reactor](https://wiki.aidancbrady.com/wiki/Fission_Reactor) is a re
 <br><br/>
 
 !!! info
-    Energy functions will always return in FE. If you want it in joules, multiplay the value with 2.5
+    Energy functions will always return in FE. If you want it in joules, multiply the value with 2.5
 
     The functions which returns a value in percent, will return a number between 1-0. (50% would be 0.5)
 
