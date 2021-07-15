@@ -18,9 +18,9 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 
 ## Events
 
-| Event Name | Parameter One | Parameter Two   | Parameter Three | Description                         |
-| ---------- | ------------- | --------------- | --------------- | ----------------------------------- |
-| chat       | "chat"        | string username | string message  | Fires when a player sends a message |
+| Event Name | Parameter One | Parameter Two   | Parameter Three | Parameter Four  | Parameter Five  | Description                         |
+| ---------- | ------------- | --------------- | --------------- | --------------- | --------------- | ----------------------------------- |
+| chat       | "chat"        | string username | string message  | string uuid     | boolean isHidden| Fires when a player sends a message |
 
 ### Example
 
@@ -39,8 +39,9 @@ You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to se
 
 | Function                                             | Returns | Description                              |
 | ---------------------------------------------------- | ------- | ---------------------------------------- |
-| sendMessage(string message)                          |         | Broadcasts a message to the global chat. |
-| sendMessageToPlayer(string message, string username) |         | Sends a message to one specific player.  |
+| sendMessage(string prefix, string message)                          |         | Broadcasts a message to the global chat. |
+| sendFormattedMessage(string prefix, string jsonObject)              |         | Broadcasts a text component message to the global chat. |
+| sendMessageToPlayer(string prefix, string message, string username) |         | Sends a message to one specific player.  |
 
 ### Example
 
@@ -64,6 +65,8 @@ Script: [here](https://gist.github.com/Seniorendi/2002973af6e983f48d5cf7a225d725
 Example Video: [here](https://cloud.srendi.de/index.php/s/insF5MgsmyTz4z4)
 
 ## Changelog/Trivia
+0.7r
+Added the uuid and hidden parameter to the chat event. Also added the `sendFormattedMessage` function.
 
 4.0b
 Fixed that the chat box is not working on LAN worlds
