@@ -46,9 +46,10 @@ end
 | amountOfCitizens()              | int     | Returns the amount of citizens.                                            |
 | maxOfCitizens()                 | int     | Returns the possible max amount of citizens.                               |
 | amountOfGraves()                | int     | Returns the amount of graves in the colony.                                |
+| amountOfConstructionSites       | int     | Returns the amount of currently existing construction sites                |
 | getVisitors()                   | table   | Returns a table with all visitors in your tavern of the colony.            |
 | getBuildings()                  | table   | Returns a table with all buildings in your colony.                         |
-| getWorkOrders()                 | table   | Returns a table with all work orders. Because MineColonies does not provide a good way to read the data of these orders, we return nbt values of the work order. |
+| getWorkOrders()                 | table   | Returns a table with all work orders. |
 | getResearch()                   | table   | Returns all possible researches, currently researches that is being worked on and research that has already been researched. |
 | getWorkOrderResources(int id)   | table   | Returns a table with the resources of a work order. You can find out every order and its ID with getWorkOrders().                         |
 | getRequests()                   | table   | Returns all requests in any kind of the colony. |
