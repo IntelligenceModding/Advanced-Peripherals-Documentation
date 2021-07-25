@@ -10,6 +10,9 @@ The AR Controller is used to control your AR Goggles wirelessly. You can draw an
 
 <br>
 
+!!! bug
+    The AR Goggles are currently slightly buggy. Sometimes, they just don't do what they should do. We will rework the AR System in 0.8r/1.0r
+
 ## Overview
 
 | Peripheral Name | Interfaces with | Events | Introduced in |
