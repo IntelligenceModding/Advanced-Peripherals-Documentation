@@ -59,13 +59,13 @@ end
 
 We made a script to show every citizens and their gender on a monitor.
 
-Script: https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_list.lua
+Script: [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_list.lua)
 ![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_152719.png)
 
 And here we have a script made for a pocket computer to show statistics about a colony
 
-Script: https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_status.lua
-![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_153126.png)
+Script: [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_status.lua)
+![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_154317.png)
 
 ## Changelog/Trivia
 
