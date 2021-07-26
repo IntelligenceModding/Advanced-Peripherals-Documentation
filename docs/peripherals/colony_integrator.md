@@ -27,7 +27,7 @@ if not integrator.isInColony then error("Block is not in a colony") end
 print("Colony name:".. integrator.getColonyName())
 print("Currently under attack?".. integrator.isUnderAttack())
 for k, v in ipairs(integrator.getCitizens()) do
-  print(k, v) -- Prints data of the citizens in the colony
+  v.name -- Prints the name of every colonist in the colony
 end
 ```
 
@@ -54,6 +54,16 @@ end
 | getWorkOrderResources(int id)   | table   | Returns a table with the resources of a work order. You can find out every order and its ID with getWorkOrders().                         |
 | getRequests()                   | table   | Returns all requests in any kind of the colony. |
 | getBuilderResources(table position) | table   | Returns all resources of the given builder's hut.                       |
+
+## Examples
+
+We made a script to show every citizens and their gender on a monitor.
+Script: https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_list.lua
+![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_152719.png)
+
+And here we have a script made for a pocket computer to show statistics about a colony
+Script: https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_status.lua
+![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_153126.png)
 
 ## Changelog/Trivia
 
