@@ -7,6 +7,7 @@ We provide Pocket Computer upgrades for the following peripherals:
 * [Player Detector](https://docs.srendi.de/peripherals/player_detector/)
 * [Chat Box](https://docs.srendi.de/peripherals/chat_box/)
 * [Geo Scanner](https://docs.srendi.de/peripherals/geo_scanner)
+* [Colony Integrator](https://docs.srendi.de/peripherals/colony_integrator/)
 
 !!! info events
     The upgrade comes wihout any events. You can't use events like the chat event

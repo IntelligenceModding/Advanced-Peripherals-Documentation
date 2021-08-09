@@ -3,7 +3,7 @@
 !!! picture inline end
     ![Header](){ align=right }
 
-The Geo Scanner provides information about blocks around and chunk where scanner located.
+The Geo Scanner provides information about blocks around him and the chunk of the geo scanner.
 
 Geo scanner has delay between scans, so you should be ready for this.
 

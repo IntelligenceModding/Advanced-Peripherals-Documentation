@@ -62,6 +62,9 @@ nav:
       - 'Memory Card': 'items/memory_card.md'
     - 'Utilities and Others':
       - 'Item parameter for ME/RS Bridge': 'othersandutilities/item_parameter.md'
+    - 'Changelogs':
+      - 'Changelog 0.7r': 'changelog/0.7r.md'
+      
 theme:
     name: material
     features:
