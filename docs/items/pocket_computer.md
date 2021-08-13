@@ -10,7 +10,7 @@ We provide Pocket Computer upgrades for the following peripherals:
 * [Colony Integrator](https://docs.srendi.de/peripherals/colony_integrator/)
 
 !!! info events
-    The upgrade comes wihout any events. You can't use events like the chat event
+    The pocke. You can't use events like the chat event
     for the Chat Box upgrade.
 
 !!! hint recipes
