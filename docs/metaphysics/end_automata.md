@@ -5,7 +5,7 @@
 
 The end automata is turtle with End Mechanic Soul upgrade!
 
-This upgrade allow everything, that [Weak automata](https://docs.srendi.de/turtles/weak_automata/) does and also provide ability to teleport to stored positions by marks! But this upgrade only works in one dimension now.
+This upgrade allow everything, that [Weak automata](https://docs.srendi.de/metaphysics/weak_automata/) does and also provide ability to teleport to stored positions by marks! But this upgrade only works in one dimension now.
 
 ## Overview
 
