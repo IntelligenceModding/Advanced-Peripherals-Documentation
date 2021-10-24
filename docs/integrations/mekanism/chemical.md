@@ -19,7 +19,7 @@
 | getStored() | table | Returns the type and the amount of the chemical. |
 | getCapacity() | int | Returns the capacity. |
 | getFilledPercentage() | int | Returns the amount of the stored chemical in percent. |
-| getNeeded() | int | Returns the amount of chemical that is needed to fill the tank. |
+| getNeeded() | int | Returns the amount of chemicals that is needed to fill the tank. |
 
 ##Changelog/Trivia
 

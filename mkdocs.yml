@@ -21,6 +21,7 @@ nav:
       - 'How does it work?': 'integrations/getstarted.md'
       - 'Minecraft':
         - 'Beacon': 'integrations/mc/beacon.md'
+        - 'Noteblock': 'integrations/mc/noteblock.md'
       - 'Mekanism':
         - 'Fission Reactor': 'integrations/mekanism/fission.md'
         - 'Fusion Reactor': 'integrations/mekanism/fusion.md'
@@ -30,6 +31,10 @@ nav:
         - 'Induction Matrix': 'integrations/mekanism/induction.md'
         - 'Digital Miner': 'integrations/mekanism/digital_miner.md'
         - 'Chemical Tank': 'integrations/mekanism/chemical.md'
+        - 'Fluid Tank': 'integrations/mekanism/fluid_tank.md'
+        - 'Solar Evaporation Tower': 'integrations/mekanism/evaporation.md'
+        - 'Dynamic Tank': 'integrations/mekanism/dynamic_tank.md'
+        - 'Waste Barrel': 'integrations/mekanism/waste_barrel.md'
       - 'Botania':
         - 'Mana generating flower': 'integrations/botania/flower.md'
         - 'Mana Pool': 'integrations/botania/pool.md'
@@ -64,7 +69,7 @@ nav:
       - 'Item parameter for ME/RS Bridge': 'othersandutilities/item_parameter.md'
     - 'Changelogs':
       - 'Changelog 0.7r': 'changelog/0.7r.md'
-      
+
 theme:
     name: material
     features:

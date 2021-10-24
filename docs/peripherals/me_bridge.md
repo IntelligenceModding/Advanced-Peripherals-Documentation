@@ -50,10 +50,11 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | importItem(table item, string direction)     | int     | Imports an item to the ME System from the chest in the direction of the block. Valid directions are "up", "down", "north", "west", "east" and "south". |
 | importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
 | isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists.                                                                                                     |
+| isItemCraftable(table item)                    | boolean | Returns true if the item is craftble |
 | listCraftableFluid()                          | table   | Returns all craftable fluids.                                                                                                                          |
 | listCraftableItems()                          | table   | Returns all craftable items.                                                                                                                           |
 | listFluid()                                   | table   | Returns all stored fluids.                                                                                                                             |
-| listItems()                                   | table   | Returns all items.                                                                                                                                     |
+| listItems()                                   | table   | Returns all stored items.                                                                                                                                     |
 
 ## Screenshots
 

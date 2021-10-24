@@ -17,7 +17,7 @@ You can retrieve items, craft items, get all items as a list and more.
 ## Functions
 
 Most functions uses a table to craft, export or import the item. You can define NBT values, the amount and the name of the item.
-You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags of the item. The MD5 hash for the protection I book is `ae70053c97f877de546b0248b9ddf525`.
+You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags of the item. A MD5 Hash can look like this `ae70053c97f877de546b0248b9ddf525`.
 
 Example with exportItem:
 
@@ -31,31 +31,31 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 ```
 
 | Function                                      | Returns | Description                                                                                                                                            |
-| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| craftItem(table item)                         | table   | Crafts an item.                                                                                                                                        |
-| exportItem(table item, string directions)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front".                      |
-| exportItemToPeripheral(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network.                                     |
-| getEnergyStorage()                            | int     | Returns the stored energy of the whole RS System.                                                                                                      |
-| getEnergyUsage()                              | int     | Returns the energy usage of the whole RS System.                                                                                                       |
-| getItem(table item)                           | table   | Returns a table with information of the item.                                                                                                          |
-| getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole RS System.                                                                                             |
+| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| craftItem(table item)                         | table   | Crafts an item. |
+| exportItem(table item, string directions)     | int     | Exports an item to a chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front". |
+| exportItemToPeripheral(table item, string chest)   | int     | Exports an item to a chest (every inventory tile entity should work) which is connected to the peripheral network. |
+| getEnergyStorage()                            | int     | Returns the stored energy of the whole RS System. |
+| getEnergyUsage()                              | int     | Returns the energy usage of the whole RS System. |
+| getItem(table item)                           | table   | Returns a table with information of the item. |
+| getPattern(table item)                        | table   | Returns the crafting pattern of this item. |
+| getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole RS System. |
 | importItem(table item, string directions)     | int     | Imports an item to the me system from the chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front". |
-| importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network.                                      |
-| isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists.                                                                                                     |
-| listCraftableFluids()                         | table   | Returns all craftable fluids.                                                                                                                          |
-| listCraftableItems()                          | table   | Returns all craftable items.                                                                                                                           |
-| listFluids()                                  | table   | Returns all stored fluids.                                                                                                                             |
-| listItems()                                   | table   | Returns all items.                                                                                                                                     |
+| importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network. |
+| isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists. |
+| isItemCraftable(table item)                   | boolean | Returns true if this item is craftable. |
+| listFluids()                                  | table   | Returns all stored fluids. |
+| listItems()                                   | table   | Returns all stored items. |
+| getMaxItemDiskStorage()                       | int     | Returns the total amount of availabe item disk storage. |
+| getMaxFluidDiskStorage()                      | int     | Returns the total amount of availabe fluid disk storage. |
+| getMaxItemExternalStorage()                   | int     | Returns the total amount of availabe extern item storage. |
+| getMaxFluidExternalStorage()                  | int     | Returns the total amount of availabe extern fluid storage. |
 
 ## Screenshots
 
 Picture of the table from listItems()
 
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_234200.png)
-
-Picture of the table from listCraftableItems()
-
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_234048.png)
 
 ## Example
 
@@ -70,6 +70,10 @@ Screenshot:
 ![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
 
 ## Changelog/Trivia
+
+0.7.3r
+Added `getMaxItemDiskStorage`, `getMaxFluidDiskStorage`, `getMaxItemExternalStorage`, `getMaxFluidExternalStorage`, `getPattern` and `isItemCraftble`
+Removed `listCraftableItems` and `listCraftableFluids`
 
 0.7r
 The RS Bridge does now use computercraft directions("top", "right", ...)
