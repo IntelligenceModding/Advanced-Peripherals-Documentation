@@ -21,7 +21,7 @@ The [Digital Miner](https://wiki.aidancbrady.com/wiki/Digital_Miner) is the scal
 ##Functions
 | Function | Returns | Description |
 |----------|---------|-------------|
-| getDalay() | int | Returns the delay between two mining operations. |
+| getDelay() | int | Returns the delay between two mining operations. |
 | getRadius() | int | Returns the radius. |
 | setRadius(int radius) | | Set the radius. |
 | getMinY() | int | Returns the minium mining high. |

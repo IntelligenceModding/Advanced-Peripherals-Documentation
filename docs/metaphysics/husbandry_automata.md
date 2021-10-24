@@ -5,7 +5,7 @@
 
 The husbandry automata is turtle with Husbandry Mechanic Soul upgrade!
 
-This upgrade allow everything, that [Weak automata](https://docs.srendi.de/turtles/weak_automata/) does and also provide ability interact with animals and even capture it.
+This upgrade allow everything, that [Weak automata](https://docs.srendi.de/metaphysics/weak_automata/) does and also provide ability interact with animals and even capture it.
 
 ## Overview
 
