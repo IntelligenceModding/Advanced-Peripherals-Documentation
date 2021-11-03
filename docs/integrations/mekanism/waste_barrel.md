@@ -1,10 +1,10 @@
-#Solar Evaporation Plant
+#Waste Barrel
 
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/10/mekanism_radioactive_waste_barrel.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Waste Barrel
-A [Solar Evaporation Plant](https://wiki.aidancbrady.com/wiki/Thermal_Evaporation_Plant) is a multiblock structure from mekanism to create brine or lithium.
+[Waste Barrels](https://wiki.aidancbrady.com/wiki/Radioactive_Waste_Barrel) are blocks from mekanism to store nuclear waste.
 
 <br><br/>
 <br><br/>
@@ -18,17 +18,14 @@ A [Solar Evaporation Plant](https://wiki.aidancbrady.com/wiki/Thermal_Evaporatio
 ##Functions
 | Function | Returns | Description |
 |----------|---------|-------------|
-| getInputTank() | table | Returns the name and the amount of the stored fluid of the input tank(left). |
-| getInputTank() | table | Returns the name and the amount of the stored fluid of the output tank(right). |
-| getHeat() | int | Returns the amount heat. |
-| getHeight() | int | Returns the height of the tower. |
-| getProduction() | int | Returns the production rate of the tower. |
-
+| getStored() | int | Returns the amount of stored waste. |
+| getCapacity() | string | Returns the capacity of the barrel. |
+| getFilledPercentage | int | Returns the amount of waste in percent. |
 
 ##Changelog/Trivia
 
-0.7.1r
-Added evaporation tower integration
+0.7.2r
+Added waste barrel integration
 
 0.6b
 Added integration for Mekanism

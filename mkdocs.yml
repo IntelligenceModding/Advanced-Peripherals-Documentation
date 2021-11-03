@@ -32,7 +32,7 @@ nav:
         - 'Digital Miner': 'integrations/mekanism/digital_miner.md'
         - 'Chemical Tank': 'integrations/mekanism/chemical.md'
         - 'Fluid Tank': 'integrations/mekanism/fluid_tank.md'
-        - 'Solar Evaporation Tower': 'integrations/mekanism/evaporation.md'
+        - 'Solar Evaporation Tower': 'integrations/mekanism/solar_evaporation.md'
         - 'Dynamic Tank': 'integrations/mekanism/dynamic_tank.md'
         - 'Waste Barrel': 'integrations/mekanism/waste_barrel.md'
       - 'Botania':
