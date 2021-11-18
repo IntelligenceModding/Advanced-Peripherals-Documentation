@@ -1,7 +1,7 @@
 #Draconic Reactor
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/11/draconicevolution_reactor_stabilizer.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/11/draconicevolution_energy_pylon.png){ align=right }
     Mod: Draconic Evolution <br><br/>
     Block: Reactor stabilizer
 The draconic reactor is a powerful reactor which can create a massive amount of energy. *It can also explode*

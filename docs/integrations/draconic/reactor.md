@@ -1,7 +1,7 @@
 #Draconic Energy Core
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/11/draconicevolution_energy_pylon.png){ align=right }
+    ![Header](https://srendi.de/wp-content/uploads/2021/11/draconicevolution_reactor_stabilizer.png){ align=right }
     Mod: Draconic Evolution <br><br/>
     Block: Energy pylon
 The draconic reactor is a multiblock structure which can store massive amounts of energy.  *Does not explode (:*
