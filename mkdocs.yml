@@ -22,6 +22,9 @@ nav:
       - 'Minecraft':
         - 'Beacon': 'integrations/mc/beacon.md'
         - 'Noteblock': 'integrations/mc/noteblock.md'
+      - 'Draconic Evolution':
+        - 'Energy Core': 'integrations/draconic/energy_core.md'
+        - 'Energy Core': 'integrations/draconic/energy_core.md'
       - 'Mekanism':
         - 'Fission Reactor': 'integrations/mekanism/fission.md'
         - 'Fusion Reactor': 'integrations/mekanism/fusion.md'

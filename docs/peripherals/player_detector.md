@@ -75,6 +75,9 @@ end
 The player detector was also a buggy block, like the energy detector. But it was not too buggy.
 We had bugs that the block uses completely wrong coordinates or the range was broken.
 
+0.7.4r
+Added more information to the `getPlayerPos` function. (Configurable)
+
 0.7r
 Added more functions to the player detector. One to define the range in every 3 axes, one to define 2 positions.
 Also added `getOnlinePlayers`

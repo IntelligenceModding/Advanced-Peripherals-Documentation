@@ -31,16 +31,24 @@ manager.removeItemFromPlayer("UP", 400) --Will remove 400 items from the players
 ```
 
 | Function                                                                | Returns    | Description                                                                                                                                                                                                                                                |
-| ----------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| addItemToPlayer(string direction, int count\[, int slot\, string item])      | int amount | Adds an item to the player's inventory. `direction` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null.                                            |
-| getArmor()                                                              | table      | Returns the content of the player's armor|
-| getItems()                                                              | table      | Returns the content of the player's|
-| getOwner()                                                              | string     | Returns the owner of the memory card, nil if the memory card is|
-| isPlayerEquipped()                                                      | boolean    | Returns true if the player is wearing one or more armor|
-| isWearing(int slot)                                                     | boolean    | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots)                                                                                                                                                       |
+| ----------------------------------------------------------------------- | ---------- | -------------------------------------------- |
+| addItemToPlayer(string direction, int count\[, int slot\, string item])      | int amount | Adds an item to the player's inventory. `direction` is the direction for the chest/inventory block. The Inventory Manager will add a random item to the player's inventory if the argument `item` is null.|
+| getArmor()                                                              | table      | Returns the content of the player's armor. |
+| getItems()                                                              | table      | Returns the content of the player's. |
+| getOwner()                                                              | string     | Returns the owner of the memory card, nil if the memory card is. |
+| isPlayerEquipped()                                                      | boolean    | Returns true if the player is wearing one or more armor. |
+| isWearing(int slot)                                                     | boolean    | Returns true if the player is wearing a armor piece on the given slot. Slots: 103(Helmet)-100(Boots). |
 | removeItemFromPlayer(string direction, int count\[, int slot\, string item]) | int amount | Removes an item from the player's inventory to the given inventory direction. `direction` is the direction for the chest/inventory block. The Inventory Manager will remove a random item from the player's inventory if the argument `item` is null. |
+| getItemInHand()                                                         | table      | Returns the item in the hand. |
+| getFreeSlot()                                                           | int        | Returns the nearest free slot of the player(-1 if inventory is full). |
+| isSpaceAvailable()                                                      | boolean    | Returns true if space is available in the player inventory. |
+| getEmptySpace()                                                         | int        | the amount of empty slots. |
 
 ## Changelog/Trivia
+
+0.7.4r
+Added `getItemInHand`, `getFreeSlot`, `isSpaceAvailable` and `getEmptySpace` to the inventory manager.
+Added support for armor items. You can use the slots 100-103 to access armor items.
 
 0.7r
 Added the slot parameter
