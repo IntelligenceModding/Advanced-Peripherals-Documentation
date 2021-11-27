@@ -52,7 +52,6 @@ print("Current dimension ".. detector.getDimensionName())
 | getDimensionProvider()        | string  | Returns the provider of the dimension (ex. minecraft).                                     |
 | getMoonId()                   | int     | Returns the current moon phase as id (ex. 2).                                              |
 | getMoonName()                 | string  | Returns the current moon phase as name (ex. Third quarter).                                |
-| getRadiation()                | table   | Returns the current radiation from mekanism.                                               |
 | getRadiation()                | table   | Returns the radiation of mekanism with the unit.                                           |
 | getRadiationRaw()             | int     | Returns the raw radiation without unit.                                                    |
 | getSkyLightLevel()            | int     | Returns the sky light level above the block.                                               |

@@ -1,16 +1,16 @@
 #Item parameters of the ME/RS Bridge
 
-The Rs and Me Bridge both use the same parameters for the item.
-It requires information on the item (as a table) to provide the user what he wants.
+The RS and ME Bridge uses a specific table as item parameter.
 Example of a dirt block with a count of 85: `{name="minecraft:dirt", count=85}`
 
-The Rs and Me Bridge can also use fingerprints to filter items exactly.
-Every item has is own fingerpint.
+The RS and ME Bridge can also use fingerprints to filter items exactly.
+Every item has its own fingerprint.
 
-You **need** to use the name parameter **or** the fingerprint parameter. If you use both, it will not break anything but the mod will use the fingerprint parameter.
+You **need** to use the name parameter **or** the fingerprint parameter. If you use both, it will not break anything, but the Bridge will use the fingerprint parameter.
 The count parameter will always work.
 
 We have 2 parameters to filter the NBT values(`nbt`, `json`). You can see more on them below.
+
 
 ##Possible informations.
 

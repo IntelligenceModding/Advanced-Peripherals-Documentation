@@ -3,75 +3,117 @@ site_url: 'https://docs.srendi.de/'
 
 nav:
     - 'Home': 'index.md'
-    - 'Peripherals':
-      - 'Chat Box': 'peripherals/chat_box.md'
-      - 'Environment Detector': 'peripherals/environment_detector.md'
-      - 'Player Detector': 'peripherals/player_detector.md'
-      - 'Me Bridge': 'peripherals/me_bridge.md'
-      - 'Rs Bridge': 'peripherals/rs_bridge.md'
-      - 'Energy Detector': 'peripherals/energy_detector.md'
-      - 'AR Controller': 'peripherals/ar_controller.md'
-      - 'Inventory Manager': 'peripherals/inventory_manager.md'
-      - 'Redstone Integrator': 'peripherals/redstone_integrator.md'
-      - 'Block Reader': 'peripherals/block_reader.md'
-      - 'NBT Storage': 'peripherals/nbt_storage.md'
-      - 'Geo Scanner': 'peripherals/geo_scanner.md'
-      - 'Colony Integrator': 'peripherals/colony_integrator.md'
-    - 'Mod Integrations':
-      - 'How does it work?': 'integrations/getstarted.md'
-      - 'Minecraft':
-        - 'Beacon': 'integrations/mc/beacon.md'
-        - 'Noteblock': 'integrations/mc/noteblock.md'
-      - 'Draconic Evolution':
-        - 'Energy Core': 'integrations/draconic/energy_core.md'
-        - 'Reactor': 'integrations/draconic/reactor.md'
-      - 'Mekanism':
-        - 'Fission Reactor': 'integrations/mekanism/fission.md'
-        - 'Fusion Reactor': 'integrations/mekanism/fusion.md'
-        - 'Boiler': 'integrations/mekanism/boiler.md'
-        - 'Generic Machine': 'integrations/mekanism/generic.md'
-        - 'Turbine': 'integrations/mekanism/turbine.md'
-        - 'Induction Matrix': 'integrations/mekanism/induction.md'
-        - 'Digital Miner': 'integrations/mekanism/digital_miner.md'
-        - 'Chemical Tank': 'integrations/mekanism/chemical.md'
-        - 'Fluid Tank': 'integrations/mekanism/fluid_tank.md'
-        - 'Solar Evaporation Tower': 'integrations/mekanism/solar_evaporation.md'
-        - 'Dynamic Tank': 'integrations/mekanism/dynamic_tank.md'
-        - 'Waste Barrel': 'integrations/mekanism/waste_barrel.md'
-      - 'Botania':
-        - 'Mana generating flower': 'integrations/botania/flower.md'
-        - 'Mana Pool': 'integrations/botania/pool.md'
-        - 'Mana Spreader': 'integrations/botania/spreader.md'
-      - 'Immersive Engineering':
-        - 'Capacitor': 'integrations/ie/capacitor.md'
-        - 'Redstone Probe': 'integrations/ie/probe.md'
-        - 'Redstone Wire Connector': 'integrations/ie/connector.md'
-      - 'Storage Drawers':
-        - 'Drawer': 'integrations/sd/drawer.md'
-      - 'Integrated Dynamics':
-        - 'Variable Store': 'integrations/id/variable_store.md'
-    - 'Metaphysics':
-      - 'Cooldowns and fuel consumption': 'metaphysics/cooldowns_and_fuel_consumption.md'
-      - 'Weak automata': 'metaphysics/weak_automata.md'
-      - 'Overpowered automata': 'metaphysics/overpowered_automata.md'
-      - 'End automata': 'metaphysics/end_automata.md'
-      - 'Husbandry automata': 'metaphysics/husbandry_automata.md'
-    - 'Turtles':
-      - 'Chunky Turtle': 'turtles/chunky_turtle.md'
-      - 'Environment Turtle': 'turtles/environment_turtle.md'
-      - 'Player Turtle': 'turtles/player_turtle.md'
-      - 'Chatty Turtle': 'turtles/chatty_turtle.md'
-      - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
-    - 'Items':
-      - 'Chunk Controller': 'items/chunk_controller.md'
-      - 'Pocket Computer': 'items/pocket_computer.md'
-      - 'AR Goggles': 'items/ar_goggles.md'
-      - 'Computer Tool': 'items/computer_tool.md'
-      - 'Memory Card': 'items/memory_card.md'
-    - 'Utilities and Others':
-      - 'Item parameter for ME/RS Bridge': 'othersandutilities/item_parameter.md'
-    - 'Changelogs':
-      - 'Changelog 0.7r': 'changelog/0.7r.md'
+    - '1.16':
+      - 'Peripherals':
+        - 'Chat Box': '1.16/peripherals/chat_box.md'
+        - 'Environment Detector': '1.16/peripherals/environment_detector.md'
+        - 'Player Detector': '1.16/peripherals/player_detector.md'
+        - 'Me Bridge': '1.16/peripherals/me_bridge.md'
+        - 'Rs Bridge': '1.16/peripherals/rs_bridge.md'
+        - 'Energy Detector': '1.16/peripherals/energy_detector.md'
+        - 'AR Controller': '1.16/peripherals/ar_controller.md'
+        - 'Inventory Manager': '1.16/peripherals/inventory_manager.md'
+        - 'Redstone Integrator': '1.16/peripherals/redstone_integrator.md'
+        - 'Block Reader': '1.16/peripherals/block_reader.md'
+        - 'NBT Storage': '1.16/peripherals/nbt_storage.md'
+        - 'Geo Scanner': '1.16/peripherals/geo_scanner.md'
+        - 'Colony Integrator': '1.16/peripherals/colony_integrator.md'
+      - 'Mod Integrations':
+        - 'How does it work?': '1.16/integrations/getstarted.md'
+        - 'Minecraft':
+          - 'Beacon': '1.16/integrations/mc/beacon.md'
+          - 'Noteblock': '1.16/integrations/mc/noteblock.md'
+        - 'Draconic Evolution':
+          - 'Energy Core': '1.16/integrations/draconic/energy_core.md'
+          - 'Reactor': '1.16/integrations/draconic/reactor.md'
+        - 'Mekanism':
+          - 'Fission Reactor': '1.16/integrations/mekanism/fission.md'
+          - 'Fusion Reactor': '1.16/integrations/mekanism/fusion.md'
+          - 'Boiler': '1.16/integrations/mekanism/boiler.md'
+          - 'Generic Machine': '1.16/integrations/mekanism/generic.md'
+          - 'Turbine': '1.16/integrations/mekanism/turbine.md'
+          - 'Induction Matrix': '1.16/integrations/mekanism/induction.md'
+          - 'Digital Miner': '1.16/integrations/mekanism/digital_miner.md'
+          - 'Chemical Tank': '1.16/integrations/mekanism/chemical.md'
+          - 'Fluid Tank': '1.16/integrations/mekanism/fluid_tank.md'
+          - 'Solar Evaporation Tower': '1.16/integrations/mekanism/solar_evaporation.md'
+          - 'Dynamic Tank': '1.16/integrations/mekanism/dynamic_tank.md'
+          - 'Waste Barrel': '1.16/integrations/mekanism/waste_barrel.md'
+        - 'Botania':
+          - 'Mana generating flower': '1.16/integrations/botania/flower.md'
+          - 'Mana Pool': '1.16/integrations/botania/pool.md'
+          - 'Mana Spreader': '1.16/integrations/botania/spreader.md'
+        - 'Immersive Engineering':
+          - 'Capacitor': '1.16/integrations/ie/capacitor.md'
+          - 'Redstone Probe': '1.16/integrations/ie/probe.md'
+          - 'Redstone Wire Connector': '1.16/integrations/ie/connector.md'
+        - 'Storage Drawers':
+          - 'Drawer': '1.16/integrations/sd/drawer.md'
+        - 'Integrated Dynamics':
+          - 'Variable Store': '1.16/integrations/id/variable_store.md'
+      - 'Metaphysics':
+        - 'Cooldowns and fuel consumption': '1.16/metaphysics/cooldowns_and_fuel_consumption.md'
+        - 'Weak automata': '1.16/metaphysics/weak_automata.md'
+        - 'Overpowered automata': '1.16/metaphysics/overpowered_automata.md'
+        - 'End automata': '1.16/metaphysics/end_automata.md'
+        - 'Husbandry automata': '1.16/metaphysics/husbandry_automata.md'
+      - 'Turtles':
+        - 'Chunky Turtle': '1.16/turtles/chunky_turtle.md'
+        - 'Environment Turtle': '1.16/turtles/environment_turtle.md'
+        - 'Player Turtle': '1.16/turtles/player_turtle.md'
+        - 'Chatty Turtle': '1.16/turtles/chatty_turtle.md'
+        - 'Geoscanning Turtle': '1.16/turtles/geo_scanner_turtle.md'
+      - 'Items':
+        - 'Chunk Controller': '1.16/items/chunk_controller.md'
+        - 'Pocket Computer': '1.16/items/pocket_computer.md'
+        - 'AR Goggles': '1.16/items/ar_goggles.md'
+        - 'Computer Tool': '1.16/items/computer_tool.md'
+        - 'Memory Card': '1.16/items/memory_card.md'
+      - 'Utilities and Others':
+        - 'Item parameter for ME/RS Bridge': '1.16/othersandutilities/item_parameter.md'
+      - 'Changelogs':
+        - 'Changelog 0.7r': '1.16/changelog/0.7r.md'
+    - '1.17':
+      - 'Peripherals':
+        - 'Chat Box': '1.17/peripherals/chat_box.md'
+        - 'Environment Detector': '1.17/peripherals/environment_detector.md'
+        - 'Player Detector': '1.17/peripherals/player_detector.md'
+        - 'Me Bridge': '1.17/peripherals/me_bridge.md'
+        - 'Energy Detector': '1.17/peripherals/energy_detector.md'
+        - 'AR Controller': '1.17/peripherals/ar_controller.md'
+        - 'Inventory Manager': '1.17/peripherals/inventory_manager.md'
+        - 'Redstone Integrator': '1.17/peripherals/redstone_integrator.md'
+        - 'Block Reader': '1.17/peripherals/block_reader.md'
+        - 'NBT Storage': '1.17/peripherals/nbt_storage.md'
+        - 'Geo Scanner': '1.17/peripherals/geo_scanner.md'
+        - 'Colony Integrator': '1.17/peripherals/colony_integrator.md'
+      - 'Mod Integrations':
+        - 'How does it work?': '1.17/integrations/getstarted.md'
+        - 'Minecraft':
+          - 'Beacon': '1.17/integrations/mc/beacon.md'
+          - 'Noteblock': '1.17/integrations/mc/noteblock.md'
+      - 'Metaphysics':
+        - 'Cooldowns and fuel consumption': '1.17/metaphysics/cooldowns_and_fuel_consumption.md'
+        - 'Weak automata': '1.17/metaphysics/weak_automata.md'
+        - 'Overpowered automata': '1.17/metaphysics/overpowered_automata.md'
+        - 'End automata': '1.17/metaphysics/end_automata.md'
+        - 'Husbandry automata': '1.17/metaphysics/husbandry_automata.md'
+      - 'Turtles':
+        - 'Chunky Turtle': '1.17/turtles/chunky_turtle.md'
+        - 'Environment Turtle': '1.17/turtles/environment_turtle.md'
+        - 'Player Turtle': '1.17/turtles/player_turtle.md'
+        - 'Chatty Turtle': '1.17/turtles/chatty_turtle.md'
+        - 'Geoscanning Turtle': '1.17/turtles/geo_scanner_turtle.md'
+      - 'Items':
+        - 'Chunk Controller': '1.17/items/chunk_controller.md'
+        - 'Pocket Computer': '1.17/items/pocket_computer.md'
+        - 'AR Goggles': '1.17/items/ar_goggles.md'
+        - 'Computer Tool': '1.17/items/computer_tool.md'
+        - 'Memory Card': '1.17/items/memory_card.md'
+      - 'Utilities and Others':
+        - 'Item parameter for ME Bridge': '1.17/othersandutilities/item_parameter.md'
+      - 'Changelogs':
+        - 'Changelog 0.7r': '1.17/changelog/0.7r.md'
 
 theme:
     name: material

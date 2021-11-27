@@ -19,27 +19,7 @@ Currently we support:
 
 * Minecraft
     - Beacon
-* Mekanism
-    - Fission reactor
-    - Boiler
-    - Fusion reactor
-    - Any energy supporting machine
-    - Turbine
-    - Induction Matrix
-    - Digital Miner
-    - Chemical Tanks
-* Botania
-    - Any flower
-    - Any spreader
-    - Any mana pool
-* Immersive Engineering
-    - Any capacitor
-    - Redstone probe
-    - Redstone connector
-* Integrated Dynamics
-    - Variable Store
-* Storage Drawers
-    - Drawer
+    - Noteblock
 
 ## Changelog/Trivia
 
