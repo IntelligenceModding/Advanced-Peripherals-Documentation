@@ -7,6 +7,12 @@ You can communicate with Refined Storage, Applied Energistics 2 or with the whol
 
 With Advanced Peripherals you can control your base in Minecraft only with messages in the chat, you can develop an AI that controls your farms - there really is no limit to what you can create with CC:Tweaked and Advanced Peripherals.
 
+Supported versions:
+
+* 1.16: LTS
+* 1.17: Not supported
+* 1.18: Fully supported
+
 If you want to add content to this documentation or you want to fix any spelling issues, feel free to do that on [Github](https://github.com/Seniorendi/Advanced-Peripherals-Documentation).
 
 If you need help, join the Discord: [here](https://discord.srendi.de).
