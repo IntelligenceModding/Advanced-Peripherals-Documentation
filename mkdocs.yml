@@ -119,6 +119,7 @@ nav:
         - 'Chat Box': '1.18/peripherals/chat_box.md'
         - 'Environment Detector': '1.18/peripherals/environment_detector.md'
         - 'Player Detector': '1.18/peripherals/player_detector.md'
+        - 'Me Bridge': '1.18/peripherals/me_bridge.md'
         - 'Energy Detector': '1.18/peripherals/energy_detector.md'
         - 'AR Controller': '1.18/peripherals/ar_controller.md'
         - 'Inventory Manager': '1.18/peripherals/inventory_manager.md'
