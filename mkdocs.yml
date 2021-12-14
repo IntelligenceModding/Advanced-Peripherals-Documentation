@@ -39,6 +39,7 @@ nav:
           - 'Solar Evaporation Tower': '1.16/integrations/mekanism/solar_evaporation.md'
           - 'Dynamic Tank': '1.16/integrations/mekanism/dynamic_tank.md'
           - 'Waste Barrel': '1.16/integrations/mekanism/waste_barrel.md'
+          - 'Transmitters': '1.16/integrations/mekanism/transmitter.md'
         - 'Botania':
           - 'Mana generating flower': '1.16/integrations/botania/flower.md'
           - 'Mana Pool': '1.16/integrations/botania/pool.md'
