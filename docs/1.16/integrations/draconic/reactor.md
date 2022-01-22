@@ -1,10 +1,10 @@
-#Draconic Energy Core
+#Draconic Reactor
 
 !!! picture inline end
     ![Header](https://srendi.de/wp-content/uploads/2021/11/draconicevolution_reactor_stabilizer.png){ align=right }
     Mod: Draconic Evolution <br><br/>
-    Block: Energy pylon
-The draconic reactor is a multiblock structure which can store massive amounts of energy.  *Does not explode (:*
+    Block: Reactor Stabilizer
+The Draconic Reactor is a powerful reactor which can create a massive amount of energy. *It can also explode*
 
 <br><br/>
 <br><br/>
@@ -16,10 +16,11 @@ The draconic reactor is a multiblock structure which can store massive amounts o
 ##Functions
 | Function | Returns | Description |
 |----------|---------|-------------|
-| getEnergyStored() | int | Returns the stored amount of energy. |
-| getMaxEnergyStored() | int | Return the capacity of the core. |
-| getTransferPerTick() | int | Returns the amount which is transfered per tick. |
-| getTier | int | Returns the tier of the core(1-8). |
+| getReactorInfo() | table | Returns a table with a lot of information about the reactor(Like temperature, status and more). |
+| chargeReactor() | boolean | Charges the reactor. Returns true if successful. |
+| activateReactor() | boolean | Activates the reactor. Returns true if successful. |
+| stopReactor() | boolean | Stops the reactor. Returns true if successful. |
+| setFailSafe(boolean failSafe) |  | Activates or deactivates failSafe. |
 
 ##Changelog/Trivia
 
