@@ -121,6 +121,7 @@ nav:
         - 'Environment Detector': '1.18/peripherals/environment_detector.md'
         - 'Player Detector': '1.18/peripherals/player_detector.md'
         - 'Me Bridge': '1.18/peripherals/me_bridge.md'
+        - 'Rs Bridge': '1.16/peripherals/rs_bridge.md'
         - 'Energy Detector': '1.18/peripherals/energy_detector.md'
         - 'AR Controller': '1.18/peripherals/ar_controller.md'
         - 'Inventory Manager': '1.18/peripherals/inventory_manager.md'
