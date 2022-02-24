@@ -1,0 +1,34 @@
+name: Documentation issue report
+description: Report issues with the documentation like typos or missing entries
+body:
+  - type: markdown
+    attributes:
+      value: "Please use the search function before submitting an issue!"
+  - type: textarea
+    attributes:
+      label: Descripe
+      description: Clearly describe the issue you found
+      placeholder: A clear description of what the issue is
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior. Feel free to remove or add steps.
+      placeholder:
+        1. Do this...
+        2. Then hit this...
+        3. Then...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Direct URL
+      description: A direct URL to the site of the issue
+      placeholder: "https://docs.srendi.de/1.17/peripherals/chat_box/"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Screenshots or Videos
+      description: If applicable, add screenshots or videos to help explain your problem.
