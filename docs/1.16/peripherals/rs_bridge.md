@@ -42,7 +42,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | getMaxEnergyStorage()                         | int     | Returns the maximum energy storage of the whole RS System. |
 | importItem(table item, string directions)     | int     | Imports an item to the me system from the chest in the direction of the block. Valid directions are "top", "bottom", "left", "right", "back" and "front". |
 | importItemFromPeripheral(table item, string chest) | int     | Imports an item to a chest(every inventory tile entity should work) which is connected to the peripheral network. |
-| isItemCrafting(table item)                    | boolean | Returns true if a job for the item already exists. |
+| isItemCrafting(string item)                   | boolean | Returns true if a job for the item already exists. |
 | isItemCraftable(table item)                   | boolean | Returns true if this item is craftable. |
 | listFluids()                                  | table   | Returns all stored fluids. |
 | listItems()                                   | table   | Returns all stored items. |
