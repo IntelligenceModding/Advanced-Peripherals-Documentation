@@ -12,7 +12,7 @@ You may need this peripheral for cases where you need to output redstone signals
 
 | Peripheral Name    | Interfaces with | Events | Introduced in |
 | ------------------ | --------------- | ------ | ------------- |
-| redstoneIntegrator | Refined Storage | No     | 0.5.3b        |
+| redstoneIntegrator |    Minecraft    | No     | 0.5.3b        |
 
 ## Functions
 
