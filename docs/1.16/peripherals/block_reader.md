@@ -14,7 +14,7 @@ This block is able to read data of blocks and tile entities in front of it.
 ### Example
 
 ``` lua
-reader = peripherals.find("blockReader")
+reader = peripheral.find("blockReader")
 
 print("Block Name: ".. reader.getBlockName())
 for k, v in ipairs(reader.getBlockData()) do --Prints the contents of the data
