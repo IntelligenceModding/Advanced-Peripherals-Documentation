@@ -172,6 +172,7 @@ theme:
     name: material
     features:
       - navigation.top
+      - content.code.annotate
     palette:
     - scheme: slate
       primary: blue
