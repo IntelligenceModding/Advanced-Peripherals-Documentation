@@ -2,15 +2,22 @@
 
 ## How does it work?
 
-You can simply put your computer next to a supported block.
+To use our third party integrations you can simply place your computer or your modem next to a suported block and wrap it.
+If the block is supported, you can use the functions it'll provide.
 
-Example code for an immersive engineering capacitor.
-```lua
-capacitor = peripheral.wrap("IECapacitor_0") --Wrap the capacitor
+Example with a botania mana flower
+```lua linenums="1" title="integration.lua"
+flower = peripheral.wrap("manaFlower") -- (1)
 
-print("Stored energy: ".. capacitor.getStoredEnergy() .."FE") --Will print the stored energy
-print("Energy Capacity: ".. capacitor.getMaxEnergy() .."FE") --Will print the energy capacity
+print("Stored mana: ".. flower.getMana() .."FE") -- (2)
+print("Mana capacity: ".. flower.getMaxMana() .."FE") -- (3)
+print("Is on enchanted soul?: ".. flower.isOnEnchantedSoil() .."FE") -- (4)
 ```
+
+1.  Place a block-sized modem next to the flower and wrap it
+2.  Prints the stored amount of mana
+3.  Prints the mana capacity
+4.  Prints true if on enchanted soil
 
 ## Supported Mods
 If you want to see more integrations, you can request a mod integration [here](https://github.com/Seniorendi/AdvancedPeripherals/issues)
@@ -20,8 +27,21 @@ Currently we support:
 * Minecraft
     - Beacon
     - Noteblock
+* Botania
+    - Flowers
+    - Mana Pool
+    - Mana Spreader
+* Create
+    - Basin
+    - Blaze Burner
+    - Fluid Tank
+    - Mechanical Mixer
+    - Scroll value behaviour blocks
 
 ## Changelog/Trivia
+
+0.7.16
+Added create and botania integration
 
 0.7r
 Removed the peripheral proxy, you can now connect your computer with any supported block directly.
@@ -30,6 +50,3 @@ Added Drawer integration
 
 0.6b
 Added mod integrations with the peripheral proxy
-
-0.5.2b
-Added fillCircle, drawCircle and drawItemIcon.
