@@ -135,6 +135,16 @@ nav:
         - 'Minecraft':
           - 'Beacon': '1.18/integrations/mc/beacon.md'
           - 'Noteblock': '1.18/integrations/mc/noteblock.md'
+        - 'Botania':
+          - 'Flowers': '1.18/integrations/botania/flower.md'
+          - 'Mana Pool': '1.18/integrations/botania/pool.md'
+          - 'Mana Spreader': '1.18/integrations/botania/spreader.md'
+        - 'Create':
+          - 'Basin': '1.18/integrations/create/basin.md'
+          - 'Blaze Burner': '1.18/integrations/create/blazeburner.md'
+          - 'Fluid Tank': '1.18/integrations/create/fluidtank.md'
+          - 'Mechanical Mixer': '1.18/integrations/create/mechanicalmixer.md'
+          - 'Scroll value behaviour blocks': '1.18/integrations/create/scrollbehaviour.md'
       - 'Metaphysics':
         - 'Cooldowns and fuel consumption': '1.18/metaphysics/cooldowns_and_fuel_consumption.md'
         - 'Weak automata': '1.18/metaphysics/weak_automata.md'
