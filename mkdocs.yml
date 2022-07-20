@@ -186,6 +186,7 @@ theme:
         name: Switch to light mode
 
 plugins:
+  - mkdocs-video
   - search:
       lang: en
 
