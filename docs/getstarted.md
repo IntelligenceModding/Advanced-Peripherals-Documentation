@@ -1,4 +1,4 @@
-#Getting started
+# Getting started
 
 !!! info
     I explain here how ComputerCraft works.
@@ -13,7 +13,7 @@ your carrot farm.
 I want to explain the basics of ComputerCraft and how it works here.
 Don't worry if you can't find a lot of information here, i will add more in the future.
 
-##Computers, Peripherals and Monitors
+## Computers, Peripherals and Monitors
 The device which you use to program scripts to control your carrot farm is the
 [computer](https://tweaked.cc/peripheral/computer.html).
 You can use the command `edit` in it to create or edit existing scripts.
