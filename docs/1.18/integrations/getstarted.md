@@ -9,9 +9,9 @@ Example with a botania mana flower
 ```lua linenums="1" title="integration.lua"
 flower = peripheral.wrap("manaFlower") -- (1)
 
-print("Stored mana: ".. flower.getMana() .."FE") -- (2)
-print("Mana capacity: ".. flower.getMaxMana() .."FE") -- (3)
-print("Is on enchanted soul?: ".. flower.isOnEnchantedSoil() .."FE") -- (4)
+print("Stored mana: ".. flower.getMana()) -- (2)
+print("Mana capacity: ".. flower.getMaxMana()) -- (3)
+print("Is on enchanted soul?: ".. flower.isOnEnchantedSoil()) -- (4)
 ```
 
 1.  Place a block-sized modem next to the flower and wrap it
