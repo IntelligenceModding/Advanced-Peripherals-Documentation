@@ -53,7 +53,7 @@ end
 | getResearch()                   | table   | Returns all possible researches, currently researches that is being worked on and research that has already been researched. |
 | getWorkOrderResources(int id)   | table   | Returns a table with the resources of a work order. You can find out every order and its ID with getWorkOrders().                         |
 | getRequests()                   | table   | Returns all requests in any kind of the colony. |
-| getBuilderResources(table position) | table   | Returns all resources of the given builder's hut.                       |
+| getBuilderResources(table position) | table   | Returns the required resources of the given builder's hut.             |
 
 ## Examples
 
