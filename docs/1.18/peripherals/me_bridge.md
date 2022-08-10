@@ -24,7 +24,7 @@ The crafting event does not work everytime. The crafting event is also barely te
 
 ## Functions
 
-Most functions uses a table to craft, export or import the item. You can see how these item parameters exactly works at the [Item parameters of the ME/RS Bridge](/othersandutilities/item_parameter/) page.
+Most functions uses a table to craft, export or import the item. You can see how these item parameters exactly works at the [Item parameters of the ME/RS Bridge](/1.18/othersandutilities/item_parameter/) page.
 
 Example with exportItem:
 
