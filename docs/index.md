@@ -12,6 +12,7 @@ Supported versions:
 * 1.16: LTS
 * 1.17: Not supported
 * 1.18: Fully supported
+* 1.19: Coming soon *I hope*
 
 If you want to add content to this documentation or you want to fix any spelling issues, feel free to do that on [Github](https://github.com/Seniorendi/Advanced-Peripherals-Documentation).
 
