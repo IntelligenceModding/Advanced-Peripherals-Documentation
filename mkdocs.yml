@@ -74,47 +74,6 @@ nav:
         - 'Item parameter for ME/RS Bridge': '1.16/othersandutilities/item_parameter.md'
       - 'Changelogs':
         - 'Changelog 0.7r': '1.16/changelog/0.7r.md'
-    - '1.17':
-      - 'Peripherals':
-        - 'Chat Box': '1.17/peripherals/chat_box.md'
-        - 'Environment Detector': '1.17/peripherals/environment_detector.md'
-        - 'Player Detector': '1.17/peripherals/player_detector.md'
-        - 'Me Bridge': '1.17/peripherals/me_bridge.md'
-        - 'Energy Detector': '1.17/peripherals/energy_detector.md'
-        - 'AR Controller': '1.17/peripherals/ar_controller.md'
-        - 'Inventory Manager': '1.17/peripherals/inventory_manager.md'
-        - 'Redstone Integrator': '1.17/peripherals/redstone_integrator.md'
-        - 'Block Reader': '1.17/peripherals/block_reader.md'
-        - 'NBT Storage': '1.17/peripherals/nbt_storage.md'
-        - 'Geo Scanner': '1.17/peripherals/geo_scanner.md'
-        - 'Colony Integrator': '1.17/peripherals/colony_integrator.md'
-      - 'Mod Integrations':
-        - 'How does it work?': '1.17/integrations/getstarted.md'
-        - 'Minecraft':
-          - 'Beacon': '1.17/integrations/mc/beacon.md'
-          - 'Noteblock': '1.17/integrations/mc/noteblock.md'
-      - 'Metaphysics':
-        - 'Cooldowns and fuel consumption': '1.17/metaphysics/cooldowns_and_fuel_consumption.md'
-        - 'Weak automata': '1.17/metaphysics/weak_automata.md'
-        - 'Overpowered automata': '1.17/metaphysics/overpowered_automata.md'
-        - 'End automata': '1.17/metaphysics/end_automata.md'
-        - 'Husbandry automata': '1.17/metaphysics/husbandry_automata.md'
-      - 'Turtles':
-        - 'Chunky Turtle': '1.17/turtles/chunky_turtle.md'
-        - 'Environment Turtle': '1.17/turtles/environment_turtle.md'
-        - 'Player Turtle': '1.17/turtles/player_turtle.md'
-        - 'Chatty Turtle': '1.17/turtles/chatty_turtle.md'
-        - 'Geoscanning Turtle': '1.17/turtles/geo_scanner_turtle.md'
-      - 'Items':
-        - 'Chunk Controller': '1.17/items/chunk_controller.md'
-        - 'Pocket Computer': '1.17/items/pocket_computer.md'
-        - 'AR Goggles': '1.17/items/ar_goggles.md'
-        - 'Computer Tool': '1.17/items/computer_tool.md'
-        - 'Memory Card': '1.17/items/memory_card.md'
-      - 'Utilities and Others':
-        - 'Item parameter for ME Bridge': '1.17/othersandutilities/item_parameter.md'
-      - 'Changelogs':
-        - 'Changelog 0.7r': '1.17/changelog/0.7r.md'
     - '1.18':
       - 'Peripherals':
         - 'Chat Box': '1.18/peripherals/chat_box.md'
@@ -194,6 +153,11 @@ repo_name: Seniorendi/Advanced-Peripherals-Documentation
 edit_uri: edit/main/docs/
 
 markdown_extensions:
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - attr_list
+    - md_in_html
     - toc:
         permalink: true
     - admonition
