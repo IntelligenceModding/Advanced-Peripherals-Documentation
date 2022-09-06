@@ -10,8 +10,7 @@ We provide Pocket Computer upgrades for the following peripherals:
 * [Colony Integrator](https://docs.srendi.de/1.18/peripherals/colony_integrator/)
 
 !!! info events
-    The upgrades does not support events. You can't use events like the chat event
-    for the Chat Box upgrade.
+    The upgrades do not support events. 
 
 !!! hint recipes
     You can see the crafting recipes when you use the mod Just Enough Items.
