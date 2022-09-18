@@ -9,10 +9,10 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 
 Supported versions:
 
-* 1.16: LTS
-* 1.17: Not supported
-* 1.18: Fully supported
-* 1.19: Coming soon *I hope*
+* 1.16: Not supported
+* 1.17: Not supported - Use the 1.16 documentation
+* 1.18: LTS
+* 1.19: Fully supported
 
 If you want to add content to this documentation or you want to fix any spelling issues, feel free to do that on [Github](https://github.com/Seniorendi/Advanced-Peripherals-Documentation).
 

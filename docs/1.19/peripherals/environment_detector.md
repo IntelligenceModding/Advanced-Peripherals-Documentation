@@ -47,9 +47,7 @@ print("Current dimension ".. detector.getDimensionName())
 | getBiome()                    | string  | Returns the biome the block is in.                                                         |
 | getBlockLightLevel()          | int     | Returns the light level of the block (can be manipulated with light sources).              |
 | getDayLightLevel()            | int     | Returns the day light level of the current world from 0 to 15 (like the day light sensor). |
-| getDimensionName()            | string  | Returns the name of the dimension (ex. the_nether).                                        |
-| getDimensionPaN()             | string  | Returns the name with the provider of the dimension (ex. minecraft:overworld).             |
-| getDimensionProvider()        | string  | Returns the provider of the dimension (ex. minecraft).                                     |
+| getDimension()                | string  | Returns the resource name of the dimension (ex. "minecraft:nether" or "galacticraft:moon").|
 | getMoonId()                   | int     | Returns the current moon phase as id (ex. 2).                                              |
 | getMoonName()                 | string  | Returns the current moon phase as name (ex. Third quarter).                                |
 | getSkyLightLevel()            | int     | Returns the sky light level above the block.                                               |

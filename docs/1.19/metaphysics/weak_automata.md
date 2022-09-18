@@ -20,7 +20,7 @@ It provides several ability:
 
 | Peripheral Name           | Interfaces with | Events | Introduced in |
 | ------------------------- | --------------- | ------ | ------------- |
-| weakMechanicSoul          | World           | No     | 0.7r          |
+| weakAutomata              | World           | No     | 0.7r          |
 
 ### Peripheral funtions
 
