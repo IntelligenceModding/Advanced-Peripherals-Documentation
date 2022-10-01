@@ -1,7 +1,7 @@
 # AR Controller
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/AR-Controller.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/AR-Controller.png){ align=right }
 
 The AR Controller is used to control your AR Goggles wirelessly. You can draw anything you wish into an overlay that will be visible as long as you're wearing the goggles.
 

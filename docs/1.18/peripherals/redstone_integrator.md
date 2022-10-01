@@ -1,7 +1,7 @@
 # Redstone Integrator
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/Redstone-Integrator.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Redstone-Integrator.png){ align=right }
 
 The Redstone Integrator is able to interact with redstone.
 You can use the same code you would use for a computer on a Redstone Integrator.

@@ -1,7 +1,7 @@
 #Fusion Reactor
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Fusion-Reactor-Logic-Adapter.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Fusion-Reactor-Logic-Adapter.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Fusion Reactor Logic Adapter
 The [Fusion Reactor](https://wiki.aidancbrady.com/wiki/Fusion_Reactor) is a reactor from Mekanism.

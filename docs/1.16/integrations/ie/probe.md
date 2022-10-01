@@ -1,7 +1,7 @@
 #Redstone Probe
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Redstone-Probe-Connector.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Redstone-Probe-Connector.png){ align=right }
     Mod: Immersive Engineering <br><br/>
     Block: Redstone Probe Connector
 The redstone probe connector is a block from Immersive Engineering to read data in a specific redstone channel.

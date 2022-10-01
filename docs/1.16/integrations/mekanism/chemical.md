@@ -1,7 +1,7 @@
 #Induction Matrix
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/06/Ultimate-Chemical-Tank.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/06/Ultimate-Chemical-Tank.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Chemical Tank
 [Chemical Tanks](https://wiki.aidancbrady.com/wiki/Chemical_Tanks) are used to store Gases. They can be placed as a block and can interact with Pressurized Tubes. They come in the four tiers, each tier being double the capacity and output rate of its predecessor. It can store the following gases:

@@ -1,7 +1,7 @@
 # Environment Detector
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/Environment-Detector.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Environment-Detector.png){ align=right }
 
 The Environment Detector provides current information from the environment like the current time, the current moon phase,
 the light level of the block and many more.

@@ -1,7 +1,7 @@
 # RS Bridge
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/RS-Bridge.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/RS-Bridge.png){ align=right }
 
 The RS Bridge is able to interact with Refined Storage.
 You can retrieve items, craft items, get all items as a list and more.
@@ -55,7 +55,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 
 Picture of the table from listItems()
 
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_234200.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_234200.png)
 
 ## Example
 
@@ -67,7 +67,7 @@ Script: [Click here](https://gist.github.com/Seniorendi/26bd8ecaec400146f2e38790
     This script does not work on version above 0.4b
 
 Screenshot:
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233915.png)
 
 ## Changelog/Trivia
 

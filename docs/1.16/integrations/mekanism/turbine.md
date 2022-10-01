@@ -1,7 +1,7 @@
 #Industrial Turbine
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Turbine-Valve.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Turbine-Valve.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Turbine Valve
 The [Industrial Turbine](https://wiki.aidancbrady.com/wiki/Industrial_Turbine) is a multiblock structure from mekanism to generate energy with steam.

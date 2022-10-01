@@ -1,7 +1,7 @@
 #Induction Matrix
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Induction-Port.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Induction-Port.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Induction Valve
 The [Induction Matrix](https://wiki.aidancbrady.com/wiki/Induction_Matrix) is a multiblock structure from mekanism made to store large amounts of energy.

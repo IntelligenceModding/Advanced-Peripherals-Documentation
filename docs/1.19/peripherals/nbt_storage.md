@@ -1,7 +1,7 @@
 # NBT Storage
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/07/NBT-Storage.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/07/NBT-Storage.png){ align=right }
 
 NBT Storage is custom block that allow input/output custom data to block. Mostly provided for ID support.
 

@@ -1,7 +1,7 @@
 #Transmitters
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/12/ezgif-2-08f84c976683.gif){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/12/ezgif-2-08f84c976683.gif){ align=right }
     Mod: Mekanism <br><br/>
     Block: Any transmitter. See full list below
 Transmitters from mekanism are blocks which can transport various types of things like gases, fluids, energy or more.

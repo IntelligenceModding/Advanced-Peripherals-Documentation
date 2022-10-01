@@ -1,6 +1,6 @@
 # ME Bridge
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/ME-Bridge.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/ME-Bridge.png){ align=right }
 
 The ME Bridge is able to interact with Applied Energistics 2.
 You can retrieve items, craft items, get all items as a list and more. The ME Bridge uses one channel.
@@ -60,15 +60,15 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 
 Picture of the table from listItems()
 
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_231136.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_231136.png)
 
 Picture of the table from getCraftingCPUs()
 
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_231231.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_231231.png)
 
 Picture of the table from craftItem()
 
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233210.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233210.png)
 
 ## Example
 
@@ -80,7 +80,7 @@ Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e
     This script does not work on version above 0.4b
 
 Screenshot:
-![Picture](https://srendi.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
 
 ## Changelog/Trivia
 

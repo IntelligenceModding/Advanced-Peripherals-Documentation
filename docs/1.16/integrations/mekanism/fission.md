@@ -1,7 +1,7 @@
 #Fission Reactor
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Fission-Reactor-Logic-Adapter.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Fission-Reactor-Logic-Adapter.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Fission Reactor Logic Adapter
 The [Fission Reactor](https://wiki.aidancbrady.com/wiki/Fission_Reactor) is a reactor from Mekanism.

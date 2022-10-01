@@ -1,7 +1,7 @@
 #Boiler
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Boiler-Valve.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Boiler-Valve.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Boiler Valve
 The [Themoelectric Boiler](https://wiki.aidancbrady.com/wiki/Thermoelectric_Boiler) is a multiblock structure from mekanism to generate steam or other gases.

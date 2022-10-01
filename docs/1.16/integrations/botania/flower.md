@@ -1,7 +1,7 @@
 #Mana generating flower
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Endoflame.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Endoflame.png){ align=right }
     Mod: Botania <br><br/>
     Block: Any mana generating flower
 Mana generating flowers from botania can generate mana for other recipes or rituals.

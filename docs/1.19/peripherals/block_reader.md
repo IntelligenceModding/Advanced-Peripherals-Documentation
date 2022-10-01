@@ -1,6 +1,6 @@
 # Block Reader
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Peripheral-Proxy.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Peripheral-Proxy.png){ align=right }
 
 This block is able to read data of blocks and tile entities in front of it.
 

@@ -1,7 +1,7 @@
 #Waste Barrel
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/10/mekanism_radioactive_waste_barrel.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/10/mekanism_radioactive_waste_barrel.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Waste Barrel
 [Waste Barrels](https://wiki.aidancbrady.com/wiki/Radioactive_Waste_Barrel) are blocks from mekanism to store nuclear waste.

@@ -1,7 +1,7 @@
 #Solar Evaporation Plant
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/10/mekanism_thermal_evaporation_valve.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/10/mekanism_thermal_evaporation_valve.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Thermal Evaporation Valve
 A [Solar Evaporation Plant](https://wiki.aidancbrady.com/wiki/Thermal_Evaporation_Plant) is a multiblock structure from mekanism to create brine or lithium.

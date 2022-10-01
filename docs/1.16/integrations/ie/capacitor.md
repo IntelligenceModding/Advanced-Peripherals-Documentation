@@ -1,7 +1,7 @@
 #Capacitor
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/HV-Capacitor.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/HV-Capacitor.png){ align=right }
     Mod: Immersive Engineering <br><br/>
     Block: Any capacitor
 The Capacitor is a block from Immersive Engineering to storage energy.

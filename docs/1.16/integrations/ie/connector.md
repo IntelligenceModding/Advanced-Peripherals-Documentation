@@ -1,7 +1,7 @@
 #Redstone Wire Connector
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Redstone-Wire-Connector.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Redstone-Wire-Connector.png){ align=right }
     Mod: Immersive Engineering <br><br/>
     Block: Redstone Wire Connector
 The redstone wire connector is a block from Immersive Engineering to connect redstone wire over big distances.

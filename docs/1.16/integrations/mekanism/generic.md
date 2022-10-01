@@ -1,7 +1,7 @@
 #Generic Mekanism Machine
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Steel-Casing.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Steel-Casing.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Any energy supporting block
 This proxy integration will add a integration for every energy supporting machine from Mekanism.

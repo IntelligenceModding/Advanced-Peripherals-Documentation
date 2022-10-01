@@ -1,7 +1,7 @@
 #Beacon
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/10/minecraft_note_block.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/10/minecraft_note_block.png){ align=right }
     Mod: Minecraft <br><br/>
     Block: Noteblock
 A [note block](https://minecraft.fandom.com/wiki/Note_Block) is a musical block that emits sounds when powered with redstone.

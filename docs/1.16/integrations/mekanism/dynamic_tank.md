@@ -1,7 +1,7 @@
 #Dynamic Tank
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/10/mekanism_dynamic_valve.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/10/mekanism_dynamic_valve.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Dynamic Tank Valve
 The [Dynamic tank](https://wiki.aidancbrady.com/wiki/Dynamic_Tank) is a multiblock structure from mekanism to store fluids, gases and more.

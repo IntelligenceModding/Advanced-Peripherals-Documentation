@@ -1,7 +1,7 @@
 # Chat Box
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/Chat-box.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Chat-box.png){ align=right }
 
 The Chat Box is able to read and write messages to the in-game chat. You can send messages to just one player or to everyone.
 

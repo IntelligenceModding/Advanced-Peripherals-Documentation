@@ -1,7 +1,7 @@
 #Fission Reactor
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Digital-Miner.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Digital-Miner.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Digital Miner
 The [Digital Miner](https://wiki.aidancbrady.com/wiki/Digital_Miner) is the scale mining machine of Mekanism. However, this machine is like no other as it "magically-teleports" mined blocks to its inventory.

@@ -1,7 +1,7 @@
 #Fluid Tank
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/10/mekanism_creative_fluid_tank_29.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/10/mekanism_creative_fluid_tank_29.png){ align=right }
     Mod: Mekanism <br><br/>
     Block: Fluid Tanks
 [Fluid Tanks](https://wiki.aidancbrady.com/wiki/Fluid_Tanks) are tanks from mekanism to store fluids, obviously.

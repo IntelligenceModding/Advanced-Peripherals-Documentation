@@ -1,7 +1,7 @@
 # Colony Integrator
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/07/Colony-Integrator.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/07/Colony-Integrator.png){ align=right }
 
 The colony integrator can interact with a colony from MineColonies.
 
@@ -60,12 +60,12 @@ end
 We made a script to show every citizens and their gender on a monitor.
 
 Script: [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_list.lua)
-![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_152719.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/07/Bild_2021-07-26_152719.png)
 
 And here we have a script made for a pocket computer to show statistics about a colony
 
 Script: [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_status.lua)
-![Picture](https://srendi.de/wp-content/uploads/2021/07/Bild_2021-07-26_154317.png)
+![Picture](https://intelligence-modding.de/wp-content/uploads/2021/07/Bild_2021-07-26_154317.png)
 
 ## Changelog/Trivia
 

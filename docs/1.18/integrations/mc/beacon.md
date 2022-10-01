@@ -1,7 +1,7 @@
 #Beacon
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Beacon.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Beacon.png){ align=right }
     Mod: Minecraft <br><br/>
     Block: Beacon
 A beacon is a block that projects a light beam skyward and can provide status effects such as Speed, Jump Boost, Haste, Regeneration, Resistance, or Strength to nearby players.

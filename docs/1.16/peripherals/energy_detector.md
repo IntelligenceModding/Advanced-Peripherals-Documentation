@@ -1,7 +1,7 @@
 # Energy Detector
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Energy-Detector.png){ align=right }
 
 The Energy Detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 

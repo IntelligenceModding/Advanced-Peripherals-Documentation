@@ -1,7 +1,7 @@
 #Spreader
 
 !!! picture inline end
-    ![Header](https://srendi.de/wp-content/uploads/2021/05/Mana-Spreader.png){ align=right }
+    ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Mana-Spreader.png){ align=right }
     Mod: Botania <br><br/>
     Block: Any spreader
 Mana spreaders can transfer mana from one source to another.
