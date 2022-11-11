@@ -13,15 +13,6 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 | --------------- | ------------------------------- | ------ | ------------- |
 | meBridge        | Applied Energistics 2 ME System | Yes    | 0.3b          |
 
-## Events
-
-!!! warning
-The crafting event does not work everytime. The crafting event is also barely tested.
-
-| Event Name | Parameter One | Parameter Two                 | Description                                              |
-| ---------- | ------------- | ----------------------------- | -------------------------------------------------------- |
-| crafting   | "crafting"    | table job informations or nil | Fires when a crafting job is done, cancelled or aborted. |
-
 ## Functions
 
 Most functions uses a table to craft, export or import the item. You can see how these item parameters exactly works at the [Item parameters of the ME/RS Bridge](/1.18/othersandutilities/item_parameter/) page.
@@ -77,7 +68,7 @@ I made a script to craft items, the computer will re-craft every item needed (a 
 Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e119d3558)
 
 !!! bug
-    This script does not work on version above 0.4b
+    This script does not work on versions above 0.4b
 
 Screenshot:
 ![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
