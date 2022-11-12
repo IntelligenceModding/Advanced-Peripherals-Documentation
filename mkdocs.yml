@@ -196,6 +196,11 @@ plugins:
   - search:
       lang: en
 
+extra:
+  analytics:
+    provider: custom
+    property: placeholder
+
 repo_url: https://github.com/Seniorendi/Advanced-Peripherals-Documentation
 repo_name: Seniorendi/Advanced-Peripherals-Documentation
 edit_uri: edit/main/docs/
