@@ -6,7 +6,7 @@ body:
       value: "Please use the search function before submitting an issue!"
   - type: textarea
     attributes:
-      label: Descripe
+      label: Describe
       description: Clearly describe the issue you found
       placeholder: A clear description of what the issue is
     validations:
