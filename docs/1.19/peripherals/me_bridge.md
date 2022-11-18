@@ -22,7 +22,7 @@ Example with exportItem:
 ```lua
 local bridge = peripheral.find("meBridge") -- Finds the peripheral if one is connected
 
-if manager == nil then error("meBridge not found") end
+if bridge == nil then error("meBridge not found") end
 
 bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "UP")
 -- Exports an protection I book to the chest above the me bridge.
