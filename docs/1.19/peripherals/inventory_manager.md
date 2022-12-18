@@ -3,7 +3,7 @@
 !!! picture inline end
     ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Inventory-Manager.png){ align=right }
 
-The Inventory Manager can communicate with the player's inventory. You need to right click a [Memory Card](https://docs.srendi.de/items/memory_card/) and put the card into the manager to use it.
+The Inventory Manager can communicate with the player's inventory. You need to right click a [Memory Card](../items/memory_card.md) and put the card into the manager to use it.
 
 !!! info
     Only one Memory Card can be linked by Inventory Manager.

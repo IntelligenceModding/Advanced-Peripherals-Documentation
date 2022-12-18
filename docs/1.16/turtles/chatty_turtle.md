@@ -3,7 +3,7 @@
 !!! picture inline end
     ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Advanced-Chatty-Turtle.png){ align=right }
 
-The Chatty Turtle is the turtle version of the [Chat Box](https://docs.srendi.de/1.16/peripherals/chat_box/).
+The Chatty Turtle is the turtle version of the [Chat Box](../peripherals/chat_box.md).
 
 ## Changelog/Trivia
 

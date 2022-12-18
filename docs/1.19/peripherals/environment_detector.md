@@ -52,6 +52,10 @@ print("Current dimension ".. detector.getDimensionName())
 | getMoonName()                 | string  | Returns the current moon phase as name (ex. Third quarter).                                |
 | getSkyLightLevel()            | int     | Returns the sky light level above the block.                                               |
 | getTime() (WIP)               | int     | Returns the daytime of the current world.                                                  |
+| getRadiation()                | table   | Returns the radiation of mekanism with the current unit.                                   |
+| getRadiationRaw()             | int     | Returns the raw radiation in Sv/h                                                          |
+| canSleepHere()                | boolean | Returns true if a play would be able to sleep here. This only checks the current day time. |
+| canSleepPlayer(username)      | boolean, err | Returns true if a play would be able to sleep in his dimesnion. This checks the day time in the dimension and if the dimensions allows you to sleep there. |
 | isDimension(string dimension) | boolean | Returns true if the current dimension matches the first parameter.                         |
 | isMoon(int moonphase)         | boolean | Returns true if the current moon phase matches the first parameter (ex. 0 = Full moon).    |
 | isRaining()                   | boolean | Returns true if it's raining.                                                              |

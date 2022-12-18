@@ -3,11 +3,11 @@
     ![Header](https://intelligence-modding.de/wp-content/uploads/2021/04/Advanced-Pocket-Computer.png){ align=right }
 We provide Pocket Computer upgrades for the following peripherals:
 
-* [Environment Detector](https://docs.srendi.de/1.18/peripherals/environment_detector/)
-* [Player Detector](https://docs.srendi.de/1.18/peripherals/player_detector/)
-* [Chat Box](https://docs.srendi.de/1.18/peripherals/chat_box/)
-* [Geo Scanner](https://docs.srendi.de/1.18/peripherals/geo_scanner)
-* [Colony Integrator](https://docs.srendi.de/1.18/peripherals/colony_integrator/)
+* [Environment Detector](../peripherals/environment_detector.md)
+* [Player Detector](../peripherals/player_detector.md)
+* [Chat Box](../peripherals/chat_box.md)
+* [Geo Scanner](../peripherals/geo_scanner.md)
+* [Colony Integrator](../peripherals/colony_integrator.md)
 
 !!! info events
     The upgrades does not support events. You can't use events like the chat event

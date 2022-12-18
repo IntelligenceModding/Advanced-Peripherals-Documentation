@@ -25,7 +25,7 @@ body:
     attributes:
       label: Direct URL
       description: A direct URL to the site of the issue
-      placeholder: "https://docs.srendi.de/1.17/peripherals/chat_box/"
+      placeholder: "https://docs.intelligence-modding.de/1.19/peripherals/chat_box/"
     validations:
       required: true
   - type: input

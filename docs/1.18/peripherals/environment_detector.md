@@ -54,6 +54,8 @@ print("Current dimension ".. detector.getDimensionName())
 | getMoonName()                 | string  | Returns the current moon phase as name (ex. Third quarter).                                |
 | getSkyLightLevel()            | int     | Returns the sky light level above the block.                                               |
 | getTime() (WIP)               | int     | Returns the daytime of the current world.                                                  |
+| getRadiation()                | table   | Returns the radiation of mekanism with the current unit.                                   |
+| getRadiationRaw()             | int     | Returns the raw radiation in Sv/h                                                          |
 | isDimension(string dimension) | boolean | Returns true if the current dimension matches the first parameter.                         |
 | isMoon(int moonphase)         | boolean | Returns true if the current moon phase matches the first parameter (ex. 0 = Full moon).    |
 | isRaining()                   | boolean | Returns true if it's raining.                                                              |

@@ -13,29 +13,29 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 | --------------- | ------------------------------- | ------ | ------------- |
 | meBridge        | Applied Energistics 2 ME System | Yes    | 0.3b          |
 
-## Events
-
-!!! warning
-The crafting event does not work everytime. The crafting event is also barely tested.
-
-| Event Name | Parameter One | Parameter Two                 | Description                                              |
-| ---------- | ------------- | ----------------------------- | -------------------------------------------------------- |
-| crafting   | "crafting"    | table job informations or nil | Fires when a crafting job is done, cancelled or aborted. |
-
 ## Functions
 
 Most functions uses a table to craft, export or import the item. You can see how these item parameters exactly works at the [Item parameters of the ME/RS Bridge](/1.16/othersandutilities/item_parameter/) page.
 
-Example with exportItem:
-
-```lua
-local bridge = peripheral.find("meBridge") -- Finds the peripheral if one is connected
+```lua linenums="1" title="meBridgeExample.lua"
+local bridge = peripheral.find("meBridge") -- (1)
 
 if bridge == nil then error("meBridge not found") end
 
-bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "UP")
--- Exports an protection I book to the chest above the me bridge.
+bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "UP") -- (2)
+
+craftableItems = bridge.listCraftableItems() -- (3)
+for a = 1, #craftableItems do
+    print(craftableItems[a].name) -- (4)
+end
+
 ```
+
+1.  Place a modem next to the me bridge and wrap it
+2.  Exports an protection I book to the chest above the me bridge.
+3.  Retrieve all craftable items
+4.  Print the name of the craftable item
+
 
 | Function                                      | Returns | Description                                                                                                                                            |
 | --------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -56,31 +56,36 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 | listFluid()                                   | table   | Returns all stored fluids.                                                                                                                             |
 | listItems()                                   | table   | Returns all stored items.                                                                                                                                     |
 
-## Screenshots
+## Examples
 
-Picture of the table from listItems()
+### Automatic Autocrafting
 
-![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_231136.png)
+This script automatic crafts items in a list.
+You want 500 glass in your me system at all time? Add glass to the list and the script will craft it for you.
+No need for level emitters or crafting cards!
 
-Picture of the table from getCraftingCPUs()
+Script:
 
-![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_231231.png)
+You can find a instruction how to install the script [here](https://github.com/SirEndii/Lua-Projects/tree/master)
 
-Picture of the table from craftItem()
-
-![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233210.png)
-
-## Example
-
-I made a script to craft items, the computer will re-craft every item needed (a specified amount) in the ME system. Everything is adjustable.
-
-Script: [Click here](https://gist.github.com/Seniorendi/dbbe08502ce51d59173c3b5e119d3558)
-
-!!! bug
-    This script does not work on version above 0.4b
+Install the installer and then run `installer install meautocraft`
 
 Screenshot:
-![Picture](https://intelligence-modding.de/wp-content/uploads/2021/02/Bild_2021-02-05_233338.png)
+![Picture](/../../../assets/images/me_bridge/autocraft_example.png)
+
+### ME Crafting CPUS
+
+This script shows you some statistics about the me crafting cpus.
+
+Script:
+
+You can find a instruction how to install the script [here](https://github.com/SirEndii/Lua-Projects/tree/master)
+
+Install the installer and then run `installer install mecpus`
+
+Screenshot:
+![Picture](/../../../assets/images/me_bridge/mecpus_example.png)
+
 
 ## Changelog/Trivia
 
