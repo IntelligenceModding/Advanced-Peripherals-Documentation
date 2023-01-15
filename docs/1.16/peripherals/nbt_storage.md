@@ -17,7 +17,7 @@ NBT Storage is custom block that allow input/output custom data to block. Mostly
 | Function           | Returns                | Description                                             |
 | ------------------ | ---------------------- | ------------------------------------------------------- |
 | read()             | table                  | Returns data that stored in block                       |
-| writeJSON(string)  | boolean or nil, reason | Writes data into block, string should be valid json     |
+| writeJson(string)  | boolean or nil, reason | Writes data into block, string should be valid json     |
 | writeTable(table)  | boolean or nil, reason | Writes data into block, table is just generic lua table |
 | getConfiguration() | table                  | Returns configuration for this peripheral               |
 
