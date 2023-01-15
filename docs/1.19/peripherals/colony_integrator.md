@@ -46,7 +46,7 @@ end
 | amountOfCitizens()              | int     | Returns the amount of citizens.                                            |
 | maxOfCitizens()                 | int     | Returns the possible max amount of citizens.                               |
 | amountOfGraves()                | int     | Returns the amount of graves in the colony.                                |
-| amountOfConstructionSites       | int     | Returns the amount of currently existing construction sites                |
+| amountOfConstructionSites()     | int     | Returns the amount of currently existing construction sites                |
 | getVisitors()                   | table   | Returns a table with all visitors in your tavern of the colony.            |
 | getBuildings()                  | table   | Returns a table with all buildings in your colony.                         |
 | getWorkOrders()                 | table   | Returns a table with all work orders. |
