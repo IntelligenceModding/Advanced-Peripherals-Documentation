@@ -53,19 +53,19 @@ while true do
 end
 ```
 
-| Function                                        | Returns | Description                            |
-| ------------------------------------------------| ------- | ---------------------------------------|
-| getPlayerPos(string player)                     | table   | Returns player's position.             |
-| getOnlinePlayers()                              | table   | Returns a table of all online players.             |
-| getPlayersInRange(int range)                    | table   | Return players within a certain range. |
-| getPlayersInCoords(table posOne, table posTwo)  | table   | Return players within 2 positions. The tables need to have a x, y, and z value |
-| getPlayersInCubic(int x, int y, int z)          | table   | Return players within a certain range. You can define the range in every 3 axes |
-| isPlayerInRange(int range, string username)     | boolean | Returns true if the player is in range, false if not. |
-| isPlayerInCoords(table posOne, table posTwo)    | boolean | Returns true if the player is within 2 positions. The tables need to have a x, y, and z value |
-| isPlayerInCubic(int x, int y, int z)            | boolean | Returns true if the player is within a certain range. You can define the range in every 3 axes |
-| isPlayersInRange(int range)                     | boolean | Returns true if any player is in range, false if not. |
-| isPlayersInCoords(table posOne, table posTwo)   | boolean | Returns true if any player is within 2 positions. The tables need to have a x, y, and z value |
-| isPlayersInCubic(int x, int y, int z)           | boolean | Returns true if any player is within a certain range. You can define the range in every 3 axes |
+| Function                                                      | Returns | Description                            |
+| --------------------------------------------------------------| ------- | ---------------------------------------|
+| getPlayerPos(string player)                                   | table   | Returns player's position.             |
+| getOnlinePlayers()                                            | table   | Returns a table of all online players.             |
+| getPlayersInRange(int range)                                  | table   | Return players within a certain range. |
+| getPlayersInCoords(table posOne, table posTwo)                | table   | Return players within 2 positions. The tables need to have a x, y, and z value |
+| getPlayersInCubic(int x, int y, int z)                        | table   | Return players within a certain range. You can define the range in every 3 axes |
+| isPlayerInRange(int range, string username)                   | boolean | Returns true if the player is in range, false if not. |
+| isPlayerInCoords(table posOne, table posTwo, string username) | boolean | Returns true if the player is within 2 positions. The tables need to have a x, y, and z value |
+| isPlayerInCubic(int x, int y, int z, string username)         | boolean | Returns true if the player is within a certain range. You can define the range in every 3 axes |
+| isPlayersInRange(int range)                                   | boolean | Returns true if any player is in range, false if not. |
+| isPlayersInCoords(table posOne, table posTwo)                 | boolean | Returns true if any player is within 2 positions. The tables need to have a x, y, and z value |
+| isPlayersInCubic(int x, int y, int z)                         | boolean | Returns true if any player is within a certain range. You can define the range in every 3 axes |
 
 !!! info
     The center of the range is the Player Detector itself and not the Computer.
