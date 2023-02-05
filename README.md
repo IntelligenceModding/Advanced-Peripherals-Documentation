@@ -26,3 +26,17 @@ Once dependencies have been installed you can now serve with mkdocs to view your
 poetry run mkdocs serve
 ~~~
 Click the url in your terminal to open the docs in your browser.
+
+## Setup with Pip
+If you have python installed on your machine you will have pip installed.
+Install the necessary dependencies by running:
+~~~zsh
+pip install -r requirements.txt
+~~~
+:warning: *Make sure you are in the folder with the `requirements.txt` file*
+
+Once dependencies have been installed you can now serve with mkdocs to view your changes:
+~~~zsh
+python -m mkdocs serve
+~~~
+Click the url in your terminal to open the docs in your browser.
