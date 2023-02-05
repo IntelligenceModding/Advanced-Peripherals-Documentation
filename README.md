@@ -1,16 +1,29 @@
-# Advanced-Peripherals-Documentation
+# Advanced Peripherals Documentation
 
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=Netify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fpeaceful-nobel-03befe.netlify.app)
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline%28Use%20altern.%20url%29&label=Domain&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fdocs.intelligence-modding.de%2F)
 
-This is the source of the documentation from advanced peripherals.
-The documentation is build with [mkdocs](https://www.mkdocs.org). 
-I recommend to use mkdocs if you want to contribute, but you do not need to.
+This is the source of the documentation for Advanced Peripherals.
+The documentation is built with [mkdocs](https://www.mkdocs.org). 
+I recommend using mkdocs if you want to contribute, but you do not need to.
 
 Web: https://docs.intelligence-modding.de/
 Alternative: https://peaceful-nobel-03befe.netlify.app/
 
-# Contribute
+# Contributing
 
-If you want to contribute, you can edit the file you want to edit or create even a new file.
-You can use mkdocs if you want to see your changes live.
+If you want to contribute, fork this repository then in your fork make changes to the file you want to edit or add new files. Once you have made the changes make a pull request to contribute your changes to this repository. You can use mkdocs if you want to see your changes live, you will need [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/) and [Python](https://www.python.org/downloads/) to get it running.
+
+## Setup with Poetry
+You will need to install [Poetry for Python](https://python-poetry.org/docs/) to use this setup.  
+Install mkdocs dependencies by running:
+~~~zsh
+poetry install
+~~~
+:warning: *Make sure you are in the folder with the `pyproject.toml` file*
+
+Once dependencies have been installed you can now serve with mkdocs to view your changes:
+~~~zsh
+poetry run mkdocs serve
+~~~
+Click the url in your terminal to open the docs in your browser.
