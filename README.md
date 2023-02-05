@@ -1,7 +1,6 @@
 # Advanced Peripherals Documentation
 
-![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=Netify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fpeaceful-nobel-03befe.netlify.app)
-![Website](https://img.shields.io/website?down_color=red&down_message=offline%28Use%20altern.%20url%29&label=Domain&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fdocs.intelligence-modding.de%2F)
+![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=Netify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fadvancedperipherals.netlify.app)
 
 This is the source of the documentation for Advanced Peripherals.
 The documentation is built with [mkdocs](https://www.mkdocs.org). 
