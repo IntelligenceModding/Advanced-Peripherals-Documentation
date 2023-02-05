@@ -1,13 +1,22 @@
 # Advanced Peripherals Documentation
 
-![Website](https://img.shields.io/website?down_color=red&down_message=offline&label=Netify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fadvancedperipherals.netlify.app)
+<center>
 
-This is the source of the documentation for Advanced Peripherals.
-The documentation is built with [mkdocs](https://www.mkdocs.org). 
+[![Project](https://img.shields.io/badge/Project-2E9CFF?style=for-the-badge&logoColor=white&logo=Github)](https://github.com/SirEndii/AdvancedPeripherals)
+![Netlify Status](https://img.shields.io/website?down_color=red&down_message=offline&label=Netlify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fadvancedperipherals.netlify.app&logoColor=white&logo=Netlify)
+[![Discord](https://img.shields.io/discord/734726882058174486?label=Discord&style=for-the-badge&color=7289da&logoColor=white&logo=Discord)](https://discord.intelligence-modding.de/)
+
+</center>
+
+This is the source of the documentation for Advanced Peripherals.  
+The documentation is built with [mkdocs](https://www.mkdocs.org).  
 I recommend using mkdocs if you want to contribute, but you do not need to.
 
-Web: https://docs.intelligence-modding.de/
-Alternative: https://peaceful-nobel-03befe.netlify.app/
+## Site
+The docs can be viewed at any of the below:  
+https://docs.intelligence-modding.de/  
+https://advancedperipherals.madefor.cc/  
+https://advancedperipherals.netlify.app/  
 
 # Contributing
 
@@ -24,5 +33,21 @@ poetry install
 Once dependencies have been installed you can now serve with mkdocs to view your changes:
 ~~~zsh
 poetry run mkdocs serve
+~~~
+Click the url in your terminal to open the docs in your browser.
+
+---
+
+## Setup with Pip
+If you have python installed on your machine you will have pip installed.  
+Install the necessary dependencies by running:
+~~~zsh
+pip install -r requirements.txt
+~~~
+:warning: *Make sure you are in the folder with the `requirements.txt` file*
+
+Once dependencies have been installed you can now serve with mkdocs to view your changes:
+~~~zsh
+python -m mkdocs serve
 ~~~
 Click the url in your terminal to open the docs in your browser.
