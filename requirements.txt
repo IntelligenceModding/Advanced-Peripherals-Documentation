@@ -1,1 +1,2 @@
 lightgallery
+python-markdown-math
