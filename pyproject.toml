@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "advanced-peripherals-documentation"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "advanced_peripherals_documentation"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.10"
+python-markdown-math = "^0.8"
+lightgallery = "^0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
