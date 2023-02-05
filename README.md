@@ -6,8 +6,11 @@ This is the source of the documentation for Advanced Peripherals.
 The documentation is built with [mkdocs](https://www.mkdocs.org). 
 I recommend using mkdocs if you want to contribute, but you do not need to.
 
-Web: https://docs.intelligence-modding.de/
-Alternative: https://peaceful-nobel-03befe.netlify.app/
+## Site
+The docs can be viewed at any of the below:  
+https://docs.intelligence-modding.de/  
+https://advancedperipherals.madefor.cc/  
+https://advancedperipherals.netlify.app/  
 
 # Contributing
 
@@ -27,8 +30,10 @@ poetry run mkdocs serve
 ~~~
 Click the url in your terminal to open the docs in your browser.
 
+---
+
 ## Setup with Pip
-If you have python installed on your machine you will have pip installed.
+If you have python installed on your machine you will have pip installed.  
 Install the necessary dependencies by running:
 ~~~zsh
 pip install -r requirements.txt
