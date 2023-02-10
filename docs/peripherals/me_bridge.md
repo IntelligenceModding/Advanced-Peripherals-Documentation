@@ -53,7 +53,7 @@ end
 
 ### craftItem
 ```
-craftItem(item: table[, craftingCpu: string]) -> true | false, string
+craftItem(item: table[, craftingCpu: string]) -> boolean, err: string
 ```
 
 Tries to craft the provided `item`. If a `craftingCpu`'s name is provided then it will use that cpu to craft the `item`.
@@ -79,7 +79,7 @@ Tries to craft the provided `item`. If a `craftingCpu`'s name is provided then i
 
 ### getItem
 ```
-getItem(item: table) -> table
+getItem(item: table) -> table, err: string
 ```
 
 Returns a table with information about the item type in the system.
@@ -100,7 +100,7 @@ Returns a table with information about the item type in the system.
 
 ### importItem
 ```
-importItem(item: table, direction: string) -> number
+importItem(item: table, direction: string) -> number, err: string
 ```
 
 Imports an `item` from a container in the `direction` to the ME System.  
@@ -120,7 +120,7 @@ bridge.importItem({name="minecraft:dirt", count=1}, "up")
 
 ### exportItem
 ```
-exportItem(item: table, direction: string) -> number
+exportItem(item: table, direction: string) -> number, err: string
 ```
 
 Exports an `item` to a container in the `direction` from the ME bridge block.  
@@ -137,7 +137,7 @@ bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877
 
 ### importItemFromPeripheral
 ```
-importItemFromPeripheral(item: table, container: string) -> number
+importItemFromPeripheral(item: table, container: string) -> number, err: string
 ```
 
 Similar to [`importItem()`](#importitem) it imports an `item` from a container which is connected to the peripheral network.  
@@ -148,7 +148,7 @@ Returns the number of the `item` imported from the container.
 
 ### exportItemToPeripheral
 ```
-exportItemToPeripheral(item: table, container: string) -> number
+exportItemToPeripheral(item: table, container: string) -> number, err: string
 ```
 
 Similar to [`exportItem()`](#exportitem) it exports an `item` to a container which is connected to the peripheral network.  
@@ -159,7 +159,7 @@ Returns the number of the `item` exported into the container.
 
 ### getEnergyStorage
 ```
-getEnergyStorage() -> number
+getEnergyStorage() -> number, err: string
 ```
 
 Returns the stored energy of the whole ME System in AE.
@@ -168,7 +168,7 @@ Returns the stored energy of the whole ME System in AE.
 
 ### getMaxEnergyStorage
 ```
-getMaxEnergyStorage() -> number
+getMaxEnergyStorage() -> number, err: string
 ```
 
 Returns the maximum energy storage capacity of the whole ME system in AE.
@@ -177,7 +177,7 @@ Returns the maximum energy storage capacity of the whole ME system in AE.
 
 ### getEnergyUsage
 ```
-getEnergyUsage() -> number
+getEnergyUsage() -> number, err: string
 ```
 
 Returns the energy usage of the whole ME System in AE/t.
@@ -186,7 +186,7 @@ Returns the energy usage of the whole ME System in AE/t.
 
 ### getCraftingCPUs
 ```
-getCraftingCPUs() -> table
+getCraftingCPUs() -> table, err: string
 ```
 
 Returns a list of all connected crafting cpus.
@@ -203,7 +203,7 @@ Returns a list of all connected crafting cpus.
 
 ### isItemCrafting
 ```
-isItemCrafting(item: table[, craftingCpu: string]) -> boolean
+isItemCrafting(item: table[, craftingCpu: string]) -> boolean, err: string
 ```
 
 Returns true if a crafting job for the `item` exists. If a `craftingCpu`'s name is provided then it will check only if that cpu is crafting the `item`.
@@ -212,7 +212,7 @@ Returns true if a crafting job for the `item` exists. If a `craftingCpu`'s name 
 
 ### isItemCraftable
 ```
-isItemCraftable(item: table) -> boolean
+isItemCraftable(item: table) -> boolean, err: string
 ```
 
 Returns true if the `item` is craftable.
@@ -221,7 +221,7 @@ Returns true if the `item` is craftable.
 
 ### listCraftableItems
 ```
-listCraftableItems() -> table
+listCraftableItems() -> table, err: string
 ```
 
 Returns a list of information about all craftable items
@@ -252,7 +252,7 @@ end
 
 ### listCraftableFluid
 ```
-listCraftableFluid() -> table
+listCraftableFluid() -> table, err: string
 ```
 
 Returns a list of information about all craftable fluids
@@ -261,7 +261,7 @@ Returns a list of information about all craftable fluids
 
 ### listItems
 ```
-listItems() -> table
+listItems() -> table, err: string
 ```
 
 Returns a list of information about all items in the ME System.
@@ -270,10 +270,95 @@ Returns a list of information about all items in the ME System.
 
 ### listFluid
 ```
-listFluid() -> table
+listFluid() -> table, err: string
 ```
 
 Returns a list of information about all fluids in the ME System.
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### listCells
+```
+listFluid() -> table, err: string
+```
+
+Returns a list of information about all cells in the disk drives of the ME System.
+
+
+| cpu                    | Description                            |
+| ---------------------- | -------------------------------------- |
+| item: `string`         | The name of the cell. e.g. `ae2:64k_storage_cell |
+| cellType: `string`     | The type of the cell. `item` or `fluid`|
+| bytesPerType: `int`    | The bytes per type                     |
+| totalBytes: `int`      | Total available bytes of the cell       |
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getTotalItemStorage
+```
+getTotalItemStorage() -> int, err: string
+```
+
+Returns how much total item storage the system offers
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getTotalFluidStorage
+```
+getTotalFluidStorage() -> int, err: string
+```
+
+Returns how much total fluid storage the system offers
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getUsedItemStorage
+```
+getUsedItemStorage() -> int, err: string
+```
+
+Returns how much item storage is used
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getUsedFluidStorage
+```
+getUsedFluidStorage() -> int, err: string
+```
+
+Returns how much fluid storage is used
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getAvailableItemStorage
+```
+getAvailableItemStorage() -> int, err: string
+```
+
+Returns how much item storage is available
+
+---
+
+!!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
+
+### getAvailableFluidStorage
+```
+getAvailableFluidStorage() -> int, err: string
+```
+
+Returns how much fluid storage is available
 
 ---
 

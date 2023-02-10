@@ -4,7 +4,7 @@ site_url: 'https://docs.intelligence-modding.de/'
 nav:
     - 'Home': 'index.md'
     - 'Guides':
-      - 'NBT Data': 'guides/nbt.md'
+      - 'Item and Fluid Filters': 'guides/filters.md'
       - 'Cooldowns and Fuel consumption': 'guides/cooldowns_and_fuel_consumption.md'
     - 'Peripherals':
       - 'Chat Box': 'peripherals/chat_box.md'
@@ -79,6 +79,7 @@ nav:
       - 'Storage Drawers':
         - 'Drawer': 'integrations/storage_drawers/drawer.md'
     - 'Changelogs':
+      - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
       - 'Changelog 0.7r': 'changelogs/0.7r.md'
 
 theme:
