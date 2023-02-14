@@ -166,7 +166,7 @@ Returns the current radiation level from the Mekanism mod with the radiation uni
 ### getRadiationRaw
 
 ```
-getRatiationRaw() -> number
+getRadiationRaw() -> number
 ```
 
 !!! success "Added in version 0.6.5b"
