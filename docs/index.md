@@ -24,7 +24,9 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 - [ ] 1.16: Not supported
 - [ ] 1.17: Not supported
 - [x] 1.18: LTS
-- [x] 1.19: Fully supported
+- [x] 1.19.2: Fully supported
+- [x] 1.19.3: Fully supported
+- [x] 1.19.4: In discussion
 
 #### Contribute
 
