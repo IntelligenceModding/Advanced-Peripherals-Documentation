@@ -176,7 +176,7 @@ Returns the total amount of available external item disk storage.
 
 ---
 
-### getMaxItemDiskStorage
+### getMaxFluidExternalStorage
 ```
 getMaxFluidExternalStorage() -> number
 ```
