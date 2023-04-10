@@ -11,7 +11,7 @@ These can set the item, count, slots, tags, nbt or fingerprint values.
 ### Item/Fluid Name and Tag
 
 The item's/fluid's filter name or tag can be specified with the `name` field.
-If this field is not set, the filter will try to search for items with right nbt values specified in the `nbt` field or fingerprints.
+If this field is not set, the filter will try to search for items with the right nbt values specified in the `nbt` field or fingerprints.
 
 This can be a tag or a name. To filter for tags, place a `#` in front of the name.
 
@@ -34,7 +34,7 @@ Standard values are 64 or 1000 for fluids.
 ```lua
 {
     name = "minecraft:cobblestone",
-    count = 128000 -- Will try to export 128000 cobblestone to the target inventory. It will transfer less with there is not enough space in the target inventory or if there not enough items in the source inventory
+    count = 128000 -- Will try to export 128000 cobblestone to the target inventory. It will transfer less if there is not enough space in the target inventory or if there aren't enough items in the source inventory
 }
 ```
 
@@ -45,11 +45,11 @@ Standard values are 64 or 1000 for fluids.
 ```lua
 {
     name = "minecraft:enchanted_book" 
-    nbt="{StoredEnchantments: [{lvl: 2s, id: \"minecraft:blast_protection\"}]}"} -- Will search for an enchanted book with the blast protection enchantment
+    nbt="{StoredEnchantments: [{lvl: 2s, id: \"minecraft:blast_protection\"}]}"} -- Will search for an enchanted book with the blast protection enchantment level 2
 }
 ```
 
-Any strings inside the nbt value needs to be prefixed with a \\ so the compiler does not try to end the string of the field.
+Any strings inside the nbt value needs to be prefixed with a \\ 
 
 ### Slots
 
@@ -83,7 +83,7 @@ If the `fingerpring` field is specified, the `nbt` and `name` field will be igno
 
 ```lua
 {
-    fingerprint = "227FCCBE693942047DD04AA96F735F2E" -- The has for a protection 4 enchanted book
-    count = 5 -- Tried to move 5 protection 4 books to the target inventory
+    fingerprint = "227FCCBE693942047DD04AA96F735F2E" -- The hash for a protection 4 enchanted book
+    count = 5 -- Try to move 5 protection 4 books to the target inventory
 }
 ```
