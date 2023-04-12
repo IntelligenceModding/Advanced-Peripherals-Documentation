@@ -89,7 +89,7 @@ Returns a table with information about the item type in the system.
 importItem(item: table, direction: string) -> number
 ```
 
-Imports an `item` from a container in the `direction` to the ME System.  
+Imports an `item` from a container in the `direction` to the RS System.  
 Returns the number of the `item` imported into the system.
 
 !!! tip "Since version 0.7r"
@@ -109,7 +109,7 @@ bridge.importItem({name="minecraft:dirt", count=1}, "up")
 exportItem(item: table, direction: string) -> number
 ```
 
-Exports an `item` to a container in the `direction` from the ME bridge block.  
+Exports an `item` to a container in the `direction` from the RS bridge block.  
 Returns the number of the `item` exported into the container.
 
 ```lua linenums="1"
@@ -303,7 +303,7 @@ Returns a list of information about all craftable fluids
 listItems() -> table
 ```
 
-Returns a list of information about all items in the ME System.
+Returns a list of information about all items in the RS System.
 
 ---
 
@@ -312,7 +312,7 @@ Returns a list of information about all items in the ME System.
 listFluids() -> table
 ```
 
-Returns a list of information about all fluids in the ME System.
+Returns a list of information about all fluids in the RS System.
 
 ---
 
