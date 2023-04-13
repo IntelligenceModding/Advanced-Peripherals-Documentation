@@ -74,5 +74,5 @@ Returns the stored volume (mb) of fluid inside the Magmator tank.
 
 ## Changelog/Trivia
 
-**N/A**  
+**1.19.2-0.7.26.r**  
 Added integration for Powah

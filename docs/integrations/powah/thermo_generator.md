@@ -58,5 +58,5 @@ Returns the stored quantity of coolant inside the Thermo Generator tank.
 
 ## Changelog/Trivia
 
-**N/A**  
+**1.19.2-0.7.26.r**  
 Added integration for Powah

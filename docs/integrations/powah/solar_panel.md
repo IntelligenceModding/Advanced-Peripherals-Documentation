@@ -57,5 +57,5 @@ Returns true if the Solar Panel can directly see the sky without any block block
 
 ## Changelog/Trivia
 
-**N/A**  
+**1.19.2-0.7.26.r**  
 Added integration for Powah

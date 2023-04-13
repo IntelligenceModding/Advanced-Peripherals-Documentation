@@ -125,5 +125,5 @@ Returns a table containing the ItemStack infos of the item inside the carbon slo
 
 ## Changelog/Trivia
 
-**N/A**  
+**1.19.2-0.7.26.r**  
 Added integration for Powah

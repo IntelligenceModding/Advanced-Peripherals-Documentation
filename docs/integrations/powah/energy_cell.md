@@ -50,5 +50,5 @@ Returns the maximum quantity of storable energy inside the cell.
 
 ## Changelog/Trivia
 
-**N/A**  
+**1.19.2-0.7.26.r**  
 Added integration for Powah
