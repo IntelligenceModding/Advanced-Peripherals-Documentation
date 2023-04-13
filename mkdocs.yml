@@ -76,6 +76,13 @@ nav:
         # - 'Turbine': ''
         # - 'Waste Barrel': ''
         # - 'Energy Blocks': ''
+      - 'Powah':
+        - 'Energy cell': 'integrations/powah/energy_cell.md'
+        - 'Furnator': 'integrations/powah/furnator.md'
+        - 'Magmator': 'integrations/powah/magmator.md'
+        - 'Reactor': 'integrations/powah/reactor.md'
+        - 'Solar panel': 'integrations/powah/solar_panel.md'
+        - 'Thermo generator': 'integrations/powah/thermo_generator.md'
       - 'Storage Drawers':
         - 'Drawer': 'integrations/storage_drawers/drawer.md'
     - 'Changelogs':
