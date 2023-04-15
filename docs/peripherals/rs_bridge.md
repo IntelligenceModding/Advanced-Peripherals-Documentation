@@ -37,13 +37,13 @@ Tries to craft the provided `item`, returns true if it successfully starts craft
 
 #### Item Properties
 
+Check the [item filters guide](/../guides/filters) for more info!
+
 | item             | Description                                 |
 | ---------------- | ------------------------------------------- |
-| name: `string`   | The registry name of the item               |
+| name: `string`   | The registry name of the item or a tag      |
 | count: `number?` | The amount of the item to craft             |
 | nbt: `string?`   | NBT to match the item on                    |
-| json: `string?`  | The same as `nbt` but as a json string      |
-| tag: `string?`   | The item tag(s) to match on                 |
 
 **OR**  
 
@@ -56,11 +56,27 @@ Tries to craft the provided `item`, returns true if it successfully starts craft
 
 ### craftFluid
 ```
-craftFluid(fluid: string, amount: number) -> boolean
+craftFluid(fluid: table, amount: number) -> boolean
 ```
 
 Tries to craft the provided `fluid` of the given `amount`, returns true if it successfully starts crafting.
 
+#### Fluid Properties
+
+Check the [fluid filters guide](/../guides/filters) for more info!
+
+| fluid             | Description                                 |
+| ---------------- | ------------------------------------------- |
+| name: `string`   | The registry name of the fluid or a tag      |
+| count: `number?` | The amount of the fluid to craft             |
+| nbt: `string?`   | NBT to match the fluid on                    |
+
+**OR**  
+
+| fluid                  | Description                                 |
+| --------------------- | ------------------------------------------- |
+| fingerprint: `string` | A unique fingerprint which identifies the<br>fluid to craft |
+| count: `number?`      | The amount of the fluid to craft      
 ---
 
 ### getItem

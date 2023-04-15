@@ -60,13 +60,13 @@ Tries to craft the provided `item`. If a `craftingCpu`'s name is provided then i
 
 #### Item Properties
 
+Check the [item filters guide](/../guides/filters) for more info!
+
 | item             | Description                                 |
 | ---------------- | ------------------------------------------- |
-| name: `string`   | The registry name of the item               |
+| name: `string`   | The registry name of the item or a tag      |
 | count: `number?` | The amount of the item to craft             |
 | nbt: `string?`   | NBT to match the item on                    |
-| json: `string?`  | The same as `nbt` but as a json string      |
-| tag: `string?`   | The item tag(s) to match on                 |
 
 **OR**  
 
@@ -75,6 +75,31 @@ Tries to craft the provided `item`. If a `craftingCpu`'s name is provided then i
 | fingerprint: `string` | A unique fingerprint which identifies the<br>item to craft |
 | count: `number?`      | The amount of the item to craft             |
 
+---
+
+### craftFluid
+```
+craftFluid(fluid: table[, craftingCpu: string]) -> boolean, err: string
+```
+
+Tries to craft the provided `fluid`. If a `craftingCpu`'s name is provided then it will use that cpu to craft the `fluid`.
+
+#### Fluid Properties
+
+Check the [fluid filters guide](/../guides/filters) for more info!
+
+| fluid            | Description                                 |
+| ---------------- | ------------------------------------------- |
+| name: `string`   | The registry name of the fluid or a tag     |
+| count: `number?` | The amount of the fluid to craft            |
+| nbt: `string?`   | NBT to match the fluid on                   |
+
+**OR**  
+
+| fluid                 | Description                                 |
+| --------------------- | ------------------------------------------- |
+| fingerprint: `string` | A unique fingerprint which identifies the<br>fluid to craft |
+| count: `number?`      | The amount of the fluid to craft            |
 ---
 
 ### getItem
