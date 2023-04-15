@@ -77,6 +77,7 @@ Check the [fluid filters guide](/../guides/filters) for more info!
 | --------------------- | ------------------------------------------- |
 | fingerprint: `string` | A unique fingerprint which identifies the<br>fluid to craft |
 | count: `number?`      | The amount of the fluid to craft      
+
 ---
 
 ### getItem
