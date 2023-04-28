@@ -25,10 +25,10 @@ The Player Detector is a useful peripheral that allows you to detect players wit
 Fires when a player clicks on the block.  
 **Values:**  
 1. `username: string` The username of the player who clicked the block  
-
+2. `detector: string` The side/name of the detector has been clicked  
 ```lua linenums="1"
-local event, username = os.pullEvent("playerClick")
-print("The detector was clicked by " .. username)
+local event, username, detector = os.pullEvent("playerClick")
+print("The detector " .. detector .. " was clicked by " .. username)
 ```
 
 !!! info
