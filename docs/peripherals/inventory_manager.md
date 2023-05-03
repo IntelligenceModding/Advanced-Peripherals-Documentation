@@ -67,7 +67,7 @@ The Inventory Manager will add a random item to the player's inventory if the `i
 local manager = peripheral.find("inventoryManager")
 
 -- Add 32 cobblestone to the players offhand slot from the block above
-manager.addItemToPlayer("up", 32, nil, {name="minecraft:cobblestone", toSlot=36})
+manager.addItemToPlayerNBT("up", 32, nil, {name="minecraft:cobblestone", toSlot=36})
 ```
 
 ---
