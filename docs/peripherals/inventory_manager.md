@@ -44,8 +44,8 @@ if the `item` argument is empty, the manager will move any item.
 ```lua linenums="1"
 local manager = peripheral.find("inventoryManager")
 
--- Add 32 cobblestone to the players offhand slot from the block above
-manager.addItemToPlayer("up", 32, nil, {name="minecraft:cobblestone", toSlot=36})
+-- Add 32 dirt to the players inventory from the block above
+manager.addItemToPlayer("up", 32, nil, "minecraft:dirt")
 ```
 
 !!! warning "Deprecated! Will be replaced in the next major version to unify `addItemToPlayer` and `addItemToPlayerNBT`"
@@ -66,10 +66,9 @@ The Inventory Manager will add a random item to the player's inventory if the `i
 ```lua linenums="1"
 local manager = peripheral.find("inventoryManager")
 
--- Add 32 dirt to the players inventory from the block above
-manager.addItemToPlayer("up", 32, nil, "minecraft:dirt")
+-- Add 32 cobblestone to the players offhand slot from the block above
+manager.addItemToPlayerNBT("up", 32, nil, {name="minecraft:cobblestone", toSlot=36})
 ```
-
 
 ---
 
