@@ -21,13 +21,12 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 
 #### Version support
 
-- [ ] 1.16: Not supported
-- [ ] 1.17: Not supported
-- [ ] 1.18: Only critical bug fixes
-- [x] 1.19.2: Fully supported
-- [x] 1.19.3: Fully supported
-- [ ] 1.19.4: Not supported
-- [ ] 1.20.0: Will be supported
+|   Supported Version   | 1.16 | 1.17 | 1.18 | 1.19.2 | 1.19.3 | 1.19.4 | 1.20.0 |
+|-----------------------|------|------|------|--------|--------|--------|--------|
+| Critical fixes        | :x:  | :x:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |   :x:  |  :x:   |
+| Minor features        | :x:  | :x:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |   :x:  |  :o:   |
+| Fully supported       | :x:  | :x:  | :x:  |  :white_check_mark:  |  :white_check_mark:  |   :x:  |  :o:   |
+| Will be supported     | :x:  | :x:  | :x:  |  :white_check_mark:  |  :white_check_mark:  |   :x:  |  :white_check_mark:  |
 
 #### Contribute
 
