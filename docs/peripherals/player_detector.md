@@ -25,14 +25,50 @@ The Player Detector is a useful peripheral that allows you to detect players wit
 Fires when a player clicks on the block.  
 **Values:**  
 1. `username: string` The username of the player who clicked the block  
+2. `devicename: string` Th name of the peripheral like `playerDetector_4` 
 
 ```lua linenums="1"
-local event, username = os.pullEvent("playerClick")
-print("The detector was clicked by " .. username)
+local event, username, device = os.pullEvent("playerClick")
+print("The detector ".. device .." was clicked by " .. username)
+```
+
+### playerJoin
+Fires when a player joins the world/a server 
+**Values:**  
+1. `username: string` The username of the player who clicked the block  
+2. `dimension: string` The resource id of the dimension the player is in
+
+```lua linenums="1"
+local event, username, dimension = os.pullEvent("playerJoin")
+print("Player " .. username .. " joined the server in the dimension " .. dimension)
+```
+
+### playerLeave
+Fires when a player leaves the world/a server 
+**Values:**  
+1. `username: string` The username of the player who clicked the block  
+2. `dimension: string` The resource id of the dimension the player was in
+
+```lua linenums="1"
+local event, username, dimension = os.pullEvent("playerLeave")
+print("Player " .. username .. " left the server in the dimension " .. dimension)
+```
+
+### playerChangedDimension
+Fires when a player clicks on the block.  
+**Values:**  
+1. `username: string` The username of the player who clicked the block  
+2. `fromDim: string` The resource id of the dimension the player was in
+2. `toDim: string` The resource id of the dimension the player is in
+
+```lua linenums="1"
+local event, username, fromDim, toDim = os.pullEvent("playerChangedDimension")
+print("Player " .. username .. " left the dimension " .. fromDim .. " and is now in " .. toDim)
 ```
 
 !!! info
-    The `playerClick` event will fire when a player detector has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
+    The events will fire when a player detector has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
+
 
 ---
 
