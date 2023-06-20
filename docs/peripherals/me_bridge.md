@@ -41,8 +41,8 @@ else
 end
 ```
 
-!!! info
-    The `crafting` event will fire when the ME Bridge is connected to an active ME System that is performing crafting operations.
+!!! Warning
+    The `crafting` event will fire when the ME Bridge is connected to an active ME System that is performing crafting operations. These operations **need** to be started by the bridge itself!
 
 ---
 
