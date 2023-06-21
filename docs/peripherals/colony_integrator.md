@@ -59,10 +59,11 @@ Returns a list of information about every citizen in the colony.
 #### Work Properties
 | work              | Description                           |
 | ----------------- | ------------------------------------- |
-| name: `string`    | The name of the job                   |
+| name: `string`    | The name of the work building         |
+| job: `string`     | The name of the job                   |
 | location: `table` | The work location (has `x`, `y`, `z`) |
-| type: `string`    | The type of job                       |
-| level: `number`   | The citizen's current job level       |
+| type: `string`    | The building type                     |
+| level: `number`   | The building's level                  |
 
 #### Home Properties
 | home              | Description                           |
@@ -78,7 +79,17 @@ Returns a list of information about every citizen in the colony.
 getVisitors() -> table
 ```
 Returns a list of information about all of the visitors in your colony's tavern.  
-This information is the same as the `citizen` table but there is an additional `recruitCost` string value.
+This information is the same as the `citizen` table but there is an additional `recruitCost` table.
+
+#### `recruitCost` properties
+| item                   | Description                             |
+| ---------------------- | --------------------------------------- |
+| name: `string`         | The registry name of the item           |
+| count: `number`        | The amount of the item                  |
+| maxStackSize: `number` | Maximum stack size for the item type    |
+| displayName: `string`  | The item's display name                 |
+| tags: `table`          | A list of item tags                     |
+| nbt: `table`           | The item's nbt data                     |
 
 ---
 
@@ -131,6 +142,35 @@ Returns a table of all possible colony research as a tree where the root table c
 | status: `number`         | The current research status                |
 | researchEffects: `table` | A list of effects provided by the research |
 | children: `table?`       | A list of any child research               |
+| progress: `number`       | Research progress                          |
+| requirements: `table`    | List of requirements for the research      |
+| cost: `table`            | The cost of the research (list of tables)  |
+
+#### Requirement Properties
+| requirememt          | Description                                    |
+| -------------------- | ---------------------------------------------- |
+| type: `string`       | Type of requirement.                           |
+| desc: `string`       | Description of the requirement                 |
+| fulfilled: `boolean` | If the requirement is already met              |
+
+
+##### Building Requirement Properties
+If the requirement type is `building`, it will have these additional properties:
+
+| requirememt          | Description                                    |
+| -------------------- | ---------------------------------------------- |
+| building: `string`   | Name of the required building                  |
+| level: `number`      | Level of the required building                |
+
+#### Cost item Properties
+| item                   | Description                             |
+| ---------------------- | --------------------------------------- |
+| name: `string`         | The registry name of the item           |
+| count: `number`        | The amount of the item                  |
+| maxStackSize: `number` | Maximum stack size for the item type    |
+| displayName: `string`  | The item's display name                 |
+| tags: `table`          | A list of item tags                     |
+| nbt: `table`           | The item's nbt data                     |
 
 ---
 
