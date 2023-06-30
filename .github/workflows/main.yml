@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Deploy docs
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout master
         uses: actions/checkout@v1
