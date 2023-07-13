@@ -81,6 +81,10 @@ getPlayerPos(username: string) -> table | nil
 
 Returns the position of the player with the `username` passed.
 
+!!! info
+    Only the players in the same dimitions as the detector can be detected.  
+    Maybe will add a config for enable cross dimensions later.
+
 #### Properties
 
 !!! success "Added more properties in version 0.7.4r"
