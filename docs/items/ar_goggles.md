@@ -10,8 +10,8 @@ See the documenation for the [AR Controller](../peripherals/ar_controller.md) to
     To link your goggles to an AR Controller, right click it with them in your hand. Multiple Goggles can be linked to one Controller.
 
 !!! bug
-    The AR Goggles are currently slightly buggy. Sometimes, they just don't do what they should do. We will rework the AR System in 0.8r/1.0r
-
+    The AR Goggles are slightly buggy in 1.18x and completely disabled in 1.19x. We work on a rework of the AR Goggles system with a bunch of new features for 0.8/1.0
+    
 ---
 
 ## Changelog/Trivia
