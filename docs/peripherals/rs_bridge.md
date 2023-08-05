@@ -28,6 +28,10 @@ You can retrieve items, craft items, get all items as a list and more.
 
 ## Functions
 
+!!! info
+    The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](/../guides/filters).
+
+
 ### craftItem
 ```
 craftItem(item: table) -> boolean

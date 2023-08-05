@@ -74,6 +74,9 @@ print("Player " .. username .. " left the dimension " .. fromDim .. " and is now
 
 ## Functions
 
+!!! info
+    The player detector supports multidimensional spying(Since 1.19.2-0.7.30r & 1.20.1-0.7.32a). This only works if the config option `playerDetMultiDimensional` is set to true and the option `playerDetMaxRange` is set to -1(infinite)
+
 ### getPlayerPos
 ```
 getPlayerPos(username: string) -> table | nil
