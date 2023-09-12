@@ -66,7 +66,7 @@ os.sleep(1)
 
 -- Sends a red "Welcome!" message with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
-chatBox.sendMessage("\u00A7cWelcome!", "Box", "<>", "\u00A7b", 30)
+chatBox.sendMessage("§cWelcome!", "Box", "<>", "§c", 30)
 ```
 
 !!! tip
