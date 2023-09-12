@@ -4,6 +4,7 @@ site_url: 'https://docs.intelligence-modding.de/'
 nav:
     - 'Home': 'index.md'
     - 'Guides':
+      - 'How to: report a bug or request a feature': 'guides/how_to_report.md'
       - 'Item and Fluid Filters': 'guides/filters.md'
       - 'Cooldowns and Fuel consumption': 'guides/cooldowns_and_fuel_consumption.md'
     - 'Peripherals':
