@@ -1,7 +1,7 @@
 ### How to report an issue or request a feature
 
 
-We appreciate your dedication to making the project better by helping us squash those pesky bugs and suggesting exciting new features. Reporting a bug or requesting a new feature is easy and friendly. Here's how to do it:
+We appreciate your dedication to making the project better by helping us squash those pesky bugs and suggesting exciting new features. The process of reporting a bug or requesting a new feature is straightforward and user-friendly. Here's how to do it:
 
 
 ## Reporting a Bug
@@ -18,7 +18,7 @@ We appreciate your dedication to making the project better by helping us squash 
 
 ## Requesting a Feature
 
-**Clear Description:** Tell us exactly what you want to see in the mod. Be specific and clear about the new feature's purpose.
+**Clear Description:** Tell us exactly what you want to see in the mod. Be specific and clear about the new features purpose.
 
 **API Functions:** If your feature request involves changes or additions to the Lua functions, let us know which functions or methods you'd like to see added or modified.
 
