@@ -117,7 +117,7 @@ local message = {
 
 local json = textutils.serialiseJSON(message)
 
-chatBox.sendFormattedMessage(message)
+chatBox.sendFormattedMessage(json)
 ```
 
 ---
