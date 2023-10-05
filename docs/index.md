@@ -30,6 +30,11 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 | Fully supported       | :x:  | :x:  | :x:  |  :white_check_mark:  |  :x:  |   :x:  |  :white_check_mark:   |  :o:  |
 | Will be supported     | :x:  | :x:  | :o:  |  :o:  |  :o:  |   :x:  |  :o:  |  :white_check_mark:   |
 
+
+#### Netlify
+
+[Netlify](https://www.netlify.com) is a cloud computing company that offers a development platform for web applications and dynamic websites. It provides a unified workflow that integrates build tools, web frameworks, APIs, and various web technologies. The platform is designed to support the development, deployment, and scaling of websites whose source files are stored in Git and then generated into static web content files
+
 #### Contribute
 
 If you want to contribute to this documentation or fix any spelling mistakes, feel free to do so on the documentation [<i class="si si-github" style="font-size:1rem;"></i> Github](https://github.com/Seniorendi/Advanced-Peripherals-Documentation), checkout the **Contribute** section in the README for more info.
