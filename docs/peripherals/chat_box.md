@@ -76,7 +76,7 @@ chatBox.sendMessage("§cWelcome!", "Box", "<>", "§c", 30)
 
 ### sendMessageToPlayer
 ```
-sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string]) -> true | nil, string
+sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
 
@@ -124,7 +124,7 @@ chatBox.sendFormattedMessage(json)
 
 ### sendFormattedMessageToPlayer
 ```
-sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string]) -> true | nil, string
+sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a formatted message to one specific player. Specify the player to send the message to with the `username` parameter.
 
