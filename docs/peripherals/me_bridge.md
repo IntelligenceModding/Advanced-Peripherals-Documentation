@@ -310,13 +310,13 @@ Returns a list of information about all fluids in the ME System.
 
 ### listCells
 ```
-listFluid() -> table, err: string
+listCells() -> table, err: string
 ```
 
 Returns a list of information about all cells in the disk drives of the ME System.
 
 
-| cpu                    | Description                            |
+| cell                   | Description                            |
 | ---------------------- | -------------------------------------- |
 | item: `string`         | The name of the cell. e.g. `ae2:64k_storage_cell |
 | cellType: `string`     | The type of the cell. `item` or `fluid`|
