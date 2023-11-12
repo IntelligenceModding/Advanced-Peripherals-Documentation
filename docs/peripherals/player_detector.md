@@ -146,6 +146,10 @@ The `posOne` and `posTwo` tables must contain:
 - y: `number`  
 - z: `number`  
 
+!!! note
+    The area the detector going to detect is \[x1, x2), \[y1, y2), \[z1, z2).
+    Which means call `getPlayersInCoords({x=x, y=y, z=z}, {x=x, y=y, z=z})` will always return nothing
+
 ---
 
 ### getPlayersInCubic
