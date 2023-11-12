@@ -306,6 +306,15 @@ Returns a list of information about all fluids in the ME System.
 
 ---
 
+### listGas
+```
+listGas() -> table, err: string
+```
+
+Returns a list of information about all gases (Applied Mekanistics) in the ME System.
+
+---
+
 !!! success "Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b"
 
 ### listCells
