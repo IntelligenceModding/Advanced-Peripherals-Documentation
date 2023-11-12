@@ -24,35 +24,9 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 ## Functions
 
-!!! warning "Deprecated! Will be replaced in the next major version to unify `addItemToPlayer` and `addItemToPlayerNBT`"
-
 ### addItemToPlayer
 ```
-addItemToPlayer(direction: string, count: number[, slot: number, item: string]) -> number
-```
-
-Adds an item to the player's inventory and returns the amount of the item added.
-The `direction` is the direction of the container relative to the peripheral.  
-The `slot` is the slot to take items from in the container.
-The Inventory Manager will add a random item to the player's inventory if the `item` or `slot` argument are not provided.
-The `slot` and `count` are overwritten if `fromSlot` or `count` is specified in the `item` filter
-if the `item` argument is empty, the manager will move any item.
-
-!!! tip "Since version 0.7r"
-    You can now use both relative (`right`, `left`, `front`, `back`, `top`, `bottom`) and cardinal (`north`, `south`, `east`, `west`, `up`, `down`) directions for the `direction` argument.  
-
-```lua linenums="1"
-local manager = peripheral.find("inventoryManager")
-
--- Add 32 dirt to the players inventory from the block above
-manager.addItemToPlayer("up", 32, nil, "minecraft:dirt")
-```
-
-!!! warning "Deprecated! Will be replaced in the next major version to unify `addItemToPlayer` and `addItemToPlayerNBT`"
-
-### addItemToPlayerNBT
-```
-addItemToPlayerNBT(direction: string, count: number[, slot: number, item: table]) -> number
+addItemToPlayer(direction: string, item: table) -> number
 ```
 
 Adds an item to the player's inventory and returns the amount of the item added.
@@ -67,36 +41,14 @@ The Inventory Manager will add a random item to the player's inventory if the `i
 local manager = peripheral.find("inventoryManager")
 
 -- Add 32 cobblestone to the players offhand slot from the block above
-manager.addItemToPlayerNBT("up", 32, nil, {name="minecraft:cobblestone", toSlot=36})
+manager.addItemToPlayer("up", {name="minecraft:cobblestone", toSlot=36, count=32})
 ```
 
 ---
 
-!!! warning "Deprecated! Will be replaced in the next major version to unify `removeItemFromPlayer` and `removeItemFromPlayerNBT`"
-
 ### removeItemFromPlayer
 ```
-removeItemFromPlayer(direction: string, count: number[, slot: number, item: string]) -> number
-```
-
-Removes an item from the player's inventory and returns the amount of the item removed.
-The `direction` is the direction of the container relative to the peripheral to put the item into.  
-The `slot` is the slot to take items from in the player's inventory.
-The Inventory Manager will remove a random item from the player's inventory if the `item` or `slot` argument are not provided.
-
-```lua linenums="1"
-local manager = peripheral.find("inventoryManager")
-
--- Remove up to 5 of the item in slot 1 of the player's inventory
--- and place it in the block above
-manager.removeItemFromPlayer("up", 5, 1)
-```
-
-!!! warning "Deprecated! Will be replaced in the next major version to unify `removeItemFromPlayer` and `removeItemFromPlayerNBT`"
-
-### removeItemFromPlayerNBT
-```
-removeItemFromPlayerNBT(direction: string, count: number[, slot: number, item: table]) -> number
+removeItemFromPlayer(direction: string item: table) -> number
 ```
 
 Removes an item from the player's inventory and returns the amount of the item removed.
@@ -111,7 +63,7 @@ local manager = peripheral.find("inventoryManager")
 
 -- Remove up to 5 of the item in slot 1 of the player's inventory
 -- and place it in the block above
-manager.removeItemFromPlayerNBT("up", 5, 1, {name="minecraft:cobblestone", toSlot=3})
+manager.removeItemFromPlayer("up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, count=5})
 ```
 
 ---
