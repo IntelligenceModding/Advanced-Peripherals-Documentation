@@ -64,19 +64,21 @@ os.sleep(1) -- We must account for the cooldown between messages, this is to pre
 chatBox.sendMessage("I am dave", "Dave") -- Sends "[Dave] I am dave"
 os.sleep(1)
 
--- Sends a red "Welcome!" message with cyan <> brackets around "<Box>"
+-- Sends message "Welcome!" with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
-chatBox.sendMessage("§cWelcome!", "Box", "<>", "§c", 30)
+chatBox.sendMessage("Welcome!", "Box", "<>", "&b", 30)
 ```
 
 !!! tip
-    Just like the `bracketColor` argument you can add colors to the `message` and `prefix` arguments using the same [MOTD color code format](https://www.digminecraft.com/lists/color_list_pc.php).
+    Just like the `bracketColor` argument you can add colors to the `message` and `prefix` arguments using the same [MOTD color code format](https://www.digminecraft.com/lists/color_list_pc.php).  
+    Since CC doesn't accept non-ascii charactor `§`, you should replace it with `&`.  
+    If you want to send colored message but not only colored brackets, please use [`sendFormattedMessage()`](#sendformattedmessage) instead.
 
 ---
 
 ### sendMessageToPlayer
 ```
-sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string]) -> true | nil, string
+sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
 
@@ -124,7 +126,7 @@ chatBox.sendFormattedMessage(json)
 
 ### sendFormattedMessageToPlayer
 ```
-sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string]) -> true | nil, string
+sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a formatted message to one specific player. Specify the player to send the message to with the `username` parameter.
 
