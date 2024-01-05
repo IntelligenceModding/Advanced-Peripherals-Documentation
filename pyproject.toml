@@ -7,10 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9"
-mkdocs = "^1.4.2"
-mkdocs-material = "^9.0.10"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.3"
 python-markdown-math = "^0.8"
-lightgallery = "^0.5"
 pyyaml = "^6.0.1"
 
 [build-system]
