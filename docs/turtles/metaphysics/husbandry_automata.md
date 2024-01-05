@@ -23,6 +23,36 @@ Husbandry automata is a turtle with a Husbandry Mechanic Soul upgrade. This upgr
 
 ---
 
+## How to craft
+
+To create a husbandry soul, you need to feed 3 different types of animals via the [feedSoul](weak_automata.md#feedsoul) function to a weak automata core.
+The core needs to be placed inside the turtle into the current active slot(Usually the first one).
+
+The turtle needs 9 animals in total:
+
+| Animal | Amount |
+| ------ | ------ |
+|   Cow  |    3   |
+|  Sheep |    3   |
+| Chicken |   3   |
+
+Step by Step:
+
+- Create a weak automata turtle(A normal turtle with a weak automata core as upgrade)
+- Place another weak automata core in the current active slot of the turtle
+- run `weakAutomata#feedSoul()` for every animal while the animal is in front of the turtle
+
+Example 
+```lua
+core = peripheral.find("weak_automata")
+
+successful, message = core.feedSoul()
+print(successful)
+print(message)
+```
+
+---
+
 ## Functions
 
 ### useOnAnimal

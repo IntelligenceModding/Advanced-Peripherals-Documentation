@@ -21,6 +21,34 @@ End automata is a turtle with an End Mechanic Soul upgrade. This upgrade has all
 
 ---
 
+## How to craft
+
+To create an end soul, you need to feed 10 endermans via the [feedSoul](weak_automata.md#feedsoul) function to a weak automata core.
+The core needs to be placed inside the turtle into the current active slot(Usually the first one).
+
+The turtle needs 10 endermans in total:
+
+| Mob      | Amount |
+|----------|--------|
+| Enderman | 10     |
+
+Step by Step:
+
+- Create a weak automata turtle(A normal turtle with a weak automata core as upgrade)
+- Place another weak automata core in the current active slot of the turtle
+- run `weakAutomata#feedSoul()` for every enderman while the enderman is in front of the turtle
+
+Example
+```lua
+core = peripheral.find("weak_automata")
+
+successful, message = core.feedSoul()
+print(successful)
+print(message)
+```
+
+---
+
 ## Functions
 
 ### points

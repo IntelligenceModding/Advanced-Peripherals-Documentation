@@ -90,10 +90,10 @@ Returns the position of the player with the `username` passed.
 
 | table               | Description                                 |
 | ------------------- | ------------------------------------------- |
-| dimension: `string` | The dimension the player is in (will be the<br>same as the peripheral's dimension) |
+| dimension: `string` | The dimension the player is in              |
 | eyeHeight: `number` | The height of the player's eyes             |
 | pitch: `number`     | The pitch of the player's head              |
-| yaw: `number`       | The yaw of the player's head (ie. the<br>direction they are looking) |
+| yaw: `number`       | The yaw of the player's head                |
 | x: `number`         | The x coordinate                            |
 | y: `number`         | The y coordinate                            |
 | z: `number`         | The z coordinate                            |
