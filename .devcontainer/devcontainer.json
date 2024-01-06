@@ -1,9 +1,11 @@
 {
   "name": "Python 3.11 with MkDocs",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"context": ".."
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "postStartCommand": "pip install poetry && poetry install && poetry run mkdocs serve",
-  "forwardPorts": [8000]
+  "forwardPorts": [
+    8000
+  ]
 }
