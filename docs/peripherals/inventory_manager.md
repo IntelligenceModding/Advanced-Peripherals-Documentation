@@ -22,6 +22,9 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 ---
 
+!!! failure
+    <center> <h3> You need to place the inventory you want to use next to the inventory manager and **NOT** next to the computer! <h3> </center>
+
 ## Functions
 
 ### addItemToPlayer

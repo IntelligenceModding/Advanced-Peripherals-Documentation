@@ -23,6 +23,9 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
 ---
 
+!!! failure
+    <center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME Bridge and **NOT** next to the computer! <h3> </center>
+
 ## Events
 
 ### crafting
