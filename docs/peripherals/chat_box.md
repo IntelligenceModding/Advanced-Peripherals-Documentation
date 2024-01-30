@@ -92,7 +92,7 @@ chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello th
 ```
 sendToastToPlayer(message: string, title: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
-Sends a toast to the specified player.
+Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.
 
 ![!Image of the toast](/../assets/images/chat_box/toast.png)
 
