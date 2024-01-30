@@ -90,6 +90,9 @@ nav:
       - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
       - 'Changelog 0.7r': 'changelogs/0.7r.md'
 
+watch:
+  - overrides
+
 theme:
     name: material
     custom_dir: overrides
