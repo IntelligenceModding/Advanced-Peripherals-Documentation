@@ -23,6 +23,9 @@ You can retrieve items, craft items, get all items as a list and more.
 
 ---
 
+!!! failure
+    <center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the RS Bridge and **NOT** next to the computer! <h3> </center>
+
 !!! tip
     You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags of the item. An MD5 Hash can look like this `ae70053c97f877de546b0248b9ddf525`.
 
@@ -30,7 +33,6 @@ You can retrieve items, craft items, get all items as a list and more.
 
 !!! info
     The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](/../guides/filters).
-
 
 ### craftItem
 ```
