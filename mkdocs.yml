@@ -116,6 +116,7 @@ theme:
 plugins:
   - search:
       lang: en
+  - glightbox
 
 extra_css:
   - extra.css

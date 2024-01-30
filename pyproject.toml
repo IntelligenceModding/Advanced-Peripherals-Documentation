@@ -11,6 +11,7 @@ mkdocs = "^1.5.3"
 mkdocs-material = "^9.5.3"
 python-markdown-math = "^0.8"
 pyyaml = "^6.0.1"
+mkdocs-glightbox = "^0.3.7"
 
 [build-system]
 requires = ["poetry-core"]
