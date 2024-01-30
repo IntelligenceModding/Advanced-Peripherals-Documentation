@@ -169,7 +169,7 @@ Where `w`, `h`, `d` correspond to the x, y, z axes and are the width, height and
 isPlayerInRange(range: number, username: string) -> boolean
 ```
 
-Returns true if the player whose username matches the provided `username` is without the given `range` of the peripheral.
+Returns true if the player whose username matches the provided `username` is within the given `range` of the peripheral.
 
 ---
 
