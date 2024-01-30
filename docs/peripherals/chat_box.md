@@ -88,6 +88,21 @@ local chatBox = peripheral.find("chatBox")
 chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
 ```
 
+### sendToastToPlayer
+```
+sendToastToPlayer(message: string, title: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+```
+Sends a toast to the specified player.
+
+![!Image of the toast](/../assets/images/chat_box/toast.png)
+
+
+```lua linenums="1"
+local chatBox = peripheral.find("chatBox")
+
+chatBox.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()", "&c&l")
+```
+
 ---
 
 ### sendFormattedMessage
@@ -132,7 +147,42 @@ Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a format
 
 ---
 
+### sendFormattedToastToPlayer
+```
+sendFormattedToastToPlayer(messageJson: string, titleJson: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+```
+This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component as the first and second parameter.  
+Find out more information on how the text component format works on the [minecraft fandom wiki](https://minecraft.fandom.com/wiki/Raw_JSON_text_format).
+You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
+
+![!Image of the formatted toast](/../assets/images/chat_box/toast_formatted.png)
+
+```lua linenums="1"
+local chatBox = peripheral.find("chatBox")
+
+
+local title = {
+    { text = "Hello", color = "dark_purple"}
+}
+
+local message = {
+    { text = "I will chat "},
+    { text = "box ", color = "red"},
+    { text = "you"}
+}
+
+local titleJson = textutils.serializeJSON(title)
+local messageJson = textutils.serialiseJSON(message)
+
+successful, error = chatBox.sendFormattedToastToPlayer(messageJson, titleJson, "Dev", "&4&lBoxi", "()", "&c&l")
+```
+
+---
+
 ## Changelog/Trivia
+
+**1.19.2-0.7.33r/1.20.1-0.7.37r**   
+Added `sendToastToPlayer` and `sendFormattedToastToPlayer`
 
 **0.7r**  
 Added the `uuid` and `isHidden` parameter to the **chat** event. Also added the `sendFormattedMessage` function.
