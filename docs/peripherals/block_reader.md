@@ -54,7 +54,19 @@ end
 
 ---
 
+!!! success "Added in version 1.19.2-0.7.33r | 1.20.1-0.7.37r"
+
+### getBlockStates
+```
+getBlockStates() -> table | nil
+```
+
+Returns the properties of a block and its states
+
 ## Changelog/Trivia
+
+**1.19.2-0.7.33r/1.20.1-0.7.37r**
+Added `getBlockStates`
 
 **0.7r**  
 Added the Block Reader peripheral.
