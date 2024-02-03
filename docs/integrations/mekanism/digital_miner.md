@@ -1,6 +1,6 @@
 <h4><a href="../">Go Back</a></h4>
 
-# Fission Reactor
+# Digital Miner
 
 !!! picture inline end
     ![Header](https://intelligence-modding.de/wp-content/uploads/2021/05/Digital-Miner.png){ align=right }
