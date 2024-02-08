@@ -61,12 +61,23 @@ end
 getBlockStates() -> table | nil
 ```
 
-Returns the properties of a block and its states
+Returns the properties of a block and its state
+
+---
+
+!!! success "Added in version 1.19.2-0.7.33r | 1.20.1-0.7.37r"
+
+### isTileEntity
+```
+isTileEntity() -> boolean | nil
+```
+
+Returns true whether the block is a tile entity or not
 
 ## Changelog/Trivia
 
 **1.19.2-0.7.33r/1.20.1-0.7.37r**
-Added `getBlockStates`
+Added `getBlockStates` and `isTileEntity`
 
 **0.7r**  
 Added the Block Reader peripheral.
