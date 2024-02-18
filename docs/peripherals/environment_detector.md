@@ -254,6 +254,37 @@ Returns a table with all of the registered dimensions for the current world, thi
 
 ---
 
+### scanEntities
+
+```
+scanEntities(range: number) -> table
+```
+
+Returns a table with all entities in the given range
+Coordinates are relativ and not absolute
+
+!!! example
+    Example output for an entity:
+    ```lua
+    {
+      {
+        canFreeze = true,
+        uuid = "380df991-f603-344c-a090-369bad2a924a",
+        tags = {},
+        id = 158,
+        y = 0.99835407917146,
+        x = 2.3657836835311,
+        name = "Dev",
+        isGlowing = false,
+        z = 1.2416321248782,
+        isInWall = false,
+        maxHealth = 20,
+        health = 20,
+      },
+    }
+    ```
+
+
 ## Changelog/Trivia
 
 **0.6.5b**  
