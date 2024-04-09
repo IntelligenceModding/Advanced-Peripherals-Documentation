@@ -58,7 +58,31 @@ Returns true if the flower is placed on enchanted soil.
 
 ---
 
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### isEmpty
+```
+isEmpty() -> boolean
+```
+Returns true if the Flower is empty.
+
+---
+
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### isFull
+```
+isFull() -> boolean
+```
+Returns true if the Flower is full.
+
+---
+
 ## Changelog/Trivia
+
+**1.20.1-0.7.39r**
+Ported Botania integration to 1.20.1    
+Added `isFull()` and `isEmpty()`
 
 **0.7.16**  
 Ported Botania integration to 1.18
