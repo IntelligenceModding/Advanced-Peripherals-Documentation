@@ -3,7 +3,7 @@
 !!! danger "Only available in versions =>1.16-0.6b, <1.16-0.7.7r"
 
 The Mekanism integration was removed from the mod due to mekanism adding CC:Tweaked support internally. Hence the documentation for the mod's integrations have been excluded from the side navigation.  
-For updated documentation on mekanism integration see the [Mekanism wiki](https://wiki.aidancbrady.com/wiki/Main_Page).  
+For updated documentation on mekanism integration see the [Mekanism wiki](https://mekanism.github.io).  
 If needed the old docs can still be accessed using the links below:
 
 ## Docs
