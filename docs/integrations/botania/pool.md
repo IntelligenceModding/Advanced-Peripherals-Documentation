@@ -42,12 +42,12 @@ Returns the maximum amount of mana that the pool can hold.
 
 ---
 
+!!! success "Added in version 0.7.4r"
+
 ### getManaNeeded
 ```
 getManaNeeded() -> number
 ```
-
-!!! success "Added in version 0.7.4r"
 
 Returns the amount of mana needed to fill the pool. Equivalent to `getMaxMana() - getMana()`.
 
@@ -69,7 +69,41 @@ Returns true if the Mana Pool is full.
 
 ---
 
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### canChargeItem
+```
+canChargeItem() -> boolean
+```
+Returns true if mode of the Mana Pool is set to charge the items on it.
+
+---
+
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### hasItems
+```
+hasItems() -> boolean
+```
+Returns true if the Mana Pool has at least one item on it.
+
+---
+
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### getItems
+```
+getItems() -> table
+```
+Returns a table with the items lying on the Mana Pool.
+
+---
+
 ## Changelog/Trivia
+
+**1.20.1-0.7.39r**  
+Ported Botania integration to 1.20.1    
+Added `getItems()`, `hasItems()` and `canChargeItem()`
 
 **0.7.16**  
 Ported Botania integration to 1.18

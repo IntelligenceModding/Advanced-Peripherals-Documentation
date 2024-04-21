@@ -82,7 +82,31 @@ Returns the coordinates of the Mana Spreader's target.
 
 ---
 
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### hasLens
+```
+hasLens() -> boolean
+```
+Returns true if the Spreader has a lens.
+
+---
+
+!!! success "Available in versions >=1.20.1-0.7.39r"
+
+### getLens
+```
+getLens() -> table
+```
+Returns the current lens item as a table.
+
+---
+
 ## Changelog/Trivia
+
+**1.20.1-0.7.39r**  
+Ported Botania integration to 1.20.1    
+Added `getLens()` and `hasLens()`
 
 **0.7.16**  
 Ported Botania integration to 1.18
