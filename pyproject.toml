@@ -2,7 +2,7 @@
 name = "advanced-peripherals-documentation"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Srendi"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

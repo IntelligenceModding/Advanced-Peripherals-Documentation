@@ -1,7 +1,7 @@
 {
-  "name": "Python 3.12.1 with MkDocs",
-  "image": "python:3.12.1",
-  "postStartCommand": "pip install poetry && poetry install && poetry run mkdocs serve",
+  "name": "Python 3.12.3 with MkDocs",
+  "image": "python:3.12.3",
+  "postStartCommand": "pip install poetry && poetry install",
   "forwardPorts": [
     8000
   ]
