@@ -9,16 +9,6 @@ The Compass Turtle allow you to know which direction is your turtle facing. The 
 
 ---
 
-<center>
-
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| geoScanner      | Blocks          | No         | 0.7r          |
-
-</center>
-
----
-
 ## Functions
 
 ### getFuelLevel
@@ -63,7 +53,7 @@ Place the selected block with forward, top, and anchor direction.
 | y: optional `number`       | The y offset relative to the turtle (default: `0`) |
 | z: optional `number`       | The z offset relative to the turtle (default: `0`) |
 | forward: optional `string` | The direction the block should facing (default: the turtle's forward) |
-| top: optional `string`     | The direction the top of block should facing (default: top) |
+| top: optional `string`     | The direction the top of block should facing (default: up) |
 | anchor: optional `string`  | The direction the block should anchor (default: `forward`) |
 | text: optional `string`    | The sign's text                                    |
 
