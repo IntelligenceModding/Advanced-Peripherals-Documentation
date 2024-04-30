@@ -12,22 +12,6 @@ The magnet power inside compass also allows you to place blocks more accurately 
 
 ## Functions
 
-### getFuelLevel
-```
-getFuelLevel() -> number
-```
-
-Returns the amount of stored fuel.
-
----
-
-### getFuelMaxLevel
-```
-getFuelMaxLevel() -> number
-```
-
-Returns the maximum amount of possible stored fuel.
-
 ---
 
 ### getFacing
