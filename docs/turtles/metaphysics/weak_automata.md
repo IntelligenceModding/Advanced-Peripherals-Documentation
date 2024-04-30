@@ -204,7 +204,7 @@ Returns true if it successfully placed block or nil and an error message.
 | y       | `number | nil` | The y offset relative to the turtle (default: `0`)                    |
 | z       | `number | nil` | The z offset relative to the turtle (default: `0`)                    |
 | forward | `string | nil` | The direction the block should facing (default: the turtle's forward) |
-| top     | `string | nil` | The direction the top of block should facing (default: up)            |
+| top     | `string | nil` | The direction the top of block should facing (default: `"up"`)        |
 | anchor  | `string | nil` | The direction the block should anchor (default: `forward`)            |
 | text    | `string | nil` | The sign's text                                                       |
 
