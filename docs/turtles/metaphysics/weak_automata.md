@@ -169,7 +169,34 @@ Returns the amount of fuel points gained or nil and an error message.
 
 ---
 
+### placeBlock
+```
+placeBlock(options: table) -> bool | nil, string
+```
+
+!!! warning "Requirement"
+    Requires compass to be equipped as another peripheral.
+
+Place the selected block with forward, top, and anchor direction.
+
+#### `options` properties
+
+| property                   | Description                                                           |
+| -------------------------- | --------------------------------------------------------------------- |
+| x: optional `number`       | The x offset relative to the turtle (default: `0`)                    |
+| y: optional `number`       | The y offset relative to the turtle (default: `0`)                    |
+| z: optional `number`       | The z offset relative to the turtle (default: `0`)                    |
+| forward: optional `string` | The direction the block should facing (default: the turtle's forward) |
+| top: optional `string`     | The direction the top of block should facing (default: up)            |
+| anchor: optional `string`  | The direction the block should anchor (default: `forward`)            |
+| text: optional `string`    | The sign's text                                                       |
+
+---
+
 ## Changelog/Trivia
+
+**0.7.36r**
+Added `placeBlock` method for accure placement.
 
 **0.7r**  
 Added the Weak Automata
