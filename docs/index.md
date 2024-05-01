@@ -37,7 +37,7 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 
 #### Contribute
 
-If you want to contribute to this documentation or fix any spelling mistakes, feel free to do so on the documentation [<i class="si si-github" style="font-size:1rem;"></i> Github](https://github.com/Seniorendi/Advanced-Peripherals-Documentation), checkout the **Contribute** section in the README for more info.
+If you want to contribute to this documentation or fix any spelling mistakes, feel free to do so on the documentation [<i class="si si-github" style="font-size:1rem;"></i> Github](https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation), checkout the **Contribute** section in the README for more info.
 
 <br>
 <center style="font-size:0.7rem;">
