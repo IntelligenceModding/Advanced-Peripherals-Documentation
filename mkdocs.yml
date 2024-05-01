@@ -24,6 +24,7 @@ nav:
     - 'Turtles':
       - 'Chatty Turtle': 'turtles/chatty_turtle.md'
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
+      - 'Compass Turtle': 'turtles/compass_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
       - 'Player Turtle': 'turtles/player_turtle.md'
       - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
