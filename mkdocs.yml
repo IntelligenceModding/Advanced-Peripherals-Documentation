@@ -128,8 +128,8 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-repo_url: https://github.com/SirEndii/AdvancedPeripherals
-repo_name: SirEndii/AdvancedPeripherals
+repo_url: https://github.com/IntelligenceModding/AdvancedPeripherals
+repo_name: IntelligenceModding/AdvancedPeripherals
 edit_uri: edit/main/docs/
 
 markdown_extensions:
