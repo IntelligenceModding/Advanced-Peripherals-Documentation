@@ -25,7 +25,7 @@ You may need this peripheral for cases where you need to output redstone signals
 ## Events
 
 ### redstone_integrator
-Fires when redstone power around the redstone integrator changes.  
+Fires when redstone power around the redstone integrator changes, and when the peripheral just placed.  
 **Values:**  
 1. `devices: table` A map which contains the updated redstone integrators' name as the key, and a list of updated sides as the value.
 
