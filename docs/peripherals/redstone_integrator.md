@@ -16,9 +16,28 @@ You may need this peripheral for cases where you need to output redstone signals
 
 | Peripheral Name    | Interfaces with | Has events | Introduced in |
 | ------------------ | --------------- | ---------- | ------------- |
-| redstoneIntegrator | Redstone        | No         | 0.5.3b        |
+| redstoneIntegrator | Redstone        | Yes        | 0.5.3b        |
 
 </center>
+
+---
+
+## Events
+
+### redstone_integrator
+Fires when the redstone power surrounding the redstone integrator changes or when the peripheral is first placed.  
+**Values:**  
+1. `devices: table` A map which contains the updated redstone integrators' name as the key, and a list of updated sides as the value.
+
+```lua linenums="1"
+local event, devices = os.pullEvent("redstone_integrator")
+for device, sides in pairs(devices) do
+    for _, side in ipairs(sides) do
+        local newPower = peripheral.call(device, 'getAnalogInput', side)
+        print("The " .. side .. " side of integrator " .. device .. " is updated. The new input power is " .. newPower)
+    end
+end
+```
 
 ---
 
