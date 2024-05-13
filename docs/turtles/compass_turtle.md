@@ -21,6 +21,8 @@ getFacing() -> string
 
 Returns where is the turtle facing.
 
+---
+
 ## Changelog/Trivia
 
 **0.7.7r**  
