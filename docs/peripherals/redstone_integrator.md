@@ -34,7 +34,7 @@ local event, devices = os.pullEvent("redstone_integrator")
 for device, sides in pairs(devices) do
     for _, side in ipairs(sides) do
         local newPower = peripheral.call(device, 'getAnalogInput', side)
-        print("The " .. side .. " side of integrator " .. device .. " is updated. The new input power is ".. newPower)
+        print("The " .. side .. " side of integrator " .. device .. " is updated. The new input power is " .. newPower)
     end
 end
 ```
