@@ -19,10 +19,6 @@ NBT Storage is a custom block that allows reading and writing of NBT data to the
 
 ---
 
-!!! failure
-    <center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the RS Bridge and **NOT** next to the computer! <h3> </center>
-
-
 ## Functions
 
 ### read
