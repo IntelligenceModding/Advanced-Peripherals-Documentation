@@ -32,9 +32,9 @@ Returns the amount of stored fuel.
 
 ---
 
-### getFuelMaxLevel
+### getMaxFuelLevel
 ```
-getFuelMaxLevel() -> number
+getMaxFuelLevel() -> number
 ```
 
 Returns the maximum amount of possible stored fuel.
