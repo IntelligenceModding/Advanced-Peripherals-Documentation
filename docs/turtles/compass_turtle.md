@@ -1,7 +1,7 @@
 # Chunky Turtle
 
 !!! picture inline end
-    ![!Image of the Compass Turtle](/../assets/images/previews/compass_turtle.png){ align=right }
+    No Picture for now :c
 
 The Compass Turtle allow you to know which direction is your turtle facing.
 The magnet power inside compass also allows you to place blocks more accurately with Automata Core.
