@@ -111,17 +111,33 @@ Returns a table containing information about the entity infront of the turtle or
 
 ### digBlock
 ```
-digBlock() -> true | nil, string
+digBlock(options: table | nil) -> true | nil, string
 ```
 Tries to dig the block that the turtle is looking at with the current item. It returns true if it successfully mines the block or nil and an error message.
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
+| sneak | `boolean | nil` | Sneak while digging (default `false`)                                                            |
 
 ---
 
 ### useOnBlock
 ```
-useOnBlock() -> true | nil, string
+useOnBlock(options: table | nil) -> true | nil, string
 ```
 Tries to interact with the block that the turtle is looking at with the current item. It returns true if it successfully interacts with the block or nil and an error message.
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
+| sneak | `boolean | nil` | Sneak while using (default `false`)                                                              |
 
 ---
 
@@ -169,7 +185,35 @@ Returns the amount of fuel points gained or nil and an error message.
 
 ---
 
+### placeBlock
+```
+placeBlock(options: table) -> true | nil, string
+```
+
+!!! warning "Requirement"
+    Requires compass to be equipped as another peripheral.
+
+Place the selected block with forward, top, and anchor direction.  
+Returns true if it successfully placed block or nil and an error message.
+
+#### `options` properties
+
+| name    | type           | Description                                                       |
+| ------- | -------------- | ----------------------------------------------------------------- |
+| x       | `number | nil` | The x offset relative to the turtle (default: `0`)                |
+| y       | `number | nil` | The y offset relative to the turtle (default: `0`)                |
+| z       | `number | nil` | The z offset relative to the turtle (default: `0`)                |
+| anchor  | `string | nil` | The direction the block should anchor (default: turtle's forward) |
+| front   | `string | nil` | The direction the block should facing (default: same as `anchor`) |
+| top     | `string | nil` | The direction the top of block should facing (default: `"up"`)    |
+| text    | `string | nil` | The sign's text                                                   |
+
+---
+
 ## Changelog/Trivia
+
+**0.7.36r**
+Added `placeBlock` method for accure placement.
 
 **0.7r**  
 Added the Weak Automata

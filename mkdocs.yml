@@ -24,6 +24,7 @@ nav:
     - 'Turtles':
       - 'Chatty Turtle': 'turtles/chatty_turtle.md'
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
+      - 'Compass Turtle': 'turtles/compass_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
       - 'Player Turtle': 'turtles/player_turtle.md'
       - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
@@ -127,8 +128,8 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-repo_url: https://github.com/SirEndii/AdvancedPeripherals
-repo_name: SirEndii/AdvancedPeripherals
+repo_url: https://github.com/IntelligenceModding/AdvancedPeripherals
+repo_name: IntelligenceModding/AdvancedPeripherals
 edit_uri: edit/main/docs/
 
 markdown_extensions:
