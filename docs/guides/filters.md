@@ -79,7 +79,7 @@ Also helpful if you don't want to copy the nbt tag for an item into the filter.
 
 A `fingerprint` can be generated with the `/advancedperipherals getHashItem` command while holding the item in your main hand.
 
-If the `fingerpring` field is specified, the `nbt` and `name` field will be ignored.
+If the `fingerprint` field is specified, the `nbt` and `name` field will be ignored.
 
 ```lua
 {
