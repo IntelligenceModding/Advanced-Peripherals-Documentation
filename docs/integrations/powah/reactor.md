@@ -47,8 +47,6 @@ Returns the maximum quantity of storable energy inside the Reactor.
 
 ---
 
----
-
 ### isRunning
 ```
 isRunning() -> boolean
