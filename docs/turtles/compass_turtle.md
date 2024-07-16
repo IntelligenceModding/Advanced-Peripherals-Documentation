@@ -1,4 +1,4 @@
-# Chunky Turtle
+# Compass Turtle
 
 !!! picture inline end
     No Picture for now :c
