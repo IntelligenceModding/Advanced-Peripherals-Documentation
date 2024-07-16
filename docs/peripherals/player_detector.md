@@ -37,7 +37,7 @@ print("The detector ".. device .." was clicked by " .. username)
 
 ### playerJoin
 
-Fires when a player joins the world/a server
+Fires when a player joins the world/a server.  
 **Values:**
 
 1. `username: string` The username of the player who clicked the block
@@ -50,7 +50,7 @@ print("Player " .. username .. " joined the server in the dimension " .. dimensi
 
 ### playerLeave
 
-Fires when a player leaves the world/a server
+Fires when a player leaves the world/a server.  
 **Values:**
 
 1. `username: string` The username of the player who clicked the block
@@ -63,7 +63,7 @@ print("Player " .. username .. " left the server in the dimension " .. dimension
 
 ### playerChangedDimension
 
-Fires when a player clicks on the block.  
+Fires when a player changes dimensions.  
 **Values:**
 
 1. `username: string` The username of the player who clicked the block
