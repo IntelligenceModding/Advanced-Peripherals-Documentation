@@ -193,7 +193,7 @@ placeBlock(options: table) -> true | nil, string
 !!! warning "Requirement"
     Requires compass to be equipped as another peripheral.
 
-Place the selected block with forward, top, and anchor direction.  
+Place the selected block with front, top, and anchor direction.  
 Returns true if it successfully placed block or nil and an error message.
 
 #### `options` properties
