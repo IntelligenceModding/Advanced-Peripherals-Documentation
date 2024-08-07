@@ -26,7 +26,7 @@ This can be a tag or a name. To filter for tags, place a `#` in front of the nam
 }
 ```
 
-### Amount
+### Count
 
 The item's/fluid's filter amout can be specified with the `count` field. 
 Standard values are 64 or 1000 for fluids.
