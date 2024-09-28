@@ -6,11 +6,11 @@ authors = ["Srendi"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.9"
-mkdocs = "^1.5.3"
-mkdocs-material = "9.5.17"
+python = ">=3.12"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.38"
 python-markdown-math = "^0.8"
-pyyaml = "^6.0.1"
+pyyaml = "^6.0.2"
 mkdocs-glightbox = "^0.3.7"
 
 [build-system]
