@@ -2,8 +2,8 @@
 
 !!! success "Added in version 1.18.2-0.7.24r and 1.19.3-0.7.23b"
 
-
-The tables which are added to one of our item/fluid transferring functions are called Item/Fluid Filters. The functions use these to find the item you're looking for.
+The tables which are added to one of our item/fluid transferring functions are called Item/Fluid Filters. The functions
+use these to find the item you're looking for.
 These can set the item, count, slots, tags, nbt or fingerprint values.
 
 ## Syntax
@@ -11,7 +11,8 @@ These can set the item, count, slots, tags, nbt or fingerprint values.
 ### Item/Fluid Name and Tag
 
 The item's/fluid's filter name or tag can be specified with the `name` field.
-If this field is not set, the filter will try to search for items with the right nbt values specified in the `nbt` field or fingerprints.
+If this field is not set, the filter will try to search for items with the right nbt values specified in the `nbt` field
+or fingerprints.
 
 This can be a tag or a name. To filter for tags, place a `#` in front of the name.
 
@@ -20,6 +21,7 @@ This can be a tag or a name. To filter for tags, place a `#` in front of the nam
     name = "minecraft:enchanted_book" -- Will just search for an enchanted book, nbt values are ginored
 }
 ```
+
 ```lua
 {
     name = "#forge:ores/gold" -- Will search for the gold ore tag, nbt values are ignored
@@ -28,7 +30,7 @@ This can be a tag or a name. To filter for tags, place a `#` in front of the nam
 
 ### Count
 
-The item's/fluid's filter amout can be specified with the `count` field. 
+The item's/fluid's filter amout can be specified with the `count` field.
 Standard values are 64 or 1000 for fluids.
 
 ```lua
@@ -40,7 +42,10 @@ Standard values are 64 or 1000 for fluids.
 
 ### NBT Values
 
-[NBT Values](https://minecraft.fandom.com/wiki/NBT_format) are specified with the `nbt` field. The field needs to be a string which contains a json which can be parsed to a nbt tag.
+!!! warning "Only for MC versions 1.20.4 and older!"
+
+[NBT Values](https://minecraft.fandom.com/wiki/NBT_format) are specified with the `nbt` field. The field needs to be a
+string which contains a json which can be parsed to a nbt tag.
 
 ```lua
 {
@@ -49,17 +54,39 @@ Standard values are 64 or 1000 for fluids.
 }
 ```
 
-Any strings inside the nbt value needs to be prefixed with a \\ 
+Any strings inside the nbt value needs to be prefixed with a \\
+
+### Data Components
+
+!!! warning "Only for MC versions 1.20.5 and newer!"
+
+Since 1.20.5, mojang moved to a new data component system to store data for items and other things instead of using NBT.
+To use that new filter, you need to provide a `components` key instead of the old `nbt` key.
+
+```lua
+{
+    name = "minecraft:enchanted_book" 
+    components= {
+        ["minecraft:stored_enchantments"] = {
+            levels = {
+                ["minecraft:aqua_affinity"] = 1
+            }
+        }
+    } -- Will search for an enchanted book with the aqua affinity enchantment level 1
+}
+```
+
+Other AP features also return a `components` key for items which you can directly use as a filter.
 
 ### Slots
 
 !!! danger "Only available for item filters"
 
-
-Slots can be specified with the `toSlot` or `fromSlot` field. 
+Slots can be specified with the `toSlot` or `fromSlot` field.
 The inventory manager uses `103-100` for the armor slots helmet to boots and 36 for the offhand.
 
-Storage systems like the rs or me bridge will ignore these fields if they are used to specify the slot of the system. Like `toSlot` if you use it for `importItem`
+Storage systems like the rs or me bridge will ignore these fields if they are used to specify the slot of the system.
+Like `toSlot` if you use it for `importItem`
 
 If the slot can't be found or if the slot can't accept this item, the item will not be transferred.
 
@@ -74,10 +101,11 @@ If the slot can't be found or if the slot can't accept this item, the item will 
 
 The `fingerprint` is a MD5 hash calculated of the nbt tag, the registry name and the display name.
 
-This can be useful if you want to only filter for one very specific item. 
+This can be useful if you want to only filter for one very specific item.
 Also helpful if you don't want to copy the nbt tag for an item into the filter.
 
-A `fingerprint` can be generated with the `/advancedperipherals getHashItem` command while holding the item in your main hand.
+A `fingerprint` can be generated with the `/advancedperipherals getHashItem` command while holding the item in your main
+hand.
 
 If the `fingerprint` field is specified, the `nbt` and `name` field will be ignored.
 

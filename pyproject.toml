@@ -4,11 +4,12 @@ version = "0.1.0"
 description = ""
 authors = ["Srendi"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.12"
 mkdocs = "^1.6.1"
-mkdocs-material = "^9.5.38"
+mkdocs-material = "^9.5.49"
 python-markdown-math = "^0.8"
 pyyaml = "^6.0.2"
 mkdocs-glightbox = "^0.3.7"
