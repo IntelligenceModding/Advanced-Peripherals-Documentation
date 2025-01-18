@@ -95,49 +95,80 @@ Returns the configuration values for this automata.
 
 ### lookAtBlock
 ```
-lookAtBlock() -> table | nil, string
+lookAtBlock(options: table | nil) -> table | nil, string
 ```
 Returns a table containing information about the block infront of the turtle or if the operation fails it will return nil and an error message.
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      | Default |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ | ------- |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right                | `0`     |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down                     | `0`     |
 
 ---
 
 ### lookAtEntity
 ```
-lookAtEntity() -> table | nil, string
+lookAtEntity(options: table | nil) -> table | nil, string
 ```
 Returns a table containing information about the entity infront of the turtle or if the operation fails it will return nil and an error message.
+
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      | Default |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ | ------- |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right                | `0`     |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down                     | `0`     |
 
 ---
 
 ### digBlock
 ```
-digBlock(options: table | nil) -> true | nil, string
+digBlock(options: table | nil) -> boolean, string
 ```
 Tries to dig the block that the turtle is looking at with the current item. It returns true if it successfully mines the block or nil and an error message.
 
 #### `options` properties
 
-| name  | type            | Description                                                                                      |
-| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
-| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
-| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
-| sneak | `boolean | nil` | Sneak while digging (default `false`)                                                            |
+| name  | type            | Description                                                                                      | Default |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ | ------- |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right                | `0`     |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down                     | `0`     |
+| sneak | `boolean | nil` | Sneak while digging (default `false`)                                                            | `false` |
 
 ---
 
 ### useOnBlock
 ```
-useOnBlock(options: table | nil) -> true | nil, string
+useOnBlock(options: table | nil) -> boolean, string
 ```
 Tries to interact with the block that the turtle is looking at with the current item. It returns true if it successfully interacts with the block or nil and an error message.
 
 #### `options` properties
 
-| name  | type            | Description                                                                                      |
-| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
-| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
-| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
-| sneak | `boolean | nil` | Sneak while using (default `false`)                                                              |
+| name  | type            | Description                                                                                      | Default |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ | ------- |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right                | `0`     |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down                     | `0`     |
+| sneak | `boolean | nil` | Sneak while using (default `false`)                                                              | `false` |
+
+---
+
+### updateBlock
+```
+updateBlock(options: table) -> boolean, string
+```
+Tries to update the text of the sign that the turtle is looking at with the `options.text` property
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      | Default |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ | ------- |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right                | `0`     |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down                     | `0`     |
+| text  | `string`        | The text to apply to the sign                                                                    |         |
 
 ---
 
@@ -198,16 +229,16 @@ Returns true if it successfully placed block or nil and an error message.
 
 #### `options` properties
 
-| name     | type           | Description                                                       |
-| -------- | -------------- | ----------------------------------------------------------------- |
-| x        | `number | nil` | The x offset relative to the turtle (default: `0`)                |
-| y        | `number | nil` | The y offset relative to the turtle (default: `0`)                |
-| z        | `number | nil` | The z offset relative to the turtle (default: `0`)                |
-| anchor   | `string | nil` | The direction the block should anchor (default: turtle's forward) |
-| front    | `string | nil` | The direction the block should facing (default: same as `anchor`) |
-| top      | `string | nil` | The direction the top of block should facing (default: `"up"`)    |
-| text     | `string | nil` | the text going to write on the sign's front side                  |
-| backText | `string | nil` | the text going to write on the sign's back side                   |
+| name     | type           | Description                                                       | Default              |
+| -------- | -------------- | ----------------------------------------------------------------- | -------------------- |
+| x        | `number | nil` | The x offset relative to the turtle                               | `0`                  |
+| y        | `number | nil` | The y offset relative to the turtle                               | `0`                  |
+| z        | `number | nil` | The z offset relative to the turtle                               | `0`                  |
+| anchor   | `string | nil` | The direction the block should anchor                             | Turtle's forward     |
+| front    | `string | nil` | The direction the block should facing                             | same as `anchor`     |
+| top      | `string | nil` | The direction the top of block should facing                      | `"up"`               |
+| text     | `string | nil` | the text going to write on the sign's front side                  |                      |
+| backText | `string | nil` | the text going to write on the sign's back side                   |                      |
 
 ---
 
