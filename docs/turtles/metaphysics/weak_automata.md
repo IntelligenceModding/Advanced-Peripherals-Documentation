@@ -111,7 +111,7 @@ Returns a table containing information about the entity infront of the turtle or
 
 ### digBlock
 ```
-digBlock(options: table | nil) -> true | nil, string
+digBlock(options: table | nil) -> boolean, string
 ```
 Tries to dig the block that the turtle is looking at with the current item. It returns true if it successfully mines the block or nil and an error message.
 
@@ -127,7 +127,7 @@ Tries to dig the block that the turtle is looking at with the current item. It r
 
 ### useOnBlock
 ```
-useOnBlock(options: table | nil) -> true | nil, string
+useOnBlock(options: table | nil) -> boolean, string
 ```
 Tries to interact with the block that the turtle is looking at with the current item. It returns true if it successfully interacts with the block or nil and an error message.
 
@@ -138,6 +138,22 @@ Tries to interact with the block that the turtle is looking at with the current 
 | pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
 | yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
 | sneak | `boolean | nil` | Sneak while using (default `false`)                                                              |
+
+---
+
+### updateBlock
+```
+updateBlock(options: table) -> boolean, string
+```
+Tries to update the text of the sign that the turtle is looking at with the `options.text` property
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
+| text  | `string`        | The text to apply to the sign                                                                    |
 
 ---
 
