@@ -95,17 +95,32 @@ Returns the configuration values for this automata.
 
 ### lookAtBlock
 ```
-lookAtBlock() -> table | nil, string
+lookAtBlock(options: table) -> table | nil, string
 ```
 Returns a table containing information about the block infront of the turtle or if the operation fails it will return nil and an error message.
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
 
 ---
 
 ### lookAtEntity
 ```
-lookAtEntity() -> table | nil, string
+lookAtEntity(options: table) -> table | nil, string
 ```
 Returns a table containing information about the entity infront of the turtle or if the operation fails it will return nil and an error message.
+
+
+#### `options` properties
+
+| name  | type            | Description                                                                                      |
+| ----- | --------------- | ------------------------------------------------------------------------------------------------ |
+| pitch | `number | nil`  | Relative pitch degrees, negative means to turn left, positive means to turn right (default: `0`) |
+| yaw   | `number | nil`  | Relative yaw degrees, negative means to look up, positive means to look down (default: `0`)      |
 
 ---
 
