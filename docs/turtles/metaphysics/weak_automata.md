@@ -95,7 +95,7 @@ Returns the configuration values for this automata.
 
 ### lookAtBlock
 ```
-lookAtBlock(options: table) -> table | nil, string
+lookAtBlock(options: table | nil) -> table | nil, string
 ```
 Returns a table containing information about the block infront of the turtle or if the operation fails it will return nil and an error message.
 
@@ -110,7 +110,7 @@ Returns a table containing information about the block infront of the turtle or 
 
 ### lookAtEntity
 ```
-lookAtEntity(options: table) -> table | nil, string
+lookAtEntity(options: table | nil) -> table | nil, string
 ```
 Returns a table containing information about the entity infront of the turtle or if the operation fails it will return nil and an error message.
 
