@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Redstone Probe
 
 !!! danger "Only available in version 1.16"

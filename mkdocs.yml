@@ -103,6 +103,7 @@ theme:
       # - navigation.instant # Breaks 'lightgallery' extension
       - navigation.indexes
       - navigation.tabs
+      - navigation.footer
       # - navigation.sections # Makes navigation too long
       - content.code.annotate
       - content.code.copy
@@ -147,6 +148,15 @@ extra_css:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/IntelligenceModding/AdvancedPeripherals
+    - icon: material/youtube
+      link: https://www.youtube.com/@intelligencemodding4093
+    - icon: fontawesome/brands/discord
+      link: https://discord.intelligence-modding.de/
 
 repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
 repo_name: IntelligenceModding/Advanced-Peripherals-Documentation

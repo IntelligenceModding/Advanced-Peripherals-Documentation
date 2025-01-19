@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Turtles: Cooldowns and Fuel consumption
 
 For information on the different types of cooldowns and operations that a turtle may have see the Automatas:

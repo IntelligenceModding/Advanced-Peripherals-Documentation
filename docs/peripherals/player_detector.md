@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Player Detector
 
 !!! picture inline end

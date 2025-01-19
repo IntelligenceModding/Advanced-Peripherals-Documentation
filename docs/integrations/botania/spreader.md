@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mana Spreader
 
 !!! success "Available in all versions"

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Chat Box
 
 !!! picture inline end

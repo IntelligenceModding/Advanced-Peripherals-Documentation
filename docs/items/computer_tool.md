@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Computer Tool
 
 !!! picture inline end

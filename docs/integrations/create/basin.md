@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Basin
 
 !!! success "Available in versions 1.18+"

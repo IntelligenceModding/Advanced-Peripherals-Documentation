@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Husbandry Automata
 
 !!! picture inline end
