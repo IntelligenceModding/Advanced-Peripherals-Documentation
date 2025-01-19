@@ -120,6 +120,17 @@ plugins:
   - search:
       lang: en
   - glightbox
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+      enabled: !ENV [CI, false]
+  - git-committers:
+       repository: IntelligenceModding/Advanced-Peripherals-Documentation
+       branch: main
+       token: !ENV DOCS_PUBLISH_GH_PAT
+       enabled: !ENV [CI, false]
+
 
 extra_css:
   - extra.css
@@ -127,8 +138,8 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-repo_url: https://github.com/SirEndii/AdvancedPeripherals
-repo_name: SirEndii/AdvancedPeripherals
+repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
+repo_name: IntelligenceModding/Advanced-Peripherals-Documentation
 edit_uri: edit/main/docs/
 
 markdown_extensions:
