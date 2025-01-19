@@ -3,6 +3,8 @@ site_url: 'https://docs.advanced-peripherals.de/'
 
 nav:
     - 'Home': 'index.md'
+    - 'Blog':
+        - blog/index.md
     - 'Guides':
       - 'How to: report a bug or request a feature': 'guides/how_to_report.md'
       - 'Item and Fluid Filters': 'guides/filters.md'
@@ -125,6 +127,10 @@ plugins:
   - search:
       lang: en
   - glightbox
+  - blog:
+      post_date_format: long
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: yyyy/MM
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
