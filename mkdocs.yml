@@ -1,5 +1,5 @@
 site_name: Advanced Peripherals
-site_url: 'https://docs.intelligence-modding.de/'
+site_url: 'https://docs.advanced-peripherals.de/'
 
 nav:
     - 'Home': 'index.md'
@@ -104,6 +104,11 @@ theme:
       # - navigation.sections # Makes navigation too long
       - content.code.annotate
       - content.code.copy
+      - content.action.edit
+      - content.action.view
+    icon:
+      edit: material/file-edit-outline
+      view: material/file-eye-outline
     palette:
     - scheme: slate
       primary: blue
@@ -130,7 +135,6 @@ plugins:
        branch: main
        token: !ENV DOCS_PUBLISH_GH_PAT
        enabled: !ENV [CI, false]
-
 
 extra_css:
   - extra.css
