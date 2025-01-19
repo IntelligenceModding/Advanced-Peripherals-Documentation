@@ -2,7 +2,6 @@
 authors: [endi]
 date: 2025-01-19
 readtime: 2
-draft: true
 categories:
   - General
 pin: true
