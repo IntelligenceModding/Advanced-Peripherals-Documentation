@@ -18,4 +18,4 @@ Peripherals, so keep an eye on it!
 
 ### Discord
 
-Everytime we make a new post, I will make an announcement in our [:fontawesome-brands-discord:Discord](https://discord.intelligence-modding.de/) - if you want to get notified, subscribe for the @News role!
+Everytime we make a new post, we will make an announcement in our [:fontawesome-brands-discord:Discord](https://discord.intelligence-modding.de/) - if you want to get notified, subscribe for the @News role!
