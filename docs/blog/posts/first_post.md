@@ -5,6 +5,7 @@ readtime: 2
 categories:
   - General
 pin: true
+comments: true
 ---
 
 # AP has a blog now!
