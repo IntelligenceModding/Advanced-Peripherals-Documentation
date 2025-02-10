@@ -114,7 +114,7 @@ chatBox.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()
 sendFormattedMessage(json: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 This function is fundamentally the same as [`sendMessage()`](#sendmessage) except it takes a json text component as the first parameter.  
-Find out more information on how the text component format works on the [minecraft fandom wiki](https://minecraft.fandom.com/wiki/Raw_JSON_text_format).
+Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
 ```lua linenums="1"
@@ -156,7 +156,7 @@ Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a format
 sendFormattedToastToPlayer(messageJson: string, titleJson: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
 ```
 This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component as the first and second parameter.  
-Find out more information on how the text component format works on the [minecraft fandom wiki](https://minecraft.fandom.com/wiki/Raw_JSON_text_format).
+Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
 ![!Image of the formatted toast](/../assets/images/chat_box/toast_formatted.png)
