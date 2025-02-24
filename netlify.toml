@@ -5,11 +5,11 @@
     if [ "$BRANCH" = "0.8" ]; then
       git config user.name "Version Deployment"
       git config user.email "netlifybot@example.com"
-      mike deploy --push --update-aliases 0.8 canary
+      mike deploy --update-aliases 0.8 canary
     elif [ "$BRANCH" = "0.7" ]; then
       git config user.name "Version Deployment"
       git config user.email "netlifybot@example.com"
-      mike deploy --push --update-aliases 0.7 latest
+      mike deploy --update-aliases 0.7 latest
     fi
   """
   publish = "site" # The directory where your built MkDocs site resides
