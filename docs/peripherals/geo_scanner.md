@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Geo Scanner
 
 !!! picture inline end

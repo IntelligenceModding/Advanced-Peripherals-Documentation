@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Blocks with Scroll Value Behaviours
 
 !!! success "Available in all versions"

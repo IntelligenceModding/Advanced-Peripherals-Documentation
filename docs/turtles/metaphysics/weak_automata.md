@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Weak Automata
 
 !!! picture inline end

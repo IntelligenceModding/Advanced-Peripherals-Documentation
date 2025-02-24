@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # NBT Storage
 
 !!! picture inline end

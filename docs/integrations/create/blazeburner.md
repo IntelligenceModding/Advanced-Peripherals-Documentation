@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Blaze Burner
 
 !!! success "Available in all versions"

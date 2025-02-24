@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Overpowered Automata
 
 !!! picture inline end

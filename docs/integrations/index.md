@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mod Integrations
 
 ## How do they work?

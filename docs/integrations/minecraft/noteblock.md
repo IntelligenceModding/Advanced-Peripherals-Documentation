@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Note Block
 
 !!! picture inline end

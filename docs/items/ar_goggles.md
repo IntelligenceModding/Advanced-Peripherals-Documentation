@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # AR Goggles
 
 !!! picture inline end

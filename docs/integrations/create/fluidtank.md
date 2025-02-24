@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Fluid Tank
 
 !!! success "Available in versions 1.18+"

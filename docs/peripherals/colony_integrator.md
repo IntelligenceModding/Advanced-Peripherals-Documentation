@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Colony Integrator
 
 !!! picture inline end

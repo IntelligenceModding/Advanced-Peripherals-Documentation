@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # AR Controller
 
 !!! picture inline end

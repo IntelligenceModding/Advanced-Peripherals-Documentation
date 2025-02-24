@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Energy Detector
 
 !!! picture inline end

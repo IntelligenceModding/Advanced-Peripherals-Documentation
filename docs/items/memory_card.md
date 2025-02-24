@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Memory Card
 
 !!! picture inline end

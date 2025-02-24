@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Filters
 
 !!! success "Added in version 1.18.2-0.7.24r and 1.19.3-0.7.23b"

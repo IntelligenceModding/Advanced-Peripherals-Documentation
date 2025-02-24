@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Ender Cell
 
 !!! danger "Only available in version 1.19.2"

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mana Pool
 
 !!! success "Available in all versions"

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Variable Store
 
 !!! danger "Only available in version 1.16"

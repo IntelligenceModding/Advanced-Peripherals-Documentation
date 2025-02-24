@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Mana Generating Flowers
 
 !!! success "Available in all versions"

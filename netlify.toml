@@ -1,0 +1,19 @@
+[build]
+  command = """
+    mkdocs build
+    git remote set-url origin https://${GITHUB_TOKEN}@github.com/SirEndii/Advanced-Peripherals-Documentation.git
+    if [ "$BRANCH" = "0.8" ]; then
+      git config user.name "Version Deployment"
+      git config user.email "netlifybot@example.com"
+      mike deploy --push --update-aliases 0.8 canary
+    elif [ "$BRANCH" = "0.7" ]; then
+      git config user.name "Version Deployment"
+      git config user.email "netlifybot@example.com"
+      mike deploy --push --update-aliases 0.7 latest
+    fi
+  """
+  publish = "site" # The directory where your built MkDocs site resides
+
+[context.deploy-preview]
+  command = "mkdocs build" #build the preview, but don't deploy with mike.
+  publish = "site"

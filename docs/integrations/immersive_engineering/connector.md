@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Redstone Wire Connector
 
 !!! danger "Only available in version 1.16"

@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Environment Detector
 
 !!! picture inline end

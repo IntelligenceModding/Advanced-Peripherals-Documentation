@@ -1,8 +1,10 @@
 site_name: Advanced Peripherals
-site_url: 'https://docs.intelligence-modding.de/'
+site_url: 'https://docstest.intelligence-modding.de/'
 
 nav:
     - 'Home': 'index.md'
+    - 'Blog':
+        - blog/index.md
     - 'Guides':
       - 'How to: report a bug or request a feature': 'guides/how_to_report.md'
       - 'Item and Fluid Filters': 'guides/filters.md'
@@ -102,9 +104,15 @@ theme:
       # - navigation.instant # Breaks 'lightgallery' extension
       - navigation.indexes
       - navigation.tabs
+      - navigation.footer
       # - navigation.sections # Makes navigation too long
       - content.code.annotate
       - content.code.copy
+      - content.action.edit
+      - content.action.view
+    icon:
+      edit: material/file-edit-outline
+      view: material/file-eye-outline
     palette:
     - scheme: slate
       primary: blue
@@ -121,6 +129,20 @@ plugins:
   - search:
       lang: en
   - glightbox
+  - blog:
+      post_date_format: long
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: yyyy/MM
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+      enabled: !ENV [CI, false]
+  - git-committers:
+       repository: IntelligenceModding/Advanced-Peripherals-Documentation
+       branch: main
+       token: !ENV DOCS_PUBLISH_GH_PAT
+       enabled: !ENV [CI, false]
 
 extra_css:
   - extra.css
@@ -128,8 +150,19 @@ extra_css:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-repo_url: https://github.com/IntelligenceModding/AdvancedPeripherals
-repo_name: IntelligenceModding/AdvancedPeripherals
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: material/github
+      link: https://github.com/IntelligenceModding/AdvancedPeripherals
+    - icon: material/youtube
+      link: https://www.youtube.com/@intelligencemodding4093
+    - icon: fontawesome/brands/discord
+      link: https://discord.intelligence-modding.de/
+
+repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
+repo_name: IntelligenceModding/Advanced-Peripherals-Documentation
 edit_uri: edit/main/docs/
 
 markdown_extensions:

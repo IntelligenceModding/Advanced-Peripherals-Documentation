@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Pocket Computers
 
 !!! picture inline end

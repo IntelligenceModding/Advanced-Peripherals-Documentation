@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Inventory Manager
 
 !!! picture inline end

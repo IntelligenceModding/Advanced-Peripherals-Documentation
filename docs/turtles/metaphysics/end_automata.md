@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # End Automata
 
 !!! picture inline end

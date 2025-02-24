@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # ME Bridge
 
 !!! picture inline end
