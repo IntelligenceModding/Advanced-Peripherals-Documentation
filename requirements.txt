@@ -4,3 +4,4 @@ python-markdown-math
 mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin-2
+mike

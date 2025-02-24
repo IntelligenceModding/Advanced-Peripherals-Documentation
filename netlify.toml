@@ -1,0 +1,14 @@
+[build]
+  command = """
+    mkdocs build
+    if [ "$BRANCH" = "0.8" ]; then
+      mike deploy 0.8 --push
+    elif [ "$BRANCH" = "0.7" ]; then
+      mike deploy 0.7 --push
+    fi
+  """
+  publish = "site" # The directory where your built MkDocs site resides
+
+[context.deploy-preview]
+  command = "mkdocs build" #build the preview, but don't deploy with mike.
+  publish = "site"
