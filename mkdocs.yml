@@ -126,7 +126,7 @@ plugins:
   - git-committers:
        repository: IntelligenceModding/Advanced-Peripherals-Documentation
        branch: main
-       token: !ENV DOCS_PUBLISH_GH_PAT
+       token: !ENV GITHUB_TOKEN
        enabled: !ENV [CI, false]
 
 extra_css:
