@@ -1,6 +1,7 @@
 [build]
   command = """
     git pull
+    git config pull.rebase true
     git pull origin gh-pages
     mkdocs build
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/SirEndii/Advanced-Peripherals-Documentation.git
