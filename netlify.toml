@@ -15,7 +15,7 @@
       echo "Deploying $BRANCH"
       mike deploy --push --update-aliases 0.7 latest
     fi
-    git push --all
+    git push origin gh-pages
   """
   publish = "site" # The directory where your built MkDocs site resides
 
