@@ -125,7 +125,7 @@ plugins:
       enabled: !ENV [CI, false]
   - git-committers:
        repository: IntelligenceModding/Advanced-Peripherals-Documentation
-       branch: main
+       branch: !ENV BRANCH
        token: !ENV GITHUB_TOKEN
        enabled: !ENV [CI, false]
 
