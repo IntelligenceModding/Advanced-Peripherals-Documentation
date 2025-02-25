@@ -3,7 +3,7 @@
 !!! danger "Only available in version 1.16"
 
 !!! picture inline end
-    ![!Images of Drawer blocks](/../assets/images/previews/storage_drawer.gif){ align=right }
+    ![!Images of Drawer blocks](../img/previews/storage_drawer.gif){ align=right }
 
 Drawers are a storage block from the Storage Drawer mod. This integration fixes weird interactions between the generic CC:Tweaked inventory integration and Storage Drawer logic.
 

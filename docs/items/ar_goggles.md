@@ -5,7 +5,7 @@ comments: true
 # AR Goggles
 
 !!! picture inline end
-    ![!Image of the AR Goggles item](/../assets/images/previews/ar_goggles.png){ align=right }
+    ![!Image of the AR Goggles item](../img/previews/ar_goggles.png){ align=right }
 
 The AR Goggles can be used in combination with the AR Controller to have a customizable overlay wherever you go. Fun!  
 See the documenation for the [AR Controller](../peripherals/ar_controller.md) to learn more.

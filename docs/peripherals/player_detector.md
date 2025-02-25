@@ -5,7 +5,7 @@ comments: true
 # Player Detector
 
 !!! picture inline end
-    ![!Image of the Player Detector block](/../assets/images/previews/player_detector.png){ align=right }
+    ![!Image of the Player Detector block](../img/previews/player_detector.png){ align=right }
 
 The Player Detector is a useful peripheral that allows you to detect players within a certain range, position and area.
 You can get a list of all online players and detect when a player clicks on the block.

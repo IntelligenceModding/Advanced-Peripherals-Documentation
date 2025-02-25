@@ -5,7 +5,7 @@ comments: true
 # RS Bridge
 
 !!! picture inline end
-    ![!Image of the RS Bridge block](/../assets/images/previews/rs_bridge.png){ align=right }
+    ![!Image of the RS Bridge block](../img/previews/rs_bridge.png){ align=right }
 
 The RS Bridge is able to interact with Refined Storage.
 You can retrieve items, craft items, get all items as a list and more.

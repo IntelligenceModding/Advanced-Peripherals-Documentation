@@ -5,7 +5,7 @@ comments: true
 # Environment Turtle
 
 !!! picture inline end
-    ![!Image of the Environment Turtle](/../assets/images/previews/environment_turtle.png){ align=right }
+    ![!Image of the Environment Turtle](../img/previews/environment_turtle.png){ align=right }
 
 The Environment Turtle is the turtle version of the [Environment Detector](../peripherals/environment_detector.md) peripheral. See its documenation for more information.
 

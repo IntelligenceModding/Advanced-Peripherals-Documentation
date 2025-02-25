@@ -1,5 +1,5 @@
 site_name: Advanced Peripherals
-site_url: 'https://docstest.intelligence-modding.de/'
+site_url: 'https://docs.advanced-peripherals.de/'
 
 nav:
     - 'Home': 'index.md'
@@ -149,7 +149,7 @@ extra:
 
 repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
 repo_name: IntelligenceModding/Advanced-Peripherals-Documentation
-edit_uri: edit/main/docs/
+edit_uri: edit/0.8/docs/
 
 markdown_extensions:
     - mdx_math

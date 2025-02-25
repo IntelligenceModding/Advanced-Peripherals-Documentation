@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in all versions"
 
 !!! picture inline end
-    ![!Images of the Flower blocks](/../assets/images/previews/botania_flowers.gif){ align=right }
+    ![!Images of the Flower blocks](../img/previews/botania_flowers.gif){ align=right }
 
 Mana generating flowers from botania can generate mana for other recipes or rituals.
 

@@ -5,7 +5,7 @@ comments: true
 # ME Bridge
 
 !!! picture inline end
-    ![!Image of the ME Bridge block](/../assets/images/previews/me_bridge.png){ align=right }
+    ![!Image of the ME Bridge block](../img/previews/me_bridge.png){ align=right }
 
 The ME Bridge is able to interact with Applied Energistics 2.
 You can retrieve items, craft items, get all items as a list and more. The ME Bridge uses one channel.
@@ -417,7 +417,7 @@ No need for level emitters or crafting cards!
 
 You can find instructions on how to install the script [here](https://github.com/SirEndii/Lua-Projects/tree/master)
 
-![Automatic autocrafting example script preview](/../assets/images/me_bridge/autocraft_example.png)
+![Automatic autocrafting example script preview](../img/me_bridge/autocraft_example.png)
 
 ### ME Crafting CPUs
 
@@ -425,7 +425,7 @@ This script shows you some statistics about the ME crafting cpus.
 
 You can find instructions on how to install the script [here](https://github.com/SirEndii/Lua-Projects/tree/master)
 
-![Me system crafting cpu example script preview](/../assets/images/me_bridge/mecpus_example.png)
+![Me system crafting cpu example script preview](../img/me_bridge/mecpus_example.png)
 
 ---
 

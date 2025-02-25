@@ -7,7 +7,7 @@ comments: true
 !!! danger "Only available in version 1.16"
 
 !!! picture inline end
-    ![!Image of the Variable Store block](/../assets/images/previews/variable_store.png){ align=right }
+    ![!Image of the Variable Store block](../img/previews/variable_store.png){ align=right }
 
 The Variable Store is a block from Integrated Dynamics that can store variables for future use.
 

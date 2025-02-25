@@ -5,7 +5,7 @@ comments: true
 # Player Turtle
 
 !!! picture inline end
-    ![!Image of the Player Turtle](/../assets/images/previews/player_turtle.png){ align=right }
+    ![!Image of the Player Turtle](../img/previews/player_turtle.png){ align=right }
 
 The Player Turtle is the turtle version of the [Player Detector](../peripherals/player_detector.md) peripheral. See its documenation for more information.
 

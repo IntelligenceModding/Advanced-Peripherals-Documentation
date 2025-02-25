@@ -5,7 +5,7 @@ comments: true
 # Environment Detector
 
 !!! picture inline end
-    ![!Image of the Environment Detector block](/../assets/images/previews/environment_detector.png){ align=right }
+    ![!Image of the Environment Detector block](../img/previews/environment_detector.png){ align=right }
 
 The Environment Detector provides current information from the environment like the current time, the current moon phase,
 the light level of the block and many more.

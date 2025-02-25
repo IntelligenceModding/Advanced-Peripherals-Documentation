@@ -5,7 +5,7 @@ comments: true
 # Husbandry Automata
 
 !!! picture inline end
-    ![!Image of the Husbandry Automata Upgrade](/../assets/images/previews/husbandry_automata.png){ align=right }
+    ![!Image of the Husbandry Automata Upgrade](../img/previews/husbandry_automata.png){ align=right }
 
 Husbandry automata is a turtle with a Husbandry Mechanic Soul upgrade. This upgrade has all of the abilities of a [Weak Automata](./weak_automata.md) plus some additional abilites:  
 • Use items on animals  

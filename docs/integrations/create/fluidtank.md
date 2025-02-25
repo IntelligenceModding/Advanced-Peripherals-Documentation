@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in versions 1.18+"
 
 !!! picture inline end
-    ![!Image of the Fluid Tank block](/../assets/images/previews/fluid_tank.png){ align=right }
+    ![!Image of the Fluid Tank block](../img/previews/fluid_tank.png){ align=right }
 
 A Fluid Tank is a multiblock structure which can hold fluids. With each block being able to hold 8 buckets worth.
 

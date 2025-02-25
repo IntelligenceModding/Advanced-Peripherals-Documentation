@@ -5,7 +5,7 @@ comments: true
 # NBT Storage
 
 !!! picture inline end
-    ![!Image of the NBT Storage block](/../assets/images/previews/nbt_storage.png){ align=right }
+    ![!Image of the NBT Storage block](../img/previews/nbt_storage.png){ align=right }
 
 NBT Storage is a custom block that allows reading and writing of NBT data to the block for later use.
 

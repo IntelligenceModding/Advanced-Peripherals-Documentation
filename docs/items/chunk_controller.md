@@ -5,7 +5,7 @@ comments: true
 # Chunk Controller
 
 !!! picture inline end
-    ![!Image of the Chunk Controller item](/../assets/images/previews/chunk_controller.png){ align=right }
+    ![!Image of the Chunk Controller item](../img/previews/chunk_controller.png){ align=right }
 
 The Chunk Controller is a crafting ingredient for the [Chunky Turtle](../turtles/chunky_turtle.md).
 

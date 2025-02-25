@@ -5,7 +5,7 @@ comments: true
 # Redstone Integrator
 
 !!! picture inline end
-    ![!Image of the Redstone Integrator block](/../assets/images/previews/redstone_integrator.png){ align=right }
+    ![!Image of the Redstone Integrator block](../img/previews/redstone_integrator.png){ align=right }
 
 The Redstone Integrator is able to interact with redstone.
 You can use the same code you would use for a computer on a Redstone Integrator.

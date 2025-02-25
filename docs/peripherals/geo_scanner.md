@@ -5,7 +5,7 @@ comments: true
 # Geo Scanner
 
 !!! picture inline end
-    ![!Image of the Geo Scanner block](/../assets/images/previews/geo_scanner.png){ align=right }
+    ![!Image of the Geo Scanner block](../img/previews/geo_scanner.png){ align=right }
 
 The Geo Scanner provides information about blocks around it and the chunk of that it is in.
 

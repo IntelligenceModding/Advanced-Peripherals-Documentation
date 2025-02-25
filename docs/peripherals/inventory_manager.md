@@ -5,7 +5,7 @@ comments: true
 # Inventory Manager
 
 !!! picture inline end
-    ![!Image of the Inventory Manager block](/../assets/images/previews/inventory_manager.png){ align=right }
+    ![!Image of the Inventory Manager block](../img/previews/inventory_manager.png){ align=right }
 
 The Inventory Manager can communicate with the player's inventory. You need to assign yourself to a [Memory Card](../items/memory_card.md) and put the card into the manager to use it.
 

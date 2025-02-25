@@ -5,7 +5,7 @@ comments: true
 # End Automata
 
 !!! picture inline end
-    ![!Image of the Husbandry Automata Upgrade](/../assets/images/previews/end_automata.png){ align=right }
+    ![!Image of the Husbandry Automata Upgrade](../img/previews/end_automata.png){ align=right }
 
 End automata is a turtle with an End Mechanic Soul upgrade. This upgrade has all of the abilities of a [Weak Automata](./weak_automata.md) plus its own additional abilites:  
 • Teleport between saved locations  

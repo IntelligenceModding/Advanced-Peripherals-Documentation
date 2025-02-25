@@ -5,7 +5,7 @@ comments: true
 # Computer Tool
 
 !!! picture inline end
-    ![!Image of the Chunk Controller item](/../assets/images/previews/computer_tool.png){ align=right }
+    ![!Image of the Chunk Controller item](../img/previews/computer_tool.png){ align=right }
 
 The Computer Tool is a tool to open GUI's from the mod blocks.
 

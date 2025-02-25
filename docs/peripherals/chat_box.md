@@ -5,7 +5,7 @@ comments: true
 # Chat Box
 
 !!! picture inline end
-    ![!Image of the Chat Box block](/../assets/images/previews/chat_box.png){ align=right }
+    ![!Image of the Chat Box block](../img/previews/chat_box.png){ align=right }
 
 The Chat Box is able to read and write messages to the in-game chat. You can send messages to just one player or to everyone.
 
@@ -98,7 +98,7 @@ sendToastToPlayer(message: string, title: string, username: string[, prefix: str
 ```
 Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.
 
-![!Image of the toast](/../assets/images/chat_box/toast.png)
+![!Image of the toast](../img/chat_box/toast.png)
 
 
 ```lua linenums="1"
@@ -159,7 +159,7 @@ This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) e
 Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
-![!Image of the formatted toast](/../assets/images/chat_box/toast_formatted.png)
+![!Image of the formatted toast](../img/chat_box/toast_formatted.png)
 
 ```lua linenums="1"
 local chatBox = peripheral.find("chatBox")

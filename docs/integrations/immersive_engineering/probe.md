@@ -7,7 +7,7 @@ comments: true
 !!! danger "Only available in version 1.16"
 
 !!! picture inline end
-    ![!Image of the Redstone Probe block](/../assets/images/previews/redstone_probe.png){ align=right }
+    ![!Image of the Redstone Probe block](../img/previews/redstone_probe.png){ align=right }
 
 The Redstone Probe is a block from Immersive Engineering used to read and write data to a specific redstone channel.
 

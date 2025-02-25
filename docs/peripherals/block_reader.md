@@ -5,7 +5,7 @@ comments: true
 # Block Reader
 
 !!! picture inline end
-    ![!Image of the Block Reader block](/../assets/images/previews/block_reader.png){ align=right }
+    ![!Image of the Block Reader block](../img/previews/block_reader.png){ align=right }
 
 This block is able to read data about any blocks or tile entities in front of it.
 

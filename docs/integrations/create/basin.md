@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in versions 1.18+"
 
 !!! picture inline end
-    ![!Image of the Basin block](/../assets/images/previews/basin.png){ align=right }
+    ![!Image of the Basin block](../img/previews/basin.png){ align=right }
 
 A Basin can hold items and fluids for many different crafting recipes. 
 

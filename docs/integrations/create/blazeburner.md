@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in all versions"
 
 !!! picture inline end
-    ![!Image of the Blaze Burner block](/../assets/images/previews/blaze_burner.png){ align=right }
+    ![!Image of the Blaze Burner block](../img/previews/blaze_burner.png){ align=right }
 
 A Blaze Burner uses different fuel types to heat up things above it like basins and fluid tanks.
 

@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in versions 1.18+"
 
 !!! picture inline end
-    ![!Image of the Mechanical Mixer block](/../assets/images/previews/mechanical_mixer.png){ align=right }
+    ![!Image of the Mechanical Mixer block](../img/previews/mechanical_mixer.png){ align=right }
 
 A Mechanical Mixer is used in combination with a Basin to process many shapeless recipes with items and fluid.
 

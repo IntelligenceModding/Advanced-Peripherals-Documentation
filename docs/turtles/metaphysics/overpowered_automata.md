@@ -5,7 +5,7 @@ comments: true
 # Overpowered Automata
 
 !!! picture inline end
-    ![!Image of the Overpowered Automata Upgrade](/../assets/images/previews/overpowered_automata.gif){ align=right }
+    ![!Image of the Overpowered Automata Upgrade](../img/previews/overpowered_automata.gif){ align=right }
 
 Overpowered automata is a turtle with an Overpowered Mechanic Soul upgrade. This upgrade has all of the abilities of the original automata.  
 

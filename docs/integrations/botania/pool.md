@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in all versions"
 
 !!! picture inline end
-    ![!Image of the Mana Pool block](/../assets/images/previews/mana_pool.png){ align=right }
+    ![!Image of the Mana Pool block](../img/previews/mana_pool.png){ align=right }
 
 Mana Pools are used to store mana. They are also used to craft items.
 

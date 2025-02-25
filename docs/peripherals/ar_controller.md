@@ -5,7 +5,7 @@ comments: true
 # AR Controller
 
 !!! picture inline end
-    ![!Image of the AR Controller block](/../assets/images/previews/ar_controller.png){ align=right }
+    ![!Image of the AR Controller block](../img/previews/ar_controller.png){ align=right }
 
 The AR Controller is used to control your [AR Goggles](../items/ar_goggles.md) wirelessly. You can draw anything you wish into an overlay that will be visible as long as you're wearing the goggles.
 

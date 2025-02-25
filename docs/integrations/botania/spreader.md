@@ -7,7 +7,7 @@ comments: true
 !!! success "Available in all versions"
 
 !!! picture inline end
-    ![!Image of the Mana Spreader block](/../assets/images/previews/mana_spreader.png){ align=right }
+    ![!Image of the Mana Spreader block](../img/previews/mana_spreader.png){ align=right }
 
 Mana Spreaders are used to transfer mana from one source to another.
 

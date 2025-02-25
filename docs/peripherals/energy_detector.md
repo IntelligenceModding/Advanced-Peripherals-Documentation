@@ -5,7 +5,7 @@ comments: true
 # Energy Detector
 
 !!! picture inline end
-    ![!Image of the Energy Detector block](/../assets/images/previews/energy_detector.png){ align=right }
+    ![!Image of the Energy Detector block](../img/previews/energy_detector.png){ align=right }
 
 The Energy Detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 

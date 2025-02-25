@@ -7,7 +7,7 @@ comments: true
 !!! danger "Only available in version 1.16"
 
 !!! picture inline end
-    ![!Image of the Redstone Connector block](/../assets/images/previews/redstone_connector.png){ align=right }
+    ![!Image of the Redstone Connector block](../img/previews/redstone_connector.png){ align=right }
 
 The Redstone Wire Connector is a block from Immersive Engineering to connect redstone wire over big distances.
 

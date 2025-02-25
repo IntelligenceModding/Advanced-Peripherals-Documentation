@@ -5,7 +5,7 @@ comments: true
 # Weak Automata
 
 !!! picture inline end
-    ![!Image of the Weak Automata Upgrade](/../assets/images/previews/weak_automata.png){ align=right }
+    ![!Image of the Weak Automata Upgrade](../img/previews/weak_automata.png){ align=right }
 
 Weak automata is a turtle with a Weak Mechanic Soul upgrade. It has several different abilities:  
 • Digging blocks with tools  

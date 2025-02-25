@@ -5,7 +5,7 @@ comments: true
 # Note Block
 
 !!! picture inline end
-    ![!Image of the Noteblock block](/../assets/images/previews/noteblock.png){ align=right }
+    ![!Image of the Noteblock block](../img/previews/noteblock.png){ align=right }
 
 A [Note Block](https://minecraft.fandom.com/wiki/Note_Block) is a musical block that emits sounds when punched or powered with redstone.
 

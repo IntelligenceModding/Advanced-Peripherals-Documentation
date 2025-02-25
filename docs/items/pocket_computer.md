@@ -5,7 +5,7 @@ comments: true
 # Pocket Computers
 
 !!! picture inline end
-    ![!Image of a Pocket Computer](/../assets/images/previews/pocket_computer.png){ align=right }
+    ![!Image of a Pocket Computer](../img/previews/pocket_computer.png){ align=right }
 
 There are Pocket Computer versions of the following peripherals:
 
