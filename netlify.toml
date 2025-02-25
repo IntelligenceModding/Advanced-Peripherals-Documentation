@@ -11,10 +11,10 @@
     echo "Trying to deploy $BRANCH ..."
     if [ "$BRANCH" = "0.8" ]; then
       echo "Deploying $BRANCH"
-      mike deploy --push --update-aliases --ignore-remote-status --allow-empty 0.8 canary
+      mike deploy --push --update-aliases 0.8 canary
     elif [ "$BRANCH" = "0.7" ]; then
       echo "Deploying $BRANCH"
-      mike deploy --push --update-aliases --ignore-remote-status --allow-empty 0.7 latest
+      mike deploy --push --update-aliases 0.7 latest
     fi
   """
   publish = "site" # The directory where your built MkDocs site resides
