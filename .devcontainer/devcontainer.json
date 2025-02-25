@@ -1,6 +1,6 @@
 {
-  "name": "Python 3.13.1 with MkDocs",
-  "image": "python:3.13.1",
+  "name": "Python 3.13.2 with MkDocs",
+  "image": "python:3.13.2",
   "postStartCommand": "pip install poetry && poetry install",
   "forwardPorts": [
     8000
