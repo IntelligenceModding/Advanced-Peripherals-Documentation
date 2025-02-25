@@ -5,7 +5,7 @@
     git config user.email "netlifybot@example.com"
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/SirEndii/Advanced-Peripherals-Documentation.git
     git config pull.rebase true
-    git checkout --no-guess -f origin/gh-pages
+    git checkout --no-guess gh-pages
     git pull origin gh-pages
     git checkout --no-guess ${BRANCH}
     echo "Trying to deploy $BRANCH ..."
