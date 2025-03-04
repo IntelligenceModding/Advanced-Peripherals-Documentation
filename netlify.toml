@@ -1,5 +1,6 @@
 [build]
   command = """
+    mkdocs build
     git config user.name "Version Deployment"
     git config user.email "netlifybot@example.com"
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/SirEndii/Advanced-Peripherals-Documentation.git
@@ -14,8 +15,10 @@
     elif [ "$BRANCH" = "0.7" ]; then
       echo "Deploying $BRANCH"
       mike deploy --push --update-aliases 0.7 latest
+    else
+      echo "Deploying $BRANCH"
+      mike deploy --push "$BRANCH"
     fi
-    git push origin gh-pages
   """
   publish = "site" # The directory where your built MkDocs site resides
 
