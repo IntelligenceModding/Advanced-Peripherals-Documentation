@@ -12,5 +12,10 @@
     "aliases": [
       "latest"
     ]
+  },
+  {
+    "version": "0.7-bridges",
+    "title": "0.7-bridges",
+    "aliases": []
   }
 ]
