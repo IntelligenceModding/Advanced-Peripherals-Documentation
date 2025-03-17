@@ -4,9 +4,6 @@ comments: true
 
 # Magmator
 
-!!! danger "Only available in version 1.19.2"
-
-
 The Magmator is a block from Powah to generate power from a fluid heat source (lava)
 
 !!! warning "Requirement"

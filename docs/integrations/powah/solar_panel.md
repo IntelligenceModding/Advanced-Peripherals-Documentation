@@ -4,8 +4,6 @@ comments: true
 
 # Solar Panel
 
-!!! danger "Only available in version 1.19.2"
-
 The Solar Panel is a block from Powah to generate power given direct exposure to the sky.
 
 !!! warning "Requirement"

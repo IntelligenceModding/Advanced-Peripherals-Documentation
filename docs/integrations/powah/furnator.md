@@ -4,8 +4,6 @@ comments: true
 
 # Furnator
 
-!!! danger "Only available in version 1.19.2"
-
 The Furnator is a block from Powah to generate power given a fuel source.
 
 !!! warning "Requirement"

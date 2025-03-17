@@ -4,8 +4,6 @@ comments: true
 
 # Ender Cell
 
-!!! danger "Only available in version 1.19.2"
-
 The Ender Cell is a block from Powah to receive, store, and send energy on specific channels of the owner. You can access the energy from anywhere.
 
 !!! warning "Requirement"

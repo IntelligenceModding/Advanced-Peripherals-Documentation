@@ -4,8 +4,6 @@ comments: true
 
 # Reactor
 
-!!! danger "Only available in version 1.19.2"
-
 The Reactor is a block from Powah to generate power from uraninite.
 
 !!! warning "Requirement"
