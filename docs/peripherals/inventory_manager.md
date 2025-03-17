@@ -18,9 +18,9 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 <center>
 
-| Peripheral Name  | Interfaces with  | Has events | Introduced in |
-| ---------------- | ---------------- | ---------- | ------------- |
-| inventoryManager | Player Inventory | No         | 0.5b          |
+| Peripheral Name   | Interfaces with  | Has events | Introduced in |
+| ----------------- | ---------------- | ---------- | ------------- |
+| inventory_manager | Player Inventory | No         | 0.5b          |
 
 </center>
 
@@ -45,7 +45,7 @@ The Inventory Manager will add a random item to the player's inventory if the `i
     You can now use both relative (`right`, `left`, `front`, `back`, `top`, `bottom`) and cardinal (`north`, `south`, `east`, `west`, `up`, `down`) directions for the `direction` argument.  
 
 ```lua linenums="1"
-local manager = peripheral.find("inventoryManager")
+local manager = peripheral.find("inventory_manager")
 
 -- Add 32 cobblestone to the players offhand slot from the block above
 manager.addItemToPlayer("up", {name="minecraft:cobblestone", toSlot=36, count=32})
@@ -66,7 +66,7 @@ The `slot` and `count` are overwritten if `fromSlot` or `count` is specified in 
 if the `item` argument is empty, the manager will move any item.
 
 ```lua linenums="1"
-local manager = peripheral.find("inventoryManager")
+local manager = peripheral.find("inventory_manager")
 
 -- Remove up to 5 of the item in slot 1 of the player's inventory
 -- and place it in the block above
@@ -95,7 +95,7 @@ Returns a list of the player's current armor slots
 | nbt: `table`           | The item's nbt data                     |
 
 ```lua linenums="1"
-local manager = peripheral.find("inventoryManager")
+local manager = peripheral.find("inventory_manager")
 
 local armor = manager.getArmor()
 print("First armor piece is: " .. armor[1].displayName)

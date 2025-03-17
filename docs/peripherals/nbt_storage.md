@@ -17,7 +17,7 @@ NBT Storage is a custom block that allows reading and writing of NBT data to the
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| nbtStorage      | NBT             | No         | 0.7r          |
+| nbt_storage     | NBT             | No         | 0.7r          |
 
 </center>
 
@@ -51,7 +51,7 @@ writeTable(nbt: table) -> boolean | nil, string
 Writes NBT data into the block and returns true if the data is successfully written. Otherwise it returns nil and an error message.
 
 ```lua linenums="1"
-local storage = peripheral.find("nbtStorage")
+local storage = peripheral.find("nbt_storage")
 
 storage.writeTable({
     specialString = "A super special string"

@@ -19,7 +19,7 @@ The Solar Panel is a block from Powah to generate power given direct exposure to
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |
-| solarPanel        | Every solar panel block (all tiers) | No         | N/A           |
+| solar_panel       | Every solar panel block (all tiers) | No         | N/A           |
 
 </center>
 

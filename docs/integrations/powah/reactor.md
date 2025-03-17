@@ -19,7 +19,7 @@ The Reactor is a block from Powah to generate power from uraninite.
 
 | Peripheral Name   | Interfaces with                                | Has events | Introduced in |
 | ----------------- | ---------------------------------------------- | ---------- | ------------- |
-| uraniniteReactor  | Every reactor multiblock structure (all tiers) | No         | N/A           |
+| uraninite_reactor | Every reactor multiblock structure (all tiers) | No         | N/A           |
 
 </center>
 

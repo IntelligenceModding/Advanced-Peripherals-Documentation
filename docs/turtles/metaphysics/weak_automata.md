@@ -23,7 +23,7 @@ Weak automata is a turtle with a Weak Mechanic Soul upgrade. It has several diff
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| weakAutomata    | World           | No         | 0.7r          |
+| weak_automata   | World           | No         | 0.7r          |
 
 </center>
 

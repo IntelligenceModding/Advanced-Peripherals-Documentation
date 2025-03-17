@@ -15,9 +15,9 @@ This automata will not use any item durability, however there is a very small ch
 
 ---
 
-| Peripheral Name              | Interfaces with | Has events | Introduced in |
-| ---------------------------- | --------------- | ---------- | ------------- |
-| overpoweredWeakAutomata<br>overpoweredHusbandryAutomata<br>overpoweredEndAutomata      | World           | No         | 0.7r          |
+| Peripheral Name                | Interfaces with | Has events | Introduced in |
+| ------------------------------ | --------------- | ---------- | ------------- |
+| overpowered_weak_automata<br>overpowered_husbandry_automata<br>overpowered_end_automata       | World           | No         | 0.7r          |
 
 ---
 

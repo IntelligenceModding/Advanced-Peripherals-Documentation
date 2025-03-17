@@ -18,7 +18,7 @@ You can get a list of all online players and detect when a player clicks on the 
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 |-----------------|-----------------|------------|---------------|
-| playerDetector  | Players         | Yes        | 0.1b          |
+| player_detector | Players         | Yes        | 0.1b          |
 
 </center>
 
@@ -118,7 +118,7 @@ Returns information about the player with the `username` passed.
 | z: `number`                | The z coordinate                           |
 
 ```lua linenums="1"
-local detector = peripheral.find("playerDetector")
+local detector = peripheral.find("player_detector")
 
 -- Get the position of Player123 and print their coordinates
 local pos = detector.getPlayerPos("Player123")

@@ -20,7 +20,7 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| chatBox         | Game Chat       | Yes        | 0.1b          |
+| chat_box        | Game Chat       | Yes        | 0.1b          |
 
 </center>
 
@@ -61,7 +61,7 @@ To change the `brackets` used around the prefix you must specify a string like s
 Returns true if the message is successfully sent, or nil and an error message if it fails.
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chatBox = peripheral.find("chat_box")
 
 chatBox.sendMessage("Hello world!") -- Sends "[AP] Hello world!" in chat
 os.sleep(1) -- We must account for the cooldown between messages, this is to prevent spam
@@ -87,7 +87,7 @@ sendMessageToPlayer(message: string, username: string[, prefix: string, brackets
 Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chatBox = peripheral.find("chat_box")
 
 chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
 ```
@@ -102,7 +102,7 @@ Sends a toast to the specified player. The design of the toast is the classic no
 
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chatBox = peripheral.find("chat_box")
 
 chatBox.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()", "&c&l")
 ```
@@ -118,7 +118,7 @@ Find out more information on how the text component format works on the [minecra
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chatBox = peripheral.find("chat_box")
 
 local message = {
     {text = "Click "}, 
@@ -162,7 +162,7 @@ You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_t
 ![!Image of the formatted toast](../img/chat_box/toast_formatted.png)
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chatBox = peripheral.find("chat_box")
 
 
 local title = {
