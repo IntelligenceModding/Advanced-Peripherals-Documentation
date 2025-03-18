@@ -4,8 +4,6 @@ comments: true
 
 # Energy Cell
 
-!!! danger "Only available in version 1.19.2"
-
 The Energy Cell is a block from Powah to receive, store and send energy.
 
 !!! warning "Requirement"
@@ -19,7 +17,7 @@ The Energy Cell is a block from Powah to receive, store and send energy.
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |
-| energyCell        | Every energy cell block (all tiers) | No         | N/A           |
+| energy_cell       | Every energy cell block (all tiers) | No         | N/A           |
 
 </center>
 

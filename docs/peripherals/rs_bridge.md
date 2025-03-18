@@ -21,7 +21,7 @@ You can retrieve items, craft items, get all items as a list and more.
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| rsBridge        | Refined Storage | No         | 0.3.6b        |
+| rs_bridge       | Refined Storage | No         | 0.3.6b        |
 
 </center>
 
@@ -123,7 +123,7 @@ Returns the number of the `item` imported into the system.
     You can now use both relative (`right`, `left`, `front`, `back`, `top`, `bottom`) and cardinal (`north`, `south`, `east`, `west`, `up`, `down`) directions for the `direction` argument.  
 
 ```lua linenums="1"
-local bridge = peripheral.find("rsBridge")
+local bridge = peripheral.find("rs_bridge")
 
 -- Imports 32 dirt from the container above into the system
 bridge.importItem({name="minecraft:dirt", count=1}, "up")
@@ -140,7 +140,7 @@ Exports an `item` to a container in the `direction` from the RS bridge block.
 Returns the number of the `item` exported into the container.
 
 ```lua linenums="1"
-local bridge = peripheral.find("rsBridge")
+local bridge = peripheral.find("rs_bridge")
 
 -- Exports 1 "Protection I" book into the container above
 bridge.exportItem({name="minecraft:enchanted_book", count=1, nbt="ae70053c97f877de546b0248b9ddf525"}, "up")
@@ -303,7 +303,7 @@ Returns a list of information about all craftable items
 | tags: `table`          | A list of all of the item tags                          |
 
 ```lua linenums="1"
-local bridge = peripheral.find("rsBridge")
+local bridge = peripheral.find("rs_bridge")
 
 -- print out all craftable items
 craftableItems = bridge.listCraftableItems()

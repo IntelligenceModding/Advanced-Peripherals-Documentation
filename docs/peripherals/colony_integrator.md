@@ -18,9 +18,9 @@ The colony integrator can interact with a colony from MineColonies.
 
 <center>
 
-| Peripheral Name  | Interfaces with | Has events | Introduced in |
-| ---------------- | --------------- | ---------- | ------------- |
-| colonyIntegrator | Mine Colony     | No         | 0.7r          |
+| Peripheral Name   | Interfaces with | Has events | Introduced in |
+| ----------------- | --------------- | ---------- | ------------- |
+| colony_integrator | Mine Colony     | No         | 0.7r          |
 
 </center>
 
@@ -333,7 +333,7 @@ isInColony() -> boolean
 Returns true if the block is in a colony.
 
 ```lua linenums="1"
-local integrator = peripheral.find("colonyIntegrator")
+local integrator = peripheral.find("colony_integrator")
 
 if integrator.isInColony() then
     print("Block is inside a colony!")

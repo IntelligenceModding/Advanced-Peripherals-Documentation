@@ -19,7 +19,7 @@ The Geo scanner has a delay between scans, so you must wait until you can scan a
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| geoScanner      | Blocks          | No         | 0.7r          |
+| geo_scanner     | Blocks          | No         | 0.7r          |
 
 </center>
 
@@ -70,15 +70,6 @@ Returns a list of data about all blocks in the radius. Or if the scan fails it r
 | x: `number`            | The block's x coordinate                |
 | y: `number`            | The block's y coordinate                |
 | z: `number`            | The block's z coordinate                |
-
----
-
-### getScanCooldown
-```
-getScanCooldown() -> number
-```
-
-Returns the current time remaining until then next `scan()` can be ran.
 
 ---
 

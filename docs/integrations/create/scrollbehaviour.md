@@ -18,9 +18,9 @@ This integration works for all blocks with any type of scroll value behaviour. L
 
 <center>
 
-| Peripheral Name       | Interfaces with               | Has events | Introduced in |
-| --------------------- | ----------------------------- | ---------- | ------------- |
-| scrollBehaviourEntity<br>speedController (1.16) | Scroll Value Behaviour blocks | No         | 0.7.16        |
+| Peripheral Name         | Interfaces with               | Has events | Introduced in |
+| ----------------------- | ----------------------------- | ---------- | ------------- |
+| scroll_behaviour_entity | Scroll Value Behaviour blocks | No         | 0.7.16        |
 
 </center>
 

@@ -22,7 +22,7 @@ A Blaze Burner uses different fuel types to heat up things above it like basins 
 
 | Peripheral Name | Interfaces with    | Has events | Introduced in |
 | --------------- | ------------------ | ---------- | ------------- |
-| blazeBurner     | Blaze Burner block | No         | 0.7.16        |
+| blaze_burner    | Blaze Burner block | No         | 0.7.16        |
 
 </center>
 

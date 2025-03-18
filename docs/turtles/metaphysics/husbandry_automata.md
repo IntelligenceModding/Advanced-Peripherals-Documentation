@@ -19,9 +19,9 @@ Husbandry automata is a turtle with a Husbandry Mechanic Soul upgrade. This upgr
 
 <center>
 
-| Peripheral Name   | Interfaces with | Has events | Introduced in |
-| ----------------- | --------------- | ---------- | ------------- |
-| husbandryAutomata | World           | No         | 0.7r          |
+| Peripheral Name    | Interfaces with | Has events | Introduced in |
+| ------------------ | --------------- | ---------- | ------------- |
+| husbandry_automata | World           | No         | 0.7r          |
 
 </center>
 
@@ -34,11 +34,11 @@ The core needs to be placed inside the turtle into the current active slot(Usual
 
 The turtle needs 9 animals in total:
 
-| Animal | Amount |
-| ------ | ------ |
-|   Cow  |    3   |
-|  Sheep |    3   |
-| Chicken |   3   |
+| Animal  | Amount |
+| ------- | ------ |
+|   Cow   | 3      |
+|  Sheep  | 3      |
+| Chicken | 3      |
 
 Step by Step:
 

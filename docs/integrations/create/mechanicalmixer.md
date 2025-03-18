@@ -20,9 +20,9 @@ A Mechanical Mixer is used in combination with a Basin to process many shapeless
 
 <center>
 
-| Peripheral Name | Interfaces with        | Has events | Introduced in |
-| --------------- | ---------------------- | ---------- | ------------- |
-| mechanicalMixer | Mechanical Mixer block | No         | 0.7.16        |
+| Peripheral Name  | Interfaces with        | Has events | Introduced in |
+| ---------------- | ---------------------- | ---------- | ------------- |
+| mechanical_mixer | Mechanical Mixer block | No         | 0.7.16        |
 
 </center>
 

@@ -4,9 +4,6 @@ comments: true
 
 # Thermo Generator
 
-!!! danger "Only available in version 1.19.2"
-
-
 The Thermo Generator is block from Powah to generate power from an appropriate heat source block beneath it (magma block, lava)
 
 !!! warning "Requirement"

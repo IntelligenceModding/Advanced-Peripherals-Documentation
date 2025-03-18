@@ -21,7 +21,7 @@ The Energy Detector can detect energy flow and acts as a resistor. You can defin
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| energyDetector  | Forge Energy    | No         | 0.4.1b        |
+| energy_detector | Forge Energy    | No         | 0.4.1b        |
 
 </center>
 
@@ -38,7 +38,7 @@ getTransferRate() -> int
 Returns the current energy that is going through the block.
 
 ```lua linenums="1"
-local detector = peripheral.find("energyDetector")
+local detector = peripheral.find("energy_detector")
 
 -- prints "Current transfer rate: xxx FE/t"
 -- where 'xxx' is the current energy flowing through the block
@@ -66,7 +66,7 @@ setTransferRateLimit(limit: int) -> void
 Set the max energy rate that will go through the block.
 
 ```lua linenums="1"
-local detector = peripheral.find("energyDetector")
+local detector = peripheral.find("energy_detector")
 
 detector.setTransferRateLimit(512) -- Only 512 FE/t can go through the block
 ```

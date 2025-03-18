@@ -16,9 +16,9 @@ the light level of the block and many more.
 
 <center>
 
-| Peripheral Name     | Interfaces with | Has events | Introduced in |
-| ------------------- | --------------- | ---------- | ------------- |
-| environmentDetector | World           | No         | 0.1b          |
+| Peripheral Name      | Interfaces with | Has events | Introduced in |
+| -------------------- | --------------- | ---------- | ------------- |
+| environment_detector | World           | No         | 0.1b          |
 
 </center>
 
@@ -35,7 +35,7 @@ getBiome() -> string
 Returns the current biome the block is in.
 
 ```lua linenums="1"
-local detector = peripheral.find("environmentDetector")
+local detector = peripheral.find("environment_detector")
 
 -- e.g. prints "Biome: minecraft:plains"
 print("Biome: " .. detector.getBiome())
@@ -82,7 +82,7 @@ getDimensionName() -> string
 Returns the name of the current dimension (ex. `overworld`, `the_nether` or `the_end`).
 
 ```lua linenums="1"
-local detector = peripheral.find("environmentDetector")
+local detector = peripheral.find("environment_detector")
 
 -- e.g. prints "Dimension: the_nether"
 print("Dimension: " .. detector.getDimensionName())

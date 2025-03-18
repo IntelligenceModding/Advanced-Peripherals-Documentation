@@ -18,9 +18,9 @@ You may need this peripheral for cases where you need to output redstone signals
 
 <center>
 
-| Peripheral Name    | Interfaces with | Has events | Introduced in |
-| ------------------ | --------------- | ---------- | ------------- |
-| redstoneIntegrator | Redstone        | Yes        | 0.5.3b        |
+| Peripheral Name     | Interfaces with | Has events | Introduced in |
+| ------------------- | --------------- | ---------- | ------------- |
+| redstone_integrator | Redstone        | Yes        | 0.5.3b        |
 
 </center>
 
@@ -98,7 +98,7 @@ setOutput(side: string, powered: boolean) -> void
 Sets the redstone level output to 0 or 15 on the given `side` depending on `powered`.
 
 ```lua linenums="1"
-local integrator = peripheral.find("redstoneIntegrator")
+local integrator = peripheral.find("redstone_integrator")
 
 print("Left redstone level: ".. integrator.getAnalogInput("left")) -- prints the level of the redstone at the left side.
 print("Right redstone: ".. integrator.getOutput("right")) -- prints whether there is a redstone output on the right side.

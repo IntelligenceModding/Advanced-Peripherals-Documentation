@@ -17,7 +17,7 @@ This block is able to read data about any blocks or tile entities in front of it
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| blockReader     | Blocks          | No         | 0.7r          |
+| block_reader    | Blocks          | No         | 0.7r          |
 
 </center>
 
@@ -33,7 +33,7 @@ getBlockName() -> string
 Returns the registry name of the block (ex. `minecraft:dirt`)
 
 ```lua linenums="1"
-local reader = peripheral.find("blockReader")
+local reader = peripheral.find("block_reader")
 
 print("There is a " .. read.getBlockName() .. " in front.")
 ```
@@ -48,7 +48,7 @@ getBlockData() -> table | nil
 Returns the block data of the block if block is a tile entity.
 
 ```lua linenums="1"
-local reader = peripheral.find("blockReader")
+local reader = peripheral.find("block_reader")
 
 --Prints the contents of the data
 for k, v in ipairs(reader.getBlockData()) do 
