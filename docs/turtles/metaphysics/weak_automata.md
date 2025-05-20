@@ -266,6 +266,9 @@ Returns `true` if mount is succeed. Or `false` and an error message.
 
 ## Changelog/Trivia
 
+**0.8**
+Added vs2 integration `isOnShip`, `getCurrentShip`, `canMountToShip`, and `mountToShip`.
+
 **0.7.36r**
 Added `placeBlock` method for accure placement.
 

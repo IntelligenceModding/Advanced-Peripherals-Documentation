@@ -144,5 +144,8 @@ Can only be invoked in a short period after `portalShipPrepare` returns the `shi
 
 ## Changelog/Trivia
 
+**0.8**
+Added cross portal ability to end automata.
+
 **0.7r**  
 Added the End Automata
