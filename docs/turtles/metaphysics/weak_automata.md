@@ -215,6 +215,55 @@ Returns true if it successfully placed block or nil and an error message.
 
 ---
 
+### isOnShip
+```
+isOnShip() -> boolean
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns `true` if turtle is on an assembled ship, `false` otherwise.
+
+---
+
+### getCurrentShip
+```
+getCurrentShip() -> table | nil
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns a table contains current ship's information, or `nil` if the turtle is not on a ship.
+
+---
+
+### canMountToShip
+```
+canMountToShip() -> table | nil
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns a table contains mountable ships' slugs, or `nil` if no ship is found.
+
+---
+
+### mountToShip
+```
+mountToShip(slug: string | nil) -> true | false, string
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Mount to a ship with given slug. Or chose a random one if no slug is provided.
+Returns `true` if mount is succeed. Or `false` and an error message.
+
+---
+
 ## Changelog/Trivia
 
 **0.7.36r**
