@@ -46,6 +46,8 @@ nav:
       - 'Minecraft':
         - 'Beacon': 'integrations/minecraft/beacon.md'
         - 'Note Block': 'integrations/minecraft/noteblock.md'
+      - 'Applied Energistics'
+        - 'Cable P2P Tunnel': 'integrations/ae2/cable_p2p_tunnel.md'
       - 'Botania':
         - 'Flowers': 'integrations/botania/flowers.md'
         - 'Mana Pool': 'integrations/botania/pool.md'
@@ -56,15 +58,6 @@ nav:
         - 'Fluid Tank': 'integrations/create/fluidtank.md'
         - 'Mechanical Mixer': 'integrations/create/mechanicalmixer.md'
         - 'Blocks with Scroll Behaviour': 'integrations/create/scrollbehaviour.md'
-      - 'Draconic Evolution':
-        - 'integrations/draconic_evolution/index.md'
-      - 'Immersive Engineering':
-        - 'Redstone Wire Connector': 'integrations/immersive_engineering/connector.md'
-        - 'Redstone Probe': 'integrations/immersive_engineering/probe.md'
-      - 'Integrated Dynamics':
-        - 'Variable Store': 'integrations/integrated_dynamics/variable_store.md'
-      - 'Mekanism':
-        - 'integrations/mekanism/index.md'
       - 'Powah':
         - 'Energy cell': 'integrations/powah/energy_cell.md'
         - 'Furnator': 'integrations/powah/furnator.md'
@@ -72,8 +65,6 @@ nav:
         - 'Reactor': 'integrations/powah/reactor.md'
         - 'Solar panel': 'integrations/powah/solar_panel.md'
         - 'Thermo generator': 'integrations/powah/thermo_generator.md'
-      - 'Storage Drawers':
-        - 'Drawer': 'integrations/storage_drawers/drawer.md'
     - 'Changelogs':
       - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
       - 'Changelog 0.7r': 'changelogs/0.7r.md'
