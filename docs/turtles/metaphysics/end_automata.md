@@ -72,6 +72,15 @@ Returns true if the location is successfully saved, or nil and an error message.
 
 ---
 
+### deletePoint
+```
+deletePoint(name: string) -> true | nil, string
+```
+Delete a saved warp point with the given `name`.  
+Returns true if the warp point exists and is successfully removed, or nil and an error message.
+
+---
+
 ### distanceToPoint
 ```
 distanceToPoint(name: string) -> number | nil, string
@@ -102,6 +111,34 @@ warpToPoint(name: string) -> true | nil, string
 ```
 Teleports the turtle from the current location to the location of the point with the given `name`.  
 Returns true if the turtle is successfully teleported or nil and an error message.
+
+---
+
+### portalShipPrepare
+```
+portalShipPrepare(direction: string | nil) -> table | nil, string
+```
+Prepare to cross a portal.  
+Direction includes `up`, `top`, `down`, `bottom`, and `front` (default).  
+If a portal is detected, a table with target dimension's information will be returns. Or nil and an error message.  
+
+| Field      | Type      | Description |
+| ---------- | --------- | ----------- |
+| `name`     | `string`  | Target dimension's ID |
+| `pos`      | `string`  | Position after teleport |
+| `facing`   | `string`  | Facing direction after teleport |
+| `costs`    | `number`  | Costs to active teleport |
+| `canSpawn` | `boolean` | `true` if the destination is not blocked so turtle can perform the teleport, `false` otherwise. |
+| `shipId`   | `string`  | The teleport id, uses in `portalShipActive` |
+
+---
+
+### portalShipActive
+```
+portalShipActive(shipId: string) -> true | nil, string
+```
+Active a portal and teleport through it.  
+Can only be invoked in a short period after `portalShipPrepare` returns the `shipId`.  
 
 ---
 
