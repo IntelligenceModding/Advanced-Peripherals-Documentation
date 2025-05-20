@@ -264,8 +264,8 @@ Returns a table with all of the registered dimensions for the current world, thi
 scanEntities(range: number) -> table
 ```
 
-Returns a table with all entities in the given range
-Coordinates are relativ and not absolute
+Returns a table with all entities in the given range.  
+Coordinates are relative and not absolute.
 
 !!! example
     Example output for an entity:
@@ -288,8 +288,39 @@ Coordinates are relativ and not absolute
     }
     ```
 
+---
+
+### scanShips
+
+```
+scanShips(range: number) -> table
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns a table with all ships in the given range.  
+Coordinates are relative and not absolute.
+
+---
+
+### scanShipCost
+
+```
+scanShipCost(range: number) -> number
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns the estimated cost to scan ships in the given range.
+
+---
 
 ## Changelog/Trivia
+
+**0.8**
+Added vs2 integration `scanShips`, `scanShipCost`.
 
 **0.6.5b**  
 Added `getRadiationRaw`
