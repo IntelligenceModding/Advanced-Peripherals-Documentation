@@ -46,7 +46,7 @@ nav:
       - 'Minecraft':
         - 'Beacon': 'integrations/minecraft/beacon.md'
         - 'Note Block': 'integrations/minecraft/noteblock.md'
-      - 'Applied Energistics'
+      - 'Applied Energistics':
         - 'Cable P2P Tunnel': 'integrations/ae2/cable_p2p_tunnel.md'
       - 'Botania':
         - 'Flowers': 'integrations/botania/flowers.md'
