@@ -19,7 +19,6 @@ nav:
       - 'Block Reader': 'peripherals/block_reader.md'
       - 'Geo Scanner': 'peripherals/geo_scanner.md'
       - 'Redstone Integrator': 'peripherals/redstone_integrator.md'
-      - 'AR Controller': 'peripherals/ar_controller.md'
       - 'ME Bridge': 'peripherals/me_bridge.md'
       - 'RS Bridge': 'peripherals/rs_bridge.md'
       - 'Colony Integrator': 'peripherals/colony_integrator.md'
@@ -36,11 +35,12 @@ nav:
         - 'End Automata': 'turtles/metaphysics/end_automata.md'
         - 'Overpowered Automata': 'turtles/metaphysics/overpowered_automata.md'
     - 'Items':
-      - 'AR Goggles': 'items/ar_goggles.md'
       - 'Chunk Controller': 'items/chunk_controller.md'
       - 'Computer Tool': 'items/computer_tool.md'
       - 'Memory Card': 'items/memory_card.md'
       - 'Pocket Computers': 'items/pocket_computer.md'
+      - 'Smart Glasses': 'items/smart_glasses.md'
+      - 'Smart Glasses Interface': 'items/smart_glasses_interface.md'
     - 'Mod Integrations':
       - 'integrations/index.md'
       - 'Minecraft':
