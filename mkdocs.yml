@@ -34,6 +34,10 @@ nav:
         - 'Husbandry Automata': 'turtles/metaphysics/husbandry_automata.md'
         - 'End Automata': 'turtles/metaphysics/end_automata.md'
         - 'Overpowered Automata': 'turtles/metaphysics/overpowered_automata.md'
+    - 'Modules':
+      - 'Hotkey Module': 'modules/hotkey.md'
+      - 'Night Vision Module': 'modules/night_vision.md'
+      - 'Overlay Module': 'modules/overlay.md'
     - 'Items':
       - 'Chunk Controller': 'items/chunk_controller.md'
       - 'Computer Tool': 'items/computer_tool.md'
