@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../guides/how_to_report/" class="md-tabs__link">
+        <a href="../../guides/objects/" class="md-tabs__link">
           
   
   
@@ -708,6 +708,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -749,12 +753,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/how_to_report/" class="md-nav__link">
+      <a href="../../guides/objects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    How to: report a bug or request a feature
+    Lua Objects
     
   </span>
   
@@ -801,6 +805,52 @@
   
   <span class="md-ellipsis">
     Cooldowns and Fuel consumption
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/storage_system_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage System Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/how_to_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to: report a bug or request a feature
     
   </span>
   
@@ -1179,30 +1229,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Events
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#crafting" class="md-nav__link">
-    <span class="md-ellipsis">
-      crafting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       Functions
@@ -1321,6 +1347,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmaxitemdiskstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxItemDiskStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxfluiddiskstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxFluidDiskStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxitemexternalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxItemExternalStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxfluidexternalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxFluidExternalStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getenergystorage" class="md-nav__link">
     <span class="md-ellipsis">
       getEnergyStorage
@@ -1348,19 +1410,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getcraftingcpus" class="md-nav__link">
+  <a href="#getpattern" class="md-nav__link">
     <span class="md-ellipsis">
-      getCraftingCPUs
+      getPattern
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="getCraftingCPUs">
+    <nav class="md-nav" aria-label="getPattern">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cpu-properties" class="md-nav__link">
+  <a href="#properties_1" class="md-nav__link">
     <span class="md-ellipsis">
-      CPU Properties
+      Properties
     </span>
   </a>
   
@@ -1400,7 +1462,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties_1" class="md-nav__link">
+  <a href="#properties_2" class="md-nav__link">
     <span class="md-ellipsis">
       Properties
     </span>
@@ -1414,9 +1476,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#listcraftablefluid" class="md-nav__link">
+  <a href="#listcraftablefluids" class="md-nav__link">
     <span class="md-ellipsis">
-      listCraftableFluid
+      listCraftableFluids
     </span>
   </a>
   
@@ -1432,81 +1494,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#listfluid" class="md-nav__link">
+  <a href="#listfluids" class="md-nav__link">
     <span class="md-ellipsis">
-      listFluid
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listgas" class="md-nav__link">
-    <span class="md-ellipsis">
-      listGas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listcells" class="md-nav__link">
-    <span class="md-ellipsis">
-      listCells
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gettotalitemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getTotalItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gettotalfluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getTotalFluidStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getuseditemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getUsedItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getusedfluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getUsedFluidStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getavailableitemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getAvailableItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getavailablefluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getAvailableFluidStorage
+      listFluids
     </span>
   </a>
   
@@ -1514,6 +1504,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functionality
+    </span>
+  </a>
   
 </li>
       
@@ -1526,6 +1525,15 @@
   
     <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requester
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#automatic-autocrafting" class="md-nav__link">
@@ -3307,30 +3315,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Events
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#crafting" class="md-nav__link">
-    <span class="md-ellipsis">
-      crafting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       Functions
@@ -3449,6 +3433,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getmaxitemdiskstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxItemDiskStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxfluiddiskstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxFluidDiskStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxitemexternalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxItemExternalStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmaxfluidexternalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      getMaxFluidExternalStorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getenergystorage" class="md-nav__link">
     <span class="md-ellipsis">
       getEnergyStorage
@@ -3476,19 +3496,19 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getcraftingcpus" class="md-nav__link">
+  <a href="#getpattern" class="md-nav__link">
     <span class="md-ellipsis">
-      getCraftingCPUs
+      getPattern
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="getCraftingCPUs">
+    <nav class="md-nav" aria-label="getPattern">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cpu-properties" class="md-nav__link">
+  <a href="#properties_1" class="md-nav__link">
     <span class="md-ellipsis">
-      CPU Properties
+      Properties
     </span>
   </a>
   
@@ -3528,7 +3548,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties_1" class="md-nav__link">
+  <a href="#properties_2" class="md-nav__link">
     <span class="md-ellipsis">
       Properties
     </span>
@@ -3542,9 +3562,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#listcraftablefluid" class="md-nav__link">
+  <a href="#listcraftablefluids" class="md-nav__link">
     <span class="md-ellipsis">
-      listCraftableFluid
+      listCraftableFluids
     </span>
   </a>
   
@@ -3560,81 +3580,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#listfluid" class="md-nav__link">
+  <a href="#listfluids" class="md-nav__link">
     <span class="md-ellipsis">
-      listFluid
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listgas" class="md-nav__link">
-    <span class="md-ellipsis">
-      listGas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#listcells" class="md-nav__link">
-    <span class="md-ellipsis">
-      listCells
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gettotalitemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getTotalItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gettotalfluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getTotalFluidStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getuseditemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getUsedItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getusedfluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getUsedFluidStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getavailableitemstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getAvailableItemStorage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getavailablefluidstorage" class="md-nav__link">
-    <span class="md-ellipsis">
-      getAvailableFluidStorage
+      listFluids
     </span>
   </a>
   
@@ -3642,6 +3590,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functionality
+    </span>
+  </a>
   
 </li>
       
@@ -3654,6 +3611,15 @@
   
     <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requester" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requester
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#automatic-autocrafting" class="md-nav__link">
@@ -3703,7 +3669,7 @@
 
 
   
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7/docs/peripherals/me_bridge.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7-bridges/docs/peripherals/me_bridge.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3712,7 +3678,7 @@
     
       
     
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7/docs/peripherals/me_bridge.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7-bridges/docs/peripherals/me_bridge.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -3758,43 +3724,25 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 <p class="admonition-title">Failure</p>
 <p><center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME Bridge and <strong>NOT</strong> next to the computer! <h3> </center></p>
 </div>
-<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
-<h3 id="crafting">crafting<a class="headerlink" href="#crafting" title="Permanent link">&para;</a></h3>
-<p>Fires when a crafting job starts or fails.<br />
-<strong>Values:</strong><br />
-1. <code>success: boolean</code> Indicates whether a crafting job has successfully started or not<br />
-2. <code>message: string</code> A message about the status of the crafting job<br />
-These values are equivalent to the return values of <a href="#craftitem"><code>craftItem()</code></a>.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">success</span><span class="p">,</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;crafting&quot;</span><span class="p">)</span>
-<span class="kr">if</span><span class="w"> </span><span class="nv">success</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A crafting job has successfully started&quot;</span><span class="p">)</span>
-<span class="kr">else</span>
-<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A crafting job has failed to start&quot;</span><span class="p">)</span>
-<span class="kr">end</span>
-</code></pre></div></td></tr></table></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The <code>crafting</code> event will fire when the ME Bridge is connected to an active ME System that is performing crafting operations. These operations <strong>need</strong> to be started by the bridge itself!</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">1.20.1-0.7 and older</label><label for="__tabbed_1_2">1.21.1-0.7 and newer</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are playing on 0.7 for the minecraft version 1.21.1 and older, please use the content tab for "1.21.1-0.7 and newer".
+The following documentation contains the legacy ME and RS bridge features which will be replaced with the next stable AP version.</p>
+<p>The newer ME and RS Bridge system will eventually be back ported to 1.20.1 and 1.19.2 with 0.8.</p>
 </div>
-<hr />
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can use the command <code>/advancedperipherals getHashItem</code> with an item in your hand to get the MD5 hash of the NBT tags of the item. An MD5 Hash can look like this <code>ae70053c97f877de546b0248b9ddf525</code>.</p>
-</div>
+<div class="result" markdown>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The item arguments(<code>item: table</code>) accepts our item filters, you can check the syntax of these filters <a href="/../guides/filters">here</a>.</p>
 </div>
+<p>The item arguments(<code>item: table</code>) accepts our item filters, you can check the syntax of these filters <a href="/../guides/filters">here</a>.</p>
 <h3 id="craftitem">craftItem<a class="headerlink" href="#craftitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>craftItem(item: table[, craftingCpu: string]) -&gt; boolean, err: string
+<div class="highlight"><pre><span></span><code>craftItem(item: table) -&gt; boolean
 </code></pre></div>
-<p>Tries to craft the provided <code>item</code>. If a <code>craftingCpu</code>'s name is provided then it will use that cpu to craft the <code>item</code>.</p>
+<p>Tries to craft the provided <code>item</code>, returns true if it successfully starts crafting.</p>
 <h4 id="item-properties">Item Properties<a class="headerlink" href="#item-properties" title="Permanent link">&para;</a></h4>
 <p>Check the <a href="/../guides/filters">item filters guide</a> for more info!</p>
 <table>
@@ -3819,7 +3767,7 @@ These values are equivalent to the return values of <a href="#craftitem"><code>c
 </tr>
 </tbody>
 </table>
-<p><strong>OR</strong>  </p>
+<p><strong>OR</strong></p>
 <table>
 <thead>
 <tr>
@@ -3840,9 +3788,9 @@ These values are equivalent to the return values of <a href="#craftitem"><code>c
 </table>
 <hr />
 <h3 id="craftfluid">craftFluid<a class="headerlink" href="#craftfluid" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>craftFluid(fluid: table[, craftingCpu: string]) -&gt; boolean, err: string
+<div class="highlight"><pre><span></span><code>craftFluid(fluid: table, amount: number) -&gt; boolean
 </code></pre></div>
-<p>Tries to craft the provided <code>fluid</code>. If a <code>craftingCpu</code>'s name is provided then it will use that cpu to craft the <code>fluid</code>.</p>
+<p>Tries to craft the provided <code>fluid</code> of the given <code>amount</code>, returns true if it successfully starts crafting.</p>
 <h4 id="fluid-properties">Fluid Properties<a class="headerlink" href="#fluid-properties" title="Permanent link">&para;</a></h4>
 <p>Check the <a href="/../guides/filters">fluid filters guide</a> for more info!</p>
 <table>
@@ -3867,7 +3815,7 @@ These values are equivalent to the return values of <a href="#craftitem"><code>c
 </tr>
 </tbody>
 </table>
-<p><strong>OR</strong>  </p>
+<p><strong>OR</strong></p>
 <table>
 <thead>
 <tr>
@@ -3884,14 +3832,11 @@ These values are equivalent to the return values of <a href="#craftitem"><code>c
 <td>count: <code>number?</code></td>
 <td>The amount of the fluid to craft</td>
 </tr>
-<tr>
-<td>---</td>
-<td></td>
-</tr>
 </tbody>
 </table>
+<hr />
 <h3 id="getitem">getItem<a class="headerlink" href="#getitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getItem(item: table) -&gt; table, err: string
+<div class="highlight"><pre><span></span><code>getItem(item: table) -&gt; table
 </code></pre></div>
 <p>Returns a table with information about the item type in the system.</p>
 <h4 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h4>
@@ -3935,109 +3880,154 @@ These values are equivalent to the return values of <a href="#craftitem"><code>c
 </table>
 <hr />
 <h3 id="importitem">importItem<a class="headerlink" href="#importitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>importItem(item: table, direction: string) -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>importItem(item: table, direction: string) -&gt; number
 </code></pre></div>
-<p>Imports an <code>item</code> from a container in the <code>direction</code> to the ME System.<br />
+<p>Imports an <code>item</code> from a container in the <code>direction</code> to the RS System.<br />
 Returns the number of the <code>item</code> imported into the system.</p>
 <div class="admonition tip">
 <p class="admonition-title">Since version 0.7r</p>
-<p>You can now use both relative (<code>right</code>, <code>left</code>, <code>front</code>, <code>back</code>, <code>top</code>, <code>bottom</code>) and cardinal (<code>north</code>, <code>south</code>, <code>east</code>, <code>west</code>, <code>up</code>, <code>down</code>) directions for the <code>direction</code> argument.  </p>
 </div>
+<p>You can now use both relative (<code>right</code>, <code>left</code>, <code>front</code>, <code>back</code>, <code>top</code>, <code>bottom</code>) and cardinal (<code>north</code>, <code>south</code>, <code>east</code>, <code>west</code>, <code>up</code>, <code>down</code>) directions for the <code>direction</code> argument.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;meBridge&quot;</span><span class="p">)</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;rsBridge&quot;</span><span class="p">)</span>
 
 <span class="c1">-- Imports 32 dirt from the container above into the system</span>
 <span class="nv">bridge</span><span class="p">.</span><span class="nf">importItem</span><span class="p">({</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:dirt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">1</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;up&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="exportitem">exportItem<a class="headerlink" href="#exportitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>exportItem(item: table, direction: string) -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>exportItem(item: table, direction: string) -&gt; number
 </code></pre></div>
-<p>Exports an <code>item</code> to a container in the <code>direction</code> from the ME bridge block.<br />
+<p>Exports an <code>item</code> to a container in the <code>direction</code> from the RS bridge block.<br />
 Returns the number of the <code>item</code> exported into the container.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;meBridge&quot;</span><span class="p">)</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;rsBridge&quot;</span><span class="p">)</span>
 
 <span class="c1">-- Exports 1 &quot;Protection I&quot; book into the container above</span>
 <span class="nv">bridge</span><span class="p">.</span><span class="nf">exportItem</span><span class="p">({</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:enchanted_book&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nv">nbt</span><span class="o">=</span><span class="s2">&quot;ae70053c97f877de546b0248b9ddf525&quot;</span><span class="p">},</span><span class="w"> </span><span class="s2">&quot;up&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="importitemfromperipheral">importItemFromPeripheral<a class="headerlink" href="#importitemfromperipheral" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>importItemFromPeripheral(item: table, container: string) -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>importItemFromPeripheral(item: table, container: string) -&gt; number
 </code></pre></div>
 <p>Similar to <a href="#importitem"><code>importItem()</code></a> it imports an <code>item</code> from a container which is connected to the peripheral network.<br />
 <code>container</code> should be the exact name of the container peripheral on the network.<br />
 Returns the number of the <code>item</code> imported from the container.</p>
 <hr />
 <h3 id="exportitemtoperipheral">exportItemToPeripheral<a class="headerlink" href="#exportitemtoperipheral" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>exportItemToPeripheral(item: table, container: string) -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>exportItemToPeripheral(item: table, container: string) -&gt; number
 </code></pre></div>
 <p>Similar to <a href="#exportitem"><code>exportItem()</code></a> it exports an <code>item</code> to a container which is connected to the peripheral network.<br />
 <code>container</code> should be the exact name of the container peripheral on the network.<br />
 Returns the number of the <code>item</code> exported into the container.</p>
 <hr />
-<h3 id="getenergystorage">getEnergyStorage<a class="headerlink" href="#getenergystorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getEnergyStorage() -&gt; number, err: string
+<h3 id="getmaxitemdiskstorage">getMaxItemDiskStorage<a class="headerlink" href="#getmaxitemdiskstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getMaxItemDiskStorage() -&gt; number
 </code></pre></div>
-<p>Returns the stored energy of the whole ME System in AE.</p>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
+<p>Returns the total amount of available item disk storage.</p>
+<hr />
+<h3 id="getmaxfluiddiskstorage">getMaxFluidDiskStorage<a class="headerlink" href="#getmaxfluiddiskstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getMaxItemDiskStorage() -&gt; number
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
+<p>Returns the total amount of available fluid disk storage.</p>
+<hr />
+<h3 id="getmaxitemexternalstorage">getMaxItemExternalStorage<a class="headerlink" href="#getmaxitemexternalstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getMaxItemExternalStorage() -&gt; number
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
+<p>Returns the total amount of available external item disk storage.</p>
+<hr />
+<h3 id="getmaxfluidexternalstorage">getMaxFluidExternalStorage<a class="headerlink" href="#getmaxfluidexternalstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getMaxFluidExternalStorage() -&gt; number
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
+<p>Returns the total amount of available external fluid disk storage.</p>
+<hr />
+<h3 id="getenergystorage">getEnergyStorage<a class="headerlink" href="#getenergystorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getEnergyStorage() -&gt; number
+</code></pre></div>
+<p>Returns the stored energy of the whole RS System in FE.</p>
 <hr />
 <h3 id="getmaxenergystorage">getMaxEnergyStorage<a class="headerlink" href="#getmaxenergystorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getMaxEnergyStorage() -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>getMaxEnergyStorage() -&gt; number
 </code></pre></div>
-<p>Returns the maximum energy storage capacity of the whole ME system in AE.</p>
+<p>Returns the maximum energy storage capacity of the whole RS system in FE.</p>
 <hr />
 <h3 id="getenergyusage">getEnergyUsage<a class="headerlink" href="#getenergyusage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getEnergyUsage() -&gt; number, err: string
+<div class="highlight"><pre><span></span><code>getEnergyUsage() -&gt; number
 </code></pre></div>
-<p>Returns the energy usage of the whole ME System in AE/t.</p>
+<p>Returns the energy usage of the whole RS System in FE/t.</p>
 <hr />
-<h3 id="getcraftingcpus">getCraftingCPUs<a class="headerlink" href="#getcraftingcpus" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getCraftingCPUs() -&gt; table, err: string
+<h3 id="getpattern">getPattern<a class="headerlink" href="#getpattern" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getPattern(item: table) -&gt; table | nil, string
 </code></pre></div>
-<p>Returns a list of all connected crafting cpus.</p>
-<h4 id="cpu-properties">CPU Properties<a class="headerlink" href="#cpu-properties" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
+<p>Returns the crafting pattern for the <code>item</code> if one exists.</p>
+<h4 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
-<th>cpu</th>
+<th>pattern</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>storage: <code>number</code></td>
-<td>The amount of storage the CPU has</td>
+<td>inputs: <code>table</code></td>
+<td>A list of all the input items</td>
 </tr>
 <tr>
-<td>coProcessors: <code>number</code></td>
-<td>The number of coprocessors the CPU has</td>
+<td>outputs: <code>table</code></td>
+<td>A list of all of the output items</td>
 </tr>
 <tr>
-<td>isBusy: <code>boolean</code></td>
-<td>If the cpu is currently crafting</td>
+<td>byproducts: <code>table</code></td>
+<td>A list of any byproduct items</td>
+</tr>
+<tr>
+<td>processing: <code>boolean</code></td>
+<td>If the pattern is currently being used in crafting</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h3 id="isitemcrafting">isItemCrafting<a class="headerlink" href="#isitemcrafting" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>isItemCrafting(item: table[, craftingCpu: string]) -&gt; boolean, err: string
+<div class="highlight"><pre><span></span><code>isItemCrafting(item: table) -&gt; boolean
 </code></pre></div>
-<p>Returns true if a crafting job for the <code>item</code> exists. If a <code>craftingCpu</code>'s name is provided then it will check only if that cpu is crafting the <code>item</code>.</p>
+<p>Returns true if a crafting job for the <code>item</code> exists.</p>
 <hr />
 <h3 id="isitemcraftable">isItemCraftable<a class="headerlink" href="#isitemcraftable" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>isItemCraftable(item: table) -&gt; boolean, err: string
+<div class="highlight"><pre><span></span><code>isItemCraftable(item: table) -&gt; boolean
 </code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.7.3r</p>
+</div>
 <p>Returns true if the <code>item</code> is craftable.</p>
 <hr />
 <h3 id="listcraftableitems">listCraftableItems<a class="headerlink" href="#listcraftableitems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listCraftableItems() -&gt; table, err: string
+<div class="highlight"><pre><span></span><code>listCraftableItems() -&gt; table
 </code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Does not exist in versions &gt;=0.7.3r, &lt;0.7.10b</p>
+</div>
 <p>Returns a list of information about all craftable items</p>
-<h4 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h4>
+<h4 id="properties_2">Properties<a class="headerlink" href="#properties_2" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -4082,7 +4072,7 @@ Returns the number of the <code>item</code> exported into the container.</p>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;meBridge&quot;</span><span class="p">)</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">bridge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;rsBridge&quot;</span><span class="p">)</span>
 
 <span class="c1">-- print out all craftable items</span>
 <span class="nv">craftableItems</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">bridge</span><span class="p">.</span><span class="nf">listCraftableItems</span><span class="p">()</span>
@@ -4091,109 +4081,50 @@ Returns the number of the <code>item</code> exported into the container.</p>
 <span class="kr">end</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<h3 id="listcraftablefluid">listCraftableFluid<a class="headerlink" href="#listcraftablefluid" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listCraftableFluid() -&gt; table, err: string
+<h3 id="listcraftablefluids">listCraftableFluids<a class="headerlink" href="#listcraftablefluids" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>listCraftableFluids() -&gt; table
 </code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Does not exist in versions &gt;=0.7.3r, &lt;0.7.10b</p>
+</div>
 <p>Returns a list of information about all craftable fluids</p>
 <hr />
 <h3 id="listitems">listItems<a class="headerlink" href="#listitems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listItems() -&gt; table, err: string
+<div class="highlight"><pre><span></span><code>listItems() -&gt; table
 </code></pre></div>
-<p>Returns a list of information about all items in the ME System.</p>
+<p>Returns a list of information about all items in the RS System.</p>
 <hr />
-<h3 id="listfluid">listFluid<a class="headerlink" href="#listfluid" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listFluid() -&gt; table, err: string
+<h3 id="listfluids">listFluids<a class="headerlink" href="#listfluids" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>listFluids() -&gt; table
 </code></pre></div>
-<p>Returns a list of information about all fluids in the ME System.</p>
+<p>Returns a list of information about all fluids in the RS System.</p>
 <hr />
-<h3 id="listgas">listGas<a class="headerlink" href="#listgas" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listGas() -&gt; table, err: string
-</code></pre></div>
-<p>Returns a list of information about all gases (Applied Mekanistics) in the ME System.</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
 </div>
-<h3 id="listcells">listCells<a class="headerlink" href="#listcells" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>listCells() -&gt; table, err: string
-</code></pre></div>
-<p>Returns a list of information about all cells in the disk drives of the ME System.</p>
-<table>
-<thead>
-<tr>
-<th>cell</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>item: <code>string</code></td>
-<td>The name of the cell. e.g. `ae2:64k_storage_cell</td>
-</tr>
-<tr>
-<td>cellType: <code>string</code></td>
-<td>The type of the cell. <code>item</code> or <code>fluid</code></td>
-</tr>
-<tr>
-<td>bytesPerType: <code>int</code></td>
-<td>The bytes per type</td>
-</tr>
-<tr>
-<td>totalBytes: <code>int</code></td>
-<td>Total available bytes of the cell</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
 </div>
-<h3 id="gettotalitemstorage">getTotalItemStorage<a class="headerlink" href="#gettotalitemstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getTotalItemStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much total item storage the system offers</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
+<div class="tabbed-block">
+<div class="result" markdown>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are playing on 0.7 for the minecraft version 1.20.1 and older, please use the content tab for "1.20.1-0.7 and older".
+The following documentation also works for the canary 0.8 version.</p>
+<p>The new ME and RS Bridge systems will eventually be back ported to 1.20.1 and 1.19.2 with 0.8.</p>
 </div>
-<h3 id="gettotalfluidstorage">getTotalFluidStorage<a class="headerlink" href="#gettotalfluidstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getTotalFluidStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much total fluid storage the system offers</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
+<h2 id="functionality">Functionality<a class="headerlink" href="#functionality" title="Permanent link">&para;</a></h2>
+<p>The RS and ME Bridge now share the same functionality. Check <a href="../../guides/storage_system_functions/">this Guide</a> for the whole documentation for every available feature.</p>
 </div>
-<h3 id="getuseditemstorage">getUsedItemStorage<a class="headerlink" href="#getuseditemstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getUsedItemStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much item storage is used</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
 </div>
-<h3 id="getusedfluidstorage">getUsedFluidStorage<a class="headerlink" href="#getusedfluidstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getUsedFluidStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much fluid storage is used</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
 </div>
-<h3 id="getavailableitemstorage">getAvailableItemStorage<a class="headerlink" href="#getavailableitemstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getAvailableItemStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much item storage is available</p>
-<hr />
-<div class="admonition success">
-<p class="admonition-title">Added in version 1.18.2-0.7.24r | 1.19.2-0.7.23b</p>
 </div>
-<h3 id="getavailablefluidstorage">getAvailableFluidStorage<a class="headerlink" href="#getavailablefluidstorage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getAvailableFluidStorage() -&gt; int, err: string
-</code></pre></div>
-<p>Returns how much fluid storage is available</p>
 <hr />
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="requester">Requester<a class="headerlink" href="#requester" title="Permanent link">&para;</a></h3>
+<p>The requester is a successor for the old "Automatic Autocrafting" script which uses the old ME Bridge functions.
+It currently only works with AP on 1.21.1 or on 1.19.2 0.8 and supports both the ME and the RS Bridge at the same time.</p>
+<p>This script automatically schedules crafting jobs for pre-defined items, fluids and mekanism chemicals
+Do you want 500 glass in your me system at all times? Add glass to the list and the script will craft it for you.
+No need for level emitters or crafting cards!</p>
+<p>You can find instructions on how to install the script <a href="https://github.com/SirEndii/Lua-Projects/tree/master">here</a></p>
+<p><a class="glightbox" href="../../img/bridge_requester.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Requester example script preview" src="../../img/bridge_requester.png" /></a></p>
 <h3 id="automatic-autocrafting">Automatic Autocrafting<a class="headerlink" href="#automatic-autocrafting" title="Permanent link">&para;</a></h3>
 <p>This script automatically crafts items in a list.
 Do you want 500 glass in your me system at all times? Add glass to the list and the script will craft it for you.
@@ -4237,7 +4168,7 @@ Added the ME Bridge with a good amount of features.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 14, 2025 21:05:31">May 14, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 10, 2025 17:01:02 UTC">June 10, 2025</span>
   </span>
 
     
@@ -4247,7 +4178,7 @@ Added the ME Bridge with a good amount of features.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 17, 2021 17:20:21">April 17, 2021</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 17, 2021 17:20:21 UTC">April 17, 2021</span>
   </span>
 
     
@@ -4288,7 +4219,7 @@ Added the ME Bridge with a good amount of features.</p>
       
       
         
-          <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/blob/0.7/docs/peripherals/me_bridge.md" class="md-author md-author--more">
+          <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/blob/0.7-bridges/docs/peripherals/me_bridge.md" class="md-author md-author--more">
             +4
           </a>
         
@@ -4362,6 +4293,8 @@ Added the ME Bridge with a good amount of features.</p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -4476,7 +4409,7 @@ Added the ME Bridge with a good amount of features.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>

@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.advanced-peripherals.de/0.7/guides/filters/">
       
       
-        <link rel="prev" href="../how_to_report/">
+        <link rel="prev" href="../objects/">
       
       
         <link rel="next" href="../cooldowns_and_fuel_consumption/">
@@ -279,7 +279,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../how_to_report/" class="md-tabs__link">
+        <a href="../objects/" class="md-tabs__link">
           
   
   
@@ -710,6 +710,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -754,12 +758,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../how_to_report/" class="md-nav__link">
+      <a href="../objects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    How to: report a bug or request a feature
+    Lua Objects
     
   </span>
   
@@ -837,9 +841,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#itemfluid-name-and-tag" class="md-nav__link">
+  <a href="#itemfluidchemical-name-and-tag" class="md-nav__link">
     <span class="md-ellipsis">
-      Item/Fluid Name and Tag
+      Item/Fluid/Chemical Name and Tag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
     </span>
   </a>
   
@@ -917,6 +930,52 @@
   
   <span class="md-ellipsis">
     Cooldowns and Fuel consumption
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage_system_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage System Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how_to_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to: report a bug or request a feature
     
   </span>
   
@@ -3005,9 +3064,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#itemfluid-name-and-tag" class="md-nav__link">
+  <a href="#itemfluidchemical-name-and-tag" class="md-nav__link">
     <span class="md-ellipsis">
-      Item/Fluid Name and Tag
+      Item/Fluid/Chemical Name and Tag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
     </span>
   </a>
   
@@ -3079,7 +3147,7 @@
 
 
   
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7/docs/guides/filters.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7-bridges/docs/guides/filters.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3088,7 +3156,7 @@
     
       
     
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7/docs/guides/filters.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7-bridges/docs/guides/filters.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -3103,7 +3171,7 @@
 use these to find the item you're looking for.
 These can set the item, count, slots, tags, nbt or fingerprint values.</p>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<h3 id="itemfluid-name-and-tag">Item/Fluid Name and Tag<a class="headerlink" href="#itemfluid-name-and-tag" title="Permanent link">&para;</a></h3>
+<h3 id="itemfluidchemical-name-and-tag">Item/Fluid/Chemical Name and Tag<a class="headerlink" href="#itemfluidchemical-name-and-tag" title="Permanent link">&para;</a></h3>
 <p>The item's/fluid's filter name or tag can be specified with the <code>name</code> field.
 If this field is not set, the filter will try to search for items with the right nbt values specified in the <code>nbt</code> field
 or fingerprints.</p>
@@ -3116,6 +3184,26 @@ or fingerprints.</p>
 <span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;#forge:ores/gold&quot;</span><span class="w"> </span><span class="c1">-- Will search for the gold ore tag, nbt values are ignored</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Added in version 0.8 and 1.21.1-0.7</p>
+</div>
+<p>Some functions can be used with any type of filter to prevent the same functions with just a different name. These filters are called generic filters.
+They automatically search if the <code>name</code> provided is an item, a fluid or a mekanism chemical - in this order. 
+If none could be found, it will return an empty filter with the message <code>NO_VALID_FILTER_TYPE</code>.</p>
+<p>A type can also be forced using the <code>type</code> key.
+Depending on the AP version and the function, the following types can be used: <code>item</code>, <code>fluid</code> and <code>chemical</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:water&quot;</span>
+<span class="w">    </span><span class="nb">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fluid&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The following example would return nil with the message <code>FLUID_NOT_FOUND</code> when used in a function.
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:dirt&quot;</span>
+<span class="w">    </span><span class="nb">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fluid&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
 <h3 id="count">Count<a class="headerlink" href="#count" title="Permanent link">&para;</a></h3>
 <p>The item's/fluid's filter amount can be specified with the <code>count</code> field.
 Standard values are 64 or 1000 for fluids.</p>
@@ -3202,7 +3290,7 @@ hand.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 11, 2025 22:34:48">March 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 7, 2025 22:24:09 UTC">June 7, 2025</span>
   </span>
 
     
@@ -3212,7 +3300,7 @@ hand.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 10, 2023 23:15:05">February 10, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 10, 2023 23:15:05 UTC">February 10, 2023</span>
   </span>
 
     
@@ -3316,6 +3404,8 @@ hand.</p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -3334,7 +3424,7 @@ hand.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../how_to_report/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to: report a bug or request a feature">
+          <a href="../objects/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lua Objects">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3344,7 +3434,7 @@ hand.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                How to: report a bug or request a feature
+                Lua Objects
               </div>
             </div>
           </a>
@@ -3430,7 +3520,7 @@ hand.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
