@@ -20,7 +20,7 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| chatBox         | Game Chat       | Yes        | 0.1b          |
+| chat_box         | Game Chat       | Yes        | 0.1b          |
 
 </div>
 
@@ -43,7 +43,7 @@ print("The 'chat' event was fired with the username " .. username .. " and the m
 ```
 
 !!! info
-    The `chat` event will fire when a chatbox has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
+    The `chat` event will fire when a chat_box has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
 
 ---
 
@@ -64,20 +64,20 @@ If `utf8Support` is `true`: `message`, `prefix`, `brackets`, and `bracketColor` 
 Returns true if the message is successfully sent, or nil and an error message if it fails.
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chat_box = peripheral.find("chat_box")
 
-chatBox.sendMessage("Hello world!") -- Sends "[AP] Hello world!" in chat
+chat_box.sendMessage("Hello world!") -- Sends "[AP] Hello world!" in chat
 os.sleep(1) -- We must account for the cooldown between messages, this is to prevent spam
-chatBox.sendMessage("I am dave", "Dave") -- Sends "[Dave] I am dave"
+chat_box.sendMessage("I am dave", "Dave") -- Sends "[Dave] I am dave"
 os.sleep(1)
 -- sends a smilely emoji to chat,
 -- leaving all other parameters at their defaults.
-chatBox.sendMessage("\u{1F600}", nil, nil, nil, nil, true)
+chat_box.sendMessage("\u{1F600}", nil, nil, nil, nil, true)
 os.sleep(1)
 
 -- Sends message "Welcome!" with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
-chatBox.sendMessage("Welcome!", "Box", "<>", "&b", 30)
+chat_box.sendMessage("Welcome!", "Box", "<>", "&b", 30)
 ```
 
 !!! tip
@@ -94,9 +94,9 @@ sendMessageToPlayer(message: string, username: string[, prefix: string, brackets
 Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chat_box = peripheral.find("chat_box")
 
-chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
+chat_box.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
 ```
 
 ### sendToastToPlayer
@@ -109,9 +109,9 @@ Sends a toast to the specified player. The design of the toast is the classic no
 
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chat_box = peripheral.find("chat_box")
 
-chatBox.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()", "&c&l")
+chat_box.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()", "&c&l")
 ```
 
 ---
@@ -125,7 +125,7 @@ Find out more information on how the text component format works on the [minecra
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chat_box = peripheral.find("chat_box")
 
 local message = {
     {text = "Click "}, 
@@ -145,7 +145,7 @@ local message = {
 
 local json = textutils.serialiseJSON(message)
 
-chatBox.sendFormattedMessage(json)
+chat_box.sendFormattedMessage(json)
 ```
 
 ---
@@ -169,7 +169,7 @@ You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_t
 ![!Image of the formatted toast](../img/chat_box/toast_formatted.png)
 
 ```lua linenums="1"
-local chatBox = peripheral.find("chatBox")
+local chat_box = peripheral.find("chat_box")
 
 
 local title = {
@@ -185,7 +185,7 @@ local message = {
 local titleJson = textutils.serializeJSON(title)
 local messageJson = textutils.serialiseJSON(message)
 
-successful, error = chatBox.sendFormattedToastToPlayer(messageJson, titleJson, "Dev", "&4&lBoxi", "()", "&c&l")
+successful, error = chat_box.sendFormattedToastToPlayer(messageJson, titleJson, "Dev", "&4&lBoxi", "()", "&c&l")
 ```
 
 ---
