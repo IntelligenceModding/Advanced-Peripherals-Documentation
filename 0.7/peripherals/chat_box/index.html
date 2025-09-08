@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../guides/objects/" class="md-tabs__link">
+        <a href="../../guides/disabled_peripherals/" class="md-tabs__link">
           
   
   
@@ -712,6 +712,8 @@
       
         
       
+        
+      
     
     
     
@@ -745,6 +747,29 @@
             Guides
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/disabled_peripherals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disabled Peripherals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3252,9 +3277,10 @@ Example:<br />
 1. <code>username: string</code> The username of the player who sent the message<br />
 2. <code>message: string</code> The message sent by the player<br />
 3. <code>uuid: string</code> The player's uuid<br />
-4. <code>isHidden: boolean</code> Whether the message is hidden or not</p>
+4. <code>isHidden: boolean</code> Whether the message is hidden or not<br />
+5. <code>messageUtf8: string</code> The message sent by the player, with utf characters.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">message</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">isHidden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;chat&quot;</span><span class="p">)</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">message</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">isHidden</span><span class="p">,</span><span class="w"> </span><span class="nv">messageUtf8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;chat&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The &#39;chat&#39; event was fired with the username &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; and the message &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">message</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <div class="admonition info">
@@ -3264,13 +3290,14 @@ Example:<br />
 <hr />
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <h3 id="sendmessage">sendMessage<a class="headerlink" href="#sendmessage" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendMessage(message: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendMessage(message: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 Broadcasts a message to the global chat or if <code>range</code> is specified it is sent to all players in the range.<br />
 The <code>prefix</code> will change the text that appears inside the brackets at the start of a message. Defaults to "AP".<br />
 To change the <code>brackets</code> used around the prefix you must specify a string like so:<br />
 <code>"[]"</code>, <code>"()"</code>, <code>"&lt;&gt;"</code>, ...<br />
 <code>bracketColor</code> specifies the color to use for the brackets, this must be in the <a href="https://www.digminecraft.com/lists/color_list_pc.php">MOTD code format</a>.</p>
+<p>If <code>utf8Support</code> is <code>true</code>: <code>message</code>, <code>prefix</code>, <code>brackets</code>, and <code>bracketColor</code> are all expected to be UTF8 encoded, using the <code>utf8</code> standard library, unicode escape sequences, or similar.</p>
 <p>Returns true if the message is successfully sent, or nil and an error message if it fails.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -3281,11 +3308,19 @@ To change the <code>brackets</code> used around the prefix you must specify a st
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">chatBox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;chatBox&quot;</span><span class="p">)</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">chatBox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;chatBox&quot;</span><span class="p">)</span>
 
 <span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendMessage</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Sends &quot;[AP] Hello world!&quot; in chat</span>
 <span class="nv">os</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">-- We must account for the cooldown between messages, this is to prevent spam</span>
 <span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendMessage</span><span class="p">(</span><span class="s2">&quot;I am dave&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dave&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Sends &quot;[Dave] I am dave&quot;</span>
+<span class="nv">os</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1">-- sends a smilely emoji to chat,</span>
+<span class="c1">-- leaving all other parameters at their defaults.</span>
+<span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendMessage</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\u{1F600}</span><span class="s2">&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">)</span>
 <span class="nv">os</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1">-- Sends message &quot;Welcome!&quot; with cyan &lt;&gt; brackets around &quot;&lt;Box&gt;&quot;</span>
@@ -3300,7 +3335,7 @@ If you want to send colored message but not only colored brackets, please use <a
 </div>
 <hr />
 <h3 id="sendmessagetoplayer">sendMessageToPlayer<a class="headerlink" href="#sendmessagetoplayer" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 Similar to <a href="#sendmessage"><code>sendMessage()</code></a> this sends a message to one specific player. Specify the player to send the message to with the <code>username</code> parameter.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3310,7 +3345,7 @@ Similar to <a href="#sendmessage"><code>sendMessage()</code></a> this sends a me
 <span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendMessageToPlayer</span><span class="p">(</span><span class="s2">&quot;Hello there.&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Player123&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- Sends &quot;[AP] Hello there.&quot; to Player123 in chat</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="sendtoasttoplayer">sendToastToPlayer<a class="headerlink" href="#sendtoasttoplayer" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendToastToPlayer(message: string, title: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendToastToPlayer(message: string, title: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.</p>
 <p><a class="glightbox" href="../../img/chat_box/toast.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="!Image of the toast" src="../../img/chat_box/toast.png" /></a></p>
@@ -3322,7 +3357,7 @@ Sends a toast to the specified player. The design of the toast is the classic no
 </code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="sendformattedmessage">sendFormattedMessage<a class="headerlink" href="#sendformattedmessage" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendFormattedMessage(json: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendFormattedMessage(json: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 This function is fundamentally the same as <a href="#sendmessage"><code>sendMessage()</code></a> except it takes a json text component as the first parameter.<br />
 Find out more information on how the text component format works on the <a href="https://minecraft.wiki/w/Text_component_format">minecraft wiki</a>.
@@ -3371,12 +3406,12 @@ You can generate the json at <a href="https://minecraft.tools/en/json_text.php?j
 </code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="sendformattedmessagetoplayer">sendFormattedMessageToPlayer<a class="headerlink" href="#sendformattedmessagetoplayer" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 Similar to <a href="#sendformattedmessage"><code>sendFormattedMessage()</code></a> this sends a formatted message to one specific player. Specify the player to send the message to with the <code>username</code> parameter.</p>
 <hr />
 <h3 id="sendformattedtoasttoplayer">sendFormattedToastToPlayer<a class="headerlink" href="#sendformattedtoasttoplayer" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sendFormattedToastToPlayer(messageJson: string, titleJson: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -&gt; true | nil, string
+<p><div class="highlight"><pre><span></span><code>sendFormattedToastToPlayer(messageJson: string, titleJson: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number, utf8Support: boolean]) -&gt; true | nil, string
 </code></pre></div>
 This function is fundamentally the same as <a href="#sendtoasttoplayer"><code>sendToast()</code></a> except it takes a json text component as the first and second parameter.<br />
 Find out more information on how the text component format works on the <a href="https://minecraft.wiki/w/Text_component_format">minecraft wiki</a>.
@@ -3418,6 +3453,8 @@ You can generate the json at <a href="https://minecraft.tools/en/json_text.php?j
 </code></pre></div></td></tr></table></div>
 <hr />
 <h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">&para;</a></h2>
+<p><strong>TODO when merged?</strong>
+Added UTF-8 support, allowing sending/recieving any unicode character supported by minecraft.</p>
 <p><strong>1.19.2-0.7.33r/1.20.1-0.7.37r</strong> <br />
 Added <code>sendToastToPlayer</code> and <code>sendFormattedToastToPlayer</code></p>
 <p><strong>0.7r</strong><br />
@@ -3448,7 +3485,7 @@ Added the chat box. This was the first feature of the mod.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 14, 2025 21:05:31 UTC">May 14, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 1, 2025 13:36:31 UTC">July 1, 2025</span>
   </span>
 
     
