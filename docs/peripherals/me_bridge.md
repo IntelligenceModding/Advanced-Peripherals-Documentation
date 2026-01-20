@@ -429,7 +429,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
     ## Functionality
     
-    The RS and ME Bridge now share the same functionality. Check [this Guide](../guides/storage_system_functions) for the whole documentation for every available feature.
+    The RS and ME Bridge now share the same functionality. Check [this Guide](../../guides/storage_system_functions) for the whole documentation for every available feature.
 
     </div>
 
