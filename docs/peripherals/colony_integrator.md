@@ -143,10 +143,10 @@ Returns a table of all possible colony research as a tree where the root table c
 | ------------------------ | ------------------------------------------ |
 | id: `string`             | The research id                            |
 | name: `string`           | The name of the research                   |
-| status: `number`         | The current research status                |
+| status: `string`         | The current research status: `NOT_STARTED`, `IN_PROGRESS`, `FINISHED`                |
 | researchEffects: `table` | A list of effects provided by the research |
-| children: `table?`       | A list of any child research               |
-| progress: `number`       | Research progress                          |
+| children: `table`        | A list of any child research               |
+| progress: `number`       | A value between 0 & 72/144/288/576/1152/2304 for level 1-6 researches respectively. Ticks up when the research is in progress              |
 | requirements: `table`    | List of requirements for the research      |
 | cost: `table`            | The cost of the research (list of tables)  |
 
