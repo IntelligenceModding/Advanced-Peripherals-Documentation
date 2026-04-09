@@ -27,15 +27,32 @@ This block is able to read data about any blocks or tile entities in front of it
 
 ### getBlockName
 ```
-getBlockName() -> string
+getBlockName() -> string | nil
 ```
 
-Returns the registry name of the block (ex. `minecraft:dirt`)
+Returns the registry name of the block (ex. `minecraft:dirt`), or `nil` if nothing is in front of the reader.
 
 ```lua linenums="1"
 local reader = peripheral.find("block_reader")
 
 print("There is a " .. read.getBlockName() .. " in front.")
+```
+
+---
+
+### getBlockState
+```
+getBlockState() -> table | nil
+```
+
+Returns the block state of the block, or `nil` if nothing is in front of the reader.
+
+```lua linenums="1"
+local reader = peripheral.find("block_reader")
+
+for k, v in ipairs(reader.getBlockState()) do 
+    print(k, v)
+end
 ```
 
 ---
@@ -60,23 +77,14 @@ end
 
 !!! success "Added in version 1.19.2-0.7.33r | 1.20.1-0.7.37r"
 
-### getBlockStates
+### hasBlockEntity
 ```
-getBlockStates() -> table | nil
+hasBlockEntity() -> boolean | nil
 ```
 
-Returns the properties of a block and its state
+Returns whether the block is a block entity or not
 
 ---
-
-!!! success "Added in version 1.19.2-0.7.33r | 1.20.1-0.7.37r"
-
-### isTileEntity
-```
-isTileEntity() -> boolean | nil
-```
-
-Returns true whether the block is a tile entity or not
 
 ## Changelog/Trivia
 
