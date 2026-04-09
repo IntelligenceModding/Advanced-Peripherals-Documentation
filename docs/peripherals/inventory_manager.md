@@ -31,168 +31,200 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 ## Functions
 
-### addItemToPlayer
+### getOwner
 ```
-addItemToPlayer(direction: string, item: table) -> number
+getOwner() -> string, string | nil
 ```
 
-Adds an item to the player's inventory and returns the amount of the item added.
-The `direction` is the direction of the container relative to the peripheral.  
-The `slot` is the slot to take items from in the container.
-The Inventory Manager will add a random item to the player's inventory if the `item` or `slot` argument are not provided.
+Returns the uuid and the username of the owner of the memory card in the manager.
+Returns `nil` if there is no memory card or owner is offline.
 
-!!! tip "Since version 0.7r"
-    You can now use both relative (`right`, `left`, `front`, `back`, `top`, `bottom`) and cardinal (`north`, `south`, `east`, `west`, `up`, `down`) directions for the `direction` argument.  
+---
 
-```lua linenums="1"
-local manager = peripheral.find("inventory_manager")
+### size
+```
+size() -> number
+```
 
--- Add 32 cobblestone to the players offhand slot from the block above
-manager.addItemToPlayer("up", {name="minecraft:cobblestone", toSlot=36, count=32})
+Returns the size of the player's inventory.
+
+---
+
+### getCuriosSizes
+```
+getCuriosSizes() -> table
+```
+
+!!! warning "Requirement"
+    Requires the Curios API mod to be installed
+
+Returns the sizes of the player's curios inventory.
+
+Result format:
+```
+{
+    [<slot name>]: string = <slot count>: number
+}
 ```
 
 ---
 
-### removeItemFromPlayer
+### list
 ```
-removeItemFromPlayer(direction: string item: table) -> number
+list() -> table
 ```
 
-Removes an item from the player's inventory and returns the amount of the item removed.
-The `direction` is the direction of the container relative to the peripheral to put the item into.  
-The `slot` is the slot to take items from in the player's inventory.
-The Inventory Manager will remove a random item from the player's inventory if the `item` or `slot` argument are not provided.
-The `slot` and `count` are overwritten if `fromSlot` or `count` is specified in the `item` filter
-if the `item` argument is empty, the manager will move any item.
+Returns the contents of the player's inventory as a map of `slot` -> `item`.
+
+#### Item Properties
+
+| item                   | Description                             |
+| ---------------------- | --------------------------------------- |
+| name: `string`         | The registry name of the item           |
+| count: `number`        | The amount of the item                  |
+| maxStackSize: `number` | Maximum stack size for the item type    |
+| displayName: `string`  | The item's display name                 |
+| tags: `table`          | A list of item tags                     |
+| components: `table`    | The item's component data               |
+
+---
+
+### listCurios
+```
+listCurios() -> table
+```
+
+!!! warning "Requirement"
+    Requires the Curios API mod to be installed
+
+Returns the contents of the player's curios inventory.
+
+Result format:
+```
+{
+    [<slot name>]: string = {
+        [<slot>]: number = <item>: table
+    }
+}
+```
+
+---
+
+### pushItems
+```
+pushItems(toName: string, filter: table) -> number
+```
+
+Removes items from the player's inventory and returns the amount of the item removed.
+
+`toName` is the target inventory's peripheral name.
+`filter` is an item filter to define how to move items.
+
+!!! tip
+    You can use both relative (`@right`, `@left`, `@front`, `@back`, `@top`, `@bottom`) and cardinal (`@north`, `@south`, `@east`, `@west`, `@up`, `@down`) directions for the `toName` argument to refer to an inventory directly relative to the inventory manager block.
 
 ```lua linenums="1"
 local manager = peripheral.find("inventory_manager")
 
 -- Remove up to 5 of the item in slot 1 of the player's inventory
 -- and place it in the block above
-manager.removeItemFromPlayer("up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, count=5})
+manager.pushItems("@up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, count=5})
 ```
 
 ---
 
-### getArmor
+### pushCuriosItems
 ```
-getArmor() -> table
+pushCuriosItems(slotName: string, toName: string, filter: table) -> number
 ```
 
-Returns a list of the player's current armor slots
+Removes items from the player's curios inventory and returns the amount of the item added.
 
-#### Item Properties
+---
 
-| item                   | Description                             |
-| ---------------------- | --------------------------------------- |
-| name: `string`         | The registry name of the item           |
-| count: `number`        | The amount of the item                  |
-| maxStackSize: `number` | Maximum stack size for the item type    |
-| displayName: `string`  | The item's display name                 |
-| slot: `number`         | The slot that the item stack is in      |
-| tags: `table`          | A list of item tags                     |
-| nbt: `table`           | The item's nbt data                     |
+### pullItems
+```
+pullItems(fromName: string, filter: table) -> number
+```
+
+Adds items to the player's inventory and returns the amount of the item added.
+
+`fromName` is the source inventory's peripheral name.
+`filter` is an item filter to define how to move items.
 
 ```lua linenums="1"
 local manager = peripheral.find("inventory_manager")
 
-local armor = manager.getArmor()
-print("First armor piece is: " .. armor[1].displayName)
+-- Add 32 cobblestone to the players offhand slot from the block above
+manager.pullItems("@up", {name="minecraft:cobblestone", toSlot=36, count=32})
 ```
 
 ---
 
-### getItems
+### pullCuriosItems
 ```
-getItems() -> table
+pullCuriosItems(slotName: string, fromName: string, filter: table) -> number
 ```
 
-Returns the contents of the player's inventory as a list of items
-
-#### Item Properties
-
-| item                   | Description                             |
-| ---------------------- | --------------------------------------- |
-| name: `string`         | The registry name of the item           |
-| count: `number`        | The amount of the item                  |
-| maxStackSize: `number` | Maximum stack size for the item type    |
-| slot: `number`         | The slot that the item stack is in      |
-| displayName: `string`  | The item's display name                 |
-| tags: `table`          | A list of item tags                     |
-| nbt: `table`           | The item's nbt data                     |
+Adds items from the player's curios inventory and returns the amount of the item added.
 
 ---
 
-### getOwner
+### wrapStorageItem
 ```
-getOwner() -> string | nil
+wrapStorageItem(slot: number) -> table
 ```
 
-Returns the username of the owner of the memory card in the manager or nil if there is no memory card or owner.
+Returns the wrapped operations of a storage item (e.g. backpack, bucket).
+
+#### Wrapped Operations
+
+| Operation                   | Description                                            |
+| --------------------------- | ------------------------------------------------------ |
+| `isValid(): boolean`        | If other operations are still valid to perform.        |
+| `isItemStorage(): boolean`  | If item operations are valid to perform on this item.  |
+| `isFluidStorage(): boolean` | If fluid operations are valid to perform on this item. |
+
+| Item operation                                   | Description                                                  |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| `size(): number`                                 | Returns the inventory size of the storage item.              |
+| `list(): table`                                  | List the available item in the storage item.                 |
+| `pushItems(name: string, filter: table): number` | Push items from the storage item to an inventory peripheral. |
+| `pullItems(name: string, filter: table): number` | Pull items from an inventory peripheral to the storage item. |
+
+| Fluid operation                                  | Description                                                     |
+| ------------------------------------------------ | --------------------------------------------------------------- |
+| `tanks(): table`                                 | List the available tanks in the storage item.                   |
+| `pushFluid(name: string, filter: table): number` | Push fluid from the storage item to a fluid storage peripheral. |
+| `pullFluid(name: string, filter: table): number` | Pull fluid from a fluid storage peripheral to the storage item. |
 
 ---
 
-### isPlayerEquipped
+### wrapCuriosStorageItem
 ```
-isPlayerEquipped() -> boolean
+wrapCuriosStorageItem(slotName: number, slot: number) -> table
 ```
 
-Returns true if the player is wearing atleast one piece of armor.
+Returns the wrapped operations of a storage item (e.g. backpack, bucket) in curios inventory.
 
 ---
 
 ### isWearing
 ```
-isWearing(slot: number) -> boolean
+isWearing(armorIndex: number) -> boolean
 ```
 
 Returns true if the player is wearing a armor piece on the given slot.  
-Slots: `103`(Helmet) - `100`(Boots).
+Armor index: `4`(Helmet) - `1`(Boots).
 
 ---
 
-### getItemInHand
+### getEmptySlots
 ```
-getItemInHand() -> table
-```
-
-!!! success "Added in version 0.7.4r"
-
-Returns the item in the player's main hand.
-
-#### Item Properties
-
-| item                   | Description                             |
-| ---------------------- | --------------------------------------- |
-| name: `string`         | The registry name of the item           |
-| count: `number`        | The amount of the item                  |
-| maxStackSize: `number` | Maximum stack size for the item type    |
-| displayName: `string`  | The item's display name                 |
-| tags: `table`          | A list of item tags                     |
-| nbt: `table`           | The item's nbt data                     |
-
----
-
-### getItemInOffHand
-```
-getItemInOffHand() -> table
+getEmptySlots() -> number
 ```
 
-!!! success "Added in version 0.7.4r"
-
-Returns the item in the player's off hand.
-
-#### Item Properties
-
-| item                   | Description                             |
-| ---------------------- | --------------------------------------- |
-| name: `string`         | The registry name of the item           |
-| count: `number`        | The amount of the item                  |
-| maxStackSize: `number` | Maximum stack size for the item type    |
-| displayName: `string`  | The item's display name                 |
-| tags: `table`          | A list of item tags                     |
-| nbt: `table`           | The item's nbt data                     |
+Returns the number of empty slots in the player's inventory.
 
 ---
 
@@ -201,31 +233,34 @@ Returns the item in the player's off hand.
 getFreeSlot() -> number
 ```
 
-!!! success "Added in version 0.7.4r"
-
-Returns the next free slot in the player's inventory. Or -1 if their inventory is full.
+Returns the next free slot in the player's inventory. Or `0` if their inventory is full.
 
 ---
 
-### isSpaceAvailable
+### getHandSlot
 ```
-isSpaceAvailable() -> boolean
+getHandSlot() -> number
 ```
 
-!!! success "Added in version 0.7.4r"
-
-Returns true if space is available in the player's inventory.
+Returns the player's selected slot.
 
 ---
 
-### getEmptySpace
+### getItemInHand
 ```
-getEmptySpace() -> number
+getItemInHand() -> table
 ```
 
-!!! success "Added in version 0.7.4r"
+Returns the item in the player's main hand.
 
-Returns the number of empty slots in the player's inventory.
+---
+
+### getItemInOffHand
+```
+getItemInOffHand() -> table
+```
+
+Returns the item in the player's off hand.
 
 ---
 
