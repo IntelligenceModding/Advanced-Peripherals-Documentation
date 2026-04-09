@@ -45,40 +45,37 @@ Returns the maximum amount of possible stored fuel.
 
 ---
 
-### cost
+### scanBlocks
 ```
-cost(radius: number) -> number
-```
-
-Returns the cost in FE for a scan with the given `radius`.
-
----
-
-### scan
-```
-scan(radius: number) -> table | nil, string
+scanBlocks(radius: number) -> table | (nil, string)
 ```
 
 Returns a list of data about all blocks in the radius. Or if the scan fails it returns nil and an error message.
 
 #### Block Properties
 
-| block                  | Description                             |
-| ---------------------- | --------------------------------------- |
-| name: `string`         | The registry name of the block          |
-| tags: `table`          | A list of block tags                    |
-| x: `number`            | The block's x coordinate                |
-| y: `number`            | The block's y coordinate                |
-| z: `number`            | The block's z coordinate                |
+| block          | Description                         |
+| -------------- | ----------------------------------- |
+| name: `string` | The registry name of the block      |
+| tags: `table`  | A list of block tags                |
+| state: `table` | The block states                    |
+| x: `number`    | The block's relative x coordinate   |
+| y: `number`    | The block's relative y coordinate   |
+| z: `number`    | The block's relative z coordinate   |
+| f: `number`    | The block's relative front distance |
+| r: `number`    | The block's relative right distance |
+| u: `number`    | The block's relative up distance    |
 
 ---
 
 ### chunkAnalyze
 ```
-chunkAnalyze() -> table | nil, reason
+chunkAnalyze(filter: string | nil) -> table | (nil, string)
 ```
 
 Returns a table of data about how many of each ore type is in the block's chunk. Or if the analyze fails it returns nil and an error message.
+
+`filter` can be a block id, or a block tag starts with `#`
 
 ---
 

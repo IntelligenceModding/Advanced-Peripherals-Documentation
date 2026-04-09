@@ -33,7 +33,7 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 ### getOwner
 ```
-getOwner() -> string, string | nil
+getOwner() -> (string, string) | nil
 ```
 
 Returns the uuid and the username of the owner of the memory card in the manager.
