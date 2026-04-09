@@ -25,35 +25,27 @@ NBT Storage is a custom block that allows reading and writing of NBT data to the
 
 ## Functions
 
-### read
+### load
 ```
-read() -> table
+load() -> table
 ```
 
 Returns the NBT data stored in the block.
 
 ---
 
-### writeJson
+### save
 ```
-writeJson(json: string) -> boolean | nil, string
-```
-
-Writes the json as NBT data into the block and returns true if the json is valid and the data is successfully written. Otherwise it returns nil and an error message.
-
----
-
-### writeTable
-```
-writeTable(nbt: table) -> boolean | nil, string
+save(data: string | table) -> boolean | nil, string
 ```
 
-Writes NBT data into the block and returns true if the data is successfully written. Otherwise it returns nil and an error message.
+Writes NBT data into the block and returns true if the data is successfully written. Otherwise it returns nil and an error message.  
+If the `data` is a string, it will be parsed as [SNBT format](https://minecraft.wiki/w/NBT_format#SNBT_format).
 
 ```lua linenums="1"
 local storage = peripheral.find("nbt_storage")
 
-storage.writeTable({
+storage.save({
     specialString = "A super special string"
 })
 
