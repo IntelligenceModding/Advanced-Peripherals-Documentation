@@ -29,15 +29,16 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 ## Events
 
 ### chat
-Fires when a player sends a message into the chat.  
+Fires when a chat message appears within a chatbox's detection range.  
 **Values:**  
-1. `username: string` The username of the player who sent the message  
-2. `message: string` The message sent by the player  
-3. `uuid: string` The player's uuid  
-4. `isHidden: boolean` Whether the message is hidden or not
+1. `uuid: string` Message sender's UUID. `nil` if triggered from a /say command
+2. `name: string` Message sender's name. `[say]` if triggered from a /say command
+3. `message: string` The chat message
+4. `isHidden: boolean` Whether or not the message is privately sent to chatboxes
+5. `encodedUtf8Message: string` The encoded chat message from utf8
 
 ```lua linenums="1"
-local event, username, message, uuid, isHidden = os.pullEvent("chat")
+local event, uuid, username, message, isHidden = os.pullEvent("chat")
 print("The 'chat' event was fired with the username " .. username .. " and the message " .. message)
 ```
 
@@ -50,13 +51,22 @@ print("The 'chat' event was fired with the username " .. username .. " and the m
 
 ### sendMessage
 ```
-sendMessage(message: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+sendMessage(message: string, options: table | nil) -> true | nil, string
 ```
+
 Broadcasts a message to the global chat or if `range` is specified it is sent to all players in the range.  
-The `prefix` will change the text that appears inside the brackets at the start of a message. Defaults to "AP".  
-To change the `brackets` used around the prefix you must specify a string like so:  
-`"[]"`, `"()"`, `"<>"`, ...  
-`bracketColor` specifies the color to use for the brackets, this must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
+Returns true if the message is successfully sent, or nil and an error message if it fails.
+
+`options` format:
+```
+{
+    utf8: boolean = if strings and message should be treated as encoded utf8
+    range: number = the broadcast range
+    prefix: string = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
+    brackets: string = used around the prefix. Must specify a two length string like "[]", "()", "<>", ...
+    bracketColor: string = specifies the color to use for the brackets, must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
+}
+```
 
 Returns true if the message is successfully sent, or nil and an error message if it fails.
 
@@ -64,13 +74,13 @@ Returns true if the message is successfully sent, or nil and an error message if
 local chatBox = peripheral.find("chat_box")
 
 chatBox.sendMessage("Hello world!") -- Sends "[AP] Hello world!" in chat
-os.sleep(1) -- We must account for the cooldown between messages, this is to prevent spam
-chatBox.sendMessage("I am dave", "Dave") -- Sends "[Dave] I am dave"
-os.sleep(1)
+sleep(1) -- We must account for the cooldown between messages, this is to prevent spam
+chatBox.sendMessage("I am dave", {prefix="Dave"}) -- Sends "[Dave] I am dave"
+sleep(1)
 
 -- Sends message "Welcome!" with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
-chatBox.sendMessage("Welcome!", "Box", "<>", "&b", 30)
+chatBox.sendMessage("Welcome!", {prefix="Box", brackets="<>", bracketColor="&b", range=30})
 ```
 
 !!! tip
@@ -82,9 +92,11 @@ chatBox.sendMessage("Welcome!", "Box", "<>", "&b", 30)
 
 ### sendMessageToPlayer
 ```
-sendMessageToPlayer(message: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+sendMessageToPlayer(message: string, username: string, options: table | nil) -> true | nil, string
 ```
 Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
+
+`username` is player's in game name or its uuid.
 
 ```lua linenums="1"
 local chatBox = peripheral.find("chat_box")
@@ -92,26 +104,11 @@ local chatBox = peripheral.find("chat_box")
 chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
 ```
 
-### sendToastToPlayer
-```
-sendToastToPlayer(message: string, title: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
-```
-Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.
-
-![!Image of the toast](../img/chat_box/toast.png)
-
-
-```lua linenums="1"
-local chatBox = peripheral.find("chat_box")
-
-chatBox.sendToastToPlayer("I will chat box you", "Hello", "Dev", "&4&lBoxi", "()", "&c&l")
-```
-
 ---
 
 ### sendFormattedMessage
 ```
-sendFormattedMessage(json: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+sendFormattedMessage(json: string, options: table | nil) -> true | nil, string
 ```
 This function is fundamentally the same as [`sendMessage()`](#sendmessage) except it takes a json text component as the first parameter.  
 Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
@@ -145,17 +142,55 @@ chatBox.sendFormattedMessage(json)
 
 ### sendFormattedMessageToPlayer
 ```
-sendFormattedMessageToPlayer(json: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+sendFormattedMessageToPlayer(json: string, username: string, options: table | nil) -> true | nil, string
 ```
 Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a formatted message to one specific player. Specify the player to send the message to with the `username` parameter.
+
+`username` is player's in game name or its uuid.
+
+---
+
+### sendToastToPlayer
+```
+sendToastToPlayer(options: table) -> true | nil, string
+```
+Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.
+
+![!Image of the toast](../img/chat_box/toast.png)
+
+`options` format:
+```
+{
+    utf8: boolean = if strings should be treated as encoded utf8
+    message: string = the message in the toast
+    title: string = the title of the toast
+    player: string = player's name or uuid
+    prefix: string = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
+    brackets: string = used around the prefix
+    bracketColor: string = specifies the color to use for the brackets
+}
+```
+
+```lua linenums="1"
+local chatBox = peripheral.find("chat_box")
+
+chatBox.sendToastToPlayer({
+    message = "I will chat box you",
+    title = "Hello",
+    player = "Dev",
+    prefix = "&4&lBoxi",
+    brackets = "()",
+    bracketColor = "&c&l",
+})
+```
 
 ---
 
 ### sendFormattedToastToPlayer
 ```
-sendFormattedToastToPlayer(messageJson: string, titleJson: string, username: string[, prefix: string, brackets: string, bracketColor: string, range: number]) -> true | nil, string
+sendFormattedToastToPlayer(options: table) -> true | nil, string
 ```
-This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component as the first and second parameter.  
+This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component for `message`, and `title` fields.  
 Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
@@ -178,7 +213,14 @@ local message = {
 local titleJson = textutils.serializeJSON(title)
 local messageJson = textutils.serialiseJSON(message)
 
-successful, error = chatBox.sendFormattedToastToPlayer(messageJson, titleJson, "Dev", "&4&lBoxi", "()", "&c&l")
+successful, error = chatBox.sendFormattedToastToPlayer({
+    message = messageJson,
+    title = titleJson,
+    player = "Dev",
+    prefix = "&4&lBoxi",
+    brackets = "()",
+    bracketColor = "&c&l",
+)
 ```
 
 ---
