@@ -22,19 +22,19 @@ getId() -> number
 
 returns the object's integer ID.
 
-#### setEnabled
-```
-setEnabled(enable: boolean) -> nil
-```
-
-set whether or not to render the object.
-
 #### isEnabled
 ```
 isEnabled() -> boolean
 ```
 
 returns whether or not the object is rendering.
+
+#### setEnabled
+```
+setEnabled(enable: boolean) -> nil
+```
+
+set whether or not to render the object.
 
 ---
 
@@ -46,12 +46,9 @@ Based on [OverlayObject](#OverlayObject)
 | ----- | ---- | ------------- | ----------- |
 | `opacity` | `number` | `1` | A decimal number that determines the transparency of the object, in range of \[0.0, 1.0\] |
 | `color` | `number` | `0xffffff` | An integer that determines the color of the object, in format of 0xRRGGBB |
-| `x` | `number` | `0` | Integer of object's X position, in range of \[-32767, 32767\] |
-| `y` | `number` | `0` | Integer of object's Y position, in range of \[-32767, 32767\] |
-| `z` | `number` | `0` | Integer of object's Z position, in range of \[-32767, 32767\] |
-| `maxX` | `number` | `0` | Integer of object's maximum X position, in range of \[-32767, 32767\] |
-| `maxY` | `number` | `0` | Integer of object's maximum Y position, in range of \[-32767, 32767\] |
-| `maxZ` | `number` | `0` | Integer of object's maximum Z position, in range of \[-32767, 32767\] |
+| `x` | `number` | `0` | Integer of object's X position |
+| `y` | `number` | `0` | Integer of object's Y position |
+| `z` | `number` | `0` | Integer of object's Z position |
 
 ---
 
@@ -150,45 +147,13 @@ Based on [ThreeDimensionalObject](#ThreeDimensionalObject)
 
 ## Functions
 
-### createRectangle
+### createObject
 ```
-createRectangle(object: table) -> table, "SUCCESS"
-```
-
-`object` is a [RectangleObject](#RectangleObject)
-
-returns a copy of the `object` with getters & setters to change its properties.
-
----
-
-### createCircle
-```
-createCircle(object: table) -> table, "SUCCESS"
+createObject(id: string, object: table) -> table
 ```
 
-`object` is a [CircleObject](#CircleObject)
-
-returns a copy of the `object` with getters & setters to change its properties.
-
----
-
-### createText
-```
-createText(object: table) -> table, "SUCCESS"
-```
-
-`object` is a [TextObject](#TextObject)
-
-returns a copy of the `object` with getters & setters to change its properties.
-
----
-
-### createItem
-```
-createItem(object: table) -> table, "SUCCESS"
-```
-
-`object` is a [ItemObject](#ItemObject)
+`id` must be a valid object's type ID
+`object` should contains the object's initial properties
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -196,7 +161,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 
 ### createBlock
 ```
-createBlock(object: table) -> table, "SUCCESS"
+createBlock(object: table) -> table
 ```
 
 `object` is a [BlockObject](#BlockObject)
@@ -207,7 +172,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 
 ### createBox
 ```
-createBox(object: table) -> table, "SUCCESS"
+createBox(object: table) -> table
 ```
 
 `object` is a [BoxObject](#BoxObject)
@@ -218,7 +183,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 
 ### createSphere
 ```
-createSphere(object: table) -> table, "SUCCESS"
+createSphere(object: table) -> table
 ```
 
 `object` is a [SphereObject](#SphereObject)
@@ -229,10 +194,76 @@ returns a copy of the `object` with getters & setters to change its properties.
 
 ### createTorus
 ```
-createTorus(object: table) -> table, "SUCCESS"
+createTorus(object: table) -> table
 ```
 
 `object` is a [TorusObject](#TorusObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createTriangle
+```
+createTriangle(object: table) -> table
+```
+
+`object` is a [TriangleObject](#TriangleObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createCircle
+```
+createCircle(object: table) -> table
+```
+
+`object` is a [CircleObject](#CircleObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createItem
+```
+createItem(object: table) -> table
+```
+
+`object` is a [ItemObject](#ItemObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createLine
+```
+createLine(object: table) -> table
+```
+
+`object` is a [LineObject](#LineObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createRectangle
+```
+createRectangle(object: table) -> table
+```
+
+`object` is a [RectangleObject](#RectangleObject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createText
+```
+createText(object: table) -> table
+```
+
+`object` is a [TextObject](#TextObject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -247,6 +278,15 @@ returns a [RenderableObject](#RenderableObject) by the object's ID, or `nil` if 
 
 ---
 
+### removeObject
+```
+removeObject(id: number) -> boolean
+```
+
+remove an object by its ID and returns if the object with given ID existed
+
+---
+
 ### clear
 ```
 clear() -> number
@@ -256,27 +296,27 @@ remove all objects, returns the number of removed object.
 
 ---
 
-### getObjectsSize
+### getObjectsCount
 ```
-getObjectsSize() -> number
+getObjectsCount() -> number
 ```
 
 returns the number of all objects.
 
 ---
 
-### getSize
+### getGuiSize
 ```
-getSize() -> number, number
+getGuiSize() -> number, number, number
 ```
 
-returns the client's width and height
+returns the client's width, height, and GUI scale
 
 ---
 
-### getCoords
+### getEyePosition
 ```
-getCoords() -> number, number, number
+getEyePosition() -> number, number, number
 ```
 
 returns the player's eye position
@@ -288,7 +328,7 @@ returns the player's eye position
 update() -> number
 ```
 
-update objects, returns the number of updated object.
+manually update objects, returns the number of updated object.
 
 ---
 
