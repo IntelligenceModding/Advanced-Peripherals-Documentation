@@ -27,15 +27,6 @@ The Geo scanner has a delay between scans, so you must wait until you can scan a
 
 ## Functions
 
-### getFuelLevel
-```
-getFuelLevel() -> number
-```
-
-Returns the amount of stored fuel.
-
----
-
 ### getMaxFuelLevel
 ```
 getMaxFuelLevel() -> number
@@ -70,15 +61,6 @@ Returns a list of data about all blocks in the radius. Or if the scan fails it r
 | x: `number`            | The block's x coordinate                |
 | y: `number`            | The block's y coordinate                |
 | z: `number`            | The block's z coordinate                |
-
----
-
-### getScanCooldown
-```
-getScanCooldown() -> number
-```
-
-Returns the current time remaining until then next `scan()` can be ran.
 
 ---
 
