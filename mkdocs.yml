@@ -4,7 +4,7 @@ site_url: 'https://docs.advanced-peripherals.de/'
 nav:
     - 'Home': 'index.md'
     - 'Blog':
-        - blog/index.md
+      - blog/index.md
     - 'Guides':
       - 'How to: report a bug or request a feature': 'guides/how_to_report.md'
       - 'Item and Fluid Filters': 'guides/filters.md'
@@ -37,6 +37,7 @@ nav:
         - 'End Automata': 'turtles/metaphysics/end_automata.md'
         - 'Overpowered Automata': 'turtles/metaphysics/overpowered_automata.md'
     - 'Modules':
+      - 'modules/index.md'
       - 'Hotkey Module': 'modules/hotkey.md'
       - 'Keyboard': 'modules/keyboard.md'
       - 'Night Vision Module': 'modules/night_vision.md'

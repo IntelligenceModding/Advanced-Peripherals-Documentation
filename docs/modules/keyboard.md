@@ -45,7 +45,7 @@ print('Keyboard closed!')
 
 Fires when a player pressed a mouse button while keyboard module is capturing mouse.
 
-**Values:**
+**Values:**  
 1. `button: number` The mouse button which clicked down.
 
 ```lua linenums="1"
@@ -59,7 +59,7 @@ print('Mouse button ' .. button .. ' pressed!')
 
 Fires when the player released a mouse button while keyboard module is capturing mouse.
 
-**Values:**
+**Values:**  
 1. `button: number` The mouse button which released up.
 
 ```lua linenums="1"
@@ -73,8 +73,8 @@ print('Mouse button ' .. button .. ' released!')
 
 Fires when a player moved mouse while keyboard module is capturing mouse.
 
-**Values:**
-1. `dx: number` Horizontal mouse movement
+**Values:**  
+1. `dx: number` Horizontal mouse movement  
 2. `dy: number` Vertical mouse movement
 
 ```lua linenums="1"
@@ -88,8 +88,8 @@ print('Mouse moving: dy=' .. dy .. ' dx=' .. dx)
 
 Fires when a player scrolled mouse while keyboard module is capturing mouse.
 
-**Values:**
-1. `dy: number` Vertical mouse scroll amount
+**Values:**  
+1. `dy: number` Vertical mouse scroll amount  
 2. `dx: number` Horizontal mouse scroll amount
 
 ```lua linenums="1"

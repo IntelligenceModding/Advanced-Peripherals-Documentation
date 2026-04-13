@@ -8,7 +8,7 @@ comments: true
     ![!Image of the Smart Glasses item](../img/previews/smart_glasses.png){ align=right }
 
 The Smart Glasses can be used as an advanced pocket computer worn on the head,
-equipped with most peripherials and various [modules](../modules)!
+equipped with most peripherials and various [modules](../modules/index.md)!
 
 You can access Smart Glasses worn on the head via a [Smart Glasses Interface](./smart_glasses_interface.md).
 
@@ -17,7 +17,7 @@ You can access Smart Glasses worn on the head via a [Smart Glasses Interface](./
 ## Module Peripheral
 
 The `back` side peripheral on Smart Glasses can be used to access modules.  
-[Modules](../modules) functions will be patched on the Module Peripheral.
+[Modules](../modules/index.md) functions will be patched on the Module Peripheral.
 
 ```lua linenums="1"
 local modules = peripheral.wrap('back')

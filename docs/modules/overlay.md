@@ -13,7 +13,23 @@ The Overlay Module allows scripts render stuff on player's GUI.
 
 ## Objects
 
+All fields will have a getter and a setter, which is defined as `getXxx` and `setXxx`.
+For `boolean` fields, getter is defined as `isXxx` or `hasXxx`.
+
+---
+
 ### OverlayObject
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `enabled` | `boolean` | `true` | whether or not to render the object |
+
+#### type
+```
+type() -> string
+```
+
+returns the object's type.
 
 #### getId
 ```
@@ -22,126 +38,262 @@ getId() -> number
 
 returns the object's integer ID.
 
-#### isEnabled
-```
-isEnabled() -> boolean
-```
-
-returns whether or not the object is rendering.
-
-#### setEnabled
-```
-setEnabled(enable: boolean) -> nil
-```
-
-set whether or not to render the object.
-
 ---
 
 ### RenderableObject
 
-Based on [OverlayObject](#OverlayObject)
+Based on [OverlayObject](#overlayobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `opacity` | `number` | `1` | A decimal number that determines the transparency of the object, in range of \[0.0, 1.0\] |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `opacity` | `number` | `1` | A decimal number that determines the transparency of the object, in range of `[0.0, 1.0]` |
 | `color` | `number` | `0xffffff` | An integer that determines the color of the object, in format of 0xRRGGBB |
-| `x` | `number` | `0` | Integer of object's X position |
-| `y` | `number` | `0` | Integer of object's Y position |
-| `z` | `number` | `0` | Integer of object's Z position |
+| `x` | `number` | `0` | A decimal number of the object's X position |
+| `y` | `number` | `0` | A decimal number of the object's Y position |
+| `z` | `number` | `0` | A decimal number of the object's Z position |
+| `rotX` | `number` | `0` | A decimal number determine the degrees the object's rotation around the X-axis, in range of `[0, 360]` |
+| `rotY` | `number` | `0` | A decimal number determine the degrees the object's rotation around the Y-axis, in range of `[0, 360]` |
+| `rotZ` | `number` | `0` | A decimal number determine the degrees the object's rotation around the Z-axis, in range of `[0, 360]` |
 
----
+#### getPos
+```
+getPos() -> number, number, number
+```
 
-### RectangleObject
+returns the object's `x`, `y`, `z`.
 
-Based on [RenderableObject](#RenderableObject)
+#### setPos
+```
+setPos(number, number, number) -> nil
+```
+
+sets the object's `x`, `y`, `z`.
 
 ---
 
 ### CircleObject
 
-Based on [RenderableObject](#RenderableObject)
+Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `radius` | `number` | `0` | Integer of the circle's radius, in range of \[-32767, 32767\] |
-
----
-
-### TextObject
-
-Based on [RenderableObject](#RenderableObject)
-
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `content` | `string` | `""` | The text to render |
-| `fontSize` | `number` | `1` | A decimal number represents the text's font size, in range of \[0.0, 128.0\] |
-| `shadow` | `boolean` | `false` | Whether or not render a shadow for the text |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `radius` | `number` | `0` | Integer of the circle's radius, in range of `[-32767, 32767]` |
+| `filled` | `boolean` | `true` | If the circle should be filled |
+| `pixelated` | `boolean` | `true` | If the circle should be pixelated |
+| `borderWidth` | `number` | `4` | Integer of the circle's border width, in range of `[0, 32767]` |
+| `segments` | `number` | `25` | Integer of the circle's segments, in range of `[0, 100]` |
 
 ---
 
 ### ItemObject
 
-Based on [RenderableObject](#RenderableObject)
+Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `id` | `string` | `"minecraft:air"` | The registry ID of the item to render |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `item` | `string | nil` | `nil` | The registry ID of the item to render |
+
+---
+
+### LineObject
+
+Based on [RenderableObject](#renderableobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `endX` | `number` | `0` | A decimal number of line's X end |
+| `endY` | `number` | `0` | A decimal number of line's Y end |
+| `pixelated` | `boolean` | `false` | If the line should be pixelated |
+| `width` | `number` | `4` | Integer of the line's width, in range of `[0, 32767]` |
+
+#### getEndPos
+```
+getEndPos() -> number, number
+```
+
+returns the object's `endX`, `endY`.
+
+#### setEndPos
+```
+setEndPos(number, number) -> nil
+```
+
+sets the object's `endX`, `endY`.
+
+---
+
+### RectangleObject
+
+Based on [RenderableObject](#renderableobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `sizeX` | `number` | `0` | A decimal number of rectangle's X size |
+| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size |
+
+#### getSizes
+```
+getSizes() -> number, number
+```
+
+returns the object's `sizeX`, `sizeY`.
+
+#### setSizes
+```
+setSizes(number, number) -> nil
+```
+
+sets the object's `sizeX`, `sizeY`.
+
+---
+
+### TextObject
+
+Based on [RenderableObject](#renderableobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `content` | `string` | `""` | The text to render |
+| `fontSize` | `number` | `1` | A decimal number represents the text's font size, in range of `[0.0, 128.0]` |
+| `shadow` | `boolean` | `false` | Whether or not render a shadow for the text |
+| `center` | `boolean` | `false` | If the text should be centered at its position  |
 
 ---
 
 ### ThreeDimensionalObject
 
-Based on [RenderableObject](#RenderableObject)
+Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `disableDepthTest` | `boolean` | `false` | If `true`, the block will not hidden behind other objects, `false` otherwise |
-| `disableCulling` | `boolean` | `false` | If `true`, the block will not hidden faces cannot be seen, `false` otherwise |
-| `xRot` | `number` | `0` | A decimal number determine the degrees the block rotates on the X-axis, in range of \[0, 360\] |
-| `yRot` | `number` | `0` | A decimal number determine the degrees the block rotates on the Y-axis, in range of \[0, 360\] |
-| `zRot` | `number` | `0` | A decimal number determine the degrees the block rotates on the Z-axis, in range of \[0, 360\] |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `relativePosition` | `boolean` | `false` | Should the object's position relative to the player's head |
+| `relativeRotation` | `boolean` | `false` | Should the object's rotation relative to the player's head |
+| `depthTest` | `boolean` | `true` | If the object should hide behind other objects |
+| `culling` | `boolean` | `true` | If the object's hidden faces should not be seen |
 
 ---
 
 ### BlockObject
 
-Based on [ThreeDimensionalObject](#ThreeDimensionalObject)
+Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
 | `block` | `string` | `"minecraft:air"` | The registry ID of the block to render |
 
 ---
 
 ### BoxObject
 
-Based on [ThreeDimensionalObject](#ThreeDimensionalObject)
+Based on [ThreeDimensionalObject](#threedimensionalobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `sizeX` | `number` | `0` | A decimal number of rectangle's X size |
+| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size |
+| `sizeZ` | `number` | `0` | A decimal number of rectangle's Z size |
+
+#### getSizes
+```
+getSizes() -> number, number, number
+```
+
+returns the object's `sizeX`, `sizeY`, `sizeZ`.
+
+#### setSizes
+```
+setSizes(number, number, number) -> nil
+```
+
+sets the object's `sizeX`, `sizeY`, `sizeZ`.
 
 ---
 
 ### SphereObject
 
-Based on [ThreeDimensionalObject](#ThreeDimensionalObject)
+Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `sectors` | `number` | `16` | An integer in range of \[1, 1024\] |
-| `stacks` | `number` | `16` | An integer in range of \[1, 1024\] |
-| `radius` | `number` | `1` | A decimal number of the sphere's radius, in range of \(0, 128\] |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `sectors` | `number` | `16` | An integer in range of `[1, 1024]` |
+| `stacks` | `number` | `16` | An integer in range of `[1, 1024]` |
+| `radius` | `number` | `1` | A decimal number of the sphere's radius, in range of `(0, 128]` |
 
 ---
 
 ### TorusObject
 
-Based on [ThreeDimensionalObject](#ThreeDimensionalObject)
+Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default Value | Description |
-| ----- | ---- | ------------- | ----------- |
-| `sides` | `number` | `32` | An integer in range of \[1, 1024\] |
-| `rings` | `number` | `16` | An integer in range of \[1, 1024\] |
-| `minorRadius` | `number` | `0.1` | A decimal number of inner radius of the ring, in range of \(0, 128\] |
-| `majorRadius` | `number` | `0.5` | A decimal number of outer radius of the ring, in range of \(0, 128\] |
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `sides` | `number` | `32` | An integer in range of `[1, 1024]` |
+| `rings` | `number` | `16` | An integer in range of `[1, 1024]` |
+| `minorRadius` | `number` | `0.1` | A decimal number of inner radius of the ring, in range of `(0, 128]` |
+| `majorRadius` | `number` | `0.5` | A decimal number of outer radius of the ring, in range of `(0, 128]` |
+
+---
+
+### TriangleObject
+
+Based on [ThreeDimensionalObject](#threedimensionalobject)
+
+!!! note
+    Triangle objects only visible from counter-clockwise drawing order.
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `x1` | `number` | `0` | A decimal number of the object's first X position |
+| `y1` | `number` | `0` | A decimal number of the object's first Y position |
+| `z1` | `number` | `0` | A decimal number of the object's first Z position |
+| `x2` | `number` | `0` | A decimal number of the object's second X position |
+| `y2` | `number` | `0` | A decimal number of the object's second Y position |
+| `z2` | `number` | `0` | A decimal number of the object's second Z position |
+| `x3` | `number` | `0` | A decimal number of the object's third X position |
+| `y3` | `number` | `0` | A decimal number of the object's third Y position |
+| `z3` | `number` | `0` | A decimal number of the object's third Z position |
+
+#### getPos1
+```
+getPos1() -> number, number, number
+```
+
+returns the object's `x1`, `y1`, `z1`.
+
+#### setPos1
+```
+setPos1(number, number, number) -> nil
+```
+
+sets the object's `x1`, `y1`, `z1`.
+
+#### getPos2
+```
+getPos2() -> number, number, number
+```
+
+returns the object's `x2`, `y2`, `z2`.
+
+#### setPos2
+```
+setPos2(number, number, number) -> nil
+```
+
+sets the object's `x2`, `y2`, `z2`.
+
+#### getPos3
+```
+getPos3() -> number, number, number
+```
+
+returns the object's `x3`, `y3`, `z3`.
+
+#### setPos3
+```
+setPos3(number, number, number) -> nil
+```
+
+sets the object's `x3`, `y3`, `z3`.
 
 ---
 
@@ -164,7 +316,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createBlock(object: table) -> table
 ```
 
-`object` is a [BlockObject](#BlockObject)
+`object` is a [BlockObject](#blockobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -175,7 +327,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createBox(object: table) -> table
 ```
 
-`object` is a [BoxObject](#BoxObject)
+`object` is a [BoxObject](#boxobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -186,7 +338,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createSphere(object: table) -> table
 ```
 
-`object` is a [SphereObject](#SphereObject)
+`object` is a [SphereObject](#sphereobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -197,7 +349,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createTorus(object: table) -> table
 ```
 
-`object` is a [TorusObject](#TorusObject)
+`object` is a [TorusObject](#torusobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -208,7 +360,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createTriangle(object: table) -> table
 ```
 
-`object` is a [TriangleObject](#TriangleObject)
+`object` is a [TriangleObject](#triangleobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -219,7 +371,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createCircle(object: table) -> table
 ```
 
-`object` is a [CircleObject](#CircleObject)
+`object` is a [CircleObject](#circleobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -230,7 +382,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createItem(object: table) -> table
 ```
 
-`object` is a [ItemObject](#ItemObject)
+`object` is a [ItemObject](#itemobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -241,7 +393,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createLine(object: table) -> table
 ```
 
-`object` is a [LineObject](#LineObject)
+`object` is a [LineObject](#lineobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -252,7 +404,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createRectangle(object: table) -> table
 ```
 
-`object` is a [RectangleObject](#RectangleObject)
+`object` is a [RectangleObject](#rectangleobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -263,7 +415,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 createText(object: table) -> table
 ```
 
-`object` is a [TextObject](#TextObject)
+`object` is a [TextObject](#textobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
@@ -274,7 +426,7 @@ returns a copy of the `object` with getters & setters to change its properties.
 getObject(id: number) -> table | nil
 ```
 
-returns a [RenderableObject](#RenderableObject) by the object's ID, or `nil` if the ID not exists.
+returns a [RenderableObject](#renderableobject) by the object's ID, or `nil` if the ID not exists.
 
 ---
 
