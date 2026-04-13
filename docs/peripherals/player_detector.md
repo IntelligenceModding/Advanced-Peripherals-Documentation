@@ -102,12 +102,12 @@ Returns information about the player with the `username` passed.
 
 !!! success "Added more properties in version 0.7.4r"
 
-!!! note "The name and uuid fields only exist in MC 1.21.1"
+!!! note "Fields `name` and `uuid` only exist in 1.21.1 version"
 
 | table                      | Description                                |
 |----------------------------|--------------------------------------------|
 | uuid: `string`             | The player's UUID                          |
-| name: `string`             | The player's name
+| name: `string`             | The player's name                          |
 | dimension: `string`        | The dimension the player is in             |
 | eyeHeight: `number`        | The height of the player's eyes            |
 | pitch: `number`            | The pitch of the player's head             |
