@@ -30,8 +30,9 @@ nav:
     - 'Chunky Turtle': 'turtles/chunky_turtle.md'
     - 'Compass Turtle': 'turtles/compass_turtle.md'
     - 'Environment Turtle': 'turtles/environment_turtle.md'
-    - 'Player Turtle': 'turtles/player_turtle.md'
     - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
+    - 'Player Turtle': 'turtles/player_turtle.md'
+    - 'Saddle Turtle': 'turtles/saddle_turtle.md'
     - 'Metaphysics':
       - 'Weak Automata': 'turtles/metaphysics/weak_automata.md'
       - 'Husbandry Automata': 'turtles/metaphysics/husbandry_automata.md'
