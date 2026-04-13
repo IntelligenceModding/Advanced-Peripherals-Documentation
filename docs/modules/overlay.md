@@ -77,7 +77,7 @@ Based on [RenderableObject](#renderableobject)
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `radius` | `number` | `0` | Integer of the circle's radius, in range of `[-32767, 32767]` |
+| `radius` | `number` | `0` | Integer of the circle's radius, in range of `[0, ∞)` |
 | `filled` | `boolean` | `true` | If the circle should be filled |
 | `pixelated` | `boolean` | `true` | If the circle should be pixelated |
 | `borderWidth` | `number` | `4` | Integer of the circle's border width, in range of `[0, 32767]` |
@@ -128,8 +128,8 @@ Based on [RenderableObject](#renderableobject)
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `sizeX` | `number` | `0` | A decimal number of rectangle's X size |
-| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size |
+| `sizeX` | `number` | `0` | A decimal number of rectangle's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
 
 #### getSizes
 ```
@@ -156,7 +156,7 @@ Based on [RenderableObject](#renderableobject)
 | `content` | `string` | `""` | The text to render |
 | `fontSize` | `number` | `1` | A decimal number represents the text's font size, in range of `[0.0, 128.0]` |
 | `shadow` | `boolean` | `false` | Whether or not render a shadow for the text |
-| `center` | `boolean` | `false` | If the text should be centered at its position  |
+| `center` | `boolean` | `false` | If the text should be centered at its position |
 
 ---
 
@@ -189,9 +189,9 @@ Based on [ThreeDimensionalObject](#threedimensionalobject)
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `sizeX` | `number` | `0` | A decimal number of rectangle's X size |
-| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size |
-| `sizeZ` | `number` | `0` | A decimal number of rectangle's Z size |
+| `sizeX` | `number` | `0` | A decimal number of rectangle's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
+| `sizeZ` | `number` | `0` | A decimal number of rectangle's Z size, in range of `[0, ∞)` |
 
 #### getSizes
 ```
@@ -239,19 +239,19 @@ Based on [ThreeDimensionalObject](#threedimensionalobject)
 Based on [ThreeDimensionalObject](#threedimensionalobject)
 
 !!! note
-    Triangle objects only visible from counter-clockwise drawing order.
+    Triangle objects only visible when the vertex is ordered in counter-clockwise.
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `x1` | `number` | `0` | A decimal number of the object's first X position |
-| `y1` | `number` | `0` | A decimal number of the object's first Y position |
-| `z1` | `number` | `0` | A decimal number of the object's first Z position |
-| `x2` | `number` | `0` | A decimal number of the object's second X position |
-| `y2` | `number` | `0` | A decimal number of the object's second Y position |
-| `z2` | `number` | `0` | A decimal number of the object's second Z position |
-| `x3` | `number` | `0` | A decimal number of the object's third X position |
-| `y3` | `number` | `0` | A decimal number of the object's third Y position |
-| `z3` | `number` | `0` | A decimal number of the object's third Z position |
+| `x1` | `number` | `0` | A decimal number of the first vertex's X position |
+| `y1` | `number` | `0` | A decimal number of the first vertex's Y position |
+| `z1` | `number` | `0` | A decimal number of the first vertex's Z position |
+| `x2` | `number` | `0` | A decimal number of the second vertex's X position |
+| `y2` | `number` | `0` | A decimal number of the second vertex's Y position |
+| `z2` | `number` | `0` | A decimal number of the second vertex's Z position |
+| `x3` | `number` | `0` | A decimal number of the third vertex's X position |
+| `y3` | `number` | `0` | A decimal number of the third vertex's Y position |
+| `z3` | `number` | `0` | A decimal number of the third vertex's Z position |
 
 #### getPos1
 ```
