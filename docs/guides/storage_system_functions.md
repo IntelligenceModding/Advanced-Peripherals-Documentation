@@ -5,8 +5,7 @@ crafting system.
 The following functions can be used for both the ME and RS Bridge
 
 !!! failure
-    <center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME/RS Bridge and *
-    *NOT** next to the computer! <h3> </center>
+    <center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME/RS Bridge and **NOT** next to the computer! <h3> </center>
 
 !!! tip
     You can use the command `/advancedperipherals getHashItem` with an item in your hand to get the MD5 hash of the NBT tags
@@ -404,10 +403,10 @@ This function returns the used storage in items for RS and in bytes for AE2
 
 ---
 
-### getUsedItemStorage
+### getUsedFluidStorage
 
 ```
-getUsedItemStorage() -> int
+getUsedFluidStorage() -> int
 ```
 
 Returns the total amount of used internal fluid storage.
@@ -415,10 +414,10 @@ This function returns the used storage in millibuckets for RS and in bytes for A
 
 ---
 
-### getUsedItemStorage
+### getUsedChemicalStorage
 
 ```
-getUsedItemStorage() -> int
+getUsedChemicalStorage() -> int
 ```
 
 Returns the total amount of used internal mekanism chemical storage.
