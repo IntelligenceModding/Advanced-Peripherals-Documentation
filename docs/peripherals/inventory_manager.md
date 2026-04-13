@@ -53,7 +53,7 @@ getCuriosSizes() -> table
 ```
 
 !!! warning "Requirement"
-    Requires the Curios API mod to be installed
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
 
 Returns the sizes of the player's curios inventory.
 
@@ -92,7 +92,7 @@ listCurios() -> table
 ```
 
 !!! warning "Requirement"
-    Requires the Curios API mod to be installed
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
 
 Returns the contents of the player's curios inventory.
 
@@ -135,6 +135,9 @@ manager.pushItems("@up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, co
 pushCuriosItems(slotName: string, toName: string, filter: table) -> number
 ```
 
+!!! warning "Requirement"
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
+
 Removes items from the player's curios inventory and returns the amount of the item added.
 
 ---
@@ -162,6 +165,9 @@ manager.pullItems("@up", {name="minecraft:cobblestone", toSlot=36, count=32})
 ```
 pullCuriosItems(slotName: string, fromName: string, filter: table) -> number
 ```
+
+!!! warning "Requirement"
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
 
 Adds items from the player's curios inventory and returns the amount of the item added.
 
@@ -201,6 +207,9 @@ Returns the wrapped operations of a storage item (e.g. backpack, bucket).
 ```
 wrapCuriosStorageItem(slotName: number, slot: number) -> table
 ```
+
+!!! warning "Requirement"
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
 
 Returns the wrapped operations of a storage item (e.g. backpack, bucket) in curios inventory.
 
