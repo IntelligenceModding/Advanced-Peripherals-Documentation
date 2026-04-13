@@ -28,7 +28,7 @@ This can be a tag or a name. To filter for tags, place a `#` in front of the nam
 
 ```lua
 {
-    name = "#forge:ores/gold" -- Will search for the gold ore tag, nbt values are ignored
+    name = "#c:ores/gold" -- Will search for the gold ore tag, nbt values are ignored
 }
 ```
 

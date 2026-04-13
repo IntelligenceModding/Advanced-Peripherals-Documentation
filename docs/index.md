@@ -20,18 +20,18 @@ With Advanced Peripherals you can control your base in Minecraft only with messa
 
 <b class="si si-discord"></b> If you need help, join the [Discord](https://discord.intelligence-modding.de/)  
 <b class="si si-curseforge"></b> See the mod page on [Curseforge](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)  
-<b class="si si-github"></b> Find the mod source code on [Github](https://github.com/SirEndii/AdvancedPeripherals)  
+<b class="si si-github"></b> Find the mod source code on [Github](https://github.com/IntelligenceModding/AdvancedPeripherals)  
 
 #### Version support
 
 | Supported Version | 1.16.5             | 1.17.1             | 1.18.2             | 1.19.2             | 1.19.3             | 1.20.1             | 1.20.4             | 1.21.1             |
 |-------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | Security patches  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Critical fixes    | :x:                | :x:                | :white_check_mark: | :white_check_mark: | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Minor fixes       | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Minor features    | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Fully supported   | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Will be supported | :x:                | :x:                | :o:                | :o:                | :o:                | :o:                | :o:                | :o:                |
+| Critical fixes    | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: | :x:                | :white_check_mark: |
+| Minor fixes       | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: |
+| Minor features    | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: |
+| Fully supported   | :x:                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                | :white_check_mark: |
+| Will be supported | :x:                | :x:                | :x:                | :o:                | :x:                | :o:                | :x:                | :o:                |
 
 
 #### Netlify

@@ -50,7 +50,7 @@ Returns the block state of the block, or `nil` if nothing is in front of the rea
 ```lua linenums="1"
 local reader = peripheral.find("block_reader")
 
-for k, v in ipairs(reader.getBlockState()) do 
+for k, v in pairs(reader.getBlockState()) do 
     print(k, v)
 end
 ```
@@ -68,7 +68,7 @@ Returns the block data of the block if block is a tile entity.
 local reader = peripheral.find("block_reader")
 
 --Prints the contents of the data
-for k, v in ipairs(reader.getBlockData()) do 
+for k, v in pairs(reader.getBlockData()) do 
     print(k, v)
 end
 ```

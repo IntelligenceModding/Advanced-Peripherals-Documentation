@@ -7,7 +7,7 @@ comments: true
 !!! picture inline end
     ![!Image of the Keyboard item](../img/previews/modules/keyboard_module.png){ align=right }
 
-The Keyboard Module can listen to the same hotkey as [the Hotkey module](./hotkey) that players bound in their client.  
+The Keyboard Module can listen to the same hotkey as [the Hotkey module](./hotkey.md) that players bound in their client.  
 When active, Keyboard Module will forward player's key events to Smart Glasses.  
 In addition, Keyboard Module may also capture player's mouse by invoking `setCaptureMouse(true)`, and then fire corresponding events.
 

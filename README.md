@@ -2,7 +2,7 @@
 
 <center>
 
-[![Project](https://img.shields.io/badge/Project-2E9CFF?style=for-the-badge&logoColor=white&logo=Github)](https://github.com/SirEndii/AdvancedPeripherals)
+[![Project](https://img.shields.io/badge/Project-2E9CFF?style=for-the-badge&logoColor=white&logo=Github)](https://github.com/IntelligenceModding/AdvancedPeripherals)
 ![Netlify Status](https://img.shields.io/website?down_color=red&down_message=offline&label=Netlify%28Host%29&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fadvancedperipherals.netlify.app&logoColor=white&logo=Netlify)
 [![Discord](https://img.shields.io/discord/734726882058174486?label=Discord&style=for-the-badge&color=7289da&logoColor=white&logo=Discord)](https://discord.intelligence-modding.de/)
 

@@ -27,6 +27,6 @@ We appreciate your dedication to making the project better by helping us squash 
 <hr/>
 Remember, our modding community is built on collaboration and a love for Minecraft. Be friendly and respectful in your reports and requests. 
 
-To report a bug or request a feature, head over to our [github repository](https://github.com/SirEndii/AdvancedPeripherals/issues). Your feedback is important to us, and it makes the project what it is today!
+To report a bug or request a feature, head over to our [github repository](https://github.com/IntelligenceModding/AdvancedPeripherals/issues). Your feedback is important to us, and it makes the project what it is today!
 
 If you need assistance or want to discuss a feature or something else, head out to our [discord](https://discord.intelligence-modding.de/)
