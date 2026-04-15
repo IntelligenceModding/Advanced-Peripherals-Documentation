@@ -486,13 +486,19 @@ manually update objects, returns the number of updated object.
 
 ### autoUpdate
 ```
-autoUpdate(value: boolean | nil) -> boolean
+autoUpdate() -> boolean
 ```
 
-set auto update and returns if the objects will be auto updated.  
+returns if objects will be auto synced to client when its fields updating
 
-If the value is a boolean, the auto update flag will set to that value.  
-If the value is not presented (aka `nil`), the auto update flag will stay unchanged
+---
+
+### setAutoUpdate
+```
+setAutoUpdate(value: boolean) -> nil
+```
+
+sets if objects will be auto synced to client
 
 ---
 
