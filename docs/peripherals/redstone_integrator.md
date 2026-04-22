@@ -22,9 +22,9 @@ You may need this peripheral for cases where you need to output redstone signals
 
 <div class="center-table" markdown>
 
-| Peripheral Name    | Interfaces with | Has events | Introduced in |
-| ------------------ | --------------- | ---------- | ------------- |
-| redstoneIntegrator | Redstone        | No         | 0.5.3b        |
+| Peripheral Name    | Interfaces with | Has events | Introduced in | Minecraft version |
+| ------------------ | --------------- | ---------- | ------------- | ------------- |
+| redstoneIntegrator | Redstone        | No         | 0.5.3b        | 1.21 and below |
 
 </div>
 

@@ -18,9 +18,10 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 <div class="center-table" markdown>
 
-| Peripheral Name  | Interfaces with  | Has events | Introduced in |
-| ---------------- | ---------------- | ---------- | ------------- |
-| inventoryManager | Player Inventory | No         | 0.5b          |
+| Peripheral Name  | Interfaces with  | Has events | Introduced in | Minecraft version |
+| ---------------- | ---------------- | ---------- | ------------- | ------------- |
+| inventoryManager | Player Inventory | No         | 0.5b          | 1.21 and below |
+| inventory_manager| Player Inventory | No         | 0.5b          | 1.21.1 and above |
 
 </div>
 

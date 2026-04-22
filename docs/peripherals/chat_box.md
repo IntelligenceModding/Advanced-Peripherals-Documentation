@@ -16,13 +16,19 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 
 ---
 
+
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| chatBox         | Game Chat       | Yes        | 0.1b          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ------------- |
+| chatBox | Game Chat | Yes | 0.1b | 1.21 and below |
+| chat_box | Game Chat | Yes | 0.1b | 1.21.1 and above |
 
 </div>
+
+
+
+
 
 ---
 

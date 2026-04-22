@@ -19,9 +19,10 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| meBridge        | ME System       | Yes        | 0.3b          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ------------- |
+| meBridge        | ME System       | Yes        | 0.3b          | 1.21 and below |
+| me_bridge       | ME System       | Yes        | 0.3b          | 1.21.1 and above |
 
 </div>
 

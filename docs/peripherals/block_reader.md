@@ -15,9 +15,10 @@ This block is able to read data about any blocks or tile entities in front of it
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| blockReader     | Blocks          | No         | 0.7r          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ------------- |
+| blockReader     | Blocks          | No         | 0.7r          | 1.21 and below |
+| block_reader    | Blocks          | No         | 0.7r          | 1.21.1 and above |
 
 </div>
 
