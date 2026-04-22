@@ -507,7 +507,7 @@ To support that in a simple way on a users end, we created that custom object.
 When you schedule a task, it firsts starts calculation in the background and sends an event that the item is either not
 craftable or the calculation was started.
 If calculation is done, there are several things that can happen. If the calculation was not successful and there were
-missing items, it fires the crafting event with the message "MISSING_ITEMs".
+missing items, it fires the crafting event with the message "MISSING_ITEMS".
 The missing items can be retrieved using the object's function `getMissingItems`.
 Depending on if you use RS or AE2, it also may return other debug messages if the calculation was nto successful like
 overflow or cycle detected.
