@@ -22,7 +22,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
 | --------------- | --------------- | ---------- | ------------- | ----------------- |
 | meBridge        | ME System       | Yes        | 0.3b          | Below 1.21.1      |
-| me_bridge       | ME System       | Yes        | 0.3b          | 1.21.1 and above  |
+| me_bridge       | ME System       | Yes        | -         | 1.21.1 and above  |
 
 </div>
 
