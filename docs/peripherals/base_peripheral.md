@@ -60,10 +60,22 @@ Configuration table is in the following format:
 getOperationCooldown(operationName: string) -> number
 ```
 
+Returns the remaining cooldown of an operation in milliseconds.
+
 !!! note
     This method only exists if any operation presents on the peripheral.
 
-Returns the remaining cooldown of an operation in milliseconds.
+---
+
+### peripheralDisabled
+```
+peripheralDisabled() -> true
+```
+
+See [Disabled Peipherals](../guides/disabled_peripherals.md) for more information.
+
+!!! note
+    `peripheralDisabled` method only exists when the peripheral is disabled by server config, and it will always return `true`.
 
 ---
 

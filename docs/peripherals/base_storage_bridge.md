@@ -509,7 +509,7 @@ craftable or the calculation was started.
 If calculation is done, there are several things that can happen. If the calculation was not successful and there were
 missing items, it fires the crafting event with the message "MISSING_ITEMS".
 The missing items can be retrieved using the object's function `getMissingItems`.
-Depending on if you use RS or AE2, it also may return other debug messages if the calculation was nto successful like
+Depending on if you use RS or AE2, it also may return other debug messages if the calculation was not successful like
 overflow or cycle detected.
 
 If the calculation was successful, the event will fire with the message `CRAFTING_STARTED` and then starts the crafting.
