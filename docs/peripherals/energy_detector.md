@@ -20,9 +20,9 @@ The Energy Detector can detect energy flow and acts as a resistor. You can defin
 <div class="center-table" markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
-| --------------- | --------------- | ---------- | ------------- | ------------- |
-| energyDetector  | Forge Energy    | No         | 0.4.1b        | 1.21 and below |
-| energy_detector | Forge Energy    | No         | 0.4.1b        | 1.21.1 and above |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| energyDetector  | Forge Energy    | No         | 0.4.1b        | Below 1.21.1      |
+| energy_detector | Forge Energy    | No         | -             | 1.21.1 and above  |
 
 </div>
 

@@ -17,9 +17,9 @@ You can get a list of all online players and detect when a player clicks on the 
 <div class="center-table" markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
-|-----------------|-----------------|------------|---------------|-------------|
-| playerDetector  | Players         | Yes        | 0.1b          | 1.21 and below |
-| player_detector | Players         | Yes        | 0.1b          | 1.21.1 and above |
+|-----------------|-----------------|------------|---------------|-------------------|
+| playerDetector  | Players         | Yes        | 0.1b          | Below 1.21.1      |
+| player_detector | Players         | Yes        | -             | 1.21.1 and above  |
 
 </div>
 

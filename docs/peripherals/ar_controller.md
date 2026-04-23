@@ -20,9 +20,9 @@ The AR Controller is used to control your [AR Goggles](../items/ar_goggles.md) w
 <div class="center-table" markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
-| --------------- | --------------- | ---------- | ------------- | ------------- |
-| arController    | AR Goggles      | No         | 0.5b          | 1.21 and below |
-| ar_controller   | AR Goggles      | No         | 0.5b          | 1.21.1 and above |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| arController    | AR Goggles      | No         | 0.5b          | Below 1.21.1      |
+| ar_controller   | AR Goggles      | No         | -             | 1.21.1 and above  |
 
 </div>
 

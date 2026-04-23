@@ -18,9 +18,9 @@ The Geo scanner has a delay between scans, so you must wait until you can scan a
 <div class="center-table" markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
-| --------------- | --------------- | ---------- | ------------- | ------------- |
-| geoScanner      | Blocks          | No         | 0.7r          | 1.21 and below |
-| geo_scanner     | Blocks          | No         | 0.7r          | 1.21.1 and above |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| geoScanner      | Blocks          | No         | 0.7r          | Below 1.21.1      |
+| geo_scanner     | Blocks          | No         | -             | 1.21.1 and above  |
 
 </div>
 

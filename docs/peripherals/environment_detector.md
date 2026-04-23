@@ -17,9 +17,9 @@ the light level of the block and many more.
 <div class="center-table" markdown>
 
 | Peripheral Name     | Interfaces with | Has events | Introduced in | Minecraft version |
-| ------------------- | --------------- | ---------- | ------------- | ------------- |
-| environmentDetector | World           | No         | 0.1b          | 1.21 and below |
-| environment_detector| World           | No         | 0.1b          | 1.21.1 and above |
+| ------------------- | --------------- | ---------- | ------------- | ----------------- |
+| environmentDetector | World           | No         | 0.1b          | Below 1.21.1      |
+| environment_detector| World           | No         | -             | 1.21.1 and above  |
 
 </div>
 
