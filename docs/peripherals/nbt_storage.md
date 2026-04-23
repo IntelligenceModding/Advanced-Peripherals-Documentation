@@ -18,7 +18,7 @@ NBT Storage is a custom block that allows reading and writing of NBT data to the
 | Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
 | --------------- | --------------- | ---------- | ------------- | ----------------- |
 | nbtStorage      | NBT             | No         | 0.7r          | Below 1.21.1      |
-| nbt_storage     | NBT             | No         | -          | 1.21.1 and above  |
+| nbt_storage     | NBT             | No         | -             | 1.21.1 and above  |
 
 </div>
 
