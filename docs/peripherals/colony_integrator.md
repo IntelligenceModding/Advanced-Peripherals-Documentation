@@ -18,10 +18,10 @@ The colony integrator can interact with a colony from MineColonies.
 
 <div class="center-table" markdown>
 
-| Peripheral Name  | Interfaces with | Has events | Introduced in | Minecraft version |
-| ---------------- | --------------- | ---------- | ------------- | ----------------- |
-| colonyIntegrator | Mine Colony     | No         | 0.7r          | Below 1.21.1      |
-| colony_integrator| Mine Colony     | No         | -             | 1.21.1 and above  |
+| Peripheral Name   | Interfaces with | Has events | Introduced in | Minecraft version |
+| ----------------- | --------------- | ---------- | ------------- | ----------------- |
+| colonyIntegrator  | Mine Colony     | No         | 0.7r          | Below 1.21.1      |
+| colony_integrator | Mine Colony     | No         | -             | 1.21.1 and above  |
 
 </div>
 
