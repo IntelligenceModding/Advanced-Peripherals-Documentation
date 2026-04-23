@@ -19,9 +19,10 @@ You can retrieve items, craft items, get all items as a list and more.
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| rsBridge        | Refined Storage | No         | 0.3.6b        |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| rsBridge        | Refined Storage | No         | 0.3.6b        | Below 1.21.1      |
+| rs_bridge       | Refined Storage | No         | -             | 1.21.1 and above  |
 
 </div>
 
