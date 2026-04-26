@@ -14,7 +14,7 @@ The Overlay Module allows scripts render stuff on player's GUI.
 ## Objects
 
 All fields will have a getter and a setter, which is defined as `getXxx` and `setXxx`.
-For `boolean` fields, getter is defined as `isXxx` or `hasXxx`.
+For `boolean` fields, getter is defined as either `isXxx` or `hasXxx`.
 
 ---
 
@@ -47,7 +47,7 @@ Based on [OverlayObject](#overlayobject)
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
 | `opacity` | `number` | `1` | A decimal number that determines the transparency of the object, in range of `[0.0, 1.0]` |
-| `color` | `number` | `0xffffff` | An integer that determines the color of the object, in format of 0xRRGGBB |
+| `color` | `number` | `-1` | An integer that determines the color of the object, in format of 0xRRGGBB. <br/>The default value `-1` is equivalent to `0xFFFFFF` in most cases. |
 | `x` | `number` | `0` | A decimal number of the object's X position |
 | `y` | `number` | `0` | A decimal number of the object's Y position |
 | `z` | `number` | `0` | A decimal number of the object's Z position |
@@ -173,16 +173,6 @@ Based on [RenderableObject](#renderableobject)
 
 ---
 
-### BlockObject
-
-Based on [ThreeDimensionalObject](#threedimensionalobject)
-
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `block` | `string` | `"minecraft:air"` | The registry ID of the block to render |
-
----
-
 ### BoxObject
 
 Based on [ThreeDimensionalObject](#threedimensionalobject)
@@ -206,6 +196,20 @@ setSizes(number, number, number) -> nil
 ```
 
 sets the object's `sizeX`, `sizeY`, `sizeZ`.
+
+---
+
+### BlockObject
+
+Based on [BoxObject](#boxobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `block` | `string?` | `nil` | The registry ID of the block to render |
+| `states` | `table` | default states of the block | The states of the block |
+| `tintAll` | `boolean` | `false` | Make the `color` attribute affect the whole block, not only the tintable parts |
+
+If `color` is `-1`, the block will shown with its original color palettes.
 
 ---
 
@@ -484,9 +488,9 @@ manually update objects, returns the number of updated object.
 
 ---
 
-### autoUpdate
+### isAutoUpdating
 ```
-autoUpdate() -> boolean
+isAutoUpdating() -> boolean
 ```
 
 returns if objects will be auto synced to client when its fields updating
