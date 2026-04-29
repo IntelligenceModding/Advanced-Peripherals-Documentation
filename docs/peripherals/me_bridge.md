@@ -19,9 +19,10 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| meBridge        | ME System       | Yes        | 0.3b          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| meBridge        | ME System       | Yes        | 0.3b          | Below 1.21.1      |
+| me_bridge       | ME System       | Yes        | -             | 1.21.1 and above  |
 
 </div>
 
@@ -429,7 +430,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
     ## Functionality
     
-    The RS and ME Bridge now share the same functionality. Check [this Guide](../guides/storage_system_functions) for the whole documentation for every available feature.
+    The RS and ME Bridge now share the same functionality. Check [this Guide](../../guides/storage_system_functions) for the whole documentation for every available feature.
 
     </div>
 
