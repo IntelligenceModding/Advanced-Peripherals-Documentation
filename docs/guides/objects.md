@@ -4,6 +4,7 @@ AP contains a lot of different objects based on in-game content, including Items
 This guide contains the most objects we have, including a description and every property with its type it can contain.
 
 Actually trying out the new github workflow
+And the PR thingy
 
 ## Item
 Base ítem properties:
