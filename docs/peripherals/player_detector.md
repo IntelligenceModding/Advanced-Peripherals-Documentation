@@ -16,9 +16,10 @@ You can get a list of all online players and detect when a player clicks on the 
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-|-----------------|-----------------|------------|---------------|
-| playerDetector  | Players         | Yes        | 0.1b          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| playerDetector  | Players         | Yes        | 0.1b          | Below 1.21.1      |
+| player_detector | Players         | Yes        | -             | 1.21.1 and above  |
 
 </div>
 
@@ -102,8 +103,12 @@ Returns information about the player with the `username` passed.
 
 !!! success "Added more properties in version 0.7.4r"
 
+!!! note "Fields `name` and `uuid` only exist in 1.21.1 version"
+
 | table                      | Description                                |
 |----------------------------|--------------------------------------------|
+| uuid: `string`             | The player's UUID                          |
+| name: `string`             | The player's name                          |
 | dimension: `string`        | The dimension the player is in             |
 | eyeHeight: `number`        | The height of the player's eyes            |
 | pitch: `number`            | The pitch of the player's head             |

@@ -17,24 +17,16 @@ The Geo scanner has a delay between scans, so you must wait until you can scan a
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| geoScanner      | Blocks          | No         | 0.7r          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| geoScanner      | Blocks          | No         | 0.7r          | Below 1.21.1      |
+| geo_scanner     | Blocks          | No         | -             | 1.21.1 and above  |
 
 </div>
 
 ---
 
 ## Functions
-
-### getFuelLevel
-```
-getFuelLevel() -> number
-```
-
-Returns the amount of stored fuel.
-
----
 
 ### getMaxFuelLevel
 ```
@@ -70,15 +62,6 @@ Returns a list of data about all blocks in the radius. Or if the scan fails it r
 | x: `number`            | The block's x coordinate                |
 | y: `number`            | The block's y coordinate                |
 | z: `number`            | The block's z coordinate                |
-
----
-
-### getScanCooldown
-```
-getScanCooldown() -> number
-```
-
-Returns the current time remaining until then next `scan()` can be ran.
 
 ---
 

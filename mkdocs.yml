@@ -2,16 +2,17 @@ site_name: Advanced Peripherals
 site_url: 'https://docs.advanced-peripherals.de/'
 
 nav:
-    - 'Home': 'index.md'
-    - 'Blog':
-        - blog/index.md
-    - 'Guides':
+  - 'Home': 'index.md'
+  - 'Blog':
+      - blog/index.md
+  - 'Guides':
+      - 'Disabled Peripherals': 'guides/disabled_peripherals.md'
       - 'Lua Objects': 'guides/objects.md'
       - 'Item and Fluid Filters': 'guides/filters.md'
       - 'Cooldowns and Fuel consumption': 'guides/cooldowns_and_fuel_consumption.md'
       - 'Storage System Functions': 'guides/storage_system_functions.md'
       - 'How to: report a bug or request a feature': 'guides/how_to_report.md'
-    - 'Peripherals':
+  - 'Peripherals':
       - 'Chat Box': 'peripherals/chat_box.md'
       - 'Energy Detector': 'peripherals/energy_detector.md'
       - 'Environment Detector': 'peripherals/environment_detector.md'
@@ -25,49 +26,49 @@ nav:
       - 'ME Bridge': 'peripherals/me_bridge.md'
       - 'RS Bridge': 'peripherals/rs_bridge.md'
       - 'Colony Integrator': 'peripherals/colony_integrator.md'
-    - 'Turtles':
+  - 'Turtles':
       - 'Chatty Turtle': 'turtles/chatty_turtle.md'
       - 'Chunky Turtle': 'turtles/chunky_turtle.md'
       - 'Environment Turtle': 'turtles/environment_turtle.md'
       - 'Player Turtle': 'turtles/player_turtle.md'
       - 'Geoscanning Turtle': 'turtles/geo_scanner_turtle.md'
       - 'Metaphysics':
-        - 'Weak Automata': 'turtles/metaphysics/weak_automata.md'
-        - 'Husbandry Automata': 'turtles/metaphysics/husbandry_automata.md'
-        - 'End Automata': 'turtles/metaphysics/end_automata.md'
-        - 'Overpowered Automata': 'turtles/metaphysics/overpowered_automata.md'
-    - 'Items':
+          - 'Weak Automata': 'turtles/metaphysics/weak_automata.md'
+          - 'Husbandry Automata': 'turtles/metaphysics/husbandry_automata.md'
+          - 'End Automata': 'turtles/metaphysics/end_automata.md'
+          - 'Overpowered Automata': 'turtles/metaphysics/overpowered_automata.md'
+  - 'Items':
       - 'AR Goggles': 'items/ar_goggles.md'
       - 'Chunk Controller': 'items/chunk_controller.md'
       - 'Computer Tool': 'items/computer_tool.md'
       - 'Memory Card': 'items/memory_card.md'
       - 'Pocket Computers': 'items/pocket_computer.md'
-    - 'Mod Integrations':
+  - 'Mod Integrations':
       - 'integrations/index.md'
       - 'Minecraft':
-        - 'Beacon': 'integrations/minecraft/beacon.md'
-        - 'Note Block': 'integrations/minecraft/noteblock.md'
+          - 'Beacon': 'integrations/minecraft/beacon.md'
+          - 'Note Block': 'integrations/minecraft/noteblock.md'
       - 'Botania':
-        - 'Flowers': 'integrations/botania/flowers.md'
-        - 'Mana Pool': 'integrations/botania/pool.md'
-        - 'Mana Spreader': 'integrations/botania/spreader.md'
+          - 'Flowers': 'integrations/botania/flowers.md'
+          - 'Mana Pool': 'integrations/botania/pool.md'
+          - 'Mana Spreader': 'integrations/botania/spreader.md'
       - 'Create':
-        - 'Basin': 'integrations/create/basin.md'
-        - 'Blaze Burner': 'integrations/create/blazeburner.md'
-        - 'Fluid Tank': 'integrations/create/fluidtank.md'
-        - 'Mechanical Mixer': 'integrations/create/mechanicalmixer.md'
-        - 'Blocks with Scroll Behaviour': 'integrations/create/scrollbehaviour.md'
+          - 'Basin': 'integrations/create/basin.md'
+          - 'Blaze Burner': 'integrations/create/blazeburner.md'
+          - 'Fluid Tank': 'integrations/create/fluidtank.md'
+          - 'Mechanical Mixer': 'integrations/create/mechanicalmixer.md'
+          - 'Blocks with Scroll Behaviour': 'integrations/create/scrollbehaviour.md'
       - 'Draconic Evolution':
-        - 'integrations/draconic_evolution/index.md'
+          - 'integrations/draconic_evolution/index.md'
         # - 'Energy Core': 'integrations/draconic_evolution/energy_core.md'
         # - 'Reactor': 'integrations/draconic_evolution/reactor.md'
       - 'Immersive Engineering':
-        - 'Redstone Wire Connector': 'integrations/immersive_engineering/connector.md'
-        - 'Redstone Probe': 'integrations/immersive_engineering/probe.md'
+          - 'Redstone Wire Connector': 'integrations/immersive_engineering/connector.md'
+          - 'Redstone Probe': 'integrations/immersive_engineering/probe.md'
       - 'Integrated Dynamics':
-        - 'Variable Store': 'integrations/integrated_dynamics/variable_store.md'
+          - 'Variable Store': 'integrations/integrated_dynamics/variable_store.md'
       - 'Mekanism':
-        - 'integrations/mekanism/index.md'
+          - 'integrations/mekanism/index.md'
         # - 'Boiler Valve': ''
         # - 'Induction Valve': ''
         # - 'Chemical Tank': ''
@@ -82,15 +83,15 @@ nav:
         # - 'Waste Barrel': ''
         # - 'Energy Blocks': ''
       - 'Powah':
-        - 'Energy cell': 'integrations/powah/energy_cell.md'
-        - 'Furnator': 'integrations/powah/furnator.md'
-        - 'Magmator': 'integrations/powah/magmator.md'
-        - 'Reactor': 'integrations/powah/reactor.md'
-        - 'Solar panel': 'integrations/powah/solar_panel.md'
-        - 'Thermo generator': 'integrations/powah/thermo_generator.md'
+          - 'Energy cell': 'integrations/powah/energy_cell.md'
+          - 'Furnator': 'integrations/powah/furnator.md'
+          - 'Magmator': 'integrations/powah/magmator.md'
+          - 'Reactor': 'integrations/powah/reactor.md'
+          - 'Solar panel': 'integrations/powah/solar_panel.md'
+          - 'Thermo generator': 'integrations/powah/thermo_generator.md'
       - 'Storage Drawers':
-        - 'Drawer': 'integrations/storage_drawers/drawer.md'
-    - 'Changelogs':
+          - 'Drawer': 'integrations/storage_drawers/drawer.md'
+  - 'Changelogs':
       - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
       - 'Changelog 0.7r': 'changelogs/0.7r.md'
 
@@ -98,24 +99,24 @@ watch:
   - overrides
 
 theme:
-    name: material
-    custom_dir: overrides
-    features:
-      - navigation.top
-      # - navigation.instant # Breaks 'lightgallery' extension
-      - navigation.indexes
-      - navigation.tabs
-      - navigation.footer
-      # - navigation.sections # Makes navigation too long
-      - content.code.annotate
-      - content.code.copy
-      - content.action.edit
-      - content.action.view
-      - content.tabs.link
-    icon:
-      edit: material/file-edit-outline
-      view: material/file-eye-outline
-    palette:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.top
+    # - navigation.instant # Breaks 'lightgallery' extension
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.footer
+    # - navigation.sections # Makes navigation too long
+    - content.code.annotate
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+  icon:
+    edit: material/file-edit-outline
+    view: material/file-eye-outline
+  palette:
     - scheme: slate
       primary: blue
       toggle:
@@ -141,10 +142,11 @@ plugins:
       fallback_to_build_date: true
       enabled: !ENV [CI, false]
   - git-committers:
-       repository: IntelligenceModding/Advanced-Peripherals-Documentation
-       branch: "0.7-bridges"
-       token: !ENV GITHUB_TOKEN
-       enabled: !ENV [CI, false]
+      repository: IntelligenceModding/Advanced-Peripherals-Documentation
+      # we use a fixed string as a placeholder instead of an env var to prevent an "Expected type str instead of float" error
+      branch: "BRANCH_NAME_HERE"
+      token: !ENV [GITHUB_TOKEN, '']
+      enabled: !ENV [CI, false]
 
 extra_css:
   - extra.css
@@ -154,7 +156,6 @@ extra_javascript:
 
 extra:
   version:
-    default: 0.7
     provider: mike
   social:
     - icon: material/github
@@ -166,26 +167,26 @@ extra:
 
 repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
 repo_name: IntelligenceModding/Advanced-Peripherals-Documentation
-edit_uri: edit/0.7-bridges/docs/
+edit_uri: "edit/BRANCH_NAME_HERE/docs/"
 
 markdown_extensions:
-    - tables
-    - md_in_html
-    - mdx_math
-    - def_list
-    - attr_list
-    - md_in_html
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - codehilite:
-        guess_lang: false
-    - toc:
-        permalink: true
-    - admonition
-    - pymdownx.superfences
-    - pymdownx.tabbed:
-        alternate_style: true
-    - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - footnotes
+  - tables
+  - md_in_html
+  - mdx_math
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - footnotes

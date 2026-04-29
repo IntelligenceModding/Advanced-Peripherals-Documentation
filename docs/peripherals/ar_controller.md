@@ -19,9 +19,10 @@ The AR Controller is used to control your [AR Goggles](../items/ar_goggles.md) w
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| arController    | AR Goggles      | No         | 0.5b          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| arController    | AR Goggles      | No         | 0.5b          | Below 1.21.1      |
+| ar_controller   | AR Goggles      | No         | -             | 1.21.1 and above  |
 
 </div>
 
@@ -295,11 +296,11 @@ Olfi01 made another script to draw .nfp files, which you can draw with the paint
 
 First, we have a script with more adaptability. You can define x, y, width and height.
 
-Script 1: [Github](https://gist.github.com/Seniorendi/ce4971245b20fb031ca9b65ec4fcb4d0)
+Script 1: [Github](https://gist.github.com/SirEndii/ce4971245b20fb031ca9b65ec4fcb4d0)
 
 And we have another script which depends on the script above, but is simpler to use.
 
-Script 2: [Github](https://gist.github.com/Seniorendi/954e9888fac01efe8f23e82d0ae06e92)
+Script 2: [Github](https://gist.github.com/SirEndii/954e9888fac01efe8f23e82d0ae06e92)
 
 ---
 

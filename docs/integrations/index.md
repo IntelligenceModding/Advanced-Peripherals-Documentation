@@ -21,7 +21,7 @@ print("Is on enchanted soul?: ".. flower.isOnEnchantedSoil())
 ---
 
 ## Integration Requests
-If you want to see more integrations, you can request a mod integration on [<i class="si si-github" style="font-size:1rem;"></i> Github](https://github.com/Seniorendi/AdvancedPeripherals/issues).
+If you want to see more integrations, you can request a mod integration on [<i class="si si-github" style="font-size:1rem;"></i> Github](https://github.com/IntelligenceModding/AdvancedPeripherals/issues).
 
 ---
 

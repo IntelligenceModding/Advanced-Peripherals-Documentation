@@ -18,9 +18,10 @@ The colony integrator can interact with a colony from MineColonies.
 
 <div class="center-table" markdown>
 
-| Peripheral Name  | Interfaces with | Has events | Introduced in |
-| ---------------- | --------------- | ---------- | ------------- |
-| colonyIntegrator | Mine Colony     | No         | 0.7r          |
+| Peripheral Name   | Interfaces with | Has events | Introduced in | Minecraft version |
+| ----------------- | --------------- | ---------- | ------------- | ----------------- |
+| colonyIntegrator  | Mine Colony     | No         | 0.7r          | Below 1.21.1      |
+| colony_integrator | Mine Colony     | No         | -             | 1.21.1 and above  |
 
 </div>
 
@@ -396,14 +397,14 @@ Returns the current number of active construction sites.
 
 We made a script to show every citizens and their gender on a monitor.
 
-You can view and download the script on [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_list.lua)
+You can view and download the script on [Github](https://github.com/SirEndii/Lua-Projects/blob/master/Examples/colony_integrator_list.lua)
 ![!Image of the citizen list program](../img/colony_integrator/citizen_list.png)
 
 ### Colony Stats
 
 And here we have a script made for a pocket computer to show statistics about a colony.
 
-You can view and download the script on [Github](https://github.com/Seniorendi/Lua-Projects/blob/master/Examples/colony_integrator_status.lua)
+You can view and download the script on [Github](https://github.com/SirEndii/Lua-Projects/blob/master/Examples/colony_integrator_status.lua)
 ![!Image of the colony info program](../img/colony_integrator/colony_info.png)
 
 ---

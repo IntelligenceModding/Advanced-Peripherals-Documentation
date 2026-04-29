@@ -1,8 +1,24 @@
 {
-  "name": "Python 3.13.2 with MkDocs",
-  "image": "python:3.13.2",
-  "postStartCommand": "pip install poetry && poetry install",
-  "forwardPorts": [
-    8000
-  ]
+  "name": "Advanced Peripherals Docs Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true
+    }
+  },
+
+  "containerEnv": {
+    "POETRY_VIRTUALENVS_IN_PROJECT": "true",
+    "POETRY_VIRTUALENVS_CREATE": "true"
+  },
+
+  "onCreateCommand": "pip install poetry",
+  "updateContentCommand": "poetry install",
+  "postCreateCommand": "git fetch origin gh-pages:gh-pages || true",
+
+  "forwardPorts": [8000],
+
+  "remoteUser": "vscode"
 }

@@ -15,9 +15,10 @@ This block is able to read data about any blocks or tile entities in front of it
 
 <div class="center-table" markdown>
 
-| Peripheral Name | Interfaces with | Has events | Introduced in |
-| --------------- | --------------- | ---------- | ------------- |
-| blockReader     | Blocks          | No         | 0.7r          |
+| Peripheral Name | Interfaces with | Has events | Introduced in | Minecraft version |
+| --------------- | --------------- | ---------- | ------------- | ----------------- |
+| blockReader     | Blocks          | No         | 0.7r          | Below 1.21.1      |
+| block_reader    | Blocks          | No         | -             | 1.21.1 and above  |
 
 </div>
 
@@ -51,7 +52,7 @@ Returns the block data of the block if block is a tile entity.
 local reader = peripheral.find("blockReader")
 
 --Prints the contents of the data
-for k, v in ipairs(reader.getBlockData()) do 
+for k, v in pairs(reader.getBlockData()) do 
     print(k, v)
 end
 ```
