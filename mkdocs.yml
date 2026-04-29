@@ -140,13 +140,13 @@ plugins:
       enable_creation_date: true
       type: date
       fallback_to_build_date: true
-      enabled: !ENV [CI, false]
+      enabled: !ENV [MKDOCS_PLUGINS, false]
   - git-committers:
       repository: IntelligenceModding/Advanced-Peripherals-Documentation
       # we use a fixed string as a placeholder instead of an env var to prevent an "Expected type str instead of float" error
       branch: "BRANCH_NAME_HERE"
       token: !ENV [GITHUB_TOKEN, '']
-      enabled: !ENV [CI, false]
+      enabled: !ENV [MKDOCS_PLUGINS, false]
 
 extra_css:
   - extra.css

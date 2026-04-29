@@ -4,7 +4,8 @@ on:
     types: [opened, synchronize, reopened]
 
 permissions:
-  contents: write # allows pushing to gh-pages
+  contents: write
+  pull-requests: write
 
 jobs:
   preview:
@@ -26,6 +27,8 @@ jobs:
 
       - name: Deploy Preview
         env:
+          MKDOCS_PLUGINS: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           EDIT_BRANCH_URI: edit/${{ github.head_ref }}/docs/
         run: |
           git config user.name "github-actions[bot]"
@@ -35,3 +38,19 @@ jobs:
           poetry run mike deploy --push pr-${{ github.event.number }}
           
           echo "Preview available at: https://docs.advanced-peripherals.de/pr-${{ github.event.number }}/"
+      - name: Post PR Comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: documentation-preview
+          message: |
+            ## 📝 Documentation Preview Ready!
+            
+            | Item | Details |
+            | :--- | :--- |
+            | **Status** | ✅ Deployed Successfully |
+            | **Preview Link** | [View Documentation](https://docs.advanced-peripherals.de/pr-${{ github.event.number }}/) |
+            | **Source Branch** | `${{ github.head_ref }}` |
+            | **Version Alias** | `pr-${{ github.event.number }}` |
+            
+            > [!NOTE]
+            > The **Edit** buttons on this preview link directly to your branch. Changes made there will update this preview after a few minutes.
