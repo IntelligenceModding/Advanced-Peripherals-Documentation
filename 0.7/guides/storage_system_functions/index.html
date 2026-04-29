@@ -1254,18 +1254,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getuseditemstorage_1" class="md-nav__link">
+  <a href="#getusedfluidstorage" class="md-nav__link">
     <span class="md-ellipsis">
-      getUsedItemStorage
+      getUsedFluidStorage
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getuseditemstorage_2" class="md-nav__link">
+  <a href="#getusedchemicalstorage" class="md-nav__link">
     <span class="md-ellipsis">
-      getUsedItemStorage
+      getUsedChemicalStorage
     </span>
   </a>
   
@@ -4016,18 +4016,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getuseditemstorage_1" class="md-nav__link">
+  <a href="#getusedfluidstorage" class="md-nav__link">
     <span class="md-ellipsis">
-      getUsedItemStorage
+      getUsedFluidStorage
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#getuseditemstorage_2" class="md-nav__link">
+  <a href="#getusedchemicalstorage" class="md-nav__link">
     <span class="md-ellipsis">
-      getUsedItemStorage
+      getUsedChemicalStorage
     </span>
   </a>
   
@@ -4342,7 +4342,7 @@
 
 
   
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7-bridges/docs/guides/storage_system_functions.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7/docs/guides/storage_system_functions.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -4351,7 +4351,7 @@
     
       
     
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7-bridges/docs/guides/storage_system_functions.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7/docs/guides/storage_system_functions.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -4364,8 +4364,7 @@ crafting system.
 The following functions can be used for both the ME and RS Bridge</p>
 <div class="admonition failure">
 <p class="admonition-title">Failure</p>
-<p><center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME/RS Bridge and *
-<em>NOT</em>* next to the computer! <h3> </center></p>
+<p><center> <h3> You need to place the inventory/tank you want to use to export/import stuff next to the ME/RS Bridge and <strong>NOT</strong> next to the computer! <h3> </center></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -4597,14 +4596,14 @@ This function returns the used storage in millibuckets even with the byte system
 <p>Returns the total amount of used internal item storage.
 This function returns the used storage in items for RS and in bytes for AE2</p>
 <hr />
-<h3 id="getuseditemstorage_1">getUsedItemStorage<a class="headerlink" href="#getuseditemstorage_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getUsedItemStorage() -&gt; int
+<h3 id="getusedfluidstorage">getUsedFluidStorage<a class="headerlink" href="#getusedfluidstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getUsedFluidStorage() -&gt; int
 </code></pre></div>
 <p>Returns the total amount of used internal fluid storage.
 This function returns the used storage in millibuckets for RS and in bytes for AE2</p>
 <hr />
-<h3 id="getuseditemstorage_2">getUsedItemStorage<a class="headerlink" href="#getuseditemstorage_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getUsedItemStorage() -&gt; int
+<h3 id="getusedchemicalstorage">getUsedChemicalStorage<a class="headerlink" href="#getusedchemicalstorage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getUsedChemicalStorage() -&gt; int
 </code></pre></div>
 <p>Returns the total amount of used internal mekanism chemical storage.
 This function returns the used storage in millibuckets for RS and in bytes for AE2</p>
@@ -5256,7 +5255,7 @@ Tho these are no properties/fields, these are functions since always pulling the
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 10, 2025 19:11:49 UTC">June 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 13, 2026 20:29:49 UTC">April 13, 2026</span>
   </span>
 
     
@@ -5283,6 +5282,11 @@ Tho these are no properties/fields, these are functions since always pulling the
 
     
     <nav>
+      
+        <a href="https://github.com/zyxkad" class="md-author" title="@zyxkad">
+          
+          <img src="https://avatars.githubusercontent.com/u/91082411?v=4&size=72" alt="zyxkad">
+        </a>
       
         <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
           
@@ -5422,7 +5426,7 @@ Tho these are no properties/fields, these are functions since always pulling the
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>

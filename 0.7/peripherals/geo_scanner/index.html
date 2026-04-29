@@ -1195,15 +1195,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getfuellevel" class="md-nav__link">
-    <span class="md-ellipsis">
-      getFuelLevel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getmaxfuellevel" class="md-nav__link">
     <span class="md-ellipsis">
       getMaxFuelLevel
@@ -1242,15 +1233,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getscancooldown" class="md-nav__link">
-    <span class="md-ellipsis">
-      getScanCooldown
-    </span>
-  </a>
   
 </li>
         
@@ -3104,15 +3086,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getfuellevel" class="md-nav__link">
-    <span class="md-ellipsis">
-      getFuelLevel
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#getmaxfuellevel" class="md-nav__link">
     <span class="md-ellipsis">
       getMaxFuelLevel
@@ -3155,15 +3128,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getscancooldown" class="md-nav__link">
-    <span class="md-ellipsis">
-      getScanCooldown
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#chunkanalyze" class="md-nav__link">
     <span class="md-ellipsis">
       chunkAnalyze
@@ -3202,7 +3166,7 @@
 
 
   
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7-bridges/docs/peripherals/geo_scanner.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/0.7/docs/peripherals/geo_scanner.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3211,7 +3175,7 @@
     
       
     
-    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7-bridges/docs/peripherals/geo_scanner.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/0.7/docs/peripherals/geo_scanner.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
@@ -3236,6 +3200,7 @@
 <th>Interfaces with</th>
 <th>Has events</th>
 <th>Introduced in</th>
+<th>Minecraft version</th>
 </tr>
 </thead>
 <tbody>
@@ -3244,17 +3209,20 @@
 <td>Blocks</td>
 <td>No</td>
 <td>0.7r</td>
+<td>Below 1.21.1</td>
+</tr>
+<tr>
+<td>geo_scanner</td>
+<td>Blocks</td>
+<td>No</td>
+<td>-</td>
+<td>1.21.1 and above</td>
 </tr>
 </tbody>
 </table>
 </div>
 <hr />
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="getfuellevel">getFuelLevel<a class="headerlink" href="#getfuellevel" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getFuelLevel() -&gt; number
-</code></pre></div>
-<p>Returns the amount of stored fuel.</p>
-<hr />
 <h3 id="getmaxfuellevel">getMaxFuelLevel<a class="headerlink" href="#getmaxfuellevel" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>getMaxFuelLevel() -&gt; number
 </code></pre></div>
@@ -3301,11 +3269,6 @@
 </tbody>
 </table>
 <hr />
-<h3 id="getscancooldown">getScanCooldown<a class="headerlink" href="#getscancooldown" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getScanCooldown() -&gt; number
-</code></pre></div>
-<p>Returns the current time remaining until then next <code>scan()</code> can be ran.</p>
-<hr />
 <h3 id="chunkanalyze">chunkAnalyze<a class="headerlink" href="#chunkanalyze" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>chunkAnalyze() -&gt; table | nil, reason
 </code></pre></div>
@@ -3336,7 +3299,7 @@ Added Geo Scanner peripheral.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 14, 2025 21:05:31 UTC">May 14, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 23, 2026 08:01:55 UTC">April 23, 2026</span>
   </span>
 
     
@@ -3364,6 +3327,16 @@ Added Geo Scanner peripheral.</p>
     
     <nav>
       
+        <a href="https://github.com/Basgamer999" class="md-author" title="@Basgamer999">
+          
+          <img src="https://avatars.githubusercontent.com/u/85746482?v=4&size=72" alt="Basgamer999">
+        </a>
+      
+        <a href="https://github.com/zyxkad" class="md-author" title="@zyxkad">
+          
+          <img src="https://avatars.githubusercontent.com/u/91082411?v=4&size=72" alt="zyxkad">
+        </a>
+      
         <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
           
           <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
@@ -3374,17 +3347,13 @@ Added Geo Scanner peripheral.</p>
           <img src="https://avatars.githubusercontent.com/u/10376793?v=4&size=72" alt="dogboy21">
         </a>
       
-        <a href="https://github.com/l3dotdev" class="md-author" title="@l3dotdev">
-          
-          <img src="https://avatars.githubusercontent.com/u/35655841?v=4&size=72" alt="l3dotdev">
-        </a>
-      
-        <a href="https://github.com/SirEdvin" class="md-author" title="@SirEdvin">
-          
-          <img src="https://avatars.githubusercontent.com/u/3713151?v=4&size=72" alt="SirEdvin">
-        </a>
       
       
+        
+          <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/blob/0.7/docs/peripherals/geo_scanner.md" class="md-author md-author--more">
+            +2
+          </a>
+        
       
     </nav>
   </span>
@@ -3571,7 +3540,7 @@ Added Geo Scanner peripheral.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": 0.7, "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
