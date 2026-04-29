@@ -26,61 +26,61 @@ You can get a list of all online players and detect when a player clicks on the 
 
 ## Events
 
-### playerClick
+### player_click
 
 Fires when a player clicks on the block.  
-**Values:**
-1. `username: string` The username of the player who clicked the block
-2. `devicename: string` The name of the peripheral like `playerDetector_4`
+**Values:**  
+1. `peripheralName: string` The name of the peripheral (e.g. `player_detector_4`)  
+2. `uuid: string` The uuid of the player who clicked the block  
+3. `username: string` The name of the player who clicked the block
 
 ```lua linenums="1"
-local event, username, device = os.pullEvent("playerClick")
+local event, peripheralName, uuid, username = os.pullEvent("player_click")
 print("The detector " .. device .. " was clicked by " .. username)
 ```
 
-### playerJoin
+### player_join
 
 Fires when a player joins the world/a server.  
-**Values:**
-
-1. `username: string` The username of the player who clicked the block
-2. `dimension: string` The resource id of the dimension the player is in
+**Values:**  
+1. `uuid: string` The uuid of the player  
+2. `username: string` The name of the player  
+3. `dimension: string` The resource id of the dimension the player is in
 
 ```lua linenums="1"
-local event, username, dimension = os.pullEvent("playerJoin")
+local event, uuid, username, dimension = os.pullEvent("player_join")
 print("Player " .. username .. " joined the server in the dimension " .. dimension)
 ```
 
-### playerLeave
+### player_leave
 
 Fires when a player leaves the world/a server.  
-**Values:**
-
-1. `username: string` The username of the player who clicked the block
-2. `dimension: string` The resource id of the dimension the player was in
+**Values:**  
+1. `uuid: string` The uuid of the player  
+2. `username: string` The name of the player  
+3. `dimension: string` The resource id of the dimension the player was in
 
 ```lua linenums="1"
-local event, username, dimension = os.pullEvent("playerLeave")
+local event, uuid, username, dimension = os.pullEvent("player_leave")
 print("Player " .. username .. " left the server in the dimension " .. dimension)
 ```
 
-### playerChangedDimension
+### player_changed_dimension
 
 Fires when a player changes dimensions.  
-**Values:**
-
-1. `username: string` The username of the player who clicked the block
-2. `fromDim: string` The resource id of the dimension the player was in
-2. `toDim: string` The resource id of the dimension the player is in
+**Values:**  
+1. `uuid: string` The uuid of the player  
+2. `username: string` The name of the player  
+3. `fromDim: string` The resource id of the dimension the player was in  
+4. `toDim: string` The resource id of the dimension the player is in
 
 ```lua linenums="1"
-local event, username, fromDim, toDim = os.pullEvent("playerChangedDimension")
+local event, uuid, username, fromDim, toDim = os.pullEvent("player_changed_dimension")
 print("Player " .. username .. " left the dimension " .. fromDim .. " and is now in " .. toDim)
 ```
 
 !!! info
     The events will fire when a player detector has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
-
 
 ---
 
@@ -89,10 +89,10 @@ print("Player " .. username .. " left the dimension " .. fromDim .. " and is now
 !!! info
     The player detector supports multidimensional spying(Since 1.19.2-0.7.30r & 1.20.1-0.7.32a). This only works if the config option `playerDetMultiDimensional` is set to true and the option `playerDetMaxRange` is set to -1(infinite)
 
-### getPlayerPos / getPlayer
+### getPlayer
 
 ```
-getPlayerPos(username: string) -> table | nil
+getPlayer(username: string) -> table | nil
 ```
 
 Returns information about the player with the `username` passed.
@@ -103,25 +103,30 @@ Returns information about the player with the `username` passed.
 
 | table                      | Description                                |
 |----------------------------|--------------------------------------------|
+| x: `number`                | The x coordinate                           |
+| y: `number`                | The y coordinate                           |
+| z: `number`                | The z coordinate                           |
+| f: `number`                | The relative front distance                |
+| r: `number`                | The relative right distance                |
+| u: `number`                | The relative up distance                   |
+| uuid: `string`             | The uuid of the player                     |
+| name: `string`             | The name of the player                     |
+| yaw: `number`              | The yaw of the player's head               |
+| pitch: `number`            | The pitch of the player's head             |
 | dimension: `string`        | The dimension the player is in             |
 | eyeHeight: `number`        | The height of the player's eyes            |
-| pitch: `number`            | The pitch of the player's head             |
 | health: `number`           | The health of the player                   |
 | maxHealth: `number`        | The max health of the player               |
 | airSupply: `number`        | The air supply of the player               |
 | respawnPosition: `number`  | The respawn position of the player         |
 | respawnDimension: `number` | The respawn dimension of the player        |
 | respawnAngle: `number`     | The respawn angle of the player in degrees |
-| yaw: `number`              | The yaw of the player's head               |
-| x: `number`                | The x coordinate                           |
-| y: `number`                | The y coordinate                           |
-| z: `number`                | The z coordinate                           |
 
 ```lua linenums="1"
 local detector = peripheral.find("player_detector")
 
 -- Get the position of Player123 and print their coordinates
-local pos = detector.getPlayerPos("Player123")
+local pos = detector.getPlayer("Player123")
 print("Position: " .. pos.x .. "," .. pos.y .. "," .. pos.z)
 ```
 

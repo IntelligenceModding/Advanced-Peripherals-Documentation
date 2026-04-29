@@ -53,16 +53,6 @@ Returns the block light level (0 to 15) at the detector block, this can be influ
 
 ---
 
-### getDayLightLevel
-
-```
-getDayLightLevel() -> number
-```
-
-Returns the day light level of the current world from 0 to 15. This is uneffected by blocks covering the peripheral.
-
----
-
 ### getSkyLightLevel
 
 ```
@@ -73,63 +63,13 @@ Returns the current sky light level from 0 to 15 (like a daylight sensor).
 
 ---
 
-### getDimensionName
+### getDayLightLevel
 
 ```
-getDimensionName() -> string
+getDayLightLevel() -> number
 ```
 
-Returns the name of the current dimension (ex. `overworld`, `the_nether` or `the_end`).
-
-```lua linenums="1"
-local detector = peripheral.find("environment_detector")
-
--- e.g. prints "Dimension: the_nether"
-print("Dimension: " .. detector.getDimensionName())
-```
-
----
-
-### getDimensionPaN
-
-```
-getDimensionPaN() -> string
-```
-
-Similar to [`getDimensionName`](#getdimensionname) it returns the name of the dimension prefixed with the provider name (ex. `minecraft:overworld`).
-
----
-
-### getDimensionProvider
-
-```
-getDimensionProvider() -> string
-```
-
-Returns the provider of the dimension (ex. `minecraft`).
-
----
-
-### getMoonId
-
-```
-getMoonId() -> number
-```
-
-Returns the current moon phase's id.
-
-!!! info
-    There are 8 different moon phases, see below a list of their names and ids
-
-    `0 = Full moon`, `1 = Waning gibbous`, `2 = Third quarter`, `3 = Waning crescent`, `4 = New moon`, `5 = Waxing crescent`, `6 = First quarter`, `7 = Waxing gibbous`
-
-### getMoonName
-
-```
-getMoonName() -> string
-```
-
-Returns the current moon phase's name.
+Returns the day light level of the current world from 0 to 15. This is uneffected by blocks covering the peripheral.
 
 ---
 
@@ -142,6 +82,94 @@ getTime() -> number
 !!! warning "WIP"
 
 Returns the daytime of the current world.
+
+---
+
+### isSlimeChunk
+
+```
+isSlimeChunk() -> boolean
+```
+
+Returns true if the current chunk is a slime chunk.
+
+---
+
+### getDimension
+
+```
+getDimension() -> string
+```
+
+Returns the name of the current dimension (ex. `minecraft:overworld`, `minecraft:the_nether` or `minecraft:the_end`).
+
+```lua linenums="1"
+local detector = peripheral.find("environment_detector")
+
+-- e.g. prints "Dimension: the_nether"
+print("Dimension: " .. detector.getDimension())
+```
+
+---
+
+### listDimensions
+
+```
+listDimensions() -> table
+```
+
+Returns a table with all of the registered dimensions for the current world, this includes modded dimensions.
+
+!!! example
+    As an example `listDimensions` might return a table like so:
+    ```
+    {"minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"}
+    ```
+
+---
+
+### getMoon
+
+```
+getMoon() -> number, string
+```
+
+Returns the current moon phase's id and its name
+
+!!! info
+    There are 8 different moon phases, see below a list of their names and ids
+
+    `0 = Full moon`, `1 = Waning gibbous`, `2 = Third quarter`, `3 = Waning crescent`, `4 = New moon`, `5 = Waxing crescent`, `6 = First quarter`, `7 = Waxing gibbous`
+
+---
+
+### isRaining
+
+```
+isRaining() -> boolean
+```
+
+Returns true if it is raining.
+
+---
+
+### isThunder
+
+```
+isThunder() -> boolean
+```
+
+Returns true if it is thundering.
+
+---
+
+### isSunny
+
+```
+isSunny() -> boolean
+```
+
+Returns true if it is sunny.
 
 ---
 
@@ -182,92 +210,17 @@ Returns the current raw radiation level in Sv/h.
 
 ---
 
-### isDimension
-
-```
-isDimension(dimension: string) -> boolean
-```
-
-Returns true if the current dimension matches the `dimension` parameter.
-
----
-
-### isMoon
-
-```
-isMoon(moonPhaseId: number) -> boolean
-```
-
-Returns true if the current moon phase matches the `moonPhaseId` parameter.
-
----
-
-### isRaining
-
-```
-isRaining() -> boolean
-```
-
-Returns true if it is raining.
-
----
-
-### isSunny
-
-```
-isSunny() -> boolean
-```
-
-Returns true if it is sunny.
-
----
-
-### isThunder
-
-```
-isThunder() -> boolean
-```
-
-Returns true if it is thundering.
-
----
-
-### isSlimeChunk
-
-```
-isSlimeChunk() -> boolean
-```
-
-Returns true if the current chunk is a slime chunk.
-
----
-
-### listDimensions
-
-```
-listDimensions() -> table
-```
-
-Returns a table with all of the registered dimensions for the current world, this includes modded dimensions.
-
-!!! example
-    As an example `listDimensions` might return a table like so:
-    ```
-    {"minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"}
-    ```
-
----
-
 ### scanEntities
 
 ```
 scanEntities(range: number) -> table
 ```
 
-Returns a table with all entities in the given range
-Coordinates are relativ and not absolute
+Returns a table with all entities in the given range.  
+Coordinates are relative and not absolute.
 
 !!! example
+    // TODO: update this example
     Example output for an entity:
     ```lua
     {
@@ -288,8 +241,26 @@ Coordinates are relativ and not absolute
     }
     ```
 
+---
+
+### scanShips
+
+```
+scanShips(range: number) -> table
+```
+
+!!! warning "Requirement"
+    Requires Valkyrien Skies to be installed.
+
+Returns a table with all ships in the given range.  
+Coordinates are relative and not absolute.
+
+---
 
 ## Changelog/Trivia
+
+**0.8**
+Added vs2 integration `scanShips`, `scanShipCost`.
 
 **0.6.5b**  
 Added `getRadiationRaw`

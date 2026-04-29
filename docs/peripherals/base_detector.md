@@ -2,12 +2,12 @@
 comments: true
 ---
 
-# Energy Detector
+# Detectors
 
 !!! picture inline end
     ![!Image of the Energy Detector block](../img/previews/energy_detector.png){ align=right }
 
-The Energy Detector can detect energy flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
+The detectors can detect content (e.g. energy, fluid) flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 
 !!! bug
     The Energy Detector does not work on versions below 0.4.5b.
@@ -22,6 +22,8 @@ The Energy Detector can detect energy flow and acts as a resistor. You can defin
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
 | energy_detector | Forge Energy    | No         | 0.4.1b        |
+| fluid_detector  | Fluid           | No         | 0.8           |
+| gas_detector    | Mekanism Gas    | No         | 0.8           |
 
 </center>
 
@@ -32,7 +34,7 @@ The Energy Detector can detect energy flow and acts as a resistor. You can defin
 ### getTransferRate
 
 ```
-getTransferRate() -> int
+getTransferRate() -> number
 ```
 
 Returns the current energy that is going through the block.
@@ -50,7 +52,7 @@ print("Current transfer rate: " .. detector.getTransferRate() .. " FE/t")
 ### getTransferRateLimit
 
 ```
-getTransferRateLimit() -> int
+getTransferRateLimit() -> number
 ```
 
 Returns the max rate limit of energy through the block which has been set using [`setTransferRateLimit`](#settransferratelimit).
@@ -60,7 +62,7 @@ Returns the max rate limit of energy through the block which has been set using 
 ### setTransferRateLimit
 
 ```
-setTransferRateLimit(limit: int) -> void
+setTransferRateLimit(limit: number) -> nil
 ```
 
 Set the max energy rate that will go through the block.
@@ -70,6 +72,36 @@ local detector = peripheral.find("energy_detector")
 
 detector.setTransferRateLimit(512) -- Only 512 FE/t can go through the block
 ```
+
+---
+
+### getMaxTransferRate
+
+```
+getMaxTransferRate() -> number
+```
+
+Returns the max possible rate limit the can be set using [`setTransferRateLimit`](#settransferratelimit).
+
+---
+
+### getLastTransferedId
+
+```
+getLastTransferedId() -> string | nil
+```
+
+Returns the previous transferred object's ID, or `nil` if nothing was ever transferred through the detector.
+
+---
+
+### getReadyTransferId
+
+```
+getLastTransferedId() -> string | nil
+```
+
+Returns the ID of the object ready to transfer in the current tick, or `nil` if nothing is ready to transfer in the tick.
 
 ---
 
