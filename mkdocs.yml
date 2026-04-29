@@ -165,7 +165,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.intelligence-modding.de/
 
-repo_url: https://github.com/SirEndii/Advanced-Peripherals-Documentation
+repo_url: https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation
 repo_name: IntelligenceModding/Advanced-Peripherals-Documentation
 edit_uri: "edit/BRANCH_NAME_HERE/docs/"
 
