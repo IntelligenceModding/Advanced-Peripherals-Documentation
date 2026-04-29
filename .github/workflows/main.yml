@@ -26,6 +26,13 @@ jobs:
           pip install poetry
           poetry install
 
+      - name: Inject Branch Name into Config
+        run: |
+          sed -i "s|BRANCH_NAME_HERE|${{ github.ref_name }}|g" mkdocs.yml
+          
+          # Just to verify it worked in the logs
+          grep -E "branch:|edit_uri:" mkdocs.yml
+
       - name: Deploy Version
         env:
           EDIT_BRANCH_URI: edit/${{ github.ref_name }}/docs/
