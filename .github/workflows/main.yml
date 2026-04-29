@@ -1,20 +1,49 @@
-name: Publish docs via GitHub Pages
+name: Publish Documentation
 on:
-  workflow_dispatch:
   push:
     branches:
-      - main
+      - 'main'
+      - '[0-9].[0-9]*'
+
+permissions:
+  contents: write # allows pushing to gh-pages
 
 jobs:
-  build:
-    name: Deploy docs
-    runs-on: self-hosted
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # mike needs history to manage versions
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@2833747909e0fab61db67a60e8d6e91a871f60aa
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install
+
+      - name: Deploy Version
         env:
+          EDIT_BRANCH_URI: edit/${{ github.ref_name }}/docs/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: requirements.txt
+        run: |
+          # Get current branch name
+          BRANCH_NAME=${GITHUB_REF_NAME}
+          
+          # Configure Git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if [ "$BRANCH_NAME" == "main" ]; then
+            poetry run mike deploy --push --update-aliases dev
+          elif [ "$BRANCH_NAME" == "0.8" ]; then
+            poetry run mike deploy --push --update-aliases 0.8 canary
+          elif [ "$BRANCH_NAME" == "0.7" ]; then
+            poetry run mike deploy --push --update-aliases 0.7 latest
+          else
+            poetry run mike deploy --push "$BRANCH_NAME"
+          fi
