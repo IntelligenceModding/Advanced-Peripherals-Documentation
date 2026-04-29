@@ -1,4 +1,5 @@
 site/
 .idea
-.cache/
+/.cache/
+.vscode
 .DS_Store
