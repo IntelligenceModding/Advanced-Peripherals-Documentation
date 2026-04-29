@@ -19,8 +19,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install mike
-        run: pip install mike
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          poetry install
 
       - name: Delete Preview
         run: |
