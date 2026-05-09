@@ -26,7 +26,7 @@ For `boolean` fields, getter is defined as either `isXxx` or `hasXxx`.
 
 #### type
 ```
-type() -> string
+getType() -> string
 ```
 
 returns the object's type.
