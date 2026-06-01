@@ -36,7 +36,7 @@ Returns the registry name of the block (ex. `minecraft:dirt`)
 ```lua linenums="1"
 local reader = peripheral.find("blockReader")
 
-print("There is a " .. read.getBlockName() .. " in front.")
+print("There is a " .. reader.getBlockName() .. " in front.")
 ```
 
 ---
