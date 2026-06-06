@@ -1308,6 +1308,17 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#player_death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        player_death
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1345,6 +1356,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getstat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getStat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3868,6 +3907,17 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#player_death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        player_death
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3905,6 +3955,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getstat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getStat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4133,6 +4211,16 @@ You can get a list of all online players and detect when a player clicks on the 
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">fromDim</span><span class="p">,</span><span class="w"> </span><span class="nv">toDim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_changed_dimension&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; left the dimension &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">fromDim</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; and is now in &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">toDim</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
+<h3 id="player_death">player_death<a class="headerlink" href="#player_death" title="Permanent link">&para;</a></h3>
+<p>Fires when a player is died.<br />
+<strong>Values:</strong><br />
+1. <code>uuid: string</code> The uuid of the player<br />
+2. <code>username: string</code> The name of the player<br />
+3. <code>damageSource: string</code> The damage source id that killed the player</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">damageSource</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_death&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; died by &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">damageSource</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The events will fire when a player detector has been connected to a computer. You don't have to <code>.wrap()</code> or <code>.find()</code> the peripheral (unless you intend to send messages).</p>
@@ -4233,6 +4321,11 @@ You can get a list of all online players and detect when a player clicks on the 
 </tr>
 </tbody>
 </table>
+<h4 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h4>
+<h5 id="getstat">getStat<a class="headerlink" href="#getstat" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>getStat(statId: string) -&gt; number | (nil, string)
+</code></pre></div>
+<p>Returns the player's stat or an error string</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -4383,7 +4476,7 @@ Added the player detector, it was the third feature of the mod.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 9, 2026 21:49:30 UTC">April 9, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 6, 2026 17:52:46 UTC">June 6, 2026</span>
   </span>
 
     
