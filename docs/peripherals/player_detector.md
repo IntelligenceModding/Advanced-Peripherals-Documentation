@@ -79,6 +79,19 @@ local event, uuid, username, fromDim, toDim = os.pullEvent("player_changed_dimen
 print("Player " .. username .. " left the dimension " .. fromDim .. " and is now in " .. toDim)
 ```
 
+### player_death
+
+Fires when a player is died.  
+**Values:**  
+1. `uuid: string` The uuid of the player  
+2. `username: string` The name of the player  
+3. `damageSource: string` The damage source id that killed the player
+
+```lua linenums="1"
+local event, uuid, username, damageSource = os.pullEvent("player_death")
+print("Player " .. username .. " died by " .. damageSource)
+```
+
 !!! info
     The events will fire when a player detector has been connected to a computer. You don't have to `.wrap()` or `.find()` the peripheral (unless you intend to send messages).
 
@@ -121,6 +134,16 @@ Returns information about the player with the `username` passed.
 | respawnPosition: `number`  | The respawn position of the player         |
 | respawnDimension: `number` | The respawn dimension of the player        |
 | respawnAngle: `number`     | The respawn angle of the player in degrees |
+
+#### Methods
+
+##### getStat
+
+```
+getStat(statId: string) -> number | (nil, string)
+```
+
+Returns the player's stat or an error string
 
 ```lua linenums="1"
 local detector = peripheral.find("player_detector")
