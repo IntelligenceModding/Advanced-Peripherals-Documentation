@@ -18,7 +18,7 @@ Mana Spreaders are used to transfer mana from one source to another.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with     | Has events | Introduced in |
 | --------------- | ------------------- | ---------- | ------------- |

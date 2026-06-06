@@ -13,7 +13,7 @@ The Ender Cell is a block from Powah to receive, store, and send energy on speci
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |

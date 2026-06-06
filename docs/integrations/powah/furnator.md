@@ -13,7 +13,7 @@ The Furnator is a block from Powah to generate power given a fuel source.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |

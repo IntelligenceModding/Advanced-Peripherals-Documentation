@@ -13,7 +13,7 @@ NBT Storage is a custom block that allows reading and writing of NBT data to the
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

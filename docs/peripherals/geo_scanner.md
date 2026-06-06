@@ -15,7 +15,7 @@ The Geo scanner has a delay between scans, so you must wait until you can scan a
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

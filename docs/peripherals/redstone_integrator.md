@@ -16,7 +16,7 @@ You may need this peripheral for cases where you need to output redstone signals
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name     | Interfaces with | Has events | Introduced in |
 | ------------------- | --------------- | ---------- | ------------- |

@@ -16,7 +16,7 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

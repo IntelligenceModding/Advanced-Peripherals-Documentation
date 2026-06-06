@@ -18,7 +18,7 @@ A Basin can hold items and fluids for many different crafting recipes.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

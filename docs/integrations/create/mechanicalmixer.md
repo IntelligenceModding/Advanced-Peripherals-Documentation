@@ -18,7 +18,7 @@ A Mechanical Mixer is used in combination with a Basin to process many shapeless
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name  | Interfaces with        | Has events | Introduced in |
 | ---------------- | ---------------------- | ---------- | ------------- |

@@ -13,7 +13,7 @@ The Reactor is a block from Powah to generate power from uraninite.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                                | Has events | Introduced in |
 | ----------------- | ---------------------------------------------- | ---------- | ------------- |

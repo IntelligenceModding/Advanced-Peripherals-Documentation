@@ -13,7 +13,7 @@ The Distance Detector can measure the distance between the peripheral and a obje
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with  | Has events | Introduced in |
 | ----------------- | ---------------- | ---------- | ------------- |

@@ -17,7 +17,7 @@ The detectors can detect content (e.g. energy, fluid) flow and acts as a resisto
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

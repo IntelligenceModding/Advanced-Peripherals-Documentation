@@ -17,7 +17,7 @@ Husbandry automata is a turtle with a Husbandry Mechanic Soul upgrade. This upgr
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name    | Interfaces with | Has events | Introduced in |
 | ------------------ | --------------- | ---------- | ------------- |

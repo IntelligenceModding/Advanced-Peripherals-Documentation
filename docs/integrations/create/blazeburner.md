@@ -18,7 +18,7 @@ A Blaze Burner uses different fuel types to heat up things above it like basins 
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with    | Has events | Introduced in |
 | --------------- | ------------------ | ---------- | ------------- |

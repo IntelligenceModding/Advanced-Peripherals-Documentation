@@ -16,7 +16,7 @@ The colony integrator can interact with a colony from MineColonies.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with | Has events | Introduced in |
 | ----------------- | --------------- | ---------- | ------------- |

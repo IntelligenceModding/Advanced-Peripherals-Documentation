@@ -13,7 +13,7 @@ The Energy Cell is a block from Powah to receive, store and send energy.
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |

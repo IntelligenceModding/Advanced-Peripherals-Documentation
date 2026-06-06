@@ -16,7 +16,7 @@ The Inventory Manager can communicate with the player's inventory. You need to a
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with  | Has events | Introduced in |
 | ----------------- | ---------------- | ---------- | ------------- |

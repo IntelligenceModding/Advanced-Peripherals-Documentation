@@ -18,7 +18,7 @@ Mana generating flowers from botania can generate mana for other recipes or ritu
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

@@ -16,7 +16,7 @@ This integration works for all blocks with any type of scroll value behaviour. L
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name         | Interfaces with               | Has events | Introduced in |
 | ----------------------- | ----------------------------- | ---------- | ------------- |

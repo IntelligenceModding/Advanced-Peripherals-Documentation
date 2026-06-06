@@ -18,7 +18,7 @@ A Fluid Tank is a multiblock structure which can hold fluids. With each block be
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with  | Has events | Introduced in |
 | --------------- | ---------------- | ---------- | ------------- |

@@ -13,7 +13,7 @@ A [Beacon](https://minecraft.fandom.com/wiki/Beacon) is a block that projects a 
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |

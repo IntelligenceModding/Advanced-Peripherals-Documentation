@@ -13,7 +13,7 @@ The Thermo Generator is block from Powah to generate power from an appropriate h
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                          | Has events | Introduced in |
 | ----------------- | ---------------------------------------- | ---------- | ------------- |

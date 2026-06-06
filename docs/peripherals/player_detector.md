@@ -14,7 +14,7 @@ You can get a list of all online players and detect when a player clicks on the 
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 |-----------------|-----------------|------------|---------------|

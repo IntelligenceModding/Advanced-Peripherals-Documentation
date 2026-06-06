@@ -13,7 +13,7 @@ The Magmator is a block from Powah to generate power from a fluid heat source (l
 
 ---
 
-<center>
+<center markdown>
 
 | Peripheral Name   | Interfaces with                     | Has events | Introduced in |
 | ----------------- | ----------------------------------- | ---------- | ------------- |
