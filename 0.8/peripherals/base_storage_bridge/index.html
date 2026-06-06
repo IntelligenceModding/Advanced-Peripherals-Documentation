@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://docs.advanced-peripherals.de/0.8/peripherals/base_storage_bridge/">
       
       
+        <link rel="prev" href="../colony_integrator/">
+      
+      
+        <link rel="next" href="../../turtles/chatty_turtle/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Storage System Functions - Advanced Peripherals</title>
+        <title>ME/RS Bridge - Advanced Peripherals</title>
       
     
     
@@ -134,7 +138,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Storage System Functions
+              ME/RS Bridge
             
           </span>
         </div>
@@ -288,7 +292,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
     
       <li class="md-tabs__item">
-        <a href="../../guides/how_to_report/" class="md-tabs__link">
+        <a href="../../guides/disabled_peripherals/" class="md-tabs__link">
           
   
   
@@ -306,11 +310,13 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../chat_box/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../base_peripheral/" class="md-tabs__link">
           
   
   
@@ -354,7 +360,29 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
     
       <li class="md-tabs__item">
-        <a href="../../items/ar_goggles.md" class="md-tabs__link">
+        <a href="../../modules/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../items/chunk_controller/" class="md-tabs__link">
           
   
   
@@ -383,28 +411,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
   
   Mod Integrations
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../changelogs/0.7.24r.md" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Changelogs
 
         </a>
       </li>
@@ -763,10 +769,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
       
-        
-      
-        
-      
     
     
     
@@ -817,34 +819,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../../guides/how_to_report/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to: report a bug or request a feature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../guides/disabled_peripherals/" class="md-nav__link">
         
   
@@ -873,7 +847,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../../guides/objects.md" class="md-nav__link">
+      <a href="../../guides/lua_objects/" class="md-nav__link">
         
   
   
@@ -957,34 +931,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../../guides/storage_system_functions.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Storage System Functions
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../guides/how_to_report/" class="md-nav__link">
         
   
@@ -1017,8 +963,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
   
   
+    
   
   
+  
     
     
       
@@ -1052,17 +1000,20 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1080,7 +1031,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1090,6 +1041,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base_peripheral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base Peripheral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1126,14 +1105,14 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../energy_detector.md" class="md-nav__link">
+      <a href="../distance_detector/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Energy Detector
+    Distance Detector
   
 
     
@@ -1182,6 +1161,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
+      <a href="../geo_scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geo Scanner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../player_detector/" class="md-nav__link">
         
   
@@ -1210,42 +1217,14 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../inventory_manager/" class="md-nav__link">
+      <a href="../base_detector/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Inventory Manager
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../nbt_storage/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    NBT Storage
+    Energy/Fluid/Gas Detector
   
 
     
@@ -1294,14 +1273,42 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../geo_scanner/" class="md-nav__link">
+      <a href="../nbt_storage/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Geo Scanner
+    NBT Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inventory_manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Manager
   
 
     
@@ -1350,90 +1357,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../ar_controller.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AR Controller
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../me_bridge.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ME Bridge
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rs_bridge.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RS Bridge
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../colony_integrator/" class="md-nav__link">
         
   
@@ -1455,6 +1378,882 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME/RS Bridge
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME/RS Bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isconnected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isConnected
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isonline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isOnline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getItem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfluid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getFluid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchemical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getChemical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getItems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfluids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getFluids
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchemicals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getChemicals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcraftableitems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCraftableItems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcraftablefluids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCraftableFluids
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcraftablechemicals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCraftableChemicals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCells
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getdrives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getDrives
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importingexporting-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing/Exporting functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Importing/Exporting functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        importItem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exportItem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importfluid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        importFluid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportfluid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exportFluid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importchemical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        importChemical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportchemical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        exportChemical
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#energy-related-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Energy Related Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Energy Related Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getstoredenergy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getStoredEnergy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenergycapacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getEnergyCapacity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenergyusage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getEnergyUsage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavgpowerinjection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvgPowerInjection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storage-related-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Related Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Related Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gettotalexternitemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalExternItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettotalexternfluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalExternFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettotalexternchemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalExternChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettotalitemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettotalfluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettotalchemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTotalChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getusedexternitemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedExternItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getusedexternfluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedExternFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getusedexternchemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedExternChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getuseditemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getusedfluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getusedchemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getUsedChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailableexternitemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableExternItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailableexternfluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableExternFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailableexternchemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableExternChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailableitemstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableItemStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailablefluidstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableFluidStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getavailablechemicalstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getAvailableChemicalStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crafting-system-and-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crafting System and functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crafting System and functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crafting-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crafting Event
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        craftItem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftfluid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        craftFluid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#craftchemical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        craftChemical
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcraftingtasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCraftingTasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcraftingtask" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCraftingTask
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelcraftingtasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cancelCraftingTasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpatterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getPatterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iscraftable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isCraftable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iscrafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isCrafting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#item-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluid-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fluid Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chemical-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chemical Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage Disk
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage Disk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refined-storage-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refined Storage Disk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applied-energistics-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applied Energistics Disk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disk-drive-disk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DISK Drive disk
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ae2-pattern-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AE2 Pattern Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ae2-crafting-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AE2 Crafting CPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crafting-job-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crafting Job Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crafting-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crafting Job
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1470,6 +2269,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
     
     
+      
+        
       
         
       
@@ -1647,6 +2448,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
+      <a href="../../turtles/geo_scanner_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geoscanning Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../turtles/player_turtle/" class="md-nav__link">
         
   
@@ -1675,14 +2504,14 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../../turtles/geo_scanner_turtle/" class="md-nav__link">
+      <a href="../../turtles/saddle_turtle/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Geoscanning Turtle
+    Saddle Turtle
   
 
     
@@ -1724,10 +2553,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_8" >
         
           
-          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_8" id="__nav_5_8_label" tabindex="0">
             
   
   
@@ -1745,8 +2574,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1893,6 +2722,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
       
         
+          
+        
       
         
       
@@ -1916,14 +2747,15 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../modules/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-    Items
+    Modules
   
 
     
@@ -1931,19 +2763,27 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Items
+    Modules
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1952,14 +2792,14 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../../items/ar_goggles.md" class="md-nav__link">
+      <a href="../../modules/hotkey/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    AR Goggles
+    Hotkey Module
   
 
     
@@ -1972,6 +2812,161 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/keyboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/night_vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Night Vision Module
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modules/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overlay Module
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Items
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Items
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2085,6 +3080,62 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/smart_glasses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Glasses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/smart_glasses_interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Glasses Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2115,14 +3166,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -2134,7 +3177,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -2156,14 +3199,14 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2199,10 +3242,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
             
   
   
@@ -2220,8 +3263,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2306,6 +3349,96 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
       
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applied Energistics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Applied Energistics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/ae2/cable_p2p_tunnel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cable P2P Tunnel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
         
       
         
@@ -2321,10 +3454,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
         
           
-          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
             
   
   
@@ -2342,8 +3475,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2475,10 +3608,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
         
           
-          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
             
   
   
@@ -2496,8 +3629,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2666,394 +3799,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
       
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Draconic Evolution
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Draconic Evolution
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/draconic_evolution/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Immersive Engineering
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Immersive Engineering
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/immersive_engineering/connector.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Redstone Wire Connector
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/immersive_engineering/probe.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Redstone Probe
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Integrated Dynamics
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Integrated Dynamics
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/integrated_dynamics/variable_store.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Variable Store
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mekanism
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Mekanism
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/mekanism/index.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    None
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
         
       
         
@@ -3077,10 +3822,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
         
           
-          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
             
   
   
@@ -3098,8 +3843,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3108,6 +3853,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/ender_cell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ender cell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3280,215 +4053,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
           </ul>
         </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_7_10" id="__nav_7_10_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Storage Drawers
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Storage Drawers
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../integrations/storage_drawers/drawer.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Drawer
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Changelogs
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Changelogs
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../changelogs/0.7.24r.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Changelog 0.7.24r
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../changelogs/0.7r.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Changelog 0.7r
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -5316,6 +5880,44 @@ Tho these are no properties/fields, these are functions since always pulling the
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../colony_integrator/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Colony Integrator">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Colony Integrator
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../turtles/chatty_turtle/" class="md-footer__link md-footer__link--next" aria-label="Next: Chatty Turtle">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chatty Turtle
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
