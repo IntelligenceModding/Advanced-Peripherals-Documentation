@@ -143,14 +143,18 @@ Returns information about the player with the `username` passed.
 getStat(statId: string) -> number | (nil, string)
 ```
 
-Returns the player's stat or an error string
+Returns the player's stat or an error string. Can loop `advancedperipherals.iterPlayerStatKeys()` to get all available stat IDs.
 
 ```lua linenums="1"
 local detector = peripheral.find("player_detector")
 
 -- Get the position of Player123 and print their coordinates
-local pos = detector.getPlayer("Player123")
-print("Position: " .. pos.x .. "," .. pos.y .. "," .. pos.z)
+local player = detector.getPlayer("Player123")
+print("Position: " .. player.x .. ", " .. player.y .. ", " .. player.z)
+
+for statId in advancedperipherals.iterPlayerStatKeys() do
+    print("  - " .. statId .. " | " .. player.getStat(statId))
+end
 ```
 
 ---
