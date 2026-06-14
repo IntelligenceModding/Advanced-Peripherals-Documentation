@@ -5,7 +5,7 @@ comments: true
 # Colony Integrator
 
 !!! picture inline end
-    ![!Image of the Colony Integrator block](../img/previews/colony_integrator.png){ align=right }
+    ![!Image of the Colony Integrator block](../img/previews/colony_integrator.apng){ align=right }
 
 The colony integrator can interact with a colony from MineColonies.
 

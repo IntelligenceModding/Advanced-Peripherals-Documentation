@@ -5,7 +5,7 @@ comments: true
 # Chat Box
 
 !!! picture inline end
-    ![!Image of the Chat Box block](../img/previews/chat_box.png){ align=right }
+    ![!Image of the Chat Box block](../img/previews/chat_box.apng){ align=right }
 
 The Chat Box is able to read and write messages to the in-game chat. You can send messages to just one player or to everyone.
 

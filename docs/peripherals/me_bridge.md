@@ -5,7 +5,7 @@ comments: true
 # ME Bridge
 
 !!! picture inline end
-    ![!Image of the ME Bridge block](../img/previews/me_bridge.png){ align=right }
+    ![!Image of the ME Bridge block](../img/previews/me_bridge.apng){ align=right }
 
 The ME Bridge is able to interact with Applied Energistics 2.
 You can retrieve items, craft items, get all items as a list and more. The ME Bridge uses one channel.
