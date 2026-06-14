@@ -5,7 +5,7 @@ comments: true
 # Hotkey Module
 
 !!! picture inline end
-    ![!Image of the Keyboard item](../img/previews/modules/keyboard_module.png){ align=right }
+    ![!Image of the Keyboard item](../img/previews/keyboard.png){ align=right }
 
 The Keyboard Module can listen to the same hotkey as [the Hotkey module](./hotkey.md) that players bound in their client.  
 When active, Keyboard Module will forward player's key events to Smart Glasses.  

@@ -5,7 +5,7 @@ comments: true
 # Overlay Module
 
 !!! picture inline end
-    ![!Image of the Overlay Module item](../img/previews/modules/overlay_module.png){ align=right }
+    ![!Image of the Overlay Module item](../img/previews/overlay_module.png){ align=right }
 
 The Overlay Module allows scripts render stuff on player's GUI.
 

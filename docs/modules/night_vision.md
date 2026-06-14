@@ -5,7 +5,7 @@ comments: true
 # Night Vision Module
 
 !!! picture inline end
-    ![!Image of the Night Vision Module item](../img/previews/modules/night_vision_module.png){ align=right }
+    ![!Image of the Night Vision Module item](../img/previews/night_vision_module.png){ align=right }
 
 The Night Vision Module can provide an infinite night vision effect to the wearer.  
 The night vision effect will be enabled by default.

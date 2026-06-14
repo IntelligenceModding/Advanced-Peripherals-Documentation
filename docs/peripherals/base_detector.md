@@ -5,7 +5,7 @@ comments: true
 # Detectors
 
 !!! picture inline end
-    ![!Image of the Energy Detector block](../img/previews/energy_detector.apng){ align=right }
+    ![!Image of the Energy Detector block](../img/previews/detector.gif){ align=right }
 
 The detectors can detect content (e.g. energy, fluid) flow and acts as a resistor. You can define the max flow rate to use it as a resistor.
 

@@ -5,7 +5,7 @@ comments: true
 # Distance Detector
 
 !!! picture inline end
-    ![!Image of the Distance Detector block](../img/previews/distance_detector.png){ align=right }
+    ![!Image of the Distance Detector block](../img/previews/distance_detector.apng){ align=right }
 
 The Distance Detector can measure the distance between the peripheral and a object.
 

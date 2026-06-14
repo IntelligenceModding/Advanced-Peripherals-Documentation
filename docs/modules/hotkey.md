@@ -5,7 +5,7 @@ comments: true
 # Hotkey Module
 
 !!! picture inline end
-    ![!Image of the Hotkey Module item](../img/previews/modules/hotkey_module.png){ align=right }
+    ![!Image of the Hotkey Module item](../img/previews/hotkey_module.png){ align=right }
 
 The Hotkey Module can listen to the hotkey that players bound in their client.  
 Hotkey is configurable at player's client.
