@@ -21,6 +21,10 @@ end
 Use specific module:
 ```lua linenums="1"
 -- turn off night vision
+if not smartglasses.modules['advancedperipherals:night_vision'] then
+	error('Night vision module is not equipped')
+end
+
 smartglasses.modules['advancedperipherals:night_vision'].enableNightVision(false) -- use module ID
 smartglasses.modules.nightVision.enableNightVision(false) -- use module alias name
 ```
