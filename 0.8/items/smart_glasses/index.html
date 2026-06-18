@@ -2299,62 +2299,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-peripheral" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Module Peripheral
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Module Peripheral">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getmodules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getModules
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hasmodule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        hasModule
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#changelogtrivia" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3358,62 +3302,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-peripheral" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Module Peripheral
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Module Peripheral">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getmodules" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getModules
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hasmodule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        hasModule
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#changelogtrivia" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3466,29 +3354,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 equipped with most peripherials and various <a href="../../modules/">modules</a>!</p>
 <p>You can access Smart Glasses worn on the head via a <a href="../smart_glasses_interface/">Smart Glasses Interface</a>.</p>
 <hr />
-<h2 id="module-peripheral">Module Peripheral<a class="headerlink" href="#module-peripheral" title="Permanent link">&para;</a></h2>
-<p>The <code>back</code> side peripheral on Smart Glasses can be used to access modules.<br />
-<a href="../../modules/">Modules</a> functions will be patched on the Module Peripheral.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">wrap</span><span class="p">(</span><span class="s1">&#39;back&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Available modules:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">table.unpack</span><span class="p">(</span><span class="nv">modules</span><span class="p">.</span><span class="nf">getModules</span><span class="p">()))</span>
-</code></pre></div></td></tr></table></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When modifing Smart Glasses modules, Module Peripheral will reload,
-which triggers <a href="https://tweaked.cc/event/peripheral_detach.html"><code>peripheral_detach</code></a>
-followed by <a href="https://tweaked.cc/event/peripheral.html"><code>peripheral</code></a> event.</p>
-</div>
-<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
-<h4 id="getmodules">getModules<a class="headerlink" href="#getmodules" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>getModules() -&gt; table
-</code></pre></div>
-<p>returns a list of installed modules' ID.</p>
-<h4 id="hasmodule">hasModule<a class="headerlink" href="#hasmodule" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>hasModule(id: string) -&gt; boolean
-</code></pre></div>
-<p>check if the module with given ID is installed.</p>
-<hr />
 <h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">&para;</a></h2>
 <p><strong>0.8</strong><br />
 Completely reworked AR Goggles and renamed it to Smart Glasses</p>
@@ -3516,7 +3381,7 @@ Added the AR Controller and AR Goggles, made by Olfi01#6413</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 13, 2026 19:10:59 UTC">April 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 01:20:34 UTC">June 18, 2026</span>
   </span>
 
     
