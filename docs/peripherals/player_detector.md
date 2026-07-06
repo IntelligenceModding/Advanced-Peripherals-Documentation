@@ -105,10 +105,11 @@ print("Player " .. username .. " died by " .. damageSource)
 ### getPlayer
 
 ```
-getPlayer(username: string) -> table | nil
+getPlayer(name: string) -> table | nil
 ```
 
-Returns information about the player with the `username` passed.
+Returns information about the player with the `name` passed.  
+`name` may be the player's username (case insensitive), or the player's UUID.
 
 #### Properties
 
@@ -135,25 +136,36 @@ Returns information about the player with the `username` passed.
 | respawnDimension: `number` | The respawn dimension of the player        |
 | respawnAngle: `number`     | The respawn angle of the player in degrees |
 
-#### Methods
-
-##### getStat
-
-```
-getStat(statId: string) -> number | (nil, string)
-```
-
-Returns the player's stat or an error string. Can loop `advancedperipherals.iterPlayerStatKeys()` to get all available stat IDs.
-
 ```lua linenums="1"
 local detector = peripheral.find("player_detector")
 
 -- Get the position of Player123 and print their coordinates
 local player = detector.getPlayer("Player123")
 print("Position: " .. player.x .. ", " .. player.y .. ", " .. player.z)
+```
 
+---
+
+#### getPlayerStat
+
+```
+getPlayerStat(name: string, statId: string...) -> number... | (nil, string)
+```
+
+Returns the player's stats or an error string. Can loop `advancedperipherals.iterPlayerStatKeys()` to get all available stat IDs.
+
+```lua linenums="1"
+local detector = peripheral.find("player_detector")
+
+local statIds = {}
 for statId in advancedperipherals.iterPlayerStatKeys() do
-    print("  - " .. statId .. " | " .. player.getStat(statId))
+    statIds[#statIds + 1] = statId
+end
+
+local stats = table.pack(detector.getPlayerStat("Player123", table.unpack(statIds)))
+
+for i, statId in ipairs(statIds) do
+    print(statId .. "=" .. stats[i])
 end
 ```
 

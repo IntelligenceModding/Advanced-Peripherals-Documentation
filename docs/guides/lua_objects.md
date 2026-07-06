@@ -88,6 +88,9 @@ Represents a specific amount of chemical with additional properties. Includes al
 | name | string | Entity registry name |
 | customName | string? | Entity custom name |
 | displayName | string | Entity default display name |
+| yaw | number | Entity rotation about the Y-axis |
+| pitch | number | Entity rotation about the X-axis |
+| eyeHeight | number | Eye offset about feet position |
 | type | string | Entity type |
 | tags | table | Entity tags |
 | category | string | Entity category |
@@ -98,6 +101,8 @@ Represents a specific amount of chemical with additional properties. Includes al
 | isInLava | boolean | Whether entity is in lava |
 | isInWall | boolean | Whether entity is in a wall |
 | team | table? | Entity [team info](#team) |
+| airSupply | number | Air supply left in the entity |
+| maxAirSupply | number | Maximum air supply the entity may have |
 
 ## Living Entity
 Inherits all properties from [Entity](#entity)
