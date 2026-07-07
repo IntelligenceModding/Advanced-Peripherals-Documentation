@@ -1445,10 +1445,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pushitems" class="md-nav__link">
+  <a href="#importitem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pushItems
+        importItem
       
     </span>
   </a>
@@ -1456,10 +1456,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pushcuriositems" class="md-nav__link">
+  <a href="#importcuriositems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pushCuriosItems
+        importCuriosItems
       
     </span>
   </a>
@@ -1467,10 +1467,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pullitems" class="md-nav__link">
+  <a href="#exportitem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pullItems
+        exportItem
       
     </span>
   </a>
@@ -1478,10 +1478,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pullcuriositems" class="md-nav__link">
+  <a href="#exportcuriositems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pullCuriosItems
+        exportCuriosItems
       
     </span>
   </a>
@@ -3624,10 +3624,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pushitems" class="md-nav__link">
+  <a href="#importitem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pushItems
+        importItem
       
     </span>
   </a>
@@ -3635,10 +3635,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pushcuriositems" class="md-nav__link">
+  <a href="#importcuriositems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pushCuriosItems
+        importCuriosItems
       
     </span>
   </a>
@@ -3646,10 +3646,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pullitems" class="md-nav__link">
+  <a href="#exportitem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pullItems
+        exportItem
       
     </span>
   </a>
@@ -3657,10 +3657,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#pullcuriositems" class="md-nav__link">
+  <a href="#exportcuriositems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pullCuriosItems
+        exportCuriosItems
       
     </span>
   </a>
@@ -3937,8 +3937,32 @@ Returns <code>nil</code> if there is no memory card or owner is offline.</p>
 }
 </code></pre></div></p>
 <hr />
-<h3 id="pushitems">pushItems<a class="headerlink" href="#pushitems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>pushItems(toName: string, filter: table) -&gt; number
+<h3 id="importitem">importItem<a class="headerlink" href="#importitem" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>importItem(fromName: string, filter: table) -&gt; number
+</code></pre></div>
+<p>Adds items to the player's inventory and returns the amount of the item added.</p>
+<p><code>fromName</code> is the source inventory's peripheral name.
+<code>filter</code> is an item filter to define how to move items.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">manager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;inventory_manager&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Add 32 cobblestone to the players offhand slot from the block above</span>
+<span class="nv">manager</span><span class="p">.</span><span class="nf">importItem</span><span class="p">(</span><span class="s2">&quot;@up&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:cobblestone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">toSlot</span><span class="o">=</span><span class="mi">36</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">32</span><span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="importcuriositems">importCuriosItems<a class="headerlink" href="#importcuriositems" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>importCuriosItems(slotName: string, fromName: string, filter: table) -&gt; number
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Requirement</p>
+<p>Requires the <a href="https://modrinth.com/mod/curios">Curios API mod</a> to be installed</p>
+</div>
+<p>Adds items from the player's curios inventory and returns the amount of the item added.</p>
+<hr />
+<h3 id="exportitem">exportItem<a class="headerlink" href="#exportitem" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>exportItem(toName: string, filter: table) -&gt; number
 </code></pre></div>
 <p>Removes items from the player's inventory and returns the amount of the item removed.</p>
 <p><code>toName</code> is the target inventory's peripheral name.
@@ -3955,41 +3979,17 @@ Returns <code>nil</code> if there is no memory card or owner is offline.</p>
 
 <span class="c1">-- Remove up to 5 of the item in slot 1 of the player&#39;s inventory</span>
 <span class="c1">-- and place it in the block above</span>
-<span class="nv">manager</span><span class="p">.</span><span class="nf">pushItems</span><span class="p">(</span><span class="s2">&quot;@up&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:cobblestone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">toSlot</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nv">fromSlot</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">5</span><span class="p">})</span>
+<span class="nv">manager</span><span class="p">.</span><span class="nf">exportItem</span><span class="p">(</span><span class="s2">&quot;@up&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:cobblestone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">toSlot</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nv">fromSlot</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">5</span><span class="p">})</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<h3 id="pushcuriositems">pushCuriosItems<a class="headerlink" href="#pushcuriositems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>pushCuriosItems(slotName: string, toName: string, filter: table) -&gt; number
+<h3 id="exportcuriositems">exportCuriosItems<a class="headerlink" href="#exportcuriositems" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>exportCuriosItems(slotName: string, toName: string, filter: table) -&gt; number
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Requirement</p>
 <p>Requires the <a href="https://modrinth.com/mod/curios">Curios API mod</a> to be installed</p>
 </div>
 <p>Removes items from the player's curios inventory and returns the amount of the item added.</p>
-<hr />
-<h3 id="pullitems">pullItems<a class="headerlink" href="#pullitems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>pullItems(fromName: string, filter: table) -&gt; number
-</code></pre></div>
-<p>Adds items to the player's inventory and returns the amount of the item added.</p>
-<p><code>fromName</code> is the source inventory's peripheral name.
-<code>filter</code> is an item filter to define how to move items.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">manager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;inventory_manager&quot;</span><span class="p">)</span>
-
-<span class="c1">-- Add 32 cobblestone to the players offhand slot from the block above</span>
-<span class="nv">manager</span><span class="p">.</span><span class="nf">pullItems</span><span class="p">(</span><span class="s2">&quot;@up&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;minecraft:cobblestone&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">toSlot</span><span class="o">=</span><span class="mi">36</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">32</span><span class="p">})</span>
-</code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="pullcuriositems">pullCuriosItems<a class="headerlink" href="#pullcuriositems" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>pullCuriosItems(slotName: string, fromName: string, filter: table) -&gt; number
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Requirement</p>
-<p>Requires the <a href="https://modrinth.com/mod/curios">Curios API mod</a> to be installed</p>
-</div>
-<p>Adds items from the player's curios inventory and returns the amount of the item added.</p>
 <hr />
 <h3 id="wrapstorageitem">wrapStorageItem<a class="headerlink" href="#wrapstorageitem" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>wrapStorageItem(slot: number) -&gt; table
@@ -4035,12 +4035,12 @@ Returns <code>nil</code> if there is no memory card or owner is offline.</p>
 <td>List the available item in the storage item.</td>
 </tr>
 <tr>
-<td><code>pushItems(name: string, filter: table): number</code></td>
-<td>Push items from the storage item to an inventory peripheral.</td>
+<td><code>importItem(name: string, filter: table): number</code></td>
+<td>Pull items from an inventory peripheral to the storage item.</td>
 </tr>
 <tr>
-<td><code>pullItems(name: string, filter: table): number</code></td>
-<td>Pull items from an inventory peripheral to the storage item.</td>
+<td><code>exportItem(name: string, filter: table): number</code></td>
+<td>Push items from the storage item to an inventory peripheral.</td>
 </tr>
 </tbody>
 </table>
@@ -4057,12 +4057,12 @@ Returns <code>nil</code> if there is no memory card or owner is offline.</p>
 <td>List the available tanks in the storage item.</td>
 </tr>
 <tr>
-<td><code>pushFluid(name: string, filter: table): number</code></td>
-<td>Push fluid from the storage item to a fluid storage peripheral.</td>
+<td><code>importFluid(name: string, filter: table): number</code></td>
+<td>Pull fluid from a fluid storage peripheral to the storage item.</td>
 </tr>
 <tr>
-<td><code>pullFluid(name: string, filter: table): number</code></td>
-<td>Pull fluid from a fluid storage peripheral to the storage item.</td>
+<td><code>exportFluid(name: string, filter: table): number</code></td>
+<td>Push fluid from the storage item to a fluid storage peripheral.</td>
 </tr>
 </tbody>
 </table>
@@ -4140,7 +4140,7 @@ Added the Inventory Manager and Memory Card</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 14, 2026 21:21:33 UTC">June 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 7, 2026 01:53:32 UTC">July 7, 2026</span>
   </span>
 
     
@@ -4168,14 +4168,14 @@ Added the Inventory Manager and Memory Card</p>
     
     <nav>
       
-        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
-          
-          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
-        </a>
-      
         <a href="https://github.com/zyxkad" class="md-author" title="@zyxkad">
           
           <img src="https://avatars.githubusercontent.com/u/91082411?v=4&size=72" alt="zyxkad">
+        </a>
+      
+        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
+          
+          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
         </a>
       
         <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
