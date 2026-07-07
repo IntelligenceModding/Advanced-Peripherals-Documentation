@@ -126,9 +126,9 @@ manager.importItem("@up", {name="minecraft:cobblestone", toSlot=36, count=32})
 
 ---
 
-### importCuriosItems
+### importCuriosItem
 ```
-importCuriosItems(slotName: string, fromName: string, filter: table) -> number
+importCuriosItem(slotName: string, fromName: string, filter: table) -> number
 ```
 
 !!! warning "Requirement"
@@ -161,9 +161,9 @@ manager.exportItem("@up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, c
 
 ---
 
-### exportCuriosItems
+### exportCuriosItem
 ```
-exportCuriosItems(slotName: string, toName: string, filter: table) -> number
+exportCuriosItem(slotName: string, toName: string, filter: table) -> number
 ```
 
 !!! warning "Requirement"
