@@ -107,9 +107,40 @@ Result format:
 
 ---
 
-### pushItems
+### importItem
 ```
-pushItems(toName: string, filter: table) -> number
+importItem(fromName: string, filter: table) -> number
+```
+
+Adds items to the player's inventory and returns the amount of the item added.
+
+`fromName` is the source inventory's peripheral name.
+`filter` is an item filter to define how to move items.
+
+```lua linenums="1"
+local manager = peripheral.find("inventory_manager")
+
+-- Add 32 cobblestone to the players offhand slot from the block above
+manager.importItem("@up", {name="minecraft:cobblestone", toSlot=36, count=32})
+```
+
+---
+
+### importCuriosItems
+```
+importCuriosItems(slotName: string, fromName: string, filter: table) -> number
+```
+
+!!! warning "Requirement"
+    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
+
+Adds items from the player's curios inventory and returns the amount of the item added.
+
+---
+
+### exportItem
+```
+exportItem(toName: string, filter: table) -> number
 ```
 
 Removes items from the player's inventory and returns the amount of the item removed.
@@ -125,51 +156,20 @@ local manager = peripheral.find("inventory_manager")
 
 -- Remove up to 5 of the item in slot 1 of the player's inventory
 -- and place it in the block above
-manager.pushItems("@up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, count=5})
+manager.exportItem("@up", {name="minecraft:cobblestone", toSlot=3, fromSlot=1, count=5})
 ```
 
 ---
 
-### pushCuriosItems
+### exportCuriosItems
 ```
-pushCuriosItems(slotName: string, toName: string, filter: table) -> number
+exportCuriosItems(slotName: string, toName: string, filter: table) -> number
 ```
 
 !!! warning "Requirement"
     Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
 
 Removes items from the player's curios inventory and returns the amount of the item added.
-
----
-
-### pullItems
-```
-pullItems(fromName: string, filter: table) -> number
-```
-
-Adds items to the player's inventory and returns the amount of the item added.
-
-`fromName` is the source inventory's peripheral name.
-`filter` is an item filter to define how to move items.
-
-```lua linenums="1"
-local manager = peripheral.find("inventory_manager")
-
--- Add 32 cobblestone to the players offhand slot from the block above
-manager.pullItems("@up", {name="minecraft:cobblestone", toSlot=36, count=32})
-```
-
----
-
-### pullCuriosItems
-```
-pullCuriosItems(slotName: string, fromName: string, filter: table) -> number
-```
-
-!!! warning "Requirement"
-    Requires the [Curios API mod](https://modrinth.com/mod/curios) to be installed
-
-Adds items from the player's curios inventory and returns the amount of the item added.
 
 ---
 
@@ -188,18 +188,18 @@ Returns the wrapped operations of a storage item (e.g. backpack, bucket).
 | `isItemStorage(): boolean`  | If item operations are valid to perform on this item.  |
 | `isFluidStorage(): boolean` | If fluid operations are valid to perform on this item. |
 
-| Item operation                                   | Description                                                  |
-| ------------------------------------------------ | ------------------------------------------------------------ |
-| `size(): number`                                 | Returns the inventory size of the storage item.              |
-| `list(): table`                                  | List the available item in the storage item.                 |
-| `pushItems(name: string, filter: table): number` | Push items from the storage item to an inventory peripheral. |
-| `pullItems(name: string, filter: table): number` | Pull items from an inventory peripheral to the storage item. |
+| Item operation                                    | Description                                                  |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| `size(): number`                                  | Returns the inventory size of the storage item.              |
+| `list(): table`                                   | List the available item in the storage item.                 |
+| `importItem(name: string, filter: table): number` | Pull items from an inventory peripheral to the storage item. |
+| `exportItem(name: string, filter: table): number` | Push items from the storage item to an inventory peripheral. |
 
-| Fluid operation                                  | Description                                                     |
-| ------------------------------------------------ | --------------------------------------------------------------- |
-| `tanks(): table`                                 | List the available tanks in the storage item.                   |
-| `pushFluid(name: string, filter: table): number` | Push fluid from the storage item to a fluid storage peripheral. |
-| `pullFluid(name: string, filter: table): number` | Pull fluid from a fluid storage peripheral to the storage item. |
+| Fluid operation                                    | Description                                                     |
+| -------------------------------------------------- | --------------------------------------------------------------- |
+| `tanks(): table`                                   | List the available tanks in the storage item.                   |
+| `importFluid(name: string, filter: table): number` | Pull fluid from a fluid storage peripheral to the storage item. |
+| `exportFluid(name: string, filter: table): number` | Push fluid from the storage item to a fluid storage peripheral. |
 
 ---
 
