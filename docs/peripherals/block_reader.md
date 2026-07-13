@@ -17,9 +17,24 @@ This block is able to read data about any blocks or tile entities in front of it
 
 | Peripheral Name | Interfaces with | Has events | Introduced in |
 | --------------- | --------------- | ---------- | ------------- |
-| block_reader    | Blocks          | No         | 0.7r          |
+| block_reader    | Blocks          | Yes        | 0.7r          |
 
 </center>
+
+---
+
+## Events
+
+### item_click
+Fires when an item is used on the peripheral.  
+**Values:**  
+1. `peripheral_name: string` The block reader's name.  
+2. `item: table` [ItemStack](../guides/lua_objects.md#item-stack) object.
+
+```lua linenums="1"
+local event, peripheral_name, item = os.pullEvent("item_click")
+print("Item " .. item.name .. " is being used on " .. peripheral)
+```
 
 ---
 
