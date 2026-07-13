@@ -3854,52 +3854,62 @@ You can get a list of all online players and detect when a player clicks on the 
 <hr />
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
 <h3 id="player_click">player_click<a class="headerlink" href="#player_click" title="Permanent link">&para;</a></h3>
-<p>Fires when a player clicks on the block.<br />
-<strong>Values:</strong><br />
-1. <code>peripheralName: string</code> The name of the peripheral (e.g. <code>player_detector_4</code>)<br />
-2. <code>uuid: string</code> The uuid of the player who clicked the block<br />
-3. <code>username: string</code> The name of the player who clicked the block</p>
+<p>Fires when a player clicks on the block.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>peripheralName: string</code> The name of the peripheral (e.g. <code>player_detector_4</code>)</li>
+<li><code>uuid: string</code> The uuid of the player who clicked the block</li>
+<li><code>username: string</code> The name of the player who clicked the block</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">peripheralName</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_click&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The detector &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">device</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; was clicked by &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="player_join">player_join<a class="headerlink" href="#player_join" title="Permanent link">&para;</a></h3>
-<p>Fires when a player joins the world/a server.<br />
-<strong>Values:</strong><br />
-1. <code>uuid: string</code> The uuid of the player<br />
-2. <code>username: string</code> The name of the player<br />
-3. <code>dimension: string</code> The resource id of the dimension the player is in</p>
+<p>Fires when a player joins the world/a server.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>uuid: string</code> The uuid of the player</li>
+<li><code>username: string</code> The name of the player</li>
+<li><code>dimension: string</code> The resource id of the dimension the player is in</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">dimension</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_join&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; joined the server in the dimension &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dimension</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="player_leave">player_leave<a class="headerlink" href="#player_leave" title="Permanent link">&para;</a></h3>
-<p>Fires when a player leaves the world/a server.<br />
-<strong>Values:</strong><br />
-1. <code>uuid: string</code> The uuid of the player<br />
-2. <code>username: string</code> The name of the player<br />
-3. <code>dimension: string</code> The resource id of the dimension the player was in</p>
+<p>Fires when a player leaves the world/a server.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>uuid: string</code> The uuid of the player</li>
+<li><code>username: string</code> The name of the player</li>
+<li><code>dimension: string</code> The resource id of the dimension the player was in</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">dimension</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_leave&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; left the server in the dimension &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dimension</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="player_changed_dimension">player_changed_dimension<a class="headerlink" href="#player_changed_dimension" title="Permanent link">&para;</a></h3>
-<p>Fires when a player changes dimensions.<br />
-<strong>Values:</strong><br />
-1. <code>uuid: string</code> The uuid of the player<br />
-2. <code>username: string</code> The name of the player<br />
-3. <code>fromDim: string</code> The resource id of the dimension the player was in<br />
-4. <code>toDim: string</code> The resource id of the dimension the player is in</p>
+<p>Fires when a player changes dimensions.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>uuid: string</code> The uuid of the player</li>
+<li><code>username: string</code> The name of the player</li>
+<li><code>fromDim: string</code> The resource id of the dimension the player was in</li>
+<li><code>toDim: string</code> The resource id of the dimension the player is in</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">fromDim</span><span class="p">,</span><span class="w"> </span><span class="nv">toDim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_changed_dimension&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; left the dimension &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">fromDim</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; and is now in &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">toDim</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="player_death">player_death<a class="headerlink" href="#player_death" title="Permanent link">&para;</a></h3>
-<p>Fires when a player is died.<br />
-<strong>Values:</strong><br />
-1. <code>uuid: string</code> The uuid of the player<br />
-2. <code>username: string</code> The name of the player<br />
-3. <code>damageSource: string</code> The damage source id that killed the player</p>
+<p>Fires when a player is died.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>uuid: string</code> The uuid of the player</li>
+<li><code>username: string</code> The name of the player</li>
+<li><code>damageSource: string</code> The damage source id that killed the player</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">uuid</span><span class="p">,</span><span class="w"> </span><span class="nv">username</span><span class="p">,</span><span class="w"> </span><span class="nv">damageSource</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_death&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Player &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">username</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; died by &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">damageSource</span><span class="p">)</span>
@@ -4184,7 +4194,7 @@ Added the player detector, it was the third feature of the mod.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 6, 2026 22:18:16 UTC">July 6, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 13, 2026 05:00:14 UTC">July 13, 2026</span>
   </span>
 
     
