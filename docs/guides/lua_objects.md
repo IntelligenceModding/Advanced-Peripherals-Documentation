@@ -21,7 +21,8 @@ Represents a specific amount of an item with additional properties. Includes all
 | count | number | Amount of items in the stack |
 | displayName | string | Display name of the item |
 | maxStackSize | number | Maximum stack size |
-| components | table | NBT component data |
+| prototype | table | default component data |
+| components | table | component data |
 | fingerprint | string | Unique identifier for the stack |
 | slot | number | (Optional) Slot number when in inventory |
 
@@ -43,7 +44,7 @@ Represents a specific amount of fluid with additional properties. Includes all F
 | count | number | Amount of fluid |
 | displayName | string | Display name of the fluid |
 | fluidType | table | [FluidType properties](#fluid-type) |
-| components | table | NBT component data |
+| components | table | component data |
 | fingerprint | string | Unique identifier for the stack |
 
 ## Fluid Type
