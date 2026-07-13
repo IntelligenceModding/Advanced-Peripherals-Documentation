@@ -26,9 +26,11 @@ This block is able to read data about any blocks or tile entities in front of it
 ## Events
 
 ### item_click
-Fires when an item is used on the peripheral.  
-**Values:**  
-1. `peripheral_name: string` The block reader's name.  
+Fires when an item is used on the peripheral.
+
+**Values:**
+
+1. `peripheral_name: string` The block reader's name.
 2. `item: table` [ItemStack](../guides/lua_objects.md#item-stack) object.
 
 ```lua linenums="1"

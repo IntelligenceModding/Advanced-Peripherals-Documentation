@@ -29,12 +29,14 @@ The Chat Box is able to read and write messages to the in-game chat. You can sen
 ## Events
 
 ### chat
-Fires when a chat message appears within a chatbox's detection range.  
-**Values:**  
-1. `uuid: string` Message sender's UUID. `nil` if triggered from a /say command  
-2. `name: string` Message sender's name. `[say]` if triggered from a /say command  
-3. `message: string` The chat message  
-4. `isHidden: boolean` Whether or not the message is privately sent to chatboxes  
+Fires when a chat message appears within a chatbox's detection range.
+
+**Values:**
+
+1. `uuid: string` Message sender's UUID. `nil` if triggered from a /say command
+2. `name: string` Message sender's name. `[say]` if triggered from a /say command
+3. `message: string` The chat message
+4. `isHidden: boolean` Whether or not the message is privately sent to chatboxes
 5. `encodedUtf8Message: string` The encoded chat message from utf8
 
 ```lua linenums="1"

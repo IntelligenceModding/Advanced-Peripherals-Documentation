@@ -28,10 +28,12 @@ You can get a list of all online players and detect when a player clicks on the 
 
 ### player_click
 
-Fires when a player clicks on the block.  
-**Values:**  
-1. `peripheralName: string` The name of the peripheral (e.g. `player_detector_4`)  
-2. `uuid: string` The uuid of the player who clicked the block  
+Fires when a player clicks on the block.
+
+**Values:**
+
+1. `peripheralName: string` The name of the peripheral (e.g. `player_detector_4`)
+2. `uuid: string` The uuid of the player who clicked the block
 3. `username: string` The name of the player who clicked the block
 
 ```lua linenums="1"
@@ -41,10 +43,12 @@ print("The detector " .. device .. " was clicked by " .. username)
 
 ### player_join
 
-Fires when a player joins the world/a server.  
-**Values:**  
-1. `uuid: string` The uuid of the player  
-2. `username: string` The name of the player  
+Fires when a player joins the world/a server.
+
+**Values:**
+
+1. `uuid: string` The uuid of the player
+2. `username: string` The name of the player
 3. `dimension: string` The resource id of the dimension the player is in
 
 ```lua linenums="1"
@@ -54,10 +58,12 @@ print("Player " .. username .. " joined the server in the dimension " .. dimensi
 
 ### player_leave
 
-Fires when a player leaves the world/a server.  
-**Values:**  
-1. `uuid: string` The uuid of the player  
-2. `username: string` The name of the player  
+Fires when a player leaves the world/a server.
+
+**Values:**
+
+1. `uuid: string` The uuid of the player
+2. `username: string` The name of the player
 3. `dimension: string` The resource id of the dimension the player was in
 
 ```lua linenums="1"
@@ -67,11 +73,13 @@ print("Player " .. username .. " left the server in the dimension " .. dimension
 
 ### player_changed_dimension
 
-Fires when a player changes dimensions.  
-**Values:**  
-1. `uuid: string` The uuid of the player  
-2. `username: string` The name of the player  
-3. `fromDim: string` The resource id of the dimension the player was in  
+Fires when a player changes dimensions.
+
+**Values:**
+
+1. `uuid: string` The uuid of the player
+2. `username: string` The name of the player
+3. `fromDim: string` The resource id of the dimension the player was in
 4. `toDim: string` The resource id of the dimension the player is in
 
 ```lua linenums="1"
@@ -81,10 +89,12 @@ print("Player " .. username .. " left the dimension " .. fromDim .. " and is now
 
 ### player_death
 
-Fires when a player is died.  
-**Values:**  
-1. `uuid: string` The uuid of the player  
-2. `username: string` The name of the player  
+Fires when a player is died.
+
+**Values:**
+
+1. `uuid: string` The uuid of the player
+2. `username: string` The name of the player
 3. `damageSource: string` The damage source id that killed the player
 
 ```lua linenums="1"
