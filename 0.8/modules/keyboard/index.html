@@ -2066,6 +2066,17 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
+  <a href="#player_interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        player_interaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#player_mouse_click" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2153,6 +2164,28 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     <span class="md-ellipsis">
       
         setCaptureMouse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ishandlinginteraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isHandlingInteraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethandlinginteraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setHandlingInteraction
       
     </span>
   </a>
@@ -3469,6 +3502,17 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
+  <a href="#player_interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        player_interaction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#player_mouse_click" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3562,6 +3606,28 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#ishandlinginteraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isHandlingInteraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sethandlinginteraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setHandlingInteraction
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3637,10 +3703,26 @@ In addition, Keyboard Module may also capture player's mouse by invoking <code>s
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Keyboard closed!&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <hr />
+<h3 id="player_interaction">player_interaction<a class="headerlink" href="#player_interaction" title="Permanent link">&para;</a></h3>
+<p>Fires when a player pressed a mouse button while keyboard module is capturing mouse.<br />
+Interactions must be registered by <a href="#sethandlinginteraction"><code>setHandlingInteraction</code></a> first.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>interaction: number</code> Performing interaction: <code>1</code> for attack; <code>2</code> for use; <code>3</code> for pick.</li>
+<li><code>block_state: table | nil</code> Aiming <a href="../../guides/lua_objects/#block-state">block</a>, if exists.</li>
+<li><code>entity_uuid: string | nil</code> Aiming entity UUID, if exists.</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">interaction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_interaction&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Interaction &#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">interaction</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; is performed!&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<hr />
 <h3 id="player_mouse_click">player_mouse_click<a class="headerlink" href="#player_mouse_click" title="Permanent link">&para;</a></h3>
 <p>Fires when a player pressed a mouse button while keyboard module is capturing mouse.</p>
-<p><strong>Values:</strong><br />
-1. <code>button: number</code> The mouse button which clicked down.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>button: number</code> The mouse button which clicked down.</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_mouse_click&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mouse button &#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">button</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; pressed!&#39;</span><span class="p">)</span>
@@ -3648,8 +3730,10 @@ In addition, Keyboard Module may also capture player's mouse by invoking <code>s
 <hr />
 <h3 id="player_mouse_up">player_mouse_up<a class="headerlink" href="#player_mouse_up" title="Permanent link">&para;</a></h3>
 <p>Fires when the player released a mouse button while keyboard module is capturing mouse.</p>
-<p><strong>Values:</strong><br />
-1. <code>button: number</code> The mouse button which released up.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>button: number</code> The mouse button which released up.</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_mouse_up&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mouse button &#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">button</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; released!&#39;</span><span class="p">)</span>
@@ -3657,9 +3741,11 @@ In addition, Keyboard Module may also capture player's mouse by invoking <code>s
 <hr />
 <h3 id="player_mouse_move">player_mouse_move<a class="headerlink" href="#player_mouse_move" title="Permanent link">&para;</a></h3>
 <p>Fires when a player moved mouse while keyboard module is capturing mouse.</p>
-<p><strong>Values:</strong><br />
-1. <code>dx: number</code> Horizontal mouse movement<br />
-2. <code>dy: number</code> Vertical mouse movement</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>dx: number</code> Horizontal mouse movement  </li>
+<li><code>dy: number</code> Vertical mouse movement</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">dx</span><span class="p">,</span><span class="w"> </span><span class="nv">dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_mouse_move&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mouse moving: dy=&#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dy</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; dx=&#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dx</span><span class="p">)</span>
@@ -3667,9 +3753,11 @@ In addition, Keyboard Module may also capture player's mouse by invoking <code>s
 <hr />
 <h3 id="player_mouse_scroll">player_mouse_scroll<a class="headerlink" href="#player_mouse_scroll" title="Permanent link">&para;</a></h3>
 <p>Fires when a player scrolled mouse while keyboard module is capturing mouse.</p>
-<p><strong>Values:</strong><br />
-1. <code>dy: number</code> Vertical mouse scroll amount<br />
-2. <code>dx: number</code> Horizontal mouse scroll amount</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>dy: number</code> Vertical mouse scroll amount  </li>
+<li><code>dx: number</code> Horizontal mouse scroll amount</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">dy</span><span class="p">,</span><span class="w"> </span><span class="nv">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;player_mouse_scroll&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mouse scrolling: dy=&#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dy</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; dx=&#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">dx</span><span class="p">)</span>
@@ -3690,6 +3778,39 @@ In addition, Keyboard Module may also capture player's mouse by invoking <code>s
 <div class="highlight"><pre><span></span><code>setCaptureMouse(enable: boolean) -&gt; nil
 </code></pre></div>
 <p>set if the mouse should be captured.</p>
+<hr />
+<h3 id="ishandlinginteraction">isHandlingInteraction<a class="headerlink" href="#ishandlinginteraction" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>isHandlingInteraction(interaction: number) -&gt; boolean
+</code></pre></div>
+<p>returns <code>true</code> if the interaction is currently being intercepted, <code>false</code> otherwise.</p>
+<hr />
+<h3 id="sethandlinginteraction">setHandlingInteraction<a class="headerlink" href="#sethandlinginteraction" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>setHandlingInteraction(interaction: number, value: boolean) -&gt; nil
+</code></pre></div>
+<p>set if the interaction should be intercepted.<br />
+Intercepted interaction will not perform its normal duty, <a href="#player_interaction"><code>player_interaction</code></a> event will be fired instead.</p>
+<table>
+<thead>
+<tr>
+<th>interaction</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>attack / dig block</td>
+</tr>
+<tr>
+<td>2</td>
+<td>use stuffs</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pick block / entity</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">&para;</a></h2>
 <p><strong>0.8</strong><br />
@@ -3716,7 +3837,7 @@ Added Hotkey Module</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 14, 2026 22:11:07 UTC">June 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 14, 2026 03:59:24 UTC">July 14, 2026</span>
   </span>
 
     
@@ -3744,14 +3865,14 @@ Added Hotkey Module</p>
     
     <nav>
       
-        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
-          
-          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
-        </a>
-      
         <a href="https://github.com/zyxkad" class="md-author" title="@zyxkad">
           
           <img src="https://avatars.githubusercontent.com/u/91082411?v=4&size=72" alt="zyxkad">
+        </a>
+      
+        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
+          
+          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
         </a>
       
       
