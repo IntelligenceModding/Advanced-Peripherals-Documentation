@@ -35,7 +35,7 @@ Fires when an item is used on the peripheral.
 
 ```lua linenums="1"
 local event, peripheral_name, item = os.pullEvent("item_click")
-print("Item " .. item.name .. " is being used on " .. peripheral)
+print("Item " .. item.name .. " is being used on " .. peripheral_name)
 ```
 
 ---

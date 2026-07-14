@@ -141,12 +141,13 @@ Inherits all properties from [Living Entity](#living-entity)
 | handSlot | number | Selected hand slot of the player |
 | inventory | table | Player's inventory |
 
-## BlockState
+## Block State
 Represents a block and its state
 
 | Property | Type | Description |
 |----------|------|-------------|
 | name | string | The registry id of the block |
+| item | string \| nil | The item used to build the block |
 | tags | table | The tags on the block |
 | state | table | The states of the block |
 

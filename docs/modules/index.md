@@ -35,8 +35,10 @@ smartglasses.modules.nightVision.enableNightVision(false) -- use module alias na
 
 ### glasses_module
 
-Fires when a glasses module is attached.  
-**Values:**  
+Fires when a glasses module is attached.
+
+**Values:**
+
 1. `id: string` The id of the module
 
 ```lua linenums="1"
@@ -46,8 +48,10 @@ print('Module ' .. moduleId .. ' is attached')
 
 ### glasses_module_detach
 
-Fires when a glasses module is detached.  
-**Values:**  
+Fires when a glasses module is detached.
+
+**Values:**
+
 1. `id: string` The id of the module
 
 ```lua linenums="1"
