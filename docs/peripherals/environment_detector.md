@@ -250,17 +250,30 @@ scanShips(range: number) -> table
 ```
 
 !!! warning "Requirement"
-    Requires Valkyrien Skies to be installed.
+    Requires Sable to be installed.
 
 Returns a table with all ships in the given range.  
 Coordinates are relative and not absolute.
 
 ---
 
+### getShip
+
+```
+getShip() -> table
+```
+
+!!! warning "Requirement"
+    Requires Sable to be installed.
+
+Returns the information of the ship the computer is currently placed on.
+
+---
+
 ## Changelog/Trivia
 
 **0.8**
-Added vs2 integration `scanShips`, `scanShipCost`.
+Added Sable integration `scanShips`, `scanShipCost`, `getShip`.
 
 **0.6.5b**  
 Added `getRadiationRaw`
