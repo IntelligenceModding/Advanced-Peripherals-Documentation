@@ -283,22 +283,34 @@ Returns the average power that is injected into the system
     The RS Bridge currently does not support Any external storage function, we will hopefully be able to support them when
     RS2 is out of beta.
 
-### getTotalExternItemStorage
+### getMaxExternItemStorage
 
 ```
-getTotalExternItemStorage() -> int
+getMaxExternItemStorage() -> number
 ```
 
-Returns the total amount of available external item storage.
+Returns the total amount of available external item storage in stacks.
 External storage is available storage by either RS2's external storage bus or AE2's storage bus
 This function returns the available storage in items even with the byte system from AE2
 
 ---
 
-### getTotalExternFluidStorage
+### getMaxExternItemCount
 
 ```
-getTotalExternFluidStorage() -> int
+getMaxExternItemCount() -> int
+```
+
+Returns the total amount of available external item storage in item counts.
+External storage is available storage by either RS2's external storage bus or AE2's storage bus
+This function returns the available storage in items even with the byte system from AE2
+
+---
+
+### getMaxExternFluidStorage
+
+```
+getMaxExternFluidStorage() -> int
 ```
 
 Returns the total amount of available external fluid storage.
@@ -307,10 +319,10 @@ This function returns the available storage in millibuckets even with the byte s
 
 ---
 
-### getTotalExternChemicalStorage
+### getMaxExternChemicalStorage
 
 ```
-getTotalExternChemicalStorage() -> int
+getMaxExternChemicalStorage() -> int
 ```
 
 Returns the total amount of available external mekanism chemical storage.
@@ -319,10 +331,10 @@ This function returns the available storage in millibuckets even with the byte s
 
 ---
 
-### getTotalItemStorage
+### getMaxItemStorage
 
 ```
-getTotalItemStorage() -> int
+getMaxItemStorage() -> int
 ```
 
 Returns the total amount of available internal item storage.
@@ -330,10 +342,10 @@ This function returns the available storage in items for RS and in bytes for AE2
 
 ---
 
-### getTotalFluidStorage
+### getMaxFluidStorage
 
 ```
-getTotalFluidStorage() -> int
+getMaxFluidStorage() -> int
 ```
 
 Returns the total amount of available internal fluid storage.
@@ -341,10 +353,10 @@ This function returns the available storage in millibuckets for RS and in bytes 
 
 ---
 
-### getTotalChemicalStorage
+### getMaxChemicalStorage
 
 ```
-getTotalChemicalStorage() -> int
+getMaxChemicalStorage() -> int
 ```
 
 Returns the total amount of available internal mekanism chemical storage.
@@ -355,10 +367,22 @@ This function returns the available storage in millibuckets for RS and in bytes 
 ### getUsedExternItemStorage
 
 ```
-getUsedExternItemStorage() -> int
+getUsedExternItemStorage() -> number
 ```
 
-Returns the total amount of used external item storage.
+Returns the total amount of used external item storage in stacks.
+External storage is available storage by either RS2's external storage bus or AE2's storage bus
+This function returns the used storage in items even with the byte system from AE2
+
+---
+
+### getUsedExternItemCount
+
+```
+getUsedExternItemCount() -> int
+```
+
+Returns the total amount of used external item storage in item counts.
 External storage is available storage by either RS2's external storage bus or AE2's storage bus
 This function returns the used storage in items even with the byte system from AE2
 
@@ -424,10 +448,22 @@ This function returns the used storage in millibuckets for RS and in bytes for A
 ### getAvailableExternItemStorage
 
 ```
-getAvailableExternItemStorage() -> int
+getAvailableExternItemStorage() -> number
 ```
 
-Returns the total amount of available and not used external item storage.
+Returns the total amount of available and not used external item storage in stacks.
+External storage is available storage by either RS2's external storage bus or AE2's storage bus
+This function returns the available and not used storage in items even with the byte system from AE2
+
+---
+
+### getAvailableExternItemCount
+
+```
+getAvailableExternItemCount() -> int
+```
+
+Returns the total amount of available and not used external item storage in item counts.
 External storage is available storage by either RS2's external storage bus or AE2's storage bus
 This function returns the available and not used storage in items even with the byte system from AE2
 
