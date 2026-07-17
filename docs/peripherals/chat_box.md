@@ -238,11 +238,11 @@ chatBox.narrateMessage("Say hi to Dev only", {
 
 ## Changelog/Trivia
 
-**0.8**
+**0.8**  
 Added `narrateMessage`.  
 Merged `sendMessageToPlayer` variant to `sendMessage` by specific `player` option value.
 
-**1.19.2-0.7.33r/1.20.1-0.7.37r**   
+**1.19.2-0.7.33r/1.20.1-0.7.37r**  
 Added `sendToastToPlayer` and `sendFormattedToastToPlayer`
 
 **0.7r**  
