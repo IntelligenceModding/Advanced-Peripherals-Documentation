@@ -997,6 +997,23 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Entity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extra-position-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra Position Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1184,6 +1201,8 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
     
     
+      
+        
       
         
       
@@ -1605,6 +1624,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     
   
     ME/RS Bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../peripherals/smart_rail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Rail
   
 
     
@@ -3541,6 +3588,23 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Entity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extra-position-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extra Position Info
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4041,6 +4105,69 @@ This guide contains the most objects we have, including a description and every 
 <td>number</td>
 <td>Maximum air supply the entity may have</td>
 </tr>
+<tr>
+<td>passengers</td>
+<td>table</td>
+<td>Passenger UUID list</td>
+</tr>
+</tbody>
+</table>
+<h3 id="extra-position-info">Extra Position Info<a class="headerlink" href="#extra-position-info" title="Permanent link">&para;</a></h3>
+<p>On applicable peripherals, entity may also contains position data</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>number</td>
+<td>world position on the X-axis</td>
+</tr>
+<tr>
+<td>y</td>
+<td>number</td>
+<td>world position on the Y-axis</td>
+</tr>
+<tr>
+<td>z</td>
+<td>number</td>
+<td>world position on the Z-axis</td>
+</tr>
+<tr>
+<td>f</td>
+<td>number</td>
+<td>relative position about the peripheral's front direction</td>
+</tr>
+<tr>
+<td>r</td>
+<td>number</td>
+<td>relative position about the peripheral's right direction</td>
+</tr>
+<tr>
+<td>u</td>
+<td>number</td>
+<td>relative position about the peripheral's up direction</td>
+</tr>
+<tr>
+<td>dx</td>
+<td>number</td>
+<td>speed on the X-axis</td>
+</tr>
+<tr>
+<td>dy</td>
+<td>number</td>
+<td>speed on the Y-axis</td>
+</tr>
+<tr>
+<td>dz</td>
+<td>number</td>
+<td>speed on the Z-axis</td>
+</tr>
 </tbody>
 </table>
 <h2 id="living-entity">Living Entity<a class="headerlink" href="#living-entity" title="Permanent link">&para;</a></h2>
@@ -4261,7 +4388,7 @@ This guide contains the most objects we have, including a description and every 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 14, 2026 03:59:24 UTC">July 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 19, 2026 19:13:21 UTC">July 19, 2026</span>
   </span>
 
     
