@@ -140,7 +140,7 @@ returns the object's `sizeX`, `sizeY`.
 
 #### setSizes
 ```
-setSizes(number, number) -> nil
+setSizes(sizeX: number, sizeY: number) -> nil
 ```
 
 sets the object's `sizeX`, `sizeY`.
@@ -192,7 +192,7 @@ returns the object's `sizeX`, `sizeY`, `sizeZ`.
 
 #### setSizes
 ```
-setSizes(number, number, number) -> nil
+setSizes(sizeX: number, sizeY: number, sizeZ: number) -> nil
 ```
 
 sets the object's `sizeX`, `sizeY`, `sizeZ`.
@@ -222,6 +222,95 @@ Based on [ThreeDimensionalObject](#threedimensionalobject)
 | `sectors` | `number` | `16` | An integer in range of `[1, 1024]` |
 | `stacks` | `number` | `16` | An integer in range of `[1, 1024]` |
 | `radius` | `number` | `1` | A decimal number of the sphere's radius, in range of `(0, 128]` |
+
+---
+
+### TextureObject
+
+Based on [ThreeDimensionalObject](#threedimensionalobject)
+
+| Field | Type | Default | Description |
+| ----- | ---- | ------- | ----------- |
+| `sizeX` | `number` | `0` | A decimal number of texture's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | A decimal number of texture's Y size, in range of `[0, ∞)` |
+| `width` | `number` | `0` | Image X-axis pixels count in range of `[0, 4096)` |
+| `height` | `number` | `0` | Image Y-axis pixels count in range of `[0, 4096)` |
+
+#### getSizes
+```
+getSizes() -> number, number
+```
+
+returns the texture's `sizeX`, `sizeY`.
+
+#### setSizes
+```
+setSizes(sizeX: number, sizeY: number) -> nil
+```
+
+sets the texture's `sizeX`, `sizeY`.
+
+#### getImageSize
+```
+getImageSize() -> number, number
+```
+
+returns the texture's `width`, `height`.
+
+#### setImageSize
+```
+setImageSize(width: number, height: number) -> nil
+```
+
+sets the texture's `width`, `height`.
+
+#### getPixel
+```
+getPixel(x: number, y: number) -> number
+```
+
+returns the texture's pixel at (`x`, `y`), in format of 0xAARRGGBB.
+
+#### setPixel
+```
+setPixel(x: number, y: number, color: number) -> nil
+```
+
+sets the texture's pixel at (`x`, `y`), in format of 0xAARRGGBB.
+
+#### getAllPixels
+```
+getAllPixels() -> table
+```
+
+returns the texture's all pixels as a 2D map that can be indexed by `pixels[y][x]`.
+
+#### getPixels
+```
+getPixels(minX: number, minY: number, width: number, height: number) -> table
+```
+
+returns the texture's sub-pixels in the range as a 2D map that can be indexed by `pixels[y][x]`.
+
+#### setPixels
+```
+setPixels(minX: number, minY: number, two_dim_data: table) -> nil
+setPixels(minX: number, minY: number, width: number, height: number, one_dim_data: table) -> nil
+```
+
+sets the texture's sub-pixels in the range from a 2D map that can be indexed by `pixels[y][x]`,
+or from a 1D map that can be indexed by `pixels[(y - 1) * width + x]`
+
+#### load
+```
+load(data: string) -> nil
+```
+
+load texture from `data` (which is the image bytes). `width` and `height` will be set to the image's width and height afterwards.
+
+!!! info
+    Supported image format may vary depends on the server.  
+    Default supported formats may include `bmp`, `gif`, `jpeg`, `png`, `tiff`, `wbmp`.
 
 ---
 
@@ -266,7 +355,7 @@ returns the object's `x1`, `y1`, `z1`.
 
 #### setPos1
 ```
-setPos1(number, number, number) -> nil
+setPos1(x1: number, y1: number, z1: number) -> nil
 ```
 
 sets the object's `x1`, `y1`, `z1`.
@@ -280,7 +369,7 @@ returns the object's `x2`, `y2`, `z2`.
 
 #### setPos2
 ```
-setPos2(number, number, number) -> nil
+setPos2(x2: number, y2: number, z2: number) -> nil
 ```
 
 sets the object's `x2`, `y2`, `z2`.
@@ -294,7 +383,7 @@ returns the object's `x3`, `y3`, `z3`.
 
 #### setPos3
 ```
-setPos3(number, number, number) -> nil
+setPos3(x3: number, y3: number, z3: number) -> nil
 ```
 
 sets the object's `x3`, `y3`, `z3`.
@@ -343,6 +432,17 @@ createSphere(object: table) -> table
 ```
 
 `object` is a [SphereObject](#sphereobject)
+
+returns a copy of the `object` with getters & setters to change its properties.
+
+---
+
+### createTexture
+```
+createTexture(object: table) -> table
+```
+
+`object` is a [TextureObject](#textureobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
 
