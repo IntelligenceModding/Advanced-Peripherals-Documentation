@@ -25,6 +25,7 @@ nav:
     - 'Redstone Integrator': 'peripherals/redstone_integrator.md'
     - 'Colony Integrator': 'peripherals/colony_integrator.md'
     - 'ME/RS Bridge': 'peripherals/base_storage_bridge.md'
+    - 'Smart Rail': 'peripherals/smart_rail.md'
   - 'Turtles':
     - 'Chatty Turtle': 'turtles/chatty_turtle.md'
     - 'Chunky Turtle': 'turtles/chunky_turtle.md'
