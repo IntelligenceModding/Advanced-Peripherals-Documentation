@@ -1,6 +1,6 @@
 name: PR Preview
 on:
-  pull_request:
+  pull_request_target: # 1. Changed to pull_request_target
     types: [opened, synchronize, reopened]
 
 permissions:
