@@ -104,6 +104,23 @@ Represents a specific amount of chemical with additional properties. Includes al
 | team | table? | Entity [team info](#team) |
 | airSupply | number | Air supply left in the entity |
 | maxAirSupply | number | Maximum air supply the entity may have |
+| passengers | table | Passenger UUID list |
+
+### Extra Position Info
+
+On applicable peripherals, entity may also contains position data
+
+| Property | Type | Description |
+|----------|------|-------------|
+| x | number | world position on the X-axis |
+| y | number | world position on the Y-axis |
+| z | number | world position on the Z-axis |
+| f | number | relative position about the peripheral's front direction |
+| r | number | relative position about the peripheral's right direction |
+| u | number | relative position about the peripheral's up direction |
+| dx | number | speed on the X-axis |
+| dy | number | speed on the Y-axis |
+| dz | number | speed on the Z-axis |
 
 ## Living Entity
 Inherits all properties from [Entity](#entity)

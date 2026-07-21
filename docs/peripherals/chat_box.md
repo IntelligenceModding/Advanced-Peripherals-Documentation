@@ -62,11 +62,12 @@ Returns true if the message is successfully sent, or nil and an error message if
 `options` format:
 ```
 {
-    utf8: boolean = if strings and message should be treated as encoded utf8
-    range: number = the broadcast range
-    prefix: string = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
-    brackets: string = used around the prefix. Must specify a two length string like "[]", "()", "<>", ...
-    bracketColor: string = specifies the color to use for the brackets, must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
+    player: string | nil = message will only send to the player when specified
+    utf8: boolean | nil = if strings and message should be treated as encoded utf8
+    range: number | nil = the broadcast range
+    prefix: string | nil = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
+    brackets: string | nil = used around the prefix. Must specify a two length string like "[]", "()", "<>", ...
+    bracketColor: string | nil = specifies the color to use for the brackets, must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
 }
 ```
 
@@ -83,28 +84,14 @@ sleep(1)
 -- Sends message "Welcome!" with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
 chatBox.sendMessage("Welcome!", {prefix="Box", brackets="<>", bracketColor="&b", range=30})
+
+chatBox.sendMessage("Hello there.", {player="Player123"}) -- Sends "[AP] Hello there." to Player123 in chat
 ```
 
 !!! tip
     Just like the `bracketColor` argument you can add colors to the `message` and `prefix` arguments using the same [MOTD color code format](https://www.digminecraft.com/lists/color_list_pc.php).  
     Since CC doesn't accept non-ascii charactor `§`, you should replace it with `&`.  
     If you want to send colored message but not only colored brackets, please use [`sendFormattedMessage()`](#sendformattedmessage) instead.
-
----
-
-### sendMessageToPlayer
-```
-sendMessageToPlayer(message: string, username: string, options: table | nil) -> true | nil, string
-```
-Similar to [`sendMessage()`](#sendmessage) this sends a message to one specific player. Specify the player to send the message to with the `username` parameter.
-
-`username` is player's in game name or its uuid.
-
-```lua linenums="1"
-local chatBox = peripheral.find("chat_box")
-
-chatBox.sendMessageToPlayer("Hello there.", "Player123") -- Sends "[AP] Hello there." to Player123 in chat
-```
 
 ---
 
@@ -142,19 +129,9 @@ chatBox.sendFormattedMessage(json)
 
 ---
 
-### sendFormattedMessageToPlayer
+### sendToast
 ```
-sendFormattedMessageToPlayer(json: string, username: string, options: table | nil) -> true | nil, string
-```
-Similar to [`sendFormattedMessage()`](#sendformattedmessage) this sends a formatted message to one specific player. Specify the player to send the message to with the `username` parameter.
-
-`username` is player's in game name or its uuid.
-
----
-
-### sendToastToPlayer
-```
-sendToastToPlayer(options: table) -> true | nil, string
+sendToast(options: table) -> true | nil, string
 ```
 Sends a toast to the specified player. The design of the toast is the classic notification design. It's planned to add a custom rendered design in the future.
 
@@ -163,13 +140,14 @@ Sends a toast to the specified player. The design of the toast is the classic no
 `options` format:
 ```
 {
-    utf8: boolean = if strings should be treated as encoded utf8
     message: string = the message in the toast
     title: string = the title of the toast
     player: string = player's name or uuid
-    prefix: string = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
-    brackets: string = used around the prefix
-    bracketColor: string = specifies the color to use for the brackets
+
+    utf8: boolean | nil = if strings should be treated as encoded utf8
+    prefix: string | nil = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
+    brackets: string | nil = used around the prefix
+    bracketColor: string | nil = specifies the color to use for the brackets
 }
 ```
 
@@ -188,9 +166,9 @@ chatBox.sendToastToPlayer({
 
 ---
 
-### sendFormattedToastToPlayer
+### sendFormattedToast
 ```
-sendFormattedToastToPlayer(options: table) -> true | nil, string
+sendFormattedToast(options: table) -> true | nil, string
 ```
 This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component for `message`, and `title` fields.  
 Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
@@ -215,7 +193,7 @@ local message = {
 local titleJson = textutils.serializeJSON(title)
 local messageJson = textutils.serialiseJSON(message)
 
-successful, error = chatBox.sendFormattedToastToPlayer({
+successful, error = chatBox.sendFormattedToast({
     message = messageJson,
     title = titleJson,
     player = "Dev",
@@ -227,9 +205,44 @@ successful, error = chatBox.sendFormattedToastToPlayer({
 
 ---
 
+### narrateMessage
+```
+narrateMessage(message: string, options: table | nil) -> true | nil, string
+```
+
+Narrate the message to players around.
+
+!!! warning
+    Narration is based on individual player's system settings. People may hear different sounds and/or different speech speeds.
+    The same word may also be pronounced differently, or may not be pronounced at all, depending on their system language.
+
+`options` format:
+```
+{
+    player: string | nil = message will only send to the player when specified
+    utf8: boolean | nil = if strings should be treated as encoded utf8
+    delay: boolean | nil = if the narrate message should queued after the previous narrations
+}
+```
+
+```lua linenums="1"
+local chatBox = peripheral.find("chat_box")
+
+chatBox.narrateMessage("Hello world!")
+chatBox.narrateMessage("Say hi to Dev only", {
+    player = "Dev",
+})
+```
+
+---
+
 ## Changelog/Trivia
 
-**1.19.2-0.7.33r/1.20.1-0.7.37r**   
+**0.8**  
+Added `narrateMessage`.  
+Merged `sendMessageToPlayer` variant to `sendMessage` by specific `player` option value.
+
+**1.19.2-0.7.33r/1.20.1-0.7.37r**  
 Added `sendToastToPlayer` and `sendFormattedToastToPlayer`
 
 **0.7r**  
