@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.advanced-peripherals.de/0.8/integrations/create/scrollbehaviour/">
       
       
-        <link rel="prev" href="../mechanicalmixer/">
+        <link rel="prev" href="../fluidtank/">
       
       
         <link rel="next" href="../../powah/ender_cell/">
@@ -2915,7 +2915,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
   
   
     <li class="md-nav__item">
-      <a href="../mechanicalmixer/" class="md-nav__link">
+      <a href="../mechanicalmixer.md" class="md-nav__link">
         
   
   
@@ -3015,10 +3015,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gettargetspeed" class="md-nav__link">
+  <a href="#getscrollvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getTargetSpeed
+        getScrollValue
       
     </span>
   </a>
@@ -3026,10 +3026,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#settargetspeed" class="md-nav__link">
+  <a href="#setscrollvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        setTargetSpeed
+        setScrollValue
       
     </span>
   </a>
@@ -3385,10 +3385,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gettargetspeed" class="md-nav__link">
+  <a href="#getscrollvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getTargetSpeed
+        getScrollValue
       
     </span>
   </a>
@@ -3396,10 +3396,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#settargetspeed" class="md-nav__link">
+  <a href="#setscrollvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        setTargetSpeed
+        setScrollValue
       
     </span>
   </a>
@@ -3481,7 +3481,7 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </thead>
 <tbody>
 <tr>
-<td>scroll_behaviour_entity</td>
+<td>scroll_behaviour</td>
 <td>Scroll Value Behaviour blocks</td>
 <td>No</td>
 <td>0.7.16</td>
@@ -3491,16 +3491,15 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </center>
 <hr />
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
-<h3 id="gettargetspeed">getTargetSpeed<a class="headerlink" href="#gettargetspeed" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>getTargetSpeed() -&gt; number
+<h3 id="getscrollvalue">getScrollValue<a class="headerlink" href="#getscrollvalue" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>getScrollValue() -&gt; number
 </code></pre></div>
 Returns the target behaviour value of the block.</p>
 <hr />
-<h3 id="settargetspeed">setTargetSpeed<a class="headerlink" href="#settargetspeed" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>setTargetSpeed(value: number) -&gt; boolean
+<h3 id="setscrollvalue">setScrollValue<a class="headerlink" href="#setscrollvalue" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>setScrollValue(value: number) -&gt; nil
 </code></pre></div>
-Sets the target behavious value of the block to the given <code>value</code>.<br />
-Returns whether or not the value was successfully set.</p>
+Sets the target behavious value of the block to the given <code>value</code>.</p>
 <hr />
 <h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">&para;</a></h2>
 <p><strong>0.7.16</strong><br />
@@ -3527,7 +3526,7 @@ Added Create integration</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 6, 2026 18:23:01 UTC">June 6, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 8, 2026 04:43:57 UTC">August 8, 2026</span>
   </span>
 
     
@@ -3659,7 +3658,7 @@ Added Create integration</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../mechanicalmixer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mechanical Mixer">
+          <a href="../fluidtank/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fluid Tank">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3669,7 +3668,7 @@ Added Create integration</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Mechanical Mixer
+                Fluid Tank
               </div>
             </div>
           </a>
