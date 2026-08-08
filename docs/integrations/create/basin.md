@@ -30,37 +30,19 @@ A Basin can hold items and fluids for many different crafting recipes.
 
 ## Functions
 
-### getInputFluids
+### inputTanks
 ```
-getInputFluids() -> table
+inputTanks() -> table
 ```
 Returns a list of information about all of the fluids in the input tank of the Basin.
 
 ---
 
-### getOutputFluids
+### outputTanks
 ```
-getOutputFluids() -> table
+outputTanks() -> table
 ```
 Returns a list of information about all of the fluids in the output tank of the Basin.
-
----
-
-### getFilter
-```
-getFilter() -> table
-```
-Returns the Basin's filter item.
-
----
-
-### getInventory
-```
-getInventory() -> table
-```
-Returns a list of information about all of the items in the Basin.
-
----
 
 ## Changelog/Trivia
 

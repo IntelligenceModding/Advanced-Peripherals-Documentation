@@ -30,20 +30,20 @@ A Fluid Tank is a multiblock structure which can hold fluids. With each block be
 
 ## Functions
 
-### getInfo
+### info
 ```
-getInfo() -> table
+info() -> table
 ```
-Returns a table with information about the Blaze Burner.
+Returns a table with information about the Fluid Tank.
 
 #### Properties
 
-| info                | Description                                    |
-| ------------------- | ---------------------------------------------- |
-| capacity: `number`  | The maximum amount of fluid the tank can hold  |
-| amount: `number`    | The amount of fluid in the tank                |
-| fluid: `string`     | The registry name for the tank's current fluid |
-| isBoiler: `boolean` | If the tank is part of a boiler                |
+| info                | Description                                   |
+| ------------------- | --------------------------------------------- |
+| size: `number`      | The size of the tank                          |
+| capacity: `number`  | The maximum amount of fluid the tank can hold |
+| fluid: `table`      | The [Fluid Stack](../../guides/lua_objects.md#fluid-stack) in the tank |
+| boiler: `table`     | Boiler information                            |
 
 ---
 

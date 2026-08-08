@@ -18,9 +18,9 @@ This integration works for all blocks with any type of scroll value behaviour. L
 
 <center markdown>
 
-| Peripheral Name         | Interfaces with               | Has events | Introduced in |
-| ----------------------- | ----------------------------- | ---------- | ------------- |
-| scroll_behaviour_entity | Scroll Value Behaviour blocks | No         | 0.7.16        |
+| Peripheral Name  | Interfaces with               | Has events | Introduced in |
+| ---------------- | ----------------------------- | ---------- | ------------- |
+| scroll_behaviour | Scroll Value Behaviour blocks | No         | 0.7.16        |
 
 </center>
 
@@ -28,20 +28,19 @@ This integration works for all blocks with any type of scroll value behaviour. L
 
 ## Functions
 
-### getTargetSpeed
+### getScrollValue
 ```
-getTargetSpeed() -> number
+getScrollValue() -> number
 ```
 Returns the target behaviour value of the block.
 
 ---
 
-### setTargetSpeed
+### setScrollValue
 ```
-setTargetSpeed(value: number) -> boolean
+setScrollValue(value: number) -> nil
 ```
-Sets the target behavious value of the block to the given `value`.  
-Returns whether or not the value was successfully set.
+Sets the target behavious value of the block to the given `value`.
 
 ---
 
