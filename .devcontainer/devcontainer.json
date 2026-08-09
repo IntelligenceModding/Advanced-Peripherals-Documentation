@@ -1,6 +1,6 @@
 {
   "name": "Advanced Peripherals Docs Dev",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14-trixie",
 
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {},

@@ -77,9 +77,10 @@ nav:
       - 'Reactor': 'integrations/powah/reactor.md'
       - 'Solar panel': 'integrations/powah/solar_panel.md'
       - 'Thermo generator': 'integrations/powah/thermo_generator.md'
-  # - 'Changelogs':
-  #   - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
-  #   - 'Changelog 0.7r': 'changelogs/0.7r.md'
+  - 'Changelogs':
+    - 'Changelog 0.8': 'changelogs/0.8.md'
+    - 'Changelog 0.7.24r': 'changelogs/0.7.24r.md'
+    - 'Changelog 0.7r': 'changelogs/0.7r.md'
 
 watch:
   - overrides
