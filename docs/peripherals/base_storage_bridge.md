@@ -161,15 +161,13 @@ Returns every drive connected to the system with the cells in it.
 
 ## Importing/Exporting functions
 
-You may are used to two different functions, `importItemFromPeripheral` and `importItem`
-The functions now support both at the same time. It first tries to parse the given string `target` as a cardinal or
-relative direction.
+It will try to parse the given string `target` as a cardinal or relative direction about the peripheral if starts with `@` (e.g. `@up`, `@east`).
 If that fails, it tries to search for a peripheral on the CC network which exposes an item handler or capability.
 
 ### importItem
 
 ```
-importItem(filter: table, target: string) -> table | (nil, string)
+importItem(target: string, filter: table) -> table | (nil, string)
 ```
 
 Imports an item from the specified target. The filter can be empty to import every item.
@@ -180,7 +178,7 @@ One call imports 64 of resources by default, can be set using the count filter k
 ### exportItem
 
 ```
-exportItem(filter: table, target: string) -> table | (nil, string)
+exportItem(target: string, filter: table) -> table | (nil, string)
 ```
 
 Exports an item to the specified target. The filter can be empty to export every item.
