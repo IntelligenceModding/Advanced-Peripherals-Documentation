@@ -29,6 +29,11 @@ smartglasses.modules['advancedperipherals:night_vision'].enableNightVision(false
 smartglasses.modules.nightVision.enableNightVision(false) -- use module alias name
 ```
 
+!!! note
+    It is recommend to locate module by its full ID (e.g. `smartglasses.modules['advancedperipherals:overlay']`),
+    instead of using alias (e.g. `smartglasses.modules.overlay`). Due to alias may sliently conflict with other addons.  
+    Alias is best being used during temperatory test and/or in the interactive Lua shell.
+
 ---
 
 ## Events
