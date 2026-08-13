@@ -5288,18 +5288,16 @@ Please open a feature request if some custom addon cells do not work</p>
 <p>Returns every drive connected to the system with the cells in it.</p>
 <hr />
 <h2 id="importingexporting-functions">Importing/Exporting functions<a class="headerlink" href="#importingexporting-functions" title="Permanent link">&para;</a></h2>
-<p>You may are used to two different functions, <code>importItemFromPeripheral</code> and <code>importItem</code>
-The functions now support both at the same time. It first tries to parse the given string <code>target</code> as a cardinal or
-relative direction.
+<p>It will try to parse the given string <code>target</code> as a cardinal or relative direction about the peripheral if starts with <code>@</code> (e.g. <code>@up</code>, <code>@east</code>).
 If that fails, it tries to search for a peripheral on the CC network which exposes an item handler or capability.</p>
 <h3 id="importitem">importItem<a class="headerlink" href="#importitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>importItem(filter: table, target: string) -&gt; table | (nil, string)
+<div class="highlight"><pre><span></span><code>importItem(target: string, filter: table) -&gt; table | (nil, string)
 </code></pre></div>
 <p>Imports an item from the specified target. The filter can be empty to import every item.
 One call imports 64 of resources by default, can be set using the count filter key.</p>
 <hr />
 <h3 id="exportitem">exportItem<a class="headerlink" href="#exportitem" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>exportItem(filter: table, target: string) -&gt; table | (nil, string)
+<div class="highlight"><pre><span></span><code>exportItem(target: string, filter: table) -&gt; table | (nil, string)
 </code></pre></div>
 <p>Exports an item to the specified target. The filter can be empty to export every item.
 One call exports 64 of resources by default, can be set using the count filter key.</p>
@@ -6105,7 +6103,7 @@ Tho these are no properties/fields, these are functions since always pulling the
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 17, 2026 01:31:02 UTC">July 17, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 9, 2026 19:56:51 UTC">August 9, 2026</span>
   </span>
 
     
