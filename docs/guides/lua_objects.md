@@ -23,7 +23,7 @@ Represents a specific amount of an item with additional properties. Includes all
 | maxStackSize | number | Maximum stack size |
 | prototype | table | default component data |
 | components | table | component data |
-| fingerprint | string | Unique identifier for the stack |
+| nbt | string | CC: T compatible NBT hash of component data |
 | slot | number | (Optional) Slot number when in inventory |
 
 ## Fluid
@@ -45,7 +45,7 @@ Represents a specific amount of fluid with additional properties. Includes all F
 | displayName | string | Display name of the fluid |
 | fluidType | table | [FluidType properties](#fluid-type) |
 | components | table | component data |
-| fingerprint | string | Unique identifier for the stack |
+| nbt | string | CC: T compatible NBT hash of component data |
 
 ## Fluid Type
 | Property | Type | Description |
@@ -78,7 +78,6 @@ Represents a specific amount of chemical with additional properties. Includes al
 |----------|------|-------------|
 | count | number | Amount of chemical |
 | displayName | string | Display name of the chemical |
-| fingerprint | string | Unique identifier for the stack |
 
 
 ## Entity

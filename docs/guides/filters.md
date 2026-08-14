@@ -15,8 +15,8 @@ These can set the item, count, slots, tags, nbt or fingerprint values.
 ### Item/Fluid Name and Tag
 
 The item's/fluid's filter name or tag can be specified with the `name` field.
-If this field is not set, the filter will try to search for items with the right nbt values specified in the `nbt` field
-or fingerprints.
+The filter will also try to match items with the right nbt values specified in the `components`,
+or `nbtHash` (see CC: T `nbt` attribute) field.
 
 This can be a tag or a name. To filter for tags, place a `#` in front of the name.
 
@@ -34,53 +34,53 @@ This can be a tag or a name. To filter for tags, place a `#` in front of the nam
 
 ### Count
 
-The item's/fluid's filter amout can be specified with the `count` field.
-Standard values are 64 or 1000 for fluids.
+The item's/fluid's filter amount can be specified with the `count` field.
+By default it will export unlimited amount.
 
 ```lua
 {
-    name = "minecraft:cobblestone",
+    name = 'minecraft:cobblestone',
     count = 128000 -- Will try to export 128000 cobblestone to the target inventory. It will transfer less if there is not enough space in the target inventory or if there aren't enough items in the source inventory
 }
 ```
 
-### NBT Values
+### Data Components
 
-!!! warning "Only for MC versions 1.20.4 and older!"
-
-[NBT Values](https://minecraft.fandom.com/wiki/NBT_format) are specified with the `nbt` field. The field needs to be a
-string which contains a json which can be parsed to a nbt tag.
+The field needs to be a table or an [SNBT](https://minecraft.wiki/w/NBT_format#SNBT_format).
 
 ```lua
 {
-    name = "minecraft:enchanted_book" 
-    nbt="{StoredEnchantments: [{lvl: 2s, id: \"minecraft:blast_protection\"}]}"} -- Will search for an enchanted book with the blast protection enchantment level 2
+    name = 'minecraft:enchanted_book',
+    -- Will search for an enchanted book with the blast protection enchantment level 2
+    components = '{"minecraft:stored_enchantments": {levels: {"minecraft:blast_protection": 2}}}'
 }
 ```
 
-Any strings inside the nbt value needs to be prefixed with a \\
-
-### Data Components
-
-!!! warning "Only for MC versions 1.20.5 and newer!"
-
-Since 1.20.5, mojang moved to a new data component system to store data for items and other things instead of using NBT.
-To use that new filter, you need to provide a `components` key instead of the old `nbt` key.
-
 ```lua
 {
     name = "minecraft:enchanted_book" 
-    components= {
+    -- Will search for an enchanted book with the aqua affinity enchantment level 1
+    components = {
         ["minecraft:stored_enchantments"] = {
             levels = {
                 ["minecraft:aqua_affinity"] = 1
             }
         }
-    } -- Will search for an enchanted book with the aqua affinity enchantment level 1
+    }
 }
 ```
 
 Other AP features also return a `components` key for items which you can directly use as a filter.
+
+### NBT Hash
+
+`nbtHash` is a field that provides compatibility with CC: T's `nbt` attribute.
+
+```lua
+{
+    nbtHash = '' -- will export items without NBT when nbt hash is empty string
+}
+```
 
 ### Slots
 
@@ -98,24 +98,5 @@ If the slot can't be found or if the slot can't accept this item, the item will 
 {
     toSlot = 6, -- Tries to move the item to this slot of the target inventory
     fromSlot = 36, -- Tries to remove the item from the offhand
-}
-```
-
-### Fingerprints
-
-The `fingerprint` is a MD5 hash calculated of the nbt tag, the registry name and the display name.
-
-This can be useful if you want to only filter for one very specific item.
-Also helpful if you don't want to copy the nbt tag for an item into the filter.
-
-A `fingerprint` can be generated with the `/advancedperipherals getHashItem` command while holding the item in your main
-hand.
-
-If the `fingerprint` field is specified, the `nbt` and `name` field will be ignored.
-
-```lua
-{
-    fingerprint = "227FCCBE693942047DD04AA96F735F2E" -- The hash for a protection 4 enchanted book
-    count = 5 -- Try to move 5 protection 4 books to the target inventory
 }
 ```
