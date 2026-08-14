@@ -13,6 +13,23 @@ The Saddle Turtle allow you to capture an entity or a player on to the turtle.
 
 ---
 
+## Events
+
+### saddle_control
+
+Fires when a player pressed/released movement key while riding on a saddle turtle.
+
+**Values:**
+1. `direction: string` The direction of player's movement key.
+2. `pressed: boolean` `true` if the player pressed down the movement key, or `false` if it is released.
+
+```lua linenums="1"
+local event, direction, pressed = os.pullEvent('saddle_control')
+print('Player ' .. (pressed and 'pressed' or 'released') .. ' key ' .. direction)
+```
+
+---
+
 ## Functions
 
 ---
