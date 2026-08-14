@@ -107,7 +107,7 @@ You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_t
 local chatBox = peripheral.find("chat_box")
 
 local message = {
-    {text = "Click "}, 
+    {text = "Click "},
     {
         text = "here",
         underlined = true,
@@ -125,6 +125,24 @@ local message = {
 local json = textutils.serialiseJSON(message)
 
 chatBox.sendFormattedMessage(json)
+```
+
+Since 1.21.1, `run_command` can no longer send chat message.  
+You may use `/ap-chatbox` command to send message to all chatboxes. It will have equivalent effect than send `$` prefixed messages.
+
+```lua linenums="1"
+local message = {
+    {
+        text = "Click to say hi to all chatboxes!",
+        underlined = true,
+        clickEvent = {
+            action = "run_command",
+            value = "/ap-chatbox hi"
+        }
+    }
+}
+
+chatBox.sendFormattedMessage(textutils.serialiseJSON(message))
 ```
 
 ---
