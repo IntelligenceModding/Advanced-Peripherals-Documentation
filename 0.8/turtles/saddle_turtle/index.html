@@ -1746,6 +1746,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saddle_control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        saddle_control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3393,6 +3421,34 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saddle_control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        saddle_control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3506,6 +3562,17 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 <p class="picture-spacing" style="--ps:6.3rem;"></p>
 
 <hr />
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="saddle_control">saddle_control<a class="headerlink" href="#saddle_control" title="Permanent link">&para;</a></h3>
+<p>Fires when a player pressed/released movement key while riding on a saddle turtle.</p>
+<p><strong>Values:</strong>
+1. <code>direction: string</code> The direction of player's movement key.
+2. <code>pressed: boolean</code> <code>true</code> if the player pressed down the movement key, or <code>false</code> if it is released.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">direction</span><span class="p">,</span><span class="w"> </span><span class="nv">pressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s1">&#39;saddle_control&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Player &#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="p">(</span><span class="nv">pressed</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="s1">&#39;pressed&#39;</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="s1">&#39;released&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s1">&#39; key &#39;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">direction</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<hr />
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <hr />
 <h3 id="capture">capture<a class="headerlink" href="#capture" title="Permanent link">&para;</a></h3>
@@ -3553,7 +3620,7 @@ Added the Saddle Turtle</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 13, 2026 21:19:16 UTC">April 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2026 20:47:48 UTC">August 14, 2026</span>
   </span>
 
     
