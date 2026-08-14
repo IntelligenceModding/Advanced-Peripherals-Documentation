@@ -565,6 +565,7 @@ The new crafting event will be fired when the state of a task will change.
 
 The name of the event is prefixed depending if you use the RS or ME Bridge.
 Use `rs_crafting` for the RS Bridge and `me_crafting` for the ME Bridge.
+
 **Values:**
 
 1. `error: boolean` If an error occurred and the calculation or crafting was not successful

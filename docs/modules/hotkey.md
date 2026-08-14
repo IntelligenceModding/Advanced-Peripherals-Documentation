@@ -19,6 +19,7 @@ Hotkey is configurable at player's client.
 Fires when the player pressed the hotkey.
 
 **Values:**
+
 1. `keyBind: string` The hotkey the player bound to.
 2. `keyPressDuration: number` The duration the hotkey was held down, in milliseconds.
 
