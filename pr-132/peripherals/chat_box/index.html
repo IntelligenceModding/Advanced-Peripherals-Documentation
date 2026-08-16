@@ -98,9 +98,9 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-You are currently viewing documentation for the upcoming 0.8 version. This version is not released yet and the documentation is still under development and only for testing purposes.
-<a href="../../..">
-    <strong>Click here to go to the latest supported.</strong>
+You are currently reading the documentation for 0.8. This is subject to change while we prepare a beta and stable release.
+<a href="/0.8/changelogs/0.8">
+    <strong>Please read the changelog.</strong>
 </a>
 
           </div>
@@ -3877,7 +3877,7 @@ You can generate the json at <a href="https://minecraft.tools/en/json_text.php?j
 <span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">chatBox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">&quot;chat_box&quot;</span><span class="p">)</span>
 
 <span class="kd">local</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">{</span><span class="nv">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Click &quot;</span><span class="p">},</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span><span class="nv">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Click &quot;</span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="nv">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;here&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nv">underlined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -3895,6 +3895,32 @@ You can generate the json at <a href="https://minecraft.tools/en/json_text.php?j
 <span class="kd">local</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">textutils</span><span class="p">.</span><span class="nf">serialiseJSON</span><span class="p">(</span><span class="nv">message</span><span class="p">)</span>
 
 <span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendFormattedMessage</span><span class="p">(</span><span class="nv">json</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Since 1.21.1, <code>run_command</code> can no longer send chat message.<br />
+You may use <code>/ap-chatbox</code> command to send message to all chatboxes. It will have equivalent effect than send <code>$</code> prefixed messages.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Click to say hi to all chatboxes!&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">underlined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">clickEvent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nv">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;run_command&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/ap-chatbox hi&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">chatBox</span><span class="p">.</span><span class="nf">sendFormattedMessage</span><span class="p">(</span><span class="nv">textutils</span><span class="p">.</span><span class="nf">serialiseJSON</span><span class="p">(</span><span class="nv">message</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="sendtoast">sendToast<a class="headerlink" href="#sendtoast" title="Permanent link">&para;</a></h3>
@@ -4054,7 +4080,7 @@ Added the chat box. This was the first feature of the mod.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 17, 2026 01:34:44 UTC">July 17, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2026 22:58:36 UTC">August 14, 2026</span>
   </span>
 
     

@@ -98,9 +98,9 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-You are currently viewing documentation for the upcoming 0.8 version. This version is not released yet and the documentation is still under development and only for testing purposes.
-<a href="../../..">
-    <strong>Click here to go to the latest supported.</strong>
+You are currently reading the documentation for 0.8. This is subject to change while we prepare a beta and stable release.
+<a href="/0.8/changelogs/0.8">
+    <strong>Please read the changelog.</strong>
 </a>
 
           </div>
@@ -3613,9 +3613,11 @@ Hotkey is configurable at player's client.</p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
 <h3 id="glasses_key_pressed">glasses_key_pressed<a class="headerlink" href="#glasses_key_pressed" title="Permanent link">&para;</a></h3>
 <p>Fires when the player pressed the hotkey.</p>
-<p><strong>Values:</strong>
-1. <code>keyBind: string</code> The hotkey the player bound to.
-2. <code>keyPressDuration: number</code> The duration the hotkey was held down, in milliseconds.</p>
+<p><strong>Values:</strong></p>
+<ol>
+<li><code>keyBind: string</code> The hotkey the player bound to.</li>
+<li><code>keyPressDuration: number</code> The duration the hotkey was held down, in milliseconds.</li>
+</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">event</span><span class="p">,</span><span class="w"> </span><span class="nv">keyBind</span><span class="p">,</span><span class="w"> </span><span class="nv">keyPressDuration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">os</span><span class="p">.</span><span class="nf">pullEvent</span><span class="p">(</span><span class="s2">&quot;glasses_key_pressed&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The hotkey &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">keyBind</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot; pressed for &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">keyPressDuration</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot;ms&quot;</span><span class="p">)</span>
@@ -3646,7 +3648,7 @@ Added Hotkey Module</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 14, 2026 22:11:07 UTC">June 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2026 20:50:50 UTC">August 14, 2026</span>
   </span>
 
     

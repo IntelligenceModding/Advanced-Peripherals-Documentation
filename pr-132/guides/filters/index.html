@@ -98,9 +98,9 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-You are currently viewing documentation for the upcoming 0.8 version. This version is not released yet and the documentation is still under development and only for testing purposes.
-<a href="../../..">
-    <strong>Click here to go to the latest supported.</strong>
+You are currently reading the documentation for 0.8. This is subject to change while we prepare a beta and stable release.
+<a href="/0.8/changelogs/0.8">
+    <strong>Please read the changelog.</strong>
 </a>
 
           </div>
@@ -996,17 +996,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#nbt-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NBT Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#data-components" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1018,10 +1007,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#nbt-hash" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots
+        NBT Hash
       
     </span>
   </a>
@@ -1029,10 +1018,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#fingerprints" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fingerprints
+        Slots
       
     </span>
   </a>
@@ -3609,17 +3598,6 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#nbt-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        NBT Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#data-components" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3631,10 +3609,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#nbt-hash" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slots
+        NBT Hash
       
     </span>
   </a>
@@ -3642,10 +3620,10 @@ You are currently viewing documentation for the upcoming 0.8 version. This versi
 </li>
         
           <li class="md-nav__item">
-  <a href="#fingerprints" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fingerprints
+        Slots
       
     </span>
   </a>
@@ -3700,8 +3678,8 @@ These can set the item, count, slots, tags, nbt or fingerprint values.</p>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
 <h3 id="itemfluid-name-and-tag">Item/Fluid Name and Tag<a class="headerlink" href="#itemfluid-name-and-tag" title="Permanent link">&para;</a></h3>
 <p>The item's/fluid's filter name or tag can be specified with the <code>name</code> field.
-If this field is not set, the filter will try to search for items with the right nbt values specified in the <code>nbt</code> field
-or fingerprints.</p>
+The filter will also try to match items with the right nbt values specified in the <code>components</code>,
+or <code>nbtHash</code> (see CC: T <code>nbt</code> attribute) field.</p>
 <p>This can be a tag or a name. To filter for tags, place a <code>#</code> in front of the name.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:enchanted_book&quot;</span><span class="w"> </span><span class="c1">-- Will just search for an enchanted book, nbt values are ginored</span>
@@ -3712,43 +3690,40 @@ or fingerprints.</p>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="count">Count<a class="headerlink" href="#count" title="Permanent link">&para;</a></h3>
-<p>The item's/fluid's filter amout can be specified with the <code>count</code> field.
-Standard values are 64 or 1000 for fluids.</p>
+<p>The item's/fluid's filter amount can be specified with the <code>count</code> field.
+By default it will export unlimited amount.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:cobblestone&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;minecraft:cobblestone&#39;</span><span class="p">,</span>
 <span class="w">    </span><span class="nv">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">128000</span><span class="w"> </span><span class="c1">-- Will try to export 128000 cobblestone to the target inventory. It will transfer less if there is not enough space in the target inventory or if there aren&#39;t enough items in the source inventory</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="nbt-values">NBT Values<a class="headerlink" href="#nbt-values" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Only for MC versions 1.20.4 and older!</p>
-</div>
-<p><a href="https://minecraft.fandom.com/wiki/NBT_format">NBT Values</a> are specified with the <code>nbt</code> field. The field needs to be a
-string which contains a json which can be parsed to a nbt tag.</p>
+<h3 id="data-components">Data Components<a class="headerlink" href="#data-components" title="Permanent link">&para;</a></h3>
+<p>The field needs to be a table or an <a href="https://minecraft.wiki/w/NBT_format#SNBT_format">SNBT</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:enchanted_book&quot;</span><span class="w"> </span>
-<span class="w">    </span><span class="nv">nbt</span><span class="o">=</span><span class="s2">&quot;{StoredEnchantments: [{lvl: 2s, id: </span><span class="se">\&quot;</span><span class="s2">minecraft:blast_protection</span><span class="se">\&quot;</span><span class="s2">}]}&quot;</span><span class="p">}</span><span class="w"> </span><span class="c1">-- Will search for an enchanted book with the blast protection enchantment level 2</span>
+<span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;minecraft:enchanted_book&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">-- Will search for an enchanted book with the blast protection enchantment level 2</span>
+<span class="w">    </span><span class="nv">components</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;{&quot;minecraft:stored_enchantments&quot;: {levels: {&quot;minecraft:blast_protection&quot;: 2}}}&#39;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Any strings inside the nbt value needs to be prefixed with a \</p>
-<h3 id="data-components">Data Components<a class="headerlink" href="#data-components" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Only for MC versions 1.20.5 and newer!</p>
-</div>
-<p>Since 1.20.5, mojang moved to a new data component system to store data for items and other things instead of using NBT.
-To use that new filter, you need to provide a <code>components</code> key instead of the old <code>nbt</code> key.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;minecraft:enchanted_book&quot;</span><span class="w"> </span>
-<span class="w">    </span><span class="nv">components</span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">-- Will search for an enchanted book with the aqua affinity enchantment level 1</span>
+<span class="w">    </span><span class="nv">components</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="p">[</span><span class="s2">&quot;minecraft:stored_enchantments&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="nv">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                </span><span class="p">[</span><span class="s2">&quot;minecraft:aqua_affinity&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="c1">-- Will search for an enchanted book with the aqua affinity enchantment level 1</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Other AP features also return a <code>components</code> key for items which you can directly use as a filter.</p>
+<h3 id="nbt-hash">NBT Hash<a class="headerlink" href="#nbt-hash" title="Permanent link">&para;</a></h3>
+<p><code>nbtHash</code> is a field that provides compatibility with CC: T's <code>nbt</code> attribute.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nv">nbtHash</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="c1">-- will export items without NBT when nbt hash is empty string</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3 id="slots">Slots<a class="headerlink" href="#slots" title="Permanent link">&para;</a></h3>
 <div class="admonition danger">
 <p class="admonition-title">Only available for item filters</p>
@@ -3761,18 +3736,6 @@ Like <code>toSlot</code> if you use it for <code>importItem</code></p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nv">toSlot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="c1">-- Tries to move the item to this slot of the target inventory</span>
 <span class="w">    </span><span class="nv">fromSlot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">36</span><span class="p">,</span><span class="w"> </span><span class="c1">-- Tries to remove the item from the offhand</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="fingerprints">Fingerprints<a class="headerlink" href="#fingerprints" title="Permanent link">&para;</a></h3>
-<p>The <code>fingerprint</code> is a MD5 hash calculated of the nbt tag, the registry name and the display name.</p>
-<p>This can be useful if you want to only filter for one very specific item.
-Also helpful if you don't want to copy the nbt tag for an item into the filter.</p>
-<p>A <code>fingerprint</code> can be generated with the <code>/advancedperipherals getHashItem</code> command while holding the item in your main
-hand.</p>
-<p>If the <code>fingerprint</code> field is specified, the <code>nbt</code> and <code>name</code> field will be ignored.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nv">fingerprint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;227FCCBE693942047DD04AA96F735F2E&quot;</span><span class="w"> </span><span class="c1">-- The hash for a protection 4 enchanted book</span>
-<span class="w">    </span><span class="nv">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="c1">-- Try to move 5 protection 4 books to the target inventory</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -3797,7 +3760,7 @@ hand.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 13, 2026 20:14:22 UTC">April 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2026 21:42:44 UTC">August 14, 2026</span>
   </span>
 
     
