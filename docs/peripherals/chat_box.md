@@ -67,7 +67,7 @@ Returns true if the message is successfully sent, or nil and an error message if
     range: number | nil = the broadcast range
     prefix: string | nil = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
     brackets: string | nil = used around the prefix. Must specify a two length string like "[]", "()", "<>", ...
-    bracketColor: string | nil = specifies the color to use for the brackets, must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
+    bracketsColor: string | nil = specifies the color to use for the brackets, must be in the [MOTD code format](https://www.digminecraft.com/lists/color_list_pc.php).
 }
 ```
 
@@ -83,13 +83,13 @@ sleep(1)
 
 -- Sends message "Welcome!" with cyan <> brackets around "<Box>"
 -- to players within 30 blocks of the chat box
-chatBox.sendMessage("Welcome!", {prefix="Box", brackets="<>", bracketColor="&b", range=30})
+chatBox.sendMessage("Welcome!", {prefix="Box", brackets="<>", bracketsColor="&b", range=30})
 
 chatBox.sendMessage("Hello there.", {player="Player123"}) -- Sends "[AP] Hello there." to Player123 in chat
 ```
 
 !!! tip
-    Just like the `bracketColor` argument you can add colors to the `message` and `prefix` arguments using the same [MOTD color code format](https://www.digminecraft.com/lists/color_list_pc.php).  
+    Just like the `bracketsColor` argument you can add colors to the `message` and `prefix` arguments using the same [MOTD color code format](https://www.digminecraft.com/lists/color_list_pc.php).  
     Since CC doesn't accept non-ascii charactor `§`, you should replace it with `&`.  
     If you want to send colored message but not only colored brackets, please use [`sendFormattedMessage()`](#sendformattedmessage) instead.
 
@@ -165,7 +165,7 @@ Sends a toast to the specified player. The design of the toast is the classic no
     utf8: boolean | nil = if strings should be treated as encoded utf8
     prefix: string | nil = change the text that appears inside the brackets at the start of a message. Defaults to "AP".
     brackets: string | nil = used around the prefix
-    bracketColor: string | nil = specifies the color to use for the brackets
+    bracketsColor: string | nil = specifies the color to use for the brackets
 }
 ```
 
@@ -178,7 +178,7 @@ chatBox.sendToastToPlayer({
     player = "Dev",
     prefix = "&4&lBoxi",
     brackets = "()",
-    bracketColor = "&c&l",
+    bracketsColor = "&c&l",
 })
 ```
 
@@ -217,7 +217,7 @@ successful, error = chatBox.sendFormattedToast({
     player = "Dev",
     prefix = "&4&lBoxi",
     brackets = "()",
-    bracketColor = "&c&l",
+    bracketsColor = "&c&l",
 })
 ```
 
