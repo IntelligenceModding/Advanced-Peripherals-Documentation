@@ -15,7 +15,7 @@ The following functions can be used for both the ME and RS Bridge
 
 !!! info
     The item arguments(`filter: table`) accepts our item/fluid/chemical filters, you can check the syntax of these
-    filters [here](/../guides/filters).
+    filters [here](/../0.7/guides/filters).
 
 ### isConnected
 
