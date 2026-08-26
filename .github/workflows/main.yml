@@ -2,7 +2,7 @@ name: Publish Documentation
 on:
   push:
     branches:
-      - '0.[0-9]+'
+      - '\d+\.\d+'
 
 permissions:
   contents: write # allows pushing to gh-pages
@@ -34,6 +34,8 @@ jobs:
 
       - name: Deploy Version
         env:
+          LATEST_BRANCH_NAME: '0.7'
+          CANARY_BRANCH_NAME: '0.8'
           EDIT_BRANCH_URI: edit/${{ github.ref_name }}/docs/
           MKDOCS_PLUGINS: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,12 +47,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          if [ "$BRANCH_NAME" == "main" ]; then
-            poetry run mike deploy --push --update-aliases dev
-          elif [ "$BRANCH_NAME" == "0.8" ]; then
-            poetry run mike deploy --push --update-aliases 0.8 canary
-          elif [ "$BRANCH_NAME" == "0.7" ]; then
-            poetry run mike deploy --push --update-aliases 0.7 latest
+          if [ "$BRANCH_NAME" == "$CANARY_BRANCH_NAME" ]; then
+            poetry run mike deploy --push --update-aliases --alias-type redirect "$BRANCH_NAME" canary
+          elif [ "$BRANCH_NAME" == "$LATEST_BRANCH_NAME" ]; then
+            poetry run mike deploy --push --update-aliases --alias-type redirect "$BRANCH_NAME" latest
           else
             poetry run mike deploy --push "$BRANCH_NAME"
           fi

@@ -1,7 +1,8 @@
 name: Cleanup PR Preview
 on:
   pull_request:
-    types: [closed]
+    types:
+      - closed
 
 permissions:
   contents: write
