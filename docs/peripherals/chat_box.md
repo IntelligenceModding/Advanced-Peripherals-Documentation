@@ -172,7 +172,7 @@ Sends a toast to the specified player. The design of the toast is the classic no
 ```lua linenums="1"
 local chatBox = peripheral.find("chat_box")
 
-chatBox.sendToastToPlayer({
+chatBox.sendToast({
     message = "I will chat box you",
     title = "Hello",
     player = "Dev",
@@ -188,7 +188,7 @@ chatBox.sendToastToPlayer({
 ```
 sendFormattedToast(options: table) -> true | nil, string
 ```
-This function is fundamentally the same as [`sendToast()`](#sendtoasttoplayer) except it takes a json text component for `message`, and `title` fields.  
+This function is fundamentally the same as [`sendToast()`](#sendtoast) except it takes a json text component for `message`, and `title` fields.  
 Find out more information on how the text component format works on the [minecraft wiki](https://minecraft.wiki/w/Text_component_format).
 You can generate the json at [minecraft.tools](https://minecraft.tools/en/json_text.php?json=Welcome%20to%20Minecraft%20Tools).
 
