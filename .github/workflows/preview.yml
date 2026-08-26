@@ -1,7 +1,10 @@
 name: PR Preview
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 permissions:
   contents: write
@@ -35,7 +38,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           # Deploy to a version named 'pr-{number}'
-          poetry run mike deploy --push pr-${{ github.event.number }}
+          poetry run mike deploy --push --no-update pr-${{ github.event.number }}
           
           echo "Preview available at: https://docs.advanced-peripherals.de/pr-${{ github.event.number }}/"
       - name: Post PR Comment

@@ -1,7 +1,8 @@
 name: Cleanup PR Preview
 on:
   pull_request:
-    types: [closed]
+    types:
+      - closed
 
 permissions:
   contents: write
@@ -19,14 +20,12 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install dependencies
-        run: |
-          pip install poetry
-          poetry install
+      - name: Install mike
+        run: pip install mike
 
       - name: Delete Preview
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          poetry run mike delete --push pr-${{ github.event.number }}
+          mike delete --push pr-${{ github.event.number }}
