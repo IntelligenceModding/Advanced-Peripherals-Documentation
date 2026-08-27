@@ -37,10 +37,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Deploy to a version named 'pr-{number}'
-          poetry run mike deploy --push --no-update pr-${{ github.event.number }}
+          # Deploy to a version named 'pr/{number}'
+          poetry run mike deploy --push --deploy-prefix pr ${{ github.event.number }}
           
-          echo "Preview available at: https://docs.advanced-peripherals.de/pr-${{ github.event.number }}/"
+          echo "Preview available at: https://docs.advanced-peripherals.de/pr/${{ github.event.number }}/"
       - name: Post PR Comment
         uses: marocchino/sticky-pull-request-comment@v2
         with:
@@ -51,9 +51,9 @@ jobs:
             | Item | Details |
             | :--- | :--- |
             | **Status** | ✅ Deployed Successfully |
-            | **Preview Link** | [View Documentation](https://docs.advanced-peripherals.de/pr-${{ github.event.number }}/) |
+            | **Preview Link** | [View Documentation](https://docs.advanced-peripherals.de/pr/${{ github.event.number }}/) |
             | **Source Branch** | `${{ github.head_ref }}` |
-            | **Version Alias** | `pr-${{ github.event.number }}` |
+            | **Version Alias** | `pr/${{ github.event.number }}` |
             
             > [!NOTE]
             > The **Edit** buttons on this preview link directly to your branch. Changes made there will update this preview after a few minutes.

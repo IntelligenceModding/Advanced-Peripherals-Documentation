@@ -28,4 +28,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          mike delete --push pr-${{ github.event.number }}
+          mike delete --push --deploy-prefix pr ${{ github.event.number }}
