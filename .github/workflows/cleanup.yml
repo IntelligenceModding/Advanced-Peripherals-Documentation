@@ -20,12 +20,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install mike
-        run: pip install mike
+      - name: Install poetry
+        run: |
+          pip install poetry
+          poetry install
 
       - name: Delete Preview
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          mike delete --push --deploy-prefix pr ${{ github.event.number }}
+          poetry run mike delete --push --deploy-prefix pr ${{ github.event.number }}
