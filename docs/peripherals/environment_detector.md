@@ -137,9 +137,18 @@ getMoon() -> number, string
 Returns the current moon phase's id and its name
 
 !!! info
-    There are 8 different moon phases, see below a list of their names and ids
+    There are 8 different moon phases:
 
-    `0 = Full moon`, `1 = Waning gibbous`, `2 = Third quarter`, `3 = Waning crescent`, `4 = New moon`, `5 = Waxing crescent`, `6 = First quarter`, `7 = Waxing gibbous`
+    | ID  | Name            |
+    | --- | --------------- |
+    | 0   | Full moon       |
+    | 1   | Waning gibbous  |
+    | 2   | Third quarter   |
+    | 3   | Waning crescent |
+    | 4   | New moon        |
+    | 5   | Waxing crescent |
+    | 6   | First quarter   |
+    | 7   | Waxing gibbous  |
 
 ---
 
@@ -213,11 +222,13 @@ Returns the current raw radiation level in Sv/h.
 ### scanEntities
 
 ```
-scanEntities(range: number) -> table
+scanEntities(range: number, detailed: boolean | nil, filter: string | nil) -> table
 ```
 
 Returns a table with all [entities](../guides/lua_objects.md#entity) in the given range.  
 Coordinates are relative and not absolute.
+
+`filter` may be an entity type ID, or an entity tag starts with `#`.
 
 ---
 
@@ -238,7 +249,7 @@ Coordinates are relative and not absolute.
 ## Changelog/Trivia
 
 **0.8**
-Added vs2 integration `scanShips`, `scanShipCost`.
+Added vs2 integration `scanShips`.
 
 **0.6.5b**  
 Added `getRadiationRaw`

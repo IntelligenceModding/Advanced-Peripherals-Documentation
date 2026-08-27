@@ -45,6 +45,7 @@ Configuration table is in the following format:
             type: string = <operation type>
             [<addition fields>] = <addition values>
             getCost(args...) -> number
+            getCooldown() -> number
         }
     }
 }
@@ -52,18 +53,6 @@ Configuration table is in the following format:
 
 !!! note
     `operations` field only exists if any operation presents on the peripheral.
-
----
-
-### getOperationCooldown
-```
-getOperationCooldown(operationName: string) -> number
-```
-
-Returns the remaining cooldown of an operation in milliseconds.
-
-!!! note
-    This method only exists if any operation presents on the peripheral.
 
 ---
 
@@ -80,3 +69,6 @@ See [Disabled Peipherals](../guides/disabled_peripherals.md) for more informatio
 ---
 
 ## Changelog/Trivia
+
+**0.8**  
+`getOperationCooldown` is replaced by `getCooldown` method returned in `getConfiguration`.
