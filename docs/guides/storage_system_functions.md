@@ -15,7 +15,7 @@ The following functions can be used for both the ME and RS Bridge
 
 !!! info
     The item arguments(`filter: table`) accepts our item/fluid/chemical filters, you can check the syntax of these
-    filters [here](/../guides/filters).
+    filters [here](../guides/filters.md).
 
 ### isConnected
 
@@ -600,7 +600,7 @@ Returns every crafting task that is currently running.
 getCraftingJob(id: int) -> table | nil, string
 ```
 
-Returns the [Crafting Job Object](/../guides/storage_system_functions#crafting-job) with the id. Nil if no object could be found
+Returns the [Crafting Job Object](../guides/storage_system_functions.md#crafting-job) with the id. Nil if no object could be found
 
 ---
 
@@ -668,7 +668,7 @@ isCraftable(filter: table) -> boolean
 ```
 
 Returns true if there is a pattern for the provided filter or nil if there was an issue with parsing the filter.
-The filter can be an item filter, a chemical filter or a fluid filter. See [filter types](/../guides/filters/#types)
+The filter can be an item filter, a chemical filter or a fluid filter. See [filter types](../guides/filters.md/#types)
 
 ---
 
@@ -680,11 +680,11 @@ isCrafting(filter: table) -> boolean
 
 Returns true if there is a crafting job running for the provided filter or nil if there was an issue with parsing the
 filter.
-The filter can be an item filter, a chemical filter or a fluid filter. See [filter types](/../guides/filters/#types)
+The filter can be an item filter, a chemical filter or a fluid filter. See [filter types](../guides/filters.md/#types)
 
 ## Objects
 
-Every object here is inherited from common lua objects, see [LuaObjects](/../guides/objects)
+Every object here is inherited from common lua objects, see [LuaObjects](../guides/objects.md)
 Please note that due to different natures of AE2 and RS that not every object is the same.
 
 ### Item Stack
@@ -723,7 +723,7 @@ not.
 
 | Property     | Type                                   | Description                      |
 |--------------|----------------------------------------|----------------------------------|
-| item         | [Item Object](/../guides/objects#item) | Disk as an Item                  |
+| item         | [Item Object](../guides/objects.md#item) | Disk as an Item                  |
 | usedBytes    | number                                 | Used Bytes                       |
 | totalBytes   | number                                 | Types capacity (Usually 63)      |
 | bytes        | number                                 | Bytes capacity                   |
@@ -739,9 +739,9 @@ Storage DISK Drive from AE2 Things inherit the same properties from the classic 
 
 | Property      | Type                                                                                                                    | Description                                |
 |---------------|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| primaryOutput | [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects)                                             | Primary Output                             |
-| outputs       | Array of [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects). </br> Or AE2 Pattern Input object | Outputs                                    |
-| inputs        | Array of [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects)                                    | Inputs                                     |
+| primaryOutput | [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects)                                             | Primary Output                             |
+| outputs       | Array of [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects). </br> Or AE2 Pattern Input object | Outputs                                    |
+| inputs        | Array of [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects)                                    | Inputs                                     |
 | patternType   | string                                                                                                                  | Pattern Type, different for AE2 and RS[^5] |
 | id            | string                                                                                                                  | Pattern ID, only for RS                    |
 
@@ -749,8 +749,8 @@ Storage DISK Drive from AE2 Things inherit the same properties from the classic 
 
 | Property       | Type                                                                                 | Description                                                                              |
 |----------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| primaryInput   | [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects)          | Primary Input.                                                                           |
-| possibleInputs | Array of [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects) | Other possible Inputs                                                                    |
+| primaryInput   | [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects)          | Primary Input.                                                                           |
+| possibleInputs | Array of [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects) | Other possible Inputs                                                                    |
 | multiplier     | number                                                                               | How many possible inputs are necessary to craft this pattern                             |
 | remaining      | number                                                                               | Remaining items like buckets when a water bucket was used. Nil for non crafting patterns |
 
@@ -772,10 +772,10 @@ Storage DISK Drive from AE2 Things inherit the same properties from the classic 
 | bridge_id  | number                                                                          | The ID of that task when scheduled via the bride or -1 if not |
 | id         | string                                                                          | ID of the task                                                |
 | quantity   | number                                                                          | Amount scheduled                                              |
-| resource   | [Item/Fluid/Chem Stack Object](/../guides/storage_system_functions#objects)     | The scheduled resource                                        |
+| resource   | [Item/Fluid/Chem Stack Object](../guides/storage_system_functions.md#objects)     | The scheduled resource                                        |
 | completion | floating number between 0 and 1                                                 | Completion in percentage                                      |
 | crafted    | number                                                                          | Amount already crafted                                        |
-| cpu        | [AE2 Crafting CPU Object](/../guides/storage_system_functions#ae2-crafting-cpu) | The crafting cpu, nil for RS                                  |
+| cpu        | [AE2 Crafting CPU Object](../guides/storage_system_functions.md#ae2-crafting-cpu) | The crafting cpu, nil for RS                                  |
 
 ### Crafting Job
 

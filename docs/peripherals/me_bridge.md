@@ -70,7 +70,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
     ## Functions
     
     !!! info
-    The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](/../guides/filters).
+    The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](../guides/filters.md).
     
     
     ### craftItem
@@ -82,7 +82,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
     
     #### Item Properties
     
-    Check the [item filters guide](/../guides/filters) for more info!
+    Check the [item filters guide](../guides/filters.md) for more info!
     
     | item             | Description                                 |
     | ---------------- | ------------------------------------------- |
@@ -108,7 +108,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
     
     #### Fluid Properties
     
-    Check the [fluid filters guide](/../guides/filters) for more info!
+    Check the [fluid filters guide](../guides/filters.md) for more info!
     
     | fluid            | Description                                 |
     | ---------------- | ------------------------------------------- |
@@ -430,7 +430,7 @@ You can retrieve items, craft items, get all items as a list and more. The ME Br
 
     ## Functionality
     
-    The RS and ME Bridge now share the same functionality. Check [this Guide](../../guides/storage_system_functions) for the whole documentation for every available feature.
+    The RS and ME Bridge now share the same functionality. Check [this Guide](../../guides/storage_system_functions.md) for the whole documentation for every available feature.
 
     </div>
 

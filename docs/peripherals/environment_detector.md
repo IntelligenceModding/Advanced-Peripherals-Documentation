@@ -97,7 +97,7 @@ print("Dimension: " .. detector.getDimension())
 getDimensionPaN() -> string
 ```
 
-Similar to [`getDimensionName`](#getdimensionname) it returns the name of the dimension prefixed with the provider name (ex. `minecraft:overworld`).
+Similar to [`getDimension`](#getdimension) it returns the name of the dimension prefixed with the provider name (ex. `minecraft:overworld`).
 
 ---
 

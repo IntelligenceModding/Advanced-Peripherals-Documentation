@@ -44,7 +44,7 @@ You can retrieve items, craft items, get all items as a list and more.
     ## Functions
     
     !!! info
-    The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](/../guides/filters).
+    The item arguments(`item: table`) accepts our item filters, you can check the syntax of these filters [here](../guides/filters.md).
     
     ### craftItem
     ```
@@ -55,7 +55,7 @@ You can retrieve items, craft items, get all items as a list and more.
     
     #### Item Properties
     
-    Check the [item filters guide](/../guides/filters) for more info!
+    Check the [item filters guide](../guides/filters.md) for more info!
     
     | item             | Description                                 |
     | ---------------- | ------------------------------------------- |
@@ -81,7 +81,7 @@ You can retrieve items, craft items, get all items as a list and more.
     
     #### Fluid Properties
     
-    Check the [fluid filters guide](/../guides/filters) for more info!
+    Check the [fluid filters guide](../guides/filters.md) for more info!
     
     | fluid            | Description                                 |
     | ---------------- | ------------------------------------------- |
