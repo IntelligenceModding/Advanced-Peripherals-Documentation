@@ -5131,7 +5131,7 @@ of the item. An MD5 Hash can look like this <code>-682649218295023</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The item arguments(<code>filter: table</code>) accepts our item/fluid/chemical filters, you can check the syntax of these
-filters <a href="/../guides/filters">here</a>.</p>
+filters <a href="../filters/">here</a>.</p>
 </div>
 <h3 id="isconnected">isConnected<a class="headerlink" href="#isconnected" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>isConnected() -&gt; boolean
@@ -5479,7 +5479,7 @@ Or nil if there was an issue with parsing the filter</p>
 <h3 id="getcraftingtask">getCraftingTask<a class="headerlink" href="#getcraftingtask" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>getCraftingJob(id: int) -&gt; table | nil, string
 </code></pre></div>
-<p>Returns the <a href="/../guides/storage_system_functions#crafting-job">Crafting Job Object</a> with the id. Nil if no object could be found</p>
+<p>Returns the <a href="./#crafting-job">Crafting Job Object</a> with the id. Nil if no object could be found</p>
 <hr />
 <h3 id="cancelcraftingtasks">cancelCraftingTasks<a class="headerlink" href="#cancelcraftingtasks" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>cancelCraftingTasks(filter: table) -&gt; int
@@ -5552,16 +5552,16 @@ all, it will return every pattern.</p>
 <div class="highlight"><pre><span></span><code>isCraftable(filter: table) -&gt; boolean
 </code></pre></div>
 <p>Returns true if there is a pattern for the provided filter or nil if there was an issue with parsing the filter.
-The filter can be an item filter, a chemical filter or a fluid filter. See <a href="/../guides/filters/#types">filter types</a></p>
+The filter can be an item filter, a chemical filter or a fluid filter. See <a href="../filters/#types">filter types</a></p>
 <hr />
 <h3 id="iscrafting">isCrafting<a class="headerlink" href="#iscrafting" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>isCrafting(filter: table) -&gt; boolean
 </code></pre></div>
 <p>Returns true if there is a crafting job running for the provided filter or nil if there was an issue with parsing the
 filter.
-The filter can be an item filter, a chemical filter or a fluid filter. See <a href="/../guides/filters/#types">filter types</a></p>
+The filter can be an item filter, a chemical filter or a fluid filter. See <a href="../filters/#types">filter types</a></p>
 <h2 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h2>
-<p>Every object here is inherited from common lua objects, see <a href="/../guides/objects">LuaObjects</a>
+<p>Every object here is inherited from common lua objects, see <a href="../objects/">LuaObjects</a>
 Please note that due to different natures of AE2 and RS that not every object is the same.</p>
 <h3 id="item-stack">Item Stack<a class="headerlink" href="#item-stack" title="Permanent link">&para;</a></h3>
 <table>
@@ -5661,7 +5661,7 @@ not.</p>
 <tbody>
 <tr>
 <td>item</td>
-<td><a href="/../guides/objects#item">Item Object</a></td>
+<td><a href="../objects/#item">Item Object</a></td>
 <td>Disk as an Item</td>
 </tr>
 <tr>
@@ -5710,17 +5710,17 @@ not.</p>
 <tbody>
 <tr>
 <td>primaryOutput</td>
-<td><a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a></td>
+<td><a href="./#objects">Item/Fluid/Chem Stack Object</a></td>
 <td>Primary Output</td>
 </tr>
 <tr>
 <td>outputs</td>
-<td>Array of <a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a>. </br> Or AE2 Pattern Input object</td>
+<td>Array of <a href="./#objects">Item/Fluid/Chem Stack Object</a>. </br> Or AE2 Pattern Input object</td>
 <td>Outputs</td>
 </tr>
 <tr>
 <td>inputs</td>
-<td>Array of <a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a></td>
+<td>Array of <a href="./#objects">Item/Fluid/Chem Stack Object</a></td>
 <td>Inputs</td>
 </tr>
 <tr>
@@ -5747,12 +5747,12 @@ not.</p>
 <tbody>
 <tr>
 <td>primaryInput</td>
-<td><a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a></td>
+<td><a href="./#objects">Item/Fluid/Chem Stack Object</a></td>
 <td>Primary Input.</td>
 </tr>
 <tr>
 <td>possibleInputs</td>
-<td>Array of <a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a></td>
+<td>Array of <a href="./#objects">Item/Fluid/Chem Stack Object</a></td>
 <td>Other possible Inputs</td>
 </tr>
 <tr>
@@ -5836,7 +5836,7 @@ not.</p>
 </tr>
 <tr>
 <td>resource</td>
-<td><a href="/../guides/storage_system_functions#objects">Item/Fluid/Chem Stack Object</a></td>
+<td><a href="./#objects">Item/Fluid/Chem Stack Object</a></td>
 <td>The scheduled resource</td>
 </tr>
 <tr>
@@ -5851,7 +5851,7 @@ not.</p>
 </tr>
 <tr>
 <td>cpu</td>
-<td><a href="/../guides/storage_system_functions#ae2-crafting-cpu">AE2 Crafting CPU Object</a></td>
+<td><a href="./#ae2-crafting-cpu">AE2 Crafting CPU Object</a></td>
 <td>The crafting cpu, nil for RS</td>
 </tr>
 </tbody>
@@ -6011,7 +6011,7 @@ Tho these are no properties/fields, these are functions since always pulling the
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 13, 2026 20:29:49 UTC">April 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2026 05:49:48 UTC">August 27, 2026</span>
   </span>
 
     
