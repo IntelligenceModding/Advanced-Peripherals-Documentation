@@ -10,6 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: gh-pages
+  queue: max
+
 jobs:
   preview:
     runs-on: ubuntu-latest
