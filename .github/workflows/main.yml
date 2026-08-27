@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write # allows pushing to gh-pages
 
+concurrency:
+  group: gh-pages
+  queue: max
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
