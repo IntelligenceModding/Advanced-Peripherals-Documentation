@@ -1,0 +1,5503 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.advanced-peripherals.de/143/peripherals/colony_integrator/">
+      
+      
+        <link rel="prev" href="../rs_bridge/">
+      
+      
+        <link rel="next" href="../../turtles/chatty_turtle/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Colony Integrator - Advanced Peripherals</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#colony-integrator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+You are welcome to help us test and give feedback on our developing
+<a href="/0.8/">0.8 version</a>!
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Advanced Peripherals" class="md-header__button md-logo" aria-label="Advanced Peripherals" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Advanced Peripherals
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Colony Integrator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    IntelligenceModding/Advanced-Peripherals-Documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/disabled_peripherals/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chat_box/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Peripherals
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../turtles/chatty_turtle/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Turtles
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../items/ar_goggles/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Items
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../integrations/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mod Integrations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../changelogs/0.7.24r/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Changelogs
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Advanced Peripherals" class="md-nav__button md-logo" aria-label="Advanced Peripherals" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Advanced Peripherals
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    IntelligenceModding/Advanced-Peripherals-Documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../blog/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/archive/2025/01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    January 2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3">
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/category/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/disabled_peripherals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Peripherals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/objects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lua Objects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Item and Fluid Filters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/cooldowns_and_fuel_consumption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cooldowns and Fuel consumption
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/storage_system_functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage System Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/how_to_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to: report a bug or request a feature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Peripherals
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Peripherals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chat_box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat Box
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy_detector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Energy Detector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environment_detector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Detector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../player_detector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Detector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inventory_manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT Storage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_reader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Block Reader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geo_scanner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geo Scanner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redstone_integrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redstone Integrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ar_controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AR Controller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../me_bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ME Bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rs_bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RS Bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colony Integrator
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colony Integrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCitizens
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getCitizens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citizen-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citizen Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Work Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Home Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvisitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getVisitors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getVisitors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recruitcost-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        recruitCost properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuildings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getBuildings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getBuildings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getresearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getResearch
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getResearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirement-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirement Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirement Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-requirement-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Requirement Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-item-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cost item Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrequests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getRequests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getRequests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getworkorders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getWorkOrders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getWorkOrders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getworkorderresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getWorkOrderResources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getWorkOrderResources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuilderresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getBuilderResources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonyid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonyname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyName
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonystyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyStyle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getLocation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getLocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gethappiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getHappiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isActive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isunderattack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isUnderAttack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincolony" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isInColony
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iswithin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isWithin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfCitizens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxofcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        maxOfCitizens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofgraves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfGraves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofconstructionsites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfConstructionSites
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citizen-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citizen Monitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colony-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colony Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelogtrivia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog/Trivia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Turtles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Turtles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/chatty_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chatty Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/chunky_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chunky Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/environment_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/player_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/geo_scanner_turtle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geoscanning Turtle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6">
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metaphysics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metaphysics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/metaphysics/weak_automata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weak Automata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/metaphysics/husbandry_automata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Husbandry Automata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/metaphysics/end_automata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End Automata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../turtles/metaphysics/overpowered_automata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overpowered Automata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Items
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Items
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/ar_goggles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AR Goggles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/chunk_controller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chunk Controller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/computer_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/memory_card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory Card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/pocket_computer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pocket Computers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../integrations/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mod Integrations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mod Integrations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2">
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minecraft
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Minecraft
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/minecraft/beacon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beacon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/minecraft/noteblock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Note Block
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3">
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Botania
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Botania
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/botania/flowers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flowers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/botania/pool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mana Pool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/botania/spreader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mana Spreader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4">
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Create
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/create/basin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/create/blazeburner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blaze Burner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/create/fluidtank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluid Tank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/create/mechanicalmixer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanical Mixer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/create/scrollbehaviour/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blocks with Scroll Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../integrations/draconic_evolution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Draconic Evolution
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Draconic Evolution
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6">
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Immersive Engineering
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Immersive Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/immersive_engineering/connector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redstone Wire Connector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/immersive_engineering/probe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redstone Probe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrated Dynamics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Integrated Dynamics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/integrated_dynamics/variable_store/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variable Store
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../integrations/mekanism/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mekanism
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mekanism
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_9">
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Powah
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Powah
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/energy_cell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Energy cell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/furnator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Furnator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/magmator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Magmator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/reactor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reactor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/solar_panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solar panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/powah/thermo_generator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Thermo generator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_10">
+        
+          
+          <label class="md-nav__link" for="__nav_7_10" id="__nav_7_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage Drawers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Storage Drawers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/storage_drawers/drawer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drawer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelogs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Changelogs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelogs/0.7.24r/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog 0.7.24r
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelogs/0.7r/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog 0.7r
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getCitizens
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getCitizens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citizen-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citizen Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#work-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Work Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#home-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Home Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getvisitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getVisitors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getVisitors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recruitcost-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        recruitCost properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuildings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getBuildings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getBuildings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Structure Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getresearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getResearch
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getResearch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirement-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirement Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirement Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#building-requirement-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building Requirement Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-item-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cost item Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrequests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getRequests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getRequests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Request Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Item Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getworkorders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getWorkOrders
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getWorkOrders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getworkorderresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getWorkOrderResources
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getWorkOrderResources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuilderresources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getBuilderResources
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonyid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonyname" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyName
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcolonystyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getColonyStyle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getLocation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="getLocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gethappiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getHappiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isActive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isunderattack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isUnderAttack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isincolony" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isInColony
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iswithin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isWithin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfCitizens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxofcitizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        maxOfCitizens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofgraves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfGraves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amountofconstructionsites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        amountOfConstructionSites
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#citizen-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Citizen Monitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colony-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Colony Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelogtrivia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog/Trivia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/edit/BRANCH_NAME_HERE/docs/peripherals/colony_integrator.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/IntelligenceModding/Advanced-Peripherals-Documentation/raw/BRANCH_NAME_HERE/docs/peripherals/colony_integrator.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+    </a>
+  
+
+
+<h1 id="colony-integrator">Colony Integrator<a class="headerlink" href="#colony-integrator" title="Permanent link">¶</a></h1>
+<div class="admonition picture inline end">
+<p class="admonition-title">Picture</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/previews/colony_integrator.apng" data-desc-position="bottom"><img align="right" alt="!Image of the Colony Integrator block" src="../../img/previews/colony_integrator.apng"></a></p>
+</div>
+<p>The colony integrator can interact with a colony from MineColonies.</p>
+<div class="admonition warning">
+<p class="admonition-title">Requirement</p>
+<p>Requires the <a href="https://www.curseforge.com/minecraft/mc-mods/minecolonies">MineColonies</a> mod to be installed</p>
+</div>
+<p class="picture-spacing" style="--ps:1.9rem;"></p>
+
+<hr>
+<div class="center-table">
+<table>
+<thead>
+<tr>
+<th>Peripheral Name</th>
+<th>Interfaces with</th>
+<th>Has events</th>
+<th>Introduced in</th>
+<th>Minecraft version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colonyIntegrator</td>
+<td>Mine Colony</td>
+<td>No</td>
+<td>0.7r</td>
+<td>Below 1.21.1</td>
+</tr>
+<tr>
+<td>colony_integrator</td>
+<td>Mine Colony</td>
+<td>No</td>
+<td>-</td>
+<td>1.21.1 and above</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">¶</a></h2>
+<h3 id="getcitizens">getCitizens<a class="headerlink" href="#getcitizens" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code>getCitizens() -&gt; table
+</code></pre></div>
+<p>Returns a list of information about every citizen in the colony.</p>
+<h4 id="citizen-properties">Citizen Properties<a class="headerlink" href="#citizen-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>citizen</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id: <code>string</code></td>
+<td>The citizen's id</td>
+</tr>
+<tr>
+<td>name: <code>string</code></td>
+<td>The citizen's name</td>
+</tr>
+<tr>
+<td>age: <code>string</code></td>
+<td>The age of the citizen, either "child" or "adult"</td>
+</tr>
+<tr>
+<td>gender: <code>string</code></td>
+<td>The citizen's gender, either "male" or "female"</td>
+</tr>
+<tr>
+<td>location: <code>table</code></td>
+<td>The current location of the citizen (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>bedPos: <code>table</code></td>
+<td>The position of the citizen's bed (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>saturation: <code>number</code></td>
+<td>The citizen's food saturation</td>
+</tr>
+<tr>
+<td>happiness: <code>number</code></td>
+<td>An indicator of how happy the citizen is</td>
+</tr>
+<tr>
+<td>health: <code>number?</code></td>
+<td>The citizen's current health</td>
+</tr>
+<tr>
+<td>maxHealth: <code>number?</code></td>
+<td>The citizen's max health</td>
+</tr>
+<tr>
+<td>armor: <code>number?</code></td>
+<td>The citizen's current number of armor points</td>
+</tr>
+<tr>
+<td>toughness: <code>number?</code></td>
+<td>The citizen's armor toughness</td>
+</tr>
+<tr>
+<td>betterFood: <code>boolean</code></td>
+<td>Whether the citizen needs better food</td>
+</tr>
+<tr>
+<td>isAsleep: <code>boolean</code></td>
+<td>If the citizen is currently asleep</td>
+</tr>
+<tr>
+<td>isIdle: <code>boolean</code></td>
+<td>If the citizen is currently idle</td>
+</tr>
+<tr>
+<td>state: <code>string</code></td>
+<td>A string representing the citizen's current state</td>
+</tr>
+<tr>
+<td>children: <code>table</code></td>
+<td>A list of the ids of this citizen's children</td>
+</tr>
+<tr>
+<td>skills: <code>table</code></td>
+<td>A table of skill names to skills where each skill has<br>a <code>level</code> and <code>xp</code> number</td>
+</tr>
+<tr>
+<td>work: <code>table?</code></td>
+<td>A table of info about the citizen's job</td>
+</tr>
+<tr>
+<td>home: <code>table?</code></td>
+<td>A table of info about the citizen's house</td>
+</tr>
+</tbody>
+</table>
+<h4 id="work-properties">Work Properties<a class="headerlink" href="#work-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>work</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name: <code>string</code></td>
+<td>The name of the work building</td>
+</tr>
+<tr>
+<td>job: <code>string</code></td>
+<td>The name of the job</td>
+</tr>
+<tr>
+<td>location: <code>table</code></td>
+<td>The work location (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>type: <code>string</code></td>
+<td>The building type</td>
+</tr>
+<tr>
+<td>level: <code>number</code></td>
+<td>The building's level</td>
+</tr>
+</tbody>
+</table>
+<h4 id="home-properties">Home Properties<a class="headerlink" href="#home-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>home</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location: <code>table</code></td>
+<td>The home location (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>type: <code>string</code></td>
+<td>The building type</td>
+</tr>
+<tr>
+<td>level: <code>number</code></td>
+<td>The building's level</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getvisitors">getVisitors<a class="headerlink" href="#getvisitors" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getVisitors() -&gt; table
+</code></pre></div>
+Returns a list of information about all of the visitors in your colony's tavern.<br>
+This information is the same as the <code>citizen</code> table but there is an additional <code>recruitCost</code> table.<p></p>
+<h4 id="recruitcost-properties"><code>recruitCost</code> properties<a class="headerlink" href="#recruitcost-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name: <code>string</code></td>
+<td>The registry name of the item</td>
+</tr>
+<tr>
+<td>count: <code>number</code></td>
+<td>The amount of the item</td>
+</tr>
+<tr>
+<td>maxStackSize: <code>number</code></td>
+<td>Maximum stack size for the item type</td>
+</tr>
+<tr>
+<td>displayName: <code>string</code></td>
+<td>The item's display name</td>
+</tr>
+<tr>
+<td>tags: <code>table</code></td>
+<td>A list of item tags</td>
+</tr>
+<tr>
+<td>nbt: <code>table</code></td>
+<td>The item's nbt data</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getbuildings">getBuildings<a class="headerlink" href="#getbuildings" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getBuildings() -&gt; table
+</code></pre></div>
+Returns a list of details about every building in the colony.<p></p>
+<h4 id="building-properties">Building Properties<a class="headerlink" href="#building-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>building</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name: <code>string</code></td>
+<td>The name of the building</td>
+</tr>
+<tr>
+<td>location: <code>table</code></td>
+<td>The buildings's location (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>type: <code>string</code></td>
+<td>The building type</td>
+</tr>
+<tr>
+<td>level: <code>number</code></td>
+<td>The building's level</td>
+</tr>
+<tr>
+<td>maxLevel: <code>number</code></td>
+<td>The building's max level</td>
+</tr>
+<tr>
+<td>style: <code>string</code></td>
+<td>The building's style</td>
+</tr>
+<tr>
+<td>storageBlocks: <code>number</code></td>
+<td>The number of storage blocks in the building</td>
+</tr>
+<tr>
+<td>storageSlots: <code>number</code></td>
+<td>The number of storage slots</td>
+</tr>
+<tr>
+<td>guarded: <code>boolean</code></td>
+<td>If the building is currently being guarded</td>
+</tr>
+<tr>
+<td>built: <code>boolean</code></td>
+<td>If the building is built or is under construction</td>
+</tr>
+<tr>
+<td>isWorkingOn: <code>boolean</code></td>
+<td>Whether the building is being worked on</td>
+</tr>
+<tr>
+<td>priority: <code>number</code></td>
+<td>The building's construction priority</td>
+</tr>
+<tr>
+<td>structure: <code>table</code></td>
+<td>A table defining the bounds of the structure</td>
+</tr>
+<tr>
+<td>citizens: <code>table</code></td>
+<td>A list of citizen's <code>name</code>s and <code>id</code>s</td>
+</tr>
+</tbody>
+</table>
+<h4 id="structure-properties">Structure Properties<a class="headerlink" href="#structure-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>structure</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cornerA: <code>table</code></td>
+<td>The first corner of the bounds (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>cornerB: <code>table</code></td>
+<td>The second corner of the bounds (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>rotation: <code>number</code></td>
+<td>The structure's rotation</td>
+</tr>
+<tr>
+<td>mirror: <code>boolean</code></td>
+<td>If the structure has been mirrored</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getresearch">getResearch<a class="headerlink" href="#getresearch" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code>getResearch() -&gt; table
+</code></pre></div>
+<p>Returns a table of all possible colony research as a tree where the root table contains the branch names and their respective research.</p>
+<h4 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>research</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id: <code>string</code></td>
+<td>The research id</td>
+</tr>
+<tr>
+<td>name: <code>string</code></td>
+<td>The name of the research</td>
+</tr>
+<tr>
+<td>status: <code>number</code></td>
+<td>The current research status</td>
+</tr>
+<tr>
+<td>researchEffects: <code>table</code></td>
+<td>A list of effects provided by the research</td>
+</tr>
+<tr>
+<td>children: <code>table?</code></td>
+<td>A list of any child research</td>
+</tr>
+<tr>
+<td>progress: <code>number</code></td>
+<td>Research progress</td>
+</tr>
+<tr>
+<td>requirements: <code>table</code></td>
+<td>List of requirements for the research</td>
+</tr>
+<tr>
+<td>cost: <code>table</code></td>
+<td>The cost of the research (list of tables)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="requirement-properties">Requirement Properties<a class="headerlink" href="#requirement-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>requirememt</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type: <code>string</code></td>
+<td>Type of requirement.</td>
+</tr>
+<tr>
+<td>desc: <code>string</code></td>
+<td>Description of the requirement</td>
+</tr>
+<tr>
+<td>fulfilled: <code>boolean</code></td>
+<td>If the requirement is already met</td>
+</tr>
+</tbody>
+</table>
+<h5 id="building-requirement-properties">Building Requirement Properties<a class="headerlink" href="#building-requirement-properties" title="Permanent link">¶</a></h5>
+<p>If the requirement type is <code>building</code>, it will have these additional properties:</p>
+<table>
+<thead>
+<tr>
+<th>requirememt</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>building: <code>string</code></td>
+<td>Name of the required building</td>
+</tr>
+<tr>
+<td>level: <code>number</code></td>
+<td>Level of the required building</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cost-item-properties">Cost item Properties<a class="headerlink" href="#cost-item-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name: <code>string</code></td>
+<td>The registry name of the item</td>
+</tr>
+<tr>
+<td>count: <code>number</code></td>
+<td>The amount of the item</td>
+</tr>
+<tr>
+<td>maxStackSize: <code>number</code></td>
+<td>Maximum stack size for the item type</td>
+</tr>
+<tr>
+<td>displayName: <code>string</code></td>
+<td>The item's display name</td>
+</tr>
+<tr>
+<td>tags: <code>table</code></td>
+<td>A list of item tags</td>
+</tr>
+<tr>
+<td>nbt: <code>table</code></td>
+<td>The item's nbt data</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getrequests">getRequests<a class="headerlink" href="#getrequests" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getRequests() -&gt; table
+</code></pre></div>
+Returns a list of the colonies current requests.<p></p>
+<h4 id="request-properties">Request Properties<a class="headerlink" href="#request-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id: <code>string</code></td>
+<td>The request's id</td>
+</tr>
+<tr>
+<td>name: <code>string</code></td>
+<td>The name of the request</td>
+</tr>
+<tr>
+<td>desc: <code>string</code></td>
+<td>A description about the request</td>
+</tr>
+<tr>
+<td>state: <code>string</code></td>
+<td>The state of the request</td>
+</tr>
+<tr>
+<td>count: <code>number</code></td>
+<td>The number of the request</td>
+</tr>
+<tr>
+<td>minCount: <code>number</code></td>
+<td>The minimum of the request needed</td>
+</tr>
+<tr>
+<td>target: <code>string</code></td>
+<td>The request's target</td>
+</tr>
+<tr>
+<td>items: <code>table</code></td>
+<td>A list of items attached to the request</td>
+</tr>
+</tbody>
+</table>
+<h4 id="item-properties">Item Properties<a class="headerlink" href="#item-properties" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name: <code>string</code></td>
+<td>The registry name of the item</td>
+</tr>
+<tr>
+<td>count: <code>number</code></td>
+<td>The amount of the item</td>
+</tr>
+<tr>
+<td>maxStackSize: <code>number</code></td>
+<td>Maximum stack size for the item type</td>
+</tr>
+<tr>
+<td>displayName: <code>string</code></td>
+<td>The item's display name</td>
+</tr>
+<tr>
+<td>tags: <code>table</code></td>
+<td>A list of item tags</td>
+</tr>
+<tr>
+<td>nbt: <code>table</code></td>
+<td>The item's nbt data</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getworkorders">getWorkOrders<a class="headerlink" href="#getworkorders" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getWorkOrders() -&gt; table
+</code></pre></div>
+Returns a list of active work orders in the colony.<p></p>
+<h4 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>workOrder</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id: <code>string</code></td>
+<td>The work order's id</td>
+</tr>
+<tr>
+<td>priority: <code>number</code></td>
+<td>The priority of the work order</td>
+</tr>
+<tr>
+<td>workOrderType: <code>string</code></td>
+<td>The type of work order</td>
+</tr>
+<tr>
+<td>changed: <code>boolean</code></td>
+<td>If the work order changed</td>
+</tr>
+<tr>
+<td>isClaimed: <code>boolean</code></td>
+<td>Whether the work order has been claimed</td>
+</tr>
+<tr>
+<td>builder: <code>table</code></td>
+<td>The position of the builder (has <code>x</code>, <code>y</code>, <code>z</code>)</td>
+</tr>
+<tr>
+<td>buildingName: <code>string</code></td>
+<td>The name of the building</td>
+</tr>
+<tr>
+<td>type: <code>string</code></td>
+<td>The type of the building</td>
+</tr>
+<tr>
+<td>targetLevel: <code>number</code></td>
+<td>The building's target level</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getworkorderresources">getWorkOrderResources<a class="headerlink" href="#getworkorderresources" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getWorkOrderResources(workOrderId: number) -&gt; table | nil
+</code></pre></div>
+Returns a list of all of the required resources for a work order. Or nil if the work order does not exist.<p></p>
+<h4 id="properties_2">Properties<a class="headerlink" href="#properties_2" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>resource</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item: <code>string</code></td>
+<td>The registry name for the item</td>
+</tr>
+<tr>
+<td>displayName: <code>string</code></td>
+<td>The display name for the item</td>
+</tr>
+<tr>
+<td>status: <code>string</code></td>
+<td>The status of this resource</td>
+</tr>
+<tr>
+<td>needed: <code>number</code></td>
+<td>How much of the resource is needed for the job</td>
+</tr>
+<tr>
+<td>available: <code>boolean</code></td>
+<td>If the resource is currently available</td>
+</tr>
+<tr>
+<td>delivering: <code>boolean</code></td>
+<td>If the resource is currently being delivered</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="getbuilderresources">getBuilderResources<a class="headerlink" href="#getbuilderresources" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getBuilderResources(position: table) -&gt; table | nil
+</code></pre></div>
+Returns the resources required by the given builder's hut.<p></p>
+<p>The <code>position</code> table must contain:  </p>
+<ul>
+<li>x: <code>number</code>  </li>
+<li>y: <code>number</code>  </li>
+<li>z: <code>number</code>  </li>
+</ul>
+<hr>
+<h3 id="getcolonyid">getColonyID<a class="headerlink" href="#getcolonyid" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getColonyID() -&gt; number
+</code></pre></div>
+Returns the id of the colony.<p></p>
+<hr>
+<h3 id="getcolonyname">getColonyName<a class="headerlink" href="#getcolonyname" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getColonyName() -&gt; string
+</code></pre></div>
+Returns the name of the colony.<p></p>
+<hr>
+<h3 id="getcolonystyle">getColonyStyle<a class="headerlink" href="#getcolonystyle" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getColonyStyle() -&gt; string
+</code></pre></div>
+Returns the style of the colony. For a list of different colony styles <a href="https://minecolony.fandom.com/wiki/Building_Styles">click here</a>.<p></p>
+<hr>
+<h3 id="getlocation">getLocation<a class="headerlink" href="#getlocation" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getLocation() -&gt; table
+</code></pre></div>
+Returns the position of the townhall.<p></p>
+<h4 id="properties_3">Properties<a class="headerlink" href="#properties_3" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>table</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x: <code>number</code></td>
+<td>The x coordinate</td>
+</tr>
+<tr>
+<td>y: <code>number</code></td>
+<td>The y coordinate</td>
+</tr>
+<tr>
+<td>z: <code>number</code></td>
+<td>The z coordinate</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="gethappiness">getHappiness<a class="headerlink" href="#gethappiness" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>getHappiness() -&gt; number
+</code></pre></div>
+Returns the overall happiness of the colony.<p></p>
+<hr>
+<h3 id="isactive">isActive<a class="headerlink" href="#isactive" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>isActive() -&gt; boolean
+</code></pre></div>
+Returns true if the colony is active. This is true when trusted players are online.<p></p>
+<hr>
+<h3 id="isunderattack">isUnderAttack<a class="headerlink" href="#isunderattack" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>isUnderAttack() -&gt; boolean
+</code></pre></div>
+Returns true if the colony is currently under attack.<p></p>
+<hr>
+<h3 id="isincolony">isInColony<a class="headerlink" href="#isincolony" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>isInColony() -&gt; boolean
+</code></pre></div>
+Returns true if the block is in a colony.<p></p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">integrator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">peripheral</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="s2">"colonyIntegrator"</span><span class="p">)</span>
+
+<span class="kr">if</span><span class="w"> </span><span class="nv">integrator</span><span class="p">.</span><span class="nf">isInColony</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Block is inside a colony!"</span><span class="p">)</span>
+<span class="kr">else</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">"Not in a colony!"</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></tbody></table></div>
+<hr>
+<h3 id="iswithin">isWithin<a class="headerlink" href="#iswithin" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>isWithin(position: table) -&gt; boolean
+</code></pre></div>
+Returns true if the given coordinates are in a colony.<p></p>
+<p>The <code>position</code> table must contain:  </p>
+<ul>
+<li>x: <code>number</code>  </li>
+<li>y: <code>number</code>  </li>
+<li>z: <code>number</code>  </li>
+</ul>
+<hr>
+<h3 id="amountofcitizens">amountOfCitizens<a class="headerlink" href="#amountofcitizens" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>amountOfCitizens() -&gt; number
+</code></pre></div>
+Returns the number of citizens in the colony.<p></p>
+<hr>
+<h3 id="maxofcitizens">maxOfCitizens<a class="headerlink" href="#maxofcitizens" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>maxOfCitizens() -&gt; number
+</code></pre></div>
+Returns the maximum number of citizens the colony can currently hold.<p></p>
+<hr>
+<h3 id="amountofgraves">amountOfGraves<a class="headerlink" href="#amountofgraves" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>amountOfGraves() -&gt; number
+</code></pre></div>
+Returns the current number of graves.<p></p>
+<hr>
+<h3 id="amountofconstructionsites">amountOfConstructionSites<a class="headerlink" href="#amountofconstructionsites" title="Permanent link">¶</a></h3>
+<p></p><div class="highlight"><pre><span></span><code>amountOfConstructionSites() -&gt; number
+</code></pre></div>
+Returns the current number of active construction sites.<p></p>
+<hr>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
+<h3 id="citizen-monitor">Citizen Monitor<a class="headerlink" href="#citizen-monitor" title="Permanent link">¶</a></h3>
+<p>We made a script to show every citizens and their gender on a monitor.</p>
+<p>You can view and download the script on <a href="https://github.com/SirEndii/Lua-Projects/blob/master/Examples/colony_integrator_list.lua">Github</a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/colony_integrator/citizen_list.png" data-desc-position="bottom"><img alt="!Image of the citizen list program" src="../../img/colony_integrator/citizen_list.png"></a></p>
+<h3 id="colony-stats">Colony Stats<a class="headerlink" href="#colony-stats" title="Permanent link">¶</a></h3>
+<p>And here we have a script made for a pocket computer to show statistics about a colony.</p>
+<p>You can view and download the script on <a href="https://github.com/SirEndii/Lua-Projects/blob/master/Examples/colony_integrator_status.lua">Github</a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/colony_integrator/colony_info.png" data-desc-position="bottom"><img alt="!Image of the colony info program" src="../../img/colony_integrator/colony_info.png"></a></p>
+<hr>
+<h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">¶</a></h2>
+<p><strong>0.7r</strong><br>
+Added the colony integrator</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js" data-repo="IntelligenceModding/AP-Docs-Comments" data-repo-id="R_kgDONsS8rA" data-category="Comments" data-category-id="DIC_kwDONsS8rM4CmJY_" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+        // Instruct Giscus to set theme
+        giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function() {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate"
+                    ? "transparent_dark"
+                    : "light"
+
+                // Instruct Giscus to change theme
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../rs_bridge/" class="md-footer__link md-footer__link--prev" aria-label="Previous: RS Bridge">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                RS Bridge
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../turtles/chatty_turtle/" class="md-footer__link md-footer__link--next" aria-label="Next: Chatty Turtle">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chatty Turtle
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/IntelligenceModding/AdvancedPeripherals" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@intelligencemodding4093" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 15 5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.intelligence-modding.de/" target="_blank" rel="noopener" title="discord.intelligence-modding.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.indexes", "navigation.tabs", "navigation.footer", "content.code.annotate", "content.code.copy", "content.action.edit", "content.action.view", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
