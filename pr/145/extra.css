@@ -1,0 +1,46 @@
+@import url(https://unpkg.com/simple-icons-font@v5/font/simple-icons.min.css);
+
+h2 {
+    position: relative;
+}
+
+h2::after {
+    display: block;
+    content: '';
+    width: 1rem;
+    height: 5px;
+    background: var(--md-primary-fg-color--light);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-radius: 2px;
+}
+
+[data-md-color-scheme="slate"] h2::after {
+    background: var(--md-primary-fg-color--dark);
+}
+
+.picture-spacing {
+    height: var(--ps);
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 45em) {
+    .picture-spacing {
+        display: block;
+        visibility: unset;
+    }
+}
+
+.si {
+    text-align: center;
+    vertical-align: middle;
+}
+
+b.si {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-right: 0.3rem;
+    vertical-align: 1rem;
+}
