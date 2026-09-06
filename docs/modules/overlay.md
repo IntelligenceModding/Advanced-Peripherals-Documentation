@@ -13,8 +13,11 @@ The Overlay Module allows scripts render stuff on player's GUI.
 
 ## Objects
 
-All fields will have a getter and a setter, which is defined as `getXxx` and `setXxx`.
-For `boolean` fields, getter is defined as either `isXxx` or `hasXxx`.
+All fields will have a getter and a setter, which is defined as `getXxx` and `setXxx`.  
+For `boolean` fields, getter is defined as either `isXxx` or `hasXxx`.  
+Fields marked as `lerp` can distribute the update into multiple ticks.
+By default they will distribute their update into `2` ticks.
+You may get and set the lerp steps by invoke `getXxxLerpSteps` and `setXxxLerpSteps`.
 
 ---
 
@@ -44,16 +47,19 @@ returns the object's integer ID.
 
 Based on [OverlayObject](#overlayobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `opacity` | `number` | `1` | A decimal number that determines the transparency of the object, in range of `[0.0, 1.0]` |
-| `color` | `number` | `-1` | An integer that determines the color of the object, in format of 0xRRGGBB. <br/>The default value `-1` is equivalent to `0xFFFFFF` in most cases. |
-| `x` | `number` | `0` | A decimal number of the object's X position |
-| `y` | `number` | `0` | A decimal number of the object's Y position |
-| `z` | `number` | `0` | A decimal number of the object's Z position |
-| `rotX` | `number` | `0` | A decimal number determine the degrees the object's rotation around the X-axis, in range of `[0, 360]` |
-| `rotY` | `number` | `0` | A decimal number determine the degrees the object's rotation around the Y-axis, in range of `[0, 360]` |
-| `rotZ` | `number` | `0` | A decimal number determine the degrees the object's rotation around the Z-axis, in range of `[0, 360]` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `gui` | `boolean` | `false` | No | If this object should render on player's GUI/HUD space instead of world space |
+| `relativePosition` | `boolean` | `false` | No | Should the object's position relative to the player's head |
+| `relativeRotation` | `boolean` | `false` | No | Should the object's rotation relative to the player's head |
+| `opacity` | `number` | `1` | Yes | A decimal number that determines the transparency of the object, in range of `[0.0, 1.0]` |
+| `color` | `number` | `-1` | No | An integer that determines the color of the object, in format of 0xRRGGBB. <br/>The default value `-1` is equivalent to `0xFFFFFF` in most cases. |
+| `x` | `number` | `0` | Yes | A decimal number of the object's X position |
+| `y` | `number` | `0` | Yes | A decimal number of the object's Y position |
+| `z` | `number` | `0` | Yes | A decimal number of the object's Z position |
+| `rotX` | `number` | `0` | Yes | A decimal number determine the degrees the object's rotation around the X-axis, in range of `[0, 360]` |
+| `rotY` | `number` | `0` | Yes | A decimal number determine the degrees the object's rotation around the Y-axis, in range of `[0, 360]` |
+| `rotZ` | `number` | `0` | Yes | A decimal number determine the degrees the object's rotation around the Z-axis, in range of `[0, 360]` |
 
 #### getPos
 ```
@@ -75,13 +81,13 @@ sets the object's `x`, `y`, `z`.
 
 Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `radius` | `number` | `0` | Integer of the circle's radius, in range of `[0, ∞)` |
-| `filled` | `boolean` | `true` | If the circle should be filled |
-| `pixelated` | `boolean` | `true` | If the circle should be pixelated |
-| `borderWidth` | `number` | `4` | Integer of the circle's border width, in range of `[0, 32767]` |
-| `segments` | `number` | `25` | Integer of the circle's segments, in range of `[0, 100]` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `radius` | `number` | `0` | Yes | A decimal number of the circle's radius, in range of `[0, ∞)` |
+| `filled` | `boolean` | `true` | No | If the circle should be filled |
+| `pixelated` | `boolean` | `true` | No | If the circle should be pixelated |
+| `borderWidth` | `number` | `4` | Yes | A decimal number of the circle's border width, in range of `[0, 32767]` |
+| `segments` | `number` | `25` | No | Integer of the circle's segments, in range of `[0, 100]` |
 
 ---
 
@@ -99,12 +105,12 @@ Based on [RenderableObject](#renderableobject)
 
 Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `endX` | `number` | `0` | A decimal number of line's X end |
-| `endY` | `number` | `0` | A decimal number of line's Y end |
-| `pixelated` | `boolean` | `false` | If the line should be pixelated |
-| `width` | `number` | `4` | Integer of the line's width, in range of `[0, 32767]` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `endX` | `number` | `0` | Yes | A decimal number of line's X end |
+| `endY` | `number` | `0` | Yes | A decimal number of line's Y end |
+| `pixelated` | `boolean` | `false` | No | If the line should be pixelated |
+| `width` | `number` | `4` | Yes | A decimal number of the line's width, in range of `[0, 32767]` |
 
 #### getEndPos
 ```
@@ -126,10 +132,10 @@ sets the object's `endX`, `endY`.
 
 Based on [RenderableObject](#renderableobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `sizeX` | `number` | `0` | A decimal number of rectangle's X size, in range of `[0, ∞)` |
-| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `sizeX` | `number` | `0` | Yes | A decimal number of rectangle's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | Yes | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
 
 #### getSizes
 ```
@@ -147,29 +153,17 @@ sets the object's `sizeX`, `sizeY`.
 
 ---
 
-### TextObject
-
-Based on [RenderableObject](#renderableobject)
-
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `content` | `string` | `""` | The text to render |
-| `fontSize` | `number` | `1` | A decimal number represents the text's font size, in range of `[0.0, 128.0]` |
-| `shadow` | `boolean` | `false` | Whether or not render a shadow for the text |
-| `center` | `boolean` | `false` | If the text should be centered at its position |
-
----
-
 ### ThreeDimensionalObject
 
 Based on [RenderableObject](#renderableobject)
 
 | Field | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| `relativePosition` | `boolean` | `false` | Should the object's position relative to the player's head |
-| `relativeRotation` | `boolean` | `false` | Should the object's rotation relative to the player's head |
-| `depthTest` | `boolean` | `true` | If the object should hide behind other objects |
 | `culling` | `boolean` | `true` | If the object's hidden faces should not be seen |
+| `depthTest` | `boolean` | `true` | If the object should hide behind other objects |
+| `depthMask` | `boolean` | `true` | If the object should show in front of other objects |
+
+Note: `depthTest` and `depthMask` are advanced render flags, it is recommend to search up better explanation by yourself.
 
 ---
 
@@ -177,11 +171,11 @@ Based on [RenderableObject](#renderableobject)
 
 Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `sizeX` | `number` | `0` | A decimal number of rectangle's X size, in range of `[0, ∞)` |
-| `sizeY` | `number` | `0` | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
-| `sizeZ` | `number` | `0` | A decimal number of rectangle's Z size, in range of `[0, ∞)` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `sizeX` | `number` | `0` | Yes | A decimal number of rectangle's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | Yes | A decimal number of rectangle's Y size, in range of `[0, ∞)` |
+| `sizeZ` | `number` | `0` | Yes | A decimal number of rectangle's Z size, in range of `[0, ∞)` |
 
 #### getSizes
 ```
@@ -217,11 +211,24 @@ If `color` is `-1`, the block will shown with its original color palettes.
 
 Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `sectors` | `number` | `16` | An integer in range of `[1, 1024]` |
-| `stacks` | `number` | `16` | An integer in range of `[1, 1024]` |
-| `radius` | `number` | `1` | A decimal number of the sphere's radius, in range of `(0, 128]` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `sectors` | `number` | `16` | No | An integer in range of `[1, 1024]` |
+| `stacks` | `number` | `16` | No | An integer in range of `[1, 1024]` |
+| `radius` | `number` | `1` | Yes | A decimal number of the sphere's radius, in range of `(0, 128]` |
+
+---
+
+### TextObject
+
+Based on [RenderableObject](#threedimensionalobject)
+
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `content` | `string` | `""` | No | The text to render |
+| `fontSize` | `number` | `1` | Yes | A decimal number represents the text's font size, in range of `[0.0, 128.0]` |
+| `shadow` | `boolean` | `false` | No | Whether or not render a shadow for the text |
+| `center` | `boolean` | `false` | No | If the text should be centered at its position |
 
 ---
 
@@ -229,12 +236,12 @@ Based on [ThreeDimensionalObject](#threedimensionalobject)
 
 Based on [ThreeDimensionalObject](#threedimensionalobject)
 
-| Field | Type | Default | Description |
-| ----- | ---- | ------- | ----------- |
-| `sizeX` | `number` | `0` | A decimal number of texture's X size, in range of `[0, ∞)` |
-| `sizeY` | `number` | `0` | A decimal number of texture's Y size, in range of `[0, ∞)` |
-| `width` | `number` | `0` | Image X-axis pixels count in range of `[0, 4096)` |
-| `height` | `number` | `0` | Image Y-axis pixels count in range of `[0, 4096)` |
+| Field | Type | Default | Lerp | Description |
+| ----- | ---- | ------- | ---- | ----------- |
+| `sizeX` | `number` | `0` | Yes | A decimal number of texture's X size, in range of `[0, ∞)` |
+| `sizeY` | `number` | `0` | Yes | A decimal number of texture's Y size, in range of `[0, ∞)` |
+| `width` | `number` | `0` | No | Image X-axis pixels count in range of `[0, 4096)` |
+| `height` | `number` | `0` | No | Image Y-axis pixels count in range of `[0, 4096)` |
 
 #### getSizes
 ```
