@@ -14,7 +14,7 @@
         <link rel="prev" href="../night_vision/">
       
       
-        <link rel="next" href="../../items/chunk_controller/">
+        <link rel="next" href="../../items/ae_disk_cell/">
       
       
         
@@ -382,7 +382,7 @@ You are currently reading the documentation for 0.8. This is subject to change w
     
     
       <li class="md-tabs__item">
-        <a href="../../items/chunk_controller/" class="md-tabs__link">
+        <a href="../../items/ae_disk_cell/" class="md-tabs__link">
           
   
   
@@ -2330,17 +2330,6 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#textobject" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TextObject
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#threedimensionalobject" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2406,6 +2395,17 @@ You are currently reading the documentation for 0.8. This is subject to change w
     <span class="md-ellipsis">
       
         SphereObject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextObject
       
     </span>
   </a>
@@ -2934,6 +2934,8 @@ You are currently reading the documentation for 0.8. This is subject to change w
       
         
       
+        
+      
     
     
     
@@ -2976,6 +2978,34 @@ You are currently reading the documentation for 0.8. This is subject to change w
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/ae_disk_cell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AE Disk Cell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4440,17 +4470,6 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#textobject" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TextObject
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#threedimensionalobject" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4516,6 +4535,17 @@ You are currently reading the documentation for 0.8. This is subject to change w
     <span class="md-ellipsis">
       
         SphereObject
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextObject
       
     </span>
   </a>
@@ -5048,8 +5078,11 @@ You are currently reading the documentation for 0.8. This is subject to change w
 <p>The Overlay Module allows scripts render stuff on player's GUI.</p>
 <hr />
 <h2 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h2>
-<p>All fields will have a getter and a setter, which is defined as <code>getXxx</code> and <code>setXxx</code>.
-For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> or <code>hasXxx</code>.</p>
+<p>All fields will have a getter and a setter, which is defined as <code>getXxx</code> and <code>setXxx</code>.<br />
+For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> or <code>hasXxx</code>.<br />
+Fields marked as <code>lerp</code> can distribute the update into multiple ticks.
+By default they will distribute their update into <code>2</code> ticks.
+You may get and set the lerp steps by invoke <code>getXxxLerpSteps</code> and <code>setXxxLerpSteps</code>.</p>
 <hr />
 <h3 id="overlayobject">OverlayObject<a class="headerlink" href="#overlayobject" title="Permanent link">&para;</a></h3>
 <table>
@@ -5087,56 +5120,86 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><code>gui</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>No</td>
+<td>If this object should render on player's GUI/HUD space instead of world space</td>
+</tr>
+<tr>
+<td><code>relativePosition</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>No</td>
+<td>Should the object's position relative to the player's head</td>
+</tr>
+<tr>
+<td><code>relativeRotation</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>No</td>
+<td>Should the object's rotation relative to the player's head</td>
+</tr>
+<tr>
 <td><code>opacity</code></td>
 <td><code>number</code></td>
 <td><code>1</code></td>
+<td>Yes</td>
 <td>A decimal number that determines the transparency of the object, in range of <code>[0.0, 1.0]</code></td>
 </tr>
 <tr>
 <td><code>color</code></td>
 <td><code>number</code></td>
 <td><code>-1</code></td>
+<td>No</td>
 <td>An integer that determines the color of the object, in format of 0xRRGGBB. <br/>The default value <code>-1</code> is equivalent to <code>0xFFFFFF</code> in most cases.</td>
 </tr>
 <tr>
 <td><code>x</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of the object's X position</td>
 </tr>
 <tr>
 <td><code>y</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of the object's Y position</td>
 </tr>
 <tr>
 <td><code>z</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of the object's Z position</td>
 </tr>
 <tr>
 <td><code>rotX</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number determine the degrees the object's rotation around the X-axis, in range of <code>[0, 360]</code></td>
 </tr>
 <tr>
 <td><code>rotY</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number determine the degrees the object's rotation around the Y-axis, in range of <code>[0, 360]</code></td>
 </tr>
 <tr>
 <td><code>rotZ</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number determine the degrees the object's rotation around the Z-axis, in range of <code>[0, 360]</code></td>
 </tr>
 </tbody>
@@ -5158,6 +5221,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5166,30 +5230,35 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>radius</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
-<td>Integer of the circle's radius, in range of <code>[0, ∞)</code></td>
+<td>Yes</td>
+<td>A decimal number of the circle's radius, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>filled</code></td>
 <td><code>boolean</code></td>
 <td><code>true</code></td>
+<td>No</td>
 <td>If the circle should be filled</td>
 </tr>
 <tr>
 <td><code>pixelated</code></td>
 <td><code>boolean</code></td>
 <td><code>true</code></td>
+<td>No</td>
 <td>If the circle should be pixelated</td>
 </tr>
 <tr>
 <td><code>borderWidth</code></td>
 <td><code>number</code></td>
 <td><code>4</code></td>
-<td>Integer of the circle's border width, in range of <code>[0, 32767]</code></td>
+<td>Yes</td>
+<td>A decimal number of the circle's border width, in range of <code>[0, 32767]</code></td>
 </tr>
 <tr>
 <td><code>segments</code></td>
 <td><code>number</code></td>
 <td><code>25</code></td>
+<td>No</td>
 <td>Integer of the circle's segments, in range of <code>[0, 100]</code></td>
 </tr>
 </tbody>
@@ -5224,6 +5293,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5232,25 +5302,29 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>endX</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of line's X end</td>
 </tr>
 <tr>
 <td><code>endY</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of line's Y end</td>
 </tr>
 <tr>
 <td><code>pixelated</code></td>
 <td><code>boolean</code></td>
 <td><code>false</code></td>
+<td>No</td>
 <td>If the line should be pixelated</td>
 </tr>
 <tr>
 <td><code>width</code></td>
 <td><code>number</code></td>
 <td><code>4</code></td>
-<td>Integer of the line's width, in range of <code>[0, 32767]</code></td>
+<td>Yes</td>
+<td>A decimal number of the line's width, in range of <code>[0, 32767]</code></td>
 </tr>
 </tbody>
 </table>
@@ -5271,6 +5345,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5279,12 +5354,14 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>sizeX</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of rectangle's X size, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>sizeY</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of rectangle's Y size, in range of <code>[0, ∞)</code></td>
 </tr>
 </tbody>
@@ -5297,45 +5374,6 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <div class="highlight"><pre><span></span><code>setSizes(sizeX: number, sizeY: number) -&gt; nil
 </code></pre></div>
 <p>sets the object's <code>sizeX</code>, <code>sizeY</code>.</p>
-<hr />
-<h3 id="textobject">TextObject<a class="headerlink" href="#textobject" title="Permanent link">&para;</a></h3>
-<p>Based on <a href="#renderableobject">RenderableObject</a></p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>content</code></td>
-<td><code>string</code></td>
-<td><code>""</code></td>
-<td>The text to render</td>
-</tr>
-<tr>
-<td><code>fontSize</code></td>
-<td><code>number</code></td>
-<td><code>1</code></td>
-<td>A decimal number represents the text's font size, in range of <code>[0.0, 128.0]</code></td>
-</tr>
-<tr>
-<td><code>shadow</code></td>
-<td><code>boolean</code></td>
-<td><code>false</code></td>
-<td>Whether or not render a shadow for the text</td>
-</tr>
-<tr>
-<td><code>center</code></td>
-<td><code>boolean</code></td>
-<td><code>false</code></td>
-<td>If the text should be centered at its position</td>
-</tr>
-</tbody>
-</table>
 <hr />
 <h3 id="threedimensionalobject">ThreeDimensionalObject<a class="headerlink" href="#threedimensionalobject" title="Permanent link">&para;</a></h3>
 <p>Based on <a href="#renderableobject">RenderableObject</a></p>
@@ -5350,16 +5388,10 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 </thead>
 <tbody>
 <tr>
-<td><code>relativePosition</code></td>
+<td><code>culling</code></td>
 <td><code>boolean</code></td>
-<td><code>false</code></td>
-<td>Should the object's position relative to the player's head</td>
-</tr>
-<tr>
-<td><code>relativeRotation</code></td>
-<td><code>boolean</code></td>
-<td><code>false</code></td>
-<td>Should the object's rotation relative to the player's head</td>
+<td><code>true</code></td>
+<td>If the object's hidden faces should not be seen</td>
 </tr>
 <tr>
 <td><code>depthTest</code></td>
@@ -5368,13 +5400,14 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td>If the object should hide behind other objects</td>
 </tr>
 <tr>
-<td><code>culling</code></td>
+<td><code>depthMask</code></td>
 <td><code>boolean</code></td>
 <td><code>true</code></td>
-<td>If the object's hidden faces should not be seen</td>
+<td>If the object should show in front of other objects</td>
 </tr>
 </tbody>
 </table>
+<p>Note: <code>depthTest</code> and <code>depthMask</code> are advanced render flags, it is recommend to search up better explanation by yourself.</p>
 <hr />
 <h3 id="boxobject">BoxObject<a class="headerlink" href="#boxobject" title="Permanent link">&para;</a></h3>
 <p>Based on <a href="#threedimensionalobject">ThreeDimensionalObject</a></p>
@@ -5384,6 +5417,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5392,18 +5426,21 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>sizeX</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of rectangle's X size, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>sizeY</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of rectangle's Y size, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>sizeZ</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of rectangle's Z size, in range of <code>[0, ∞)</code></td>
 </tr>
 </tbody>
@@ -5459,6 +5496,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5467,19 +5505,66 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>sectors</code></td>
 <td><code>number</code></td>
 <td><code>16</code></td>
+<td>No</td>
 <td>An integer in range of <code>[1, 1024]</code></td>
 </tr>
 <tr>
 <td><code>stacks</code></td>
 <td><code>number</code></td>
 <td><code>16</code></td>
+<td>No</td>
 <td>An integer in range of <code>[1, 1024]</code></td>
 </tr>
 <tr>
 <td><code>radius</code></td>
 <td><code>number</code></td>
 <td><code>1</code></td>
+<td>Yes</td>
 <td>A decimal number of the sphere's radius, in range of <code>(0, 128]</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="textobject">TextObject<a class="headerlink" href="#textobject" title="Permanent link">&para;</a></h3>
+<p>Based on <a href="#threedimensionalobject">RenderableObject</a></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Default</th>
+<th>Lerp</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content</code></td>
+<td><code>string</code></td>
+<td><code>""</code></td>
+<td>No</td>
+<td>The text to render</td>
+</tr>
+<tr>
+<td><code>fontSize</code></td>
+<td><code>number</code></td>
+<td><code>1</code></td>
+<td>Yes</td>
+<td>A decimal number represents the text's font size, in range of <code>[0.0, 128.0]</code></td>
+</tr>
+<tr>
+<td><code>shadow</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>No</td>
+<td>Whether or not render a shadow for the text</td>
+</tr>
+<tr>
+<td><code>center</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>No</td>
+<td>If the text should be centered at its position</td>
 </tr>
 </tbody>
 </table>
@@ -5492,6 +5577,7 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <th>Field</th>
 <th>Type</th>
 <th>Default</th>
+<th>Lerp</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -5500,24 +5586,28 @@ For <code>boolean</code> fields, getter is defined as either <code>isXxx</code> 
 <td><code>sizeX</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of texture's X size, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>sizeY</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>Yes</td>
 <td>A decimal number of texture's Y size, in range of <code>[0, ∞)</code></td>
 </tr>
 <tr>
 <td><code>width</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>No</td>
 <td>Image X-axis pixels count in range of <code>[0, 4096)</code></td>
 </tr>
 <tr>
 <td><code>height</code></td>
 <td><code>number</code></td>
 <td><code>0</code></td>
+<td>No</td>
 <td>Image Y-axis pixels count in range of <code>[0, 4096)</code></td>
 </tr>
 </tbody>
@@ -5850,7 +5940,7 @@ Added Overlay Module</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 19, 2026 21:58:25 UTC">July 19, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 6, 2026 20:28:58 UTC">September 6, 2026</span>
   </span>
 
     
@@ -5994,13 +6084,13 @@ Added Overlay Module</p>
         
         
           
-          <a href="../../items/chunk_controller/" class="md-footer__link md-footer__link--next" aria-label="Next: Chunk Controller">
+          <a href="../../items/ae_disk_cell/" class="md-footer__link md-footer__link--next" aria-label="Next: AE Disk Cell">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chunk Controller
+                AE Disk Cell
               </div>
             </div>
             <div class="md-footer__button md-icon">
