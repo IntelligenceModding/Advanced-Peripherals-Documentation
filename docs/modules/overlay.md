@@ -420,6 +420,18 @@ createBlock(object: table) -> table
 
 returns a copy of the `object` with getters & setters to change its properties.
 
+Example:
+```lua
+-- a red grassblock that follows you!
+smartglasses.modules.overlay.createBlock({
+    relativePosition = true,
+    y = -1,
+    z = -3,
+    color = 0xff0000,
+    block = 'minecraft:grass_block'
+})
+```
+
 ---
 
 ### createBox
@@ -452,6 +464,22 @@ createTexture(object: table) -> table
 `object` is a [TextureObject](#textureobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
+
+Example:
+```lua
+local texture = smartglasses.modules.overlay.createTexture({
+    gui = true,
+    x = 10,
+    y = 10,
+    sizeX = 100
+})
+
+local imageURL = 'https://www.bisecthosting.com/images/CF/Advanced_Peripherals/BH_AP_Header.png'
+local response = assert(http.get(imageURL, nil, true))
+texture.load(response.readAll())
+
+texture.setSizeY(texture.getSizeX() / texture.getWidth() * texture.getHeight())
+```
 
 ---
 
@@ -529,6 +557,18 @@ createText(object: table) -> table
 `object` is a [TextObject](#textobject)
 
 returns a copy of the `object` with getters & setters to change its properties.
+
+Example:
+```lua
+smartglasses.modules.overlay.createText({
+    gui = true, -- true if you want draw text on the HUD instead of in the world
+    x = 100,
+    y = 50,
+    color = 0xff00ff,
+    content = 'Hello world!',
+    shadow = true
+})
+```
 
 ---
 
