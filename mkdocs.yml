@@ -46,6 +46,7 @@ nav:
     - 'Night Vision Module': 'modules/night_vision.md'
     - 'Overlay Module': 'modules/overlay.md'
   - 'Items':
+    - 'AE Disk Cell': 'items/ae_disk_cell.md'
     - 'Chunk Controller': 'items/chunk_controller.md'
     - 'Computer Tool': 'items/computer_tool.md'
     - 'Memory Card': 'items/memory_card.md'
