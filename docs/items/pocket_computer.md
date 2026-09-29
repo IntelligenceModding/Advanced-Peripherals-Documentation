@@ -15,9 +15,6 @@ There are Pocket Computer versions of the following peripherals:
 * [Geo Scanner](../peripherals/geo_scanner.md) ➜ Geoscanning ..
 * [Colony Integrator](../peripherals/colony_integrator.md) ➜ Colony ..
 
-!!! failure "Events"
-    The pocket computer versions of the peripherals do not receive the peripheral events.
-
 ---
 
 ## Changelog/Trivia
