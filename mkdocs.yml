@@ -51,6 +51,7 @@ nav:
     - 'Computer Tool': 'items/computer_tool.md'
     - 'Memory Card': 'items/memory_card.md'
     - 'Pocket Computers': 'items/pocket_computer.md'
+    - 'Smart Chestplate': 'items/smart_chestplate.md'
     - 'Smart Glasses': 'items/smart_glasses.md'
     - 'Smart Glasses Interface': 'items/smart_glasses_interface.md'
   - 'Mod Integrations':

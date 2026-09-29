@@ -5,7 +5,7 @@ comments: true
 # Smart Chestplate
 
 !!! picture inline end
-    ![!Image of the Smart Chestplate item](../img/previews/smart_chest.png){ align=right }
+    ![!Image of the Smart Chestplate item](../img/previews/smart_chestplate.png){ align=right }
 
 The Smart Chestplate is an advanced chestplate that have give wearer extra programmable arms.
 
@@ -178,4 +178,4 @@ let Smart Hand perform use action.
 ## Changelog/Trivia
 
 **0.8**  
-Added Smart Chest
+Added Smart Chestplate
