@@ -114,9 +114,9 @@ Returns true if the turtle is successfully teleported or nil and an error messag
 
 ---
 
-### portalShipPrepare
+### preparePortalWarp
 ```
-portalShipPrepare(direction: string | nil) -> table | nil, string
+preparePortalWarp(direction: string | nil) -> table | nil, string
 ```
 Prepare to cross a portal.  
 Direction includes `up`, `top`, `down`, `bottom`, and `front` (default).  
@@ -129,16 +129,16 @@ If a portal is detected, a table with target dimension's information will be ret
 | `facing`   | `string`  | Facing direction after teleport |
 | `costs`    | `number`  | Costs to active teleport |
 | `canSpawn` | `boolean` | `true` if the destination is not blocked so turtle can perform the teleport, `false` otherwise. |
-| `shipId`   | `string`  | The teleport id, uses in `portalShipActive` |
+| `warpId`   | `string`  | The teleport id, uses in `activePortalWarp` |
 
 ---
 
-### portalShipActive
+### activePortalWarp
 ```
-portalShipActive(shipId: string) -> true | nil, string
+activePortalWarp(warpId: string) -> true | nil, string
 ```
 Active a portal and teleport through it.  
-Can only be invoked in a short period after `portalShipPrepare` returns the `shipId`.  
+Can only be invoked in a short period after `preparePortalWarp` returns the `warpId`.
 
 ---
 
