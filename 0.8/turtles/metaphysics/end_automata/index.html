@@ -2014,10 +2014,10 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#portalshipprepare" class="md-nav__link">
+  <a href="#prepareportalwarp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        portalShipPrepare
+        preparePortalWarp
       
     </span>
   </a>
@@ -2025,10 +2025,10 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#portalshipactive" class="md-nav__link">
+  <a href="#activeportalwarp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        portalShipActive
+        activePortalWarp
       
     </span>
   </a>
@@ -3792,10 +3792,10 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#portalshipprepare" class="md-nav__link">
+  <a href="#prepareportalwarp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        portalShipPrepare
+        preparePortalWarp
       
     </span>
   </a>
@@ -3803,10 +3803,10 @@ You are currently reading the documentation for 0.8. This is subject to change w
 </li>
         
           <li class="md-nav__item">
-  <a href="#portalshipactive" class="md-nav__link">
+  <a href="#activeportalwarp" class="md-nav__link">
     <span class="md-ellipsis">
       
-        portalShipActive
+        activePortalWarp
       
     </span>
   </a>
@@ -3965,8 +3965,8 @@ Returns the fuel point cost to warp from the current location to the point with 
 Teleports the turtle from the current location to the location of the point with the given <code>name</code>.<br />
 Returns true if the turtle is successfully teleported or nil and an error message.</p>
 <hr />
-<h3 id="portalshipprepare">portalShipPrepare<a class="headerlink" href="#portalshipprepare" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>portalShipPrepare(direction: string | nil) -&gt; table | nil, string
+<h3 id="prepareportalwarp">preparePortalWarp<a class="headerlink" href="#prepareportalwarp" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>preparePortalWarp(direction: string | nil) -&gt; table | nil, string
 </code></pre></div>
 Prepare to cross a portal.<br />
 Direction includes <code>up</code>, <code>top</code>, <code>down</code>, <code>bottom</code>, and <code>front</code> (default).<br />
@@ -4006,18 +4006,18 @@ If a portal is detected, a table with target dimension's information will be ret
 <td><code>true</code> if the destination is not blocked so turtle can perform the teleport, <code>false</code> otherwise.</td>
 </tr>
 <tr>
-<td><code>shipId</code></td>
+<td><code>warpId</code></td>
 <td><code>string</code></td>
-<td>The teleport id, uses in <code>portalShipActive</code></td>
+<td>The teleport id, uses in <code>activePortalWarp</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="portalshipactive">portalShipActive<a class="headerlink" href="#portalshipactive" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>portalShipActive(shipId: string) -&gt; true | nil, string
+<h3 id="activeportalwarp">activePortalWarp<a class="headerlink" href="#activeportalwarp" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>activePortalWarp(warpId: string) -&gt; true | nil, string
 </code></pre></div>
 Active a portal and teleport through it.<br />
-Can only be invoked in a short period after <code>portalShipPrepare</code> returns the <code>shipId</code>.  </p>
+Can only be invoked in a short period after <code>preparePortalWarp</code> returns the <code>warpId</code>.</p>
 <hr />
 <h2 id="changelogtrivia">Changelog/Trivia<a class="headerlink" href="#changelogtrivia" title="Permanent link">&para;</a></h2>
 <p><strong>0.8</strong>
@@ -4046,7 +4046,7 @@ Added the End Automata</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 14, 2026 21:52:29 UTC">June 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 3, 2026 20:44:31 UTC">October 3, 2026</span>
   </span>
 
     
@@ -4074,14 +4074,14 @@ Added the End Automata</p>
     
     <nav>
       
-        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
-          
-          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
-        </a>
-      
         <a href="https://github.com/zyxkad" class="md-author" title="@zyxkad">
           
           <img src="https://avatars.githubusercontent.com/u/91082411?v=4&size=72" alt="zyxkad">
+        </a>
+      
+        <a href="https://github.com/SirEndii" class="md-author" title="@SirEndii">
+          
+          <img src="https://avatars.githubusercontent.com/u/67484093?v=4&size=72" alt="SirEndii">
         </a>
       
         <a href="https://github.com/l3dotdev" class="md-author" title="@l3dotdev">
