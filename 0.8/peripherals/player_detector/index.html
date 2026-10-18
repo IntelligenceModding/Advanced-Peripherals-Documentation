@@ -1365,19 +1365,19 @@ You are currently reading the documentation for 0.8. This is subject to change w
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="getPlayer">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#getowner" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Properties
+        getOwner
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="getOwner">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#getplayerstat" class="md-nav__link">
@@ -3893,19 +3893,19 @@ You are currently reading the documentation for 0.8. This is subject to change w
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="getPlayer">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#getowner" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Properties
+        getOwner
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="getOwner">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#getplayerstat" class="md-nav__link">
@@ -4186,96 +4186,11 @@ You can get a list of all online players and detect when a player clicks on the 
 <p>The player detector supports multidimensional spying(Since 1.19.2-0.7.30r &amp; 1.20.1-0.7.32a). This only works if the config option <code>playerDetMultiDimensional</code> is set to true and the option <code>playerDetMaxRange</code> is set to -1(infinite)</p>
 </div>
 <h3 id="getplayer">getPlayer<a class="headerlink" href="#getplayer" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>getPlayer(name: string) -&gt; table | nil
+<div class="highlight"><pre><span></span><code>getPlayer(name: string, detailed: boolean | nil) -&gt; table | nil
 </code></pre></div>
 <p>Returns information about the player with the <code>name</code> passed.<br />
 <code>name</code> may be the player's username (case insensitive), or the player's UUID.</p>
-<h4 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h4>
-<div class="admonition success">
-<p class="admonition-title">Added more properties in version 0.7.4r</p>
-</div>
-<table>
-<thead>
-<tr>
-<th>table</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x: <code>number</code></td>
-<td>The x coordinate</td>
-</tr>
-<tr>
-<td>y: <code>number</code></td>
-<td>The y coordinate</td>
-</tr>
-<tr>
-<td>z: <code>number</code></td>
-<td>The z coordinate</td>
-</tr>
-<tr>
-<td>f: <code>number</code></td>
-<td>The relative front distance</td>
-</tr>
-<tr>
-<td>r: <code>number</code></td>
-<td>The relative right distance</td>
-</tr>
-<tr>
-<td>u: <code>number</code></td>
-<td>The relative up distance</td>
-</tr>
-<tr>
-<td>uuid: <code>string</code></td>
-<td>The uuid of the player</td>
-</tr>
-<tr>
-<td>name: <code>string</code></td>
-<td>The name of the player</td>
-</tr>
-<tr>
-<td>yaw: <code>number</code></td>
-<td>The yaw of the player's head</td>
-</tr>
-<tr>
-<td>pitch: <code>number</code></td>
-<td>The pitch of the player's head</td>
-</tr>
-<tr>
-<td>dimension: <code>string</code></td>
-<td>The dimension the player is in</td>
-</tr>
-<tr>
-<td>eyeHeight: <code>number</code></td>
-<td>The height of the player's eyes</td>
-</tr>
-<tr>
-<td>health: <code>number</code></td>
-<td>The health of the player</td>
-</tr>
-<tr>
-<td>maxHealth: <code>number</code></td>
-<td>The max health of the player</td>
-</tr>
-<tr>
-<td>airSupply: <code>number</code></td>
-<td>The air supply of the player</td>
-</tr>
-<tr>
-<td>respawnPosition: <code>number</code></td>
-<td>The respawn position of the player</td>
-</tr>
-<tr>
-<td>respawnDimension: <code>number</code></td>
-<td>The respawn dimension of the player</td>
-</tr>
-<tr>
-<td>respawnAngle: <code>number</code></td>
-<td>The respawn angle of the player in degrees</td>
-</tr>
-</tbody>
-</table>
+<p>Returned table structure see <a href="../../guides/lua_objects/#player">LuaObjects#player</a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -4286,6 +4201,11 @@ You can get a list of all online players and detect when a player clicks on the 
 <span class="kd">local</span><span class="w"> </span><span class="nv">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">detector</span><span class="p">.</span><span class="nf">getPlayer</span><span class="p">(</span><span class="s2">&quot;Player123&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Position: &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">player</span><span class="p">.</span><span class="py">x</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot;, &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">player</span><span class="p">.</span><span class="py">y</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="s2">&quot;, &quot;</span><span class="w"> </span><span class="o">..</span><span class="w"> </span><span class="nv">player</span><span class="p">.</span><span class="py">z</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="getowner">getOwner<a class="headerlink" href="#getowner" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getOwner(detailed: boolean | nil) -&gt; table | nil
+</code></pre></div>
+<p>Same as <a href="#getplayer"><code>getPlayer</code></a> but returns the current owner's information.</p>
 <hr />
 <h4 id="getplayerstat">getPlayerStat<a class="headerlink" href="#getplayerstat" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>getPlayerStat(name: string, statId: string...) -&gt; number... | (nil, string)
@@ -4455,7 +4375,7 @@ Added the player detector, it was the third feature of the mod.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 13, 2026 05:00:14 UTC">July 13, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 18, 2026 22:20:30 UTC">October 18, 2026</span>
   </span>
 
     
