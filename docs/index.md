@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# Advanced Peripherals
+# Advanced Peripherals PR Test
 
 [![Header](https://www.bisecthosting.com/images/CF/Advanced_Peripherals/BH_AP_Header.png)](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 
