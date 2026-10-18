@@ -115,36 +115,13 @@ print("Player " .. username .. " died by " .. damageSource)
 ### getPlayer
 
 ```
-getPlayer(name: string) -> table | nil
+getPlayer(name: string, detailed: boolean | nil) -> table | nil
 ```
 
 Returns information about the player with the `name` passed.  
 `name` may be the player's username (case insensitive), or the player's UUID.
 
-#### Properties
-
-!!! success "Added more properties in version 0.7.4r"
-
-| table                      | Description                                |
-|----------------------------|--------------------------------------------|
-| x: `number`                | The x coordinate                           |
-| y: `number`                | The y coordinate                           |
-| z: `number`                | The z coordinate                           |
-| f: `number`                | The relative front distance                |
-| r: `number`                | The relative right distance                |
-| u: `number`                | The relative up distance                   |
-| uuid: `string`             | The uuid of the player                     |
-| name: `string`             | The name of the player                     |
-| yaw: `number`              | The yaw of the player's head               |
-| pitch: `number`            | The pitch of the player's head             |
-| dimension: `string`        | The dimension the player is in             |
-| eyeHeight: `number`        | The height of the player's eyes            |
-| health: `number`           | The health of the player                   |
-| maxHealth: `number`        | The max health of the player               |
-| airSupply: `number`        | The air supply of the player               |
-| respawnPosition: `number`  | The respawn position of the player         |
-| respawnDimension: `number` | The respawn dimension of the player        |
-| respawnAngle: `number`     | The respawn angle of the player in degrees |
+Returned table structure see [LuaObjects#player](../guides/lua_objects.md#player)
 
 ```lua linenums="1"
 local detector = peripheral.find("player_detector")
@@ -153,6 +130,16 @@ local detector = peripheral.find("player_detector")
 local player = detector.getPlayer("Player123")
 print("Position: " .. player.x .. ", " .. player.y .. ", " .. player.z)
 ```
+
+---
+
+### getOwner
+
+```
+getOwner(detailed: boolean | nil) -> table | nil
+```
+
+Same as [`getPlayer`](#getplayer) but returns the current owner's information.
 
 ---
 

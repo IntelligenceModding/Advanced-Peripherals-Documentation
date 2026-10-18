@@ -91,7 +91,12 @@ Represents a specific amount of chemical with additional properties. Includes al
 | yaw | number | Entity rotation about the Y-axis |
 | pitch | number | Entity rotation about the X-axis |
 | eyeHeight | number | Eye offset about feet position |
-| type | string | Entity type |
+
+**Detailed:**
+
+| Property | Type | Description |
+|----------|------|-------------|
+| dimension | string | Entity dimension ID |
 | tags | table | Entity tags |
 | category | string | Entity category |
 | canBurn | boolean | Whether entity can burn |
@@ -129,6 +134,11 @@ Inherits all properties from [Entity](#entity)
 | baby | boolean | Whether the entity is a baby |
 | health | number | Current health |
 | maxHealth | number | Maximum health |
+
+**Detailed:**
+
+| Property | Type | Description |
+|----------|------|-------------|
 | lastDamageSource | string | Last damage source (or nil) |
 | effect | table | Effects on the entity |
 
@@ -145,6 +155,11 @@ Inherits all properties from [Mob](#mob)
 | Property | Type | Description |
 |----------|------|-------------|
 | inLove | boolean | Whether the animal is in love state |
+
+**Detailed:**
+
+| Property | Type | Description |
+|----------|------|-------------|
 | shareable | boolean | Whether the animal can be sheared (if applicable) |
 
 ## Player
@@ -155,7 +170,15 @@ Inherits all properties from [Living Entity](#living-entity)
 | score | number | The player's score |
 | luck | number | The luck of the player |
 | handSlot | number | Selected hand slot of the player |
+
+**Detailed:**
+
+| Property | Type | Description |
+|----------|------|-------------|
 | inventory | table | Player's inventory |
+| respawnPosition | number | The respawn position of the player |
+| respawnDimension | number | The respawn dimension of the player |
+| respawnAngle | number | The respawn angle of the player in degrees |
 
 ## Block State
 Represents a block and its state
