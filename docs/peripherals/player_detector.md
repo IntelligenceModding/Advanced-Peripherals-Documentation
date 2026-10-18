@@ -143,7 +143,7 @@ Same as [`getPlayer`](#getplayer) but returns the current owner's information.
 
 ---
 
-#### getPlayerStat
+### getPlayerStat
 
 ```
 getPlayerStat(name: string, statId: string...) -> number... | (nil, string)
