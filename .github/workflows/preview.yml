@@ -24,7 +24,7 @@ jobs:
 
       - name: Checkout updated docs
         run: |
-          PR_REF="${{ github.event.pull_request.head.ref }}"
+          PR_REF="pull/${{ github.event.pull_request.number }}/head"
           echo "PR_REF=$PR_REF"
           git fetch origin "$PR_REF"
           git checkout "$PR_REF" -- docs/
