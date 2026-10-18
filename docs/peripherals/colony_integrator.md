@@ -240,12 +240,12 @@ Returns a list of all of the required resources for a work order. Or nil if the 
 #### Properties
 | resource              | Description                                     |
 | --------------------- | ----------------------------------------------- |
-| item: `string`        | The registry name for the item                  |
+| item: `table`         | The item as an item stack table                 |
 | displayName: `string` | The display name for the item                   |
 | status: `string`      | The status of this resource                     |
-| needed: `number`      | How much of the resource is needed for the job  |
+| needs: `number`       | How much of the resource is needed for the job  |
 | available: `boolean`  | If the resource is currently available          |
-| delivering: `boolean` | If the resource is currently being delivered    |
+| delivering: `number`  | How much of the resource is currently being delivered |
 
 ---
 
