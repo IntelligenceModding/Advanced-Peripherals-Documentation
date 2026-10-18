@@ -24,7 +24,10 @@ jobs:
 
       - name: Checkout updated docs
         run: |
-          git checkout "${{ github.event.pull_request.head.sha }}" -- docs/
+          PR_REF="${{ github.event.pull_request.head.ref }}"
+          echo "PR_REF=$PR_REF"
+          git fetch origin "$PR_REF"
+          git checkout "$PR_REF" -- docs/
 
       - name: Set up Python
         uses: actions/setup-python@v5
