@@ -117,7 +117,7 @@ Returns a list of details about every building in the colony.
 | storageSlots: `number`  | The number of storage slots                       |
 | guarded: `boolean`      | If the building is currently being guarded        |
 | built: `boolean`        | If the building is built or is under construction |
-| isWorkingOn: `boolean`  | Whether the building is being worked on           |
+| isWorking: `boolean`  | Whether the building is being worked on           |
 | priority: `number`      | The building's construction priority              |
 | structure: `table`      | A table defining the bounds of the structure      |
 | citizens: `table`       | A list of citizen's `name`s and `id`s             |
