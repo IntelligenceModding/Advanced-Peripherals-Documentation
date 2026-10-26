@@ -13,7 +13,7 @@ List all modules:
 ```lua linenums="1"
 for name, module in pairs(smartglasses.modules) do
 	if name == module.getId() then
-		print('Module ' .. name .. ' has alias ' .. tostring(modules.getAlias()))
+		print('Module ' .. name .. ' has alias ' .. tostring(module.getAlias()))
 	end
 end
 ```
